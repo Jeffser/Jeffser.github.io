@@ -1,3 +1,3 @@
 # Jeffser.github.io
 My Blog!
-You can take a look https://jeffser.github.io/
+You can take a look here https://jeffser.github.io/
