@@ -20,7 +20,7 @@ function load(){
     })
     var pageID = new URLSearchParams(window.location.search).get('p')
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){
-        if (pageID == null){pageID = ""}
+        if (pageID == null){pageID = "home"}
         if (data[data.findIndex(d => d.id == pageID)] == undefined){pageID = "404"}
         var page = data[data.findIndex(d => d.id == pageID)]
         document.getElementById('main').innerHTML = '<h1 id="title">' + page['title'] + '</h1>' + page['content']
