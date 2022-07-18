@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "Choco Krispis",
+        "marca": "Kellogg's",
+        "descripcion": "Cereal de chocolate",
+        "precio": 2000,
+        "medios": "En tienda",
+        "pagos": "Tarjeta o efectivo",
+        "envio": "Retira en tienda",
+        "cantidad": 14
+    },
+    {
+        "nombre": "Leche 1.8L",
+        "marca": "Dos Pinos",
+        "descripcion": "Leche de vaca",
+        "precio": 1500,
+        "medios": "En tienda",
+        "pagos": "Tarjeta o efectivo",
+        "envio": "Retira en tienda",
+        "cantidad": 12
+    },
+    {
+        "nombre": "Pan Integral",
+        "marca": "Bimbo",
+        "descripcion": "Pan de tipo integral 530g",
+        "precio": 1000,
+        "medios": "En tienda",
+        "pagos": "Tarjeta o efectivo",
+        "envio": "Retira en tienda",
+        "cantidad": 18
+    },
+    {
+        "nombre": "Pringles Queso",
+        "marca": "Pringles",
+        "descripcion": "Papas sabor a queso 124g",
+        "precio": 900,
+        "medios": "En tienda",
+        "pagos": "Tarjeta o efectivo",
+        "envio": "Retira en tienda",
+        "cantidad": 24
+    },
+    {
+        "nombre": "Coca-Cola Zero",
+        "marca": "Coca-Cola",
+        "descripcion": "Gaseosa sin azucar 355ml",
+        "precio": 700,
+        "medios": "En tienda",
+        "pagos": "Tarjeta o efectivo",
+        "envio": "Retira en tienda",
+        "cantidad": 31
+    },
+    {
+        "nombre": "Pinguinos",
+        "marca": "Marinela",
+        "descripcion": "2 quequitos de chocolate",
+        "precio": 600,
+        "medios": "En tienda",
+        "pagos": "Tarjeta o efectivo",
+        "envio": "Retira en tienda",
+        "cantidad": 18
+    }
+]

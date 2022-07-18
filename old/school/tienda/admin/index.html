@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Quicksand&display=swap" rel="stylesheet">
+    <title>La Muralla</title>
+</head>
+<body style="background-color: gray;">
+    <header>
+        <div onclick="window.location='../'" onclick="location.reload()">La Muralla</div>
+        <img src="../media/Twitter.png" alt="Twitter" onclick="window.location='https://twitter.com/_Tentri_'">
+        <img src="../media/GitHub.png" alt="GitHub" onclick="window.location='https://github.com/Jeffser'">
+    </header>
+    <section id="menu">
+        <div onclick="document.getElementById('Contacto').style.display = 'table'">Contacto</div>
+        <div onclick="window.location='../productos'">Productos</div>
+    </section>
+    <section id="menu">
+        <div id="btnInventario" onclick="updateInventario()" style="width: 30%;">Inventario</div>
+        <div id="btnFacturacion" onclick="updateFacturacion()" style="width: 30%;">Facturación</div>
+        <div id="btnControl" onclick="updateControl()" style="width: 30%;">Control</div>
+    </section>
+    <section id="admin"></section>
+    <div id="Contacto" class="richAlert">
+        <p onclick="document.getElementById('Contacto').style.display = 'none'">
+            <b>Telefono: </b>**** ****<br>
+            <b>Email: </b>*********@gmail.com<br>
+        </p>
+    </div>
+</body>
+<script src="../verificar.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.rawgit.com/Jeffser/NikoJS/master/niko.js"></script>
+</html>

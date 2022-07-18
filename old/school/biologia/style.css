@@ -1,0 +1,53 @@
+body{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header{
+    backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#title{
+    font-size: 6vw;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 10px;
+}
+div{
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Poppins', sans-serif;
+    color: white; 
+    padding: 10px;
+}
+#content{
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 10px;
+}
+input{
+    font-size: 2vw;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: none;
+}
+textarea{
+    font-size: 2vw;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: none;
+}
+form{
+    width: 100%;
+    text-align: center;
+}

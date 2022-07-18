@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header><h1>Swiss</h1></header>
+    <section id="main">
+        <div class="widget" id="objective">
+            <h1>About Swiss</h1>
+            Switzerland, officially the Swiss Confederation, is a landlocked country at the confluence of Western, Central and Southern Europe. The country is a federal republic composed of 26 cantons, with federal authorities based in Bern. Switzerland is bordered by Italy to the south, France to the west, Germany to the north and Austria and Liechtenstein to the east. It is geographically divided among the Swiss Plateau, the Alps and the Jura, spanning a total area of 41,285 km2 and land area of 39,997 km2. Although the Alps occupy the greater part of the territory, the Swiss population of approximately 8.5 million is concentrated mostly on the plateau.
+        </div>
+        <div class="widget" id="justification">
+            <h1>Places</h1>
+            Rin Waterfalls<br>
+            Pilatus Mountain<br>
+            Rigi<br>
+            Titlis<br>
+            Brienz River<br>
+        </div>
+        <div class="widget" id="countries">
+            <h1>More Countries</h1>
+            <a href="../uk"><div class="button" id="uk">United Kingdom</div></a>
+            <a href="../spain"><div class="button" id="spain">Spain</div></a>
+        </div>
+        <div class="widget" id="ad">
+            <h1>Back</h1>
+            <div>
+                <a href="../"><div class="button" id="lMore">Back to main</div></a>
+            </div>
+            <img src="../media/europe.png" alt="Europe">
+        </div>
+        <div class="widget" id="buy">
+            <h1>Reserve</h1>
+            <b>Nights: </b><input type="number" onchange="document.getElementById('total').value = document.getElementById('nights').value * document.getElementById('place').value" id="nights"><br>
+            <b>Place: </b><select id="place" onchange="document.getElementById('total').value = document.getElementById('nights').value * document.getElementById('place').value"><option value="1000">Rin Waterfalls</option><option value="1300">Pilatus Mountain</option><option value="1500">Rigi</option><option value="1300">Titlis</option><option value="1000">Brienz River</option></select><br>
+            <b>Total: </b><input type="number" id="total" disabled><br>
+            <button onclick="buy(document.getElementById('total').value)">Buy</button>
+        </div>
+    </section>
+</body>
+<script src="../script.js"></script>
+</html>

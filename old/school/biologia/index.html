@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function clean(){
+            document.getElementById('nombre').clean()
+            document.getElementById('correo').clean()
+            document.getElementById('archivo').clean()
+            document.getElementById('comentario').clean()
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biología</title>
+</head>
+<body>
+    <header>
+        <div id="title">Biología</div>
+    </header>
+    <section>
+        <div style="background-color: rgba(140, 70, 70, 0.5);">Organismo</div>
+        <div id="content" style="background-color: rgba(210, 140, 140, 0.5);">
+            <table style="width: 100%;">
+                <td style="width: 80%;">Un ser vivo u organismo es un conjunto material de organización compleja, en la que intervienen sistemas de comunicación molecular que lo relacionan internamente y con el medio ambiente en un intercambio de materia y energía de una forma ordenada.</td>
+                <td style="width: 20%;"><img style="width: 100%;" src="organismo.jpg" alt="Leones en grupo"></td>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div style="background-color: rgba(70, 140, 70, 0.5);">Poblaciones Biologicas</div>
+        <div id="content" style="background-color: rgba(140, 210, 140, 0.5);">
+            <table style="width: 100%;">
+                <td style="width: 80%;">Población biológica es un conjunto de organismos o individuos de la misma especie que conviven en un mismo espacio y tiempo, y que comparten ciertas propiedades biológicas, las cuales producen una alta cohesión reproductiva y ecológica del grupo.</td>
+                <td style="width: 20%;"><img style="width: 100%;" src="poblacion.jpg" alt="Leones en grupo"></td>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div style="background-color: rgba(70, 70, 140, 0.5);">Biocenosis</div>
+        <div id="content" style="background-color: rgba(140, 140, 210, 0.5);">
+            <table style="width: 100%;">
+                <td style="width: 80%;">Una biocenosis es conjunto de poblaciones biológicas que coexisten en espacio y tiempo.​ Estas especies se presentan en un espacio definido llamado biotopo, que ofrece las condiciones ambientales necesarias para su supervivencia. Puede dividirse en fitocenosis, zoocenosis y microbiocenosis.</td>
+                <td style="width: 20%;"><img style="width: 100%;" src="comunidad.jpg" alt="Una comunidad de animales"></td>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div style="background-color: rgba(140, 140, 70, 0.5);">Ecosistema</div>
+        <div id="content" style="background-color: rgba(210, 210, 140, 0.5);">
+            <table style="width: 100%;">
+                <td style="width: 80%;">El ecosistema es el conjunto de especies de un área determinada que interactúan entre ellas y con su ambiente abiótico; mediante procesos como la depredación, el parasitismo, la competencia y la simbiosis, y con su ambiente al desintegrarse y volver a ser parte del ciclo de energía y de nutrientes.</td>
+                <td style="width: 20%;"><img style="width: 100%;" src="ecosistema.jpg" alt="Un ecosistema"></td>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div style="background-color: rgba(70, 140, 140, 0.5);">Test</div>
+        <div id="content" style="background-color: rgba(140, 210, 210, 0.5);">
+            Quieres participar en un test para poner a prueba lo aprendido en esta pagina? sigue el siguiente link para ver que tanto aprendiste :3<br><a href="test" style="text-decoration: none; color: whitesmoke; font-size: 6vh;">>Test</a>
+        </div>
+    </section>
+
+    <section>
+        <div style="background-color: rgba(140, 70, 70, 0.5);">Comentarios</div>
+        <div id="content" style="background-color: rgba(210, 140, 140, 0.5);">
+            <form action="">
+                <table style="width: 100%;">
+                    <tr><td>Ingrese su nombre:</td><td><input type="text" id="nombre"></td></tr>
+                    <tr><td>Ingrese su correo:</td><td><input type="email" id="correo"></td></tr>
+                    <tr><td>Ingrese un archivo:</td><td><input type="file" id="archivo"></td></tr>
+                </table>
+                <b>Comentario</b><br>
+                <textarea id="comentario" cols="61" rows="10"></textarea>
+                <table style="width: 100%;">
+                    <td style="width: 50%;"><input type="reset" value="Limpiar" onclick="clean()"></td>
+                    <td style="width: 50%;"><input type="submit" value="Enviar" onclick="alert('Enviado con exito')"></td>
+                </table>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div style="background-color: rgba(70, 140, 70, 0.5);">Pagina creada por Jeffry Samuel Eduarte Rojas</div>
+        <div id="content" style="background-color: rgba(140, 210, 140, 0.5); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+            <button style="width: 10vw; height: 10vw; background-image: url(github.png); background-size: 100% 100%; background-color: transparent; border: 0px;" onclick="location.href='https://github.com/jeffser'"></button>
+        </div>
+    </footer>
+</body>
+</html>

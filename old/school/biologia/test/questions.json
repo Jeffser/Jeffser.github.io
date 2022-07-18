@@ -1,0 +1,10 @@
+[
+    {"question": "Un organismo es:", "options": {"a": "La base de toda la vida", "b": "La base en el ciclo ecologico", "c": "Un ser vivo", "d": "Un mamifero"}, "correctOption": "c", "correctSelected": false},
+    {"question": "El ecosistema es:", "options": {"a": "Una biocenosis con el ambiente", "b": "El hogar de los organismos", "c": "Organismos de la misma especie", "d": "Seres vivos"}, "correctOption": "a", "correctSelected": false},
+    {"question": "Una biocenosis es: ", "options": {"a": "Organismos de la misma especie", "b": "Organismos de especies distintas", "c": "Depredadores y presas", "d": "Pocos seres vivos en un mismo lugar"}, "correctOption": "b", "correctSelected": false},
+    {"question": "Una poblacion biologica es:", "options": {"a": "Organismos de la misma especie", "b": "Organismos de especies distintas", "c": "Organismos y su ambiente", "d": "Guarari"}, "correctOption": "a", "correctSelected": false},
+    {"question": "Un perro es: ", "options": {"a": "Poblacion Biologica", "b": "Organismo", "c": "Biocenosis", "d": "Ecosistema"}, "correctOption": "b", "correctSelected": false},
+    {"question": "Una manada de lobos es: ", "options": {"a": "Poblacion Biologica", "b": "Organismo", "c": "Biocenosis", "d": "Ecosistema"}, "correctOption": "a", "correctSelected": false},
+    {"question": "Guarari es: ", "options": {"a": "Poblacion Biologica", "b": "Organismo", "c": "Biocenosis", "d": "Ecosistema"}, "correctOption": "d", "correctSelected": false},
+    {"question": "Ovejas con un perro pastor es: ", "options": {"a": "Poblacion Biologica", "b": "Organismo", "c": "Biocenosis", "d": "Ecosistema"}, "correctOption": "c", "correctSelected": false}
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Quicksand&display=swap" rel="stylesheet">
+    <title>La Muralla</title>
+</head>
+<body style="background-color: gray;">
+    <header>
+        <div onclick="location.reload()">La Muralla</div>
+        <img src="media/Lock.png" alt="Lock" onclick="document.getElementById('Ingreso').style.display = 'table'">
+        <img src="media/Twitter.png" alt="Twitter" onclick="window.location='https://twitter.com/_Tentri_'">
+        <img src="media/GitHub.png" alt="GitHub" onclick="window.location='https://github.com/Jeffser'">
+    </header>
+    <section id="menu">
+        <div onclick="document.getElementById('Contacto').style.display = 'table'">Contacto</div>
+        <div onclick="window.location='productos'">Productos</div>
+    </section>
+    <section id="about">
+        <div style="width: 69%;">
+            <h3>Quienes Somos</h3>
+                La Muralla desde 1995 se ha encargado de otorgar acceso local a productos de toda clase para toda la comunidad, nos enfocamos en otorgar una atención de primer nivel manteniendo limpieza y productos recientes y nunca expirados.<br>
+                Manejado por un equipo de personas enfocadas en dar el mejor trabajo posible, nuestros servicios y productos están disponibles en esta pagina.<br>
+                Gracias por visitarnos!<br>
+                Pagina creada por Jeffry Samuel Eduarte Rojas
+        </div>
+        <div style="width: 30%;">
+            <img src="media/LaMuralla.jpg" alt="Logo de La Muralla" width="100%">
+        </div>
+    </section>
+    <div id="Contacto" class="richAlert">
+        <p onclick="document.getElementById('Contacto').style.display = 'none'">
+            <b>Telefono: </b>**** ****<br>
+            <b>Email: </b>*********@gmail.com<br>
+        </p>
+    </div>
+    <div id="Ingreso" class="richAlert">
+        <p>
+            Es 123 NO ES 321, NO ESCRIBAS 321<br>
+            <b>Clave:</b>
+            <input type="password" id="clave"><br>
+            <input type="button" value="Enviar" onclick="ingreso(document.getElementById('clave'), '')">
+            <input type="button" value="Cancelar" onclick="document.getElementById('Ingreso').style.display = 'none'">
+        </p>
+    </div>
+</body>
+<script src="verificar.js"></script>
+<script src="https://cdn.rawgit.com/Jeffser/NikoJS/master/niko.js"></script>
+</html>

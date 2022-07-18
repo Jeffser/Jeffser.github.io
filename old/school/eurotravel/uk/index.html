@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header><h1>United Kingdom</h1></header>
+    <section id="main">
+        <div class="widget" id="objective">
+            <h1>About UK</h1>
+            The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a sovereign country in Europe, off the north-­western coast of the continental mainland. It comprises England, Wales, Scotland, and Northern Ireland. The United Kingdom includes the island of Great Britain, the north eastern part of the island of Ireland, and many smaller islands within the British Isles.
+        </div>
+        <div class="widget" id="justification">
+            <h1>Places</h1>
+            Windsor Castle<br>
+            Stonehenge<br>
+            Oxford<br>
+            Piccadilly<br>
+            London<br>
+        </div>
+        <div class="widget" id="countries">
+            <h1>More Countries</h1>
+            <a href="../spain"><div class="button" id="spain">Spain</div></a>
+            <a href="../swiss"><div class="button" id="swiss">Swiss</div></a>
+        </div>
+        <div class="widget" id="ad">
+            <h1>Back</h1>
+            <div>
+                <a href="../"><div class="button" id="lMore">Back to main</div></a>
+            </div>
+            <img src="../media/europe.png" alt="Europe">
+        </div>
+        <div class="widget" id="buy">
+            <h1>Reserve</h1>
+            <b>Nights: </b><input type="number" onchange="document.getElementById('total').value = document.getElementById('nights').value * document.getElementById('place').value" id="nights"><br>
+            <b>Place: </b><select id="place" onchange="document.getElementById('total').value = document.getElementById('nights').value * document.getElementById('place').value"><option value="1000">Windsor Castle</option><option value="1300">Stonehenge</option><option value="1500">Oxford</option><option value="1300">Piccadilly</option><option value="1000">London</option></select><br>
+            <b>Total: </b><input type="number" id="total" disabled><br>
+            <button onclick="buy(document.getElementById('total').value)">Buy</button>
+        </div>
+    </section>
+</body>
+<script src="../script.js"></script>
+</html>

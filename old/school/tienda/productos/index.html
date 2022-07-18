@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Quicksand&display=swap" rel="stylesheet">
+    <title>La Muralla</title>
+</head>
+<body style="background-color: gray;">
+    <header>
+        <div onclick="window.location='../'">La Muralla</div>
+        <img src="../media/Lock.png" alt="Lock" onclick="document.getElementById('Ingreso').style.display = 'table'">
+        <img src="../media/Twitter.png" alt="Twitter" onclick="window.location='https://twitter.com/_Tentri_'">
+        <img src="../media/GitHub.png" alt="GitHub" onclick="window.location='https://github.com/Jeffser'">
+    </header>
+    <section id="menu">
+        <div onclick="document.getElementById('Contacto').style.display = 'table'">Contacto</div>
+        <div onclick="location.reload()">Productos</div>
+    </section>
+    <div id="productos">
+        <section id="lista"></section>
+        <section id="descripcion">
+            <div>
+                <h1 id="nombre">Selecciona un producto</h1>
+                <h2 id="marca"></h2><br>
+                <h2 id="desc"></h2><br>
+                <h2 id="precio"></h2><br>
+                <h2 id="medio"></h2><br>
+                <h2 id="pago"></h2><br>
+                <h2 id="envio"></h2><br>
+            </div>
+            <img src="" alt="">
+        </section>
+    </div>
+    <div id="Contacto" class="richAlert">
+        <p onclick="document.getElementById('Contacto').style.display = 'none'">
+            <b>Telefono: </b>**** ****<br>
+            <b>Email: </b>*********@gmail.com<br>
+        </p>
+    </div>
+    <div id="Ingreso" class="richAlert">
+        <p>
+            Es 123 NO ES 321, NO ESCRIBAS 321<br>
+            <b>Clave:</b>
+            <input type="password" id="clave"><br>
+            <input type="button" value="Enviar" onclick="ingreso(document.getElementById('clave'), '../')">
+            <input type="button" value="Cancelar" onclick="document.getElementById('Ingreso').style.display = 'none'">
+        </p>
+    </div>
+</body>
+<script src="../verificar.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.rawgit.com/Jeffser/NikoJS/master/niko.js"></script>
+</html>

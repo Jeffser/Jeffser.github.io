@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header><h1>Euro Travel</h1></header>
+    <section id="main">
+        <div class="widget" style="width: 80vmax;" id="buy">
+            <form action="script.php" method="post">
+                <b>Total to pay: </b><input type="number" name="total" id="total" disabled><br>
+                <b>Card Number: </b><input type="number" name="card" id="card"><br>
+                <b>Name: </b><input type="text" name="name" id="name"><br>
+                <b>Email: </b><input type="email" name="email" id="email"><br>
+                <b>Residence Adress: </b><input type="text" name="residence" id="residence"><br>
+                <button onclick="complete()">Complete</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function load(){
+            let params = (new URL(document.location)).searchParams
+            document.getElementById('total').value = params.get("total")
+        }
+        window.onload = load()
+    </script>
+</body>
+</html>
