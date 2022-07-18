@@ -1,0 +1,19 @@
+html{overflow-y: hidden; overflow-x: hidden;}
+body{
+    background-image: url(https://www.whatspaper.com/wp-content/uploads/2021/07/dark-wallpaper-whatspaper-14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Dancing Script', cursive;
+    height: 100%;
+    vertical-align: middle;
+}
+#text{
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    background: -webkit-linear-gradient(#7f5a5d, #487e7b, #4284d8, #c9162c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

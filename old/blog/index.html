@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffry's Blog</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fredoka:wght@500&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<header>
+    Jeffry's blog <br>
+    <button onclick="changeEntry(-1)"><</button><input type="text" id="entry" value="1" onchange="changeEntry(0)"><button onclick="changeEntry(1)">></button>
+</header>
+<body>
+    <section style="position: sticky; height: 22vh;"></section>
+    <div class="widget entry" id="1"><div id="title"></div><div id="date"></div><div id="content"></div><div id="id"></div></div>
+</body>
+<script src="script.js"></script>
+</html>

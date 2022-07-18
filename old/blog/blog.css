@@ -1,0 +1,44 @@
+.entry{
+    left: 0px;
+    right: 0px;
+    height: 62vh;
+    max-width: 100%;
+}
+.entry img{
+    max-width: 100%;
+}
+.entry #date{
+    font-size: 3vh;
+}
+.entry #id{
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 2vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+header{
+    padding: 0px;
+}
+header button{
+    vertical-align: middle;
+    font-size: 5vh;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: 0px;
+    font-family: 'Dancing Script', cursive;
+}
+header input{
+    vertical-align: middle;
+    font-size: 5vh;
+    width: 30%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 0px;
+    font-family: 'Dancing Script', cursive;
+}

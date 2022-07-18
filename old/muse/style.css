@@ -1,0 +1,95 @@
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: overlay;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+}
+header{
+    text-align: center;
+    color: white;
+}
+#music{
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-radius: 25px;
+}
+.song{
+    width: 25vh;
+    display: inline-table;
+    position: sticky;
+    transition: 0.3s;
+    z-index: 0;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.song div{
+    width: 25vh;
+    height: 25vh;
+    background-size: auto 25vh;
+    background-position: center;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.song:hover > div{box-shadow: 2px 2px 2px 2px white; margin-left: 10px; margin-right: 10px;}
+.songWidget{
+    opacity: 0%;
+    width: 55vh;
+    margin-top: 1vmax;
+    height: 185px;
+    transition: 0.3s;
+    border-radius: 25px;
+    background-size: auto contain;
+    background-position: center;
+    text-align: center;
+    display: inline-table;
+}
+.songWidget div{
+    display: grid;
+    height: 145px;
+    padding: 20px;
+    transition: 0.3s;
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(25px);
+}
+.songWidget div h1{
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-radius: 25px;
+    text-overflow: ellipsis;
+}
+.songWidget div h2{
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-radius: 25px;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+#playing{
+    height: auto;
+}
+#playing div{
+    height: auto;
+}
+#playing h1{
+    margin: 0;
+}
