@@ -17,11 +17,18 @@ function load(){
     $.getJSON('https://api.github.com/users/jeffser', function(data){
         document.getElementById('header').getElementsByTagName('b')[0].innerHTML = data.name
         document.getElementById('header').getElementsByTagName('img')[0].src = data.avatar_url
+        document.getElementById('favicon').href = data.avatar_url
     })
     var pageID = new URLSearchParams(window.location.search).get('p')
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){
         if (pageID == null){pageID = "home"}
-        if (data[data.findIndex(d => d.id == pageID)] == undefined){pageID = "404"}
+        if (data[data.findIndex(d => d.id == pageID)] == undefined){
+            var url = new URL(window.location.href)
+            var sp = url.searchParams
+            sp.set('p', '404')
+            url.search = sp.toString()
+            window.location.href = url.toString()
+        }
         var page = data[data.findIndex(d => d.id == pageID)]
         document.getElementById('main').innerHTML = '<h1 id="title">' + page['title'] + '</h1>' + page['content']
         color = page['color']
