@@ -16,7 +16,7 @@ header div img{
     float: left;
     height: 6vmin;
     padding-right: 10px;
-    border-radius: 6vmin;
+    border-radius: 50%;
 }
 header div b{
     float: right;
