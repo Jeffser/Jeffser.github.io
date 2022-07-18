@@ -14,8 +14,9 @@ function setColor(){
     console.log(color)
 }
 function load(){
-    document.getElementById('header').getElementsByTagName('b')[0].innerHTML = 'Jeffry Samuel Eduarte Rojas'
-    document.getElementById('header').getElementsByTagName('img')[0].src = 'https://avatars.githubusercontent.com/u/69224322?v=4'
+    var header = document.getElementById('header')
+    header.getElementsByTagName('b')[0].innerHTML = 'Jeffry Samuel Eduarte Rojas'
+    header.getElementsByTagName('img')[0].src = 'https://avatars.githubusercontent.com/u/69224322?v=4'
     document.getElementById('favicon').href = 'https://avatars.githubusercontent.com/u/69224322?v=4'
     var pageID = new URLSearchParams(window.location.search).get('p')
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){
