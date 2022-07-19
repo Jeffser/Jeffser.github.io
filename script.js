@@ -1,6 +1,7 @@
 let kaomoji = [['smile', '(´• ω •`)']]
 var color = null
 function setModeColor(){
+    document.getSelection().removeAllRanges() 
     var pc = null
     if (color['r'] + color['g'] + color['b']<382){pc = 'white'}
     else{pc = 'black'}
