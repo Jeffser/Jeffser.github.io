@@ -48,6 +48,7 @@ header div b{
     width: 80vmin;
 }
 #main img{
+    transition: .3s;
     width: 100%;
     padding-top: 1.5vmin;
     padding-bottom: 1.5vmin;
@@ -58,6 +59,7 @@ header div b{
 }
 #main a{
     color: white;
+    transition: .3s;
 }
 #main p{
     margin: 0;
