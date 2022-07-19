@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap');
 *{font-family: 'Roboto', sans-serif; transition: .3s; caret-color: transparent;}
-*::selection {background-color: rgba(128, 128, 128, 0.3); color: white;}
+*::selection {background-color: rgba(128, 128, 128, 0.4); color: white;}
 ::-webkit-scrollbar{
     width: 1vmin;
 }
