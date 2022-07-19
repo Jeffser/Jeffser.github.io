@@ -25,7 +25,7 @@ function setColor(){
     setModeColor()
 }
 function load(){    
-    var pageID = this.href.substring(this.href.lastIndexOf('/') + 1)
+    var pageID = window.location.href.substring(window.location.href.lastIndexOf('/') + 1)
     console.log(pageID)
     //new URLSearchParams(window.location.search).get('p')
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){
