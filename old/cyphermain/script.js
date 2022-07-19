@@ -47,7 +47,7 @@ function buy(i){
     document.getElementById('buy').style.display = 'table'
 }
 function fetcher(type, name){
-    metadata = getRequest('https://raw.githubusercontent.com/Jeffser/Jeffser.github.io/main/cyphermain/metadata.json');
+    metadata = getRequest('https://raw.githubusercontent.com/Jeffser/Jeffser.github.io/main/old/cyphermain/metadata.json');
     document.getElementById('main').innerHTML = "";
     if (type!="ALL"){metadata=metadata.filter(function(a){return a['type']==type;})}
     if (name!=""){metadata=metadata.filter(function(a){return a['name'].toUpperCase().includes(name.toUpperCase())})}
