@@ -17,14 +17,14 @@ function setModeColor(){
     document.body.style.backgroundColor = 'rgb(' + color['r'] + ',' + color['g'] + ',' + color['b'] + ')'
     document.getElementById('theme-color').content = 'rgb(' + color['r'] + ',' + color['g'] + ',' + color['b'] + ')'
 }
-function setColor(){
+function setColor(){    
     ['r', 'g', 'b'].forEach(c => {
         if (color[c]<127){color[c]+=127}
         else{color[c]-=127}
     })
     setModeColor()
 }
-function load(){
+function load(){    
     var pageID = new URLSearchParams(window.location.search).get('p')
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){
         if (pageID == null){pageID = "home"}
