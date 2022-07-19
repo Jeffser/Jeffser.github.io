@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap');
-*{font-family: 'Roboto', sans-serif; transition: .3s; caret-color: transparent;}
+*{font-family: 'Roboto', sans-serif; transition: .2s; caret-color: transparent;}
 *::selection {background-color: rgba(128, 128, 128, 0.4); color: white;}
 ::-webkit-scrollbar{
     width: 1vmin;
@@ -48,7 +48,6 @@ header div b{
     width: 80vmin;
 }
 #main img{
-    transition: .3s;
     width: 100%;
     padding-top: 1.5vmin;
     padding-bottom: 1.5vmin;
@@ -59,7 +58,6 @@ header div b{
 }
 #main a{
     color: white;
-    transition: .3s;
 }
 #main p{
     margin: 0;
