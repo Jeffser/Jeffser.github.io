@@ -14,6 +14,7 @@ function setModeColor(){
         }
     }
     document.body.style.backgroundColor = 'rgb(' + color['r'] + ',' + color['g'] + ',' + color['b'] + ')'
+    document.getElementById('theme-color').content = 'rgb(' + color['r'] + ',' + color['g'] + ',' + color['b'] + ')'
 }
 function setColor(){
     ['r', 'g', 'b'].forEach(c => {

@@ -36,12 +36,12 @@ header div img{
 }
 header div b{
     float: right;
-    font-size: 4vmin;
+    font-size: 4.5vmin;
     padding-top: 1vmin;
     padding-bottom: 1vmin;
 }
 #main{
-    font-size: 2vmin;
+    font-size: 2.5vmin;
     display: inline-table;
     text-align: left;
     width: 80vmin;
@@ -62,7 +62,7 @@ header div b{
     margin: 0;
 }
 #main #date{
-    font-size: 1.5vmin;
+    font-size: 2vmin;
 }
 #main div{
     padding-top: 1.5vmin;
