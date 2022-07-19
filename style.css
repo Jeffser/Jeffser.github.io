@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap');
 *{font-family: 'Roboto', sans-serif; transition: .3s; caret-color: transparent;}
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 1vmin;
 }
 ::-webkit-scrollbar-track{
     background: transparent;
 }
 ::-webkit-scrollbar-thumb{
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
+    border-radius: 0.5vmin;
 }
 ::-webkit-scrollbar-thumb:hover{
     background: rgba(255, 255, 255, 0.7);
 }
 body{
+    background-color: black;
+    color: white;
     overflow: overlay;
     margin: 0;
     text-align: center;
@@ -29,7 +31,7 @@ header div{
 header div img{
     float: left;
     height: 6vmin;
-    padding-right: 10px;
+    margin-right: 1vmin;
     border-radius: 50%;
 }
 header div b{
@@ -37,7 +39,6 @@ header div b{
     font-size: 4vmin;
     padding-top: 1vmin;
     padding-bottom: 1vmin;
-    padding-right: 10px;
 }
 #main{
     font-size: 2vmin;
@@ -47,13 +48,41 @@ header div b{
 }
 #main img{
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 1.5vmin;
+    padding-bottom: 1.5vmin;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
     border-top: solid;
     border-bottom: solid;
 }
 #main a{
     color: white;
+}
+#main p{
+    margin: 0;
+}
+#main #date{
+    font-size: 1.5vmin;
+}
+#main div{
+    padding-top: 1.5vmin;
+    padding-bottom: 1.5vmin;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
+    border-top: solid;
+    border-bottom: solid;
+}
+li.checked{list-style: none;}
+li.unchecked{list-style: none;}
+li.checked:before{content: '✓ ';}
+li.unchecked:before{content: '✗ ';}
+div.code{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 1.5vmin;
+    padding-right: 1.5vmin;
+}
+code{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
