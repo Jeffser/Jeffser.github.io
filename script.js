@@ -40,8 +40,8 @@ function load(){
         })//.replace(/\n/g, '<br />');
         document.getElementById('main').innerHTML = '<h1 id="title">' + page['title'] + '</h1>' + page['content']
         if (page['id']!='404'){document.getElementById('main').innerHTML += '<div id="date"><b>Created: </b>'+page['date']+'<br><b>Last Updated: </b>'+page['lastUpdated']+'</div>'}
-        Array.prototype.slice.call(document.getElementById('main').getElementsByTagName('img')).forEach(img => {img.src = 'https://raw.githubusercontent.com/Jeffser/Blog-Data/main/media/' + page['id'] + '/' + img.alt})
-        Array.prototype.slice.call(document.getElementById('main').getElementsByTagName('code')).forEach(code => {code.innerHTML = code.innerHTML.replace(/\n/g, '<br />')})
+        for (let img of document.getElementById('main').getElementsByTagName('img')){img.src = 'https://raw.githubusercontent.com/Jeffser/Blog-Data/main/media/' + page['id'] + '/' + img.alt}
+        for (let code of document.getElementById('main').getElementsByTagName('code')){code.innerHTML = code.innerHTML.replace(/\n/g, '<br />')}
         color = page['color']
         setModeColor()
     })
