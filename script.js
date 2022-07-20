@@ -1,10 +1,13 @@
 let kaomoji = [['smile', '(´• ω •`)']]
-var color = null
+var colors = []
+var mode = 1 //0=Dark 1=Light
 function setModeColor(){
     document.getSelection().removeAllRanges() 
     var pc = null
-    if (color['r'] + color['g'] + color['b']<382){pc = 'white'}
-    else{pc = 'black'}
+    console.log(colors)
+    if (mode==0){pc = 'black'}
+    else{pc = 'white'}
+    console.log(pc)
     document.body.style.color = pc
     for (let img of document.getElementById('main').getElementsByTagName('img')){img.style.borderTop = 'solid ' + pc; img.style.borderBottom = 'solid' + pc}
     for (let a of document.body.getElementsByTagName('a')){a.style.color = pc}
@@ -14,14 +17,12 @@ function setModeColor(){
             else {code.style.backgroundColor = 'rgba(255, 255, 255, 0.4)'}
         }
     }
-    document.body.style.backgroundColor = 'rgb(' + color['r'] + ',' + color['g'] + ',' + color['b'] + ')'
-    document.getElementById('theme-color').content = 'rgb(' + color['r'] + ',' + color['g'] + ',' + color['b'] + ')'
+    document.body.style.backgroundColor = 'rgb(' + colors[mode].toString() + ')'
+    document.getElementById('theme-color').content = 'rgb(' + colors[mode].toString() + ')'
 }
-function setColor(){    
-    ['r', 'g', 'b'].forEach(c => {
-        if (color[c]<127){color[c]+=127}
-        else{color[c]-=127}
-    })
+function invertMode(){    
+    if (mode==0){mode=1}else{mode=0}
+    console.log(colors)
     setModeColor()
 }
 function load(){    
@@ -44,7 +45,7 @@ function load(){
         if (page['id']!='404'){document.getElementById('main').innerHTML += '<div id="date"><b>Created: </b>'+page['date']+'<br><b>Last Updated: </b>'+page['lastUpdated']+'</div>'}
         for (let img of document.getElementById('main').getElementsByTagName('img')){img.src = 'https://raw.githubusercontent.com/Jeffser/Blog-Data/main/media/' + page['id'] + '/' + img.alt}
         for (let code of document.getElementById('main').getElementsByTagName('code')){code.innerHTML = code.innerHTML.replace(/\n/g, '<br />')}
-        color = page['color']
+        colors = [page['color']['dark'], page['color']['light']]
         setModeColor()
     })
 }
