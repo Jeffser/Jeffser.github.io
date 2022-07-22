@@ -32,7 +32,6 @@ function setModeColor(){
         sb.childNodes[0].style.caretColor = 'rgb('+colors[mode].toString()+')'
         if (mode==0){sb.childNodes[1].style.boxShadow = 'inset 0 0 100px 100px rgba(255, 255, 255, 0.5)'}
         else{sb.childNodes[1].style.boxShadow = 'inset 0 0 100px 100px rgba(0, 0, 0, 0.5)'}
-        
     }
     document.body.style.backgroundColor = 'rgb(' + colors[mode].toString() + ')'
     document.getElementById('theme-color').content = 'rgb(' + colors[mode].toString() + ')'
@@ -62,6 +61,7 @@ function search(searchBar){
 function updateWidgets(){
     //Fixed Posts List (FPL)
     for (let FPL of document.getElementById('main').getElementsByClassName('FPL')){
+        if (FPL.id=='*'){for (let post of pages){FPL.innerHTML += '<div class="post" id="' + post['id'] + '" style="padding: 1vmin; margin: 1vmin;"></div>'}}
         for (let post of FPL.id.split('-')){
             post = pages[pages.findIndex(p => p.id == post)]
             FPL.innerHTML += '<div class="post" id="' + post['id'] + '" style="padding: 1vmin; margin: 1vmin;"></div>'
