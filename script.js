@@ -82,7 +82,6 @@ function load(){
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/categories.json', function(data){categories = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){pages = data
         mode = window.localStorage.getItem('mode')
-        console.log(window.localStorage.getItem('mode'))
         if (mode == null){mode = 0}
         if (pageID == null){pageID = "home"}
         if (pages[pages.findIndex(d => d.id == pageID)] == undefined){
