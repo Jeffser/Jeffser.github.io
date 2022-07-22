@@ -3,11 +3,13 @@ let categories = []
 let pages = []
 var colors = []
 var mode = 0 //0=Dark 1=Light
+var zenMode = false
 function setModeColor(){
     document.getSelection().removeAllRanges() 
     var pc = null
     if (mode==0){pc = 'white'}
     else{pc = 'black'}
+    if (zenMode){pc = 'rgb('+colors[1-mode].toString()+')'}
     document.body.style.color = pc
     for (let img of document.getElementById('main').getElementsByTagName('img')){img.style.borderTop = 'solid ' + pc; img.style.borderBottom = 'solid' + pc}
     for (let a of document.body.getElementsByTagName('a')){a.style.color = pc}
@@ -28,6 +30,9 @@ function setModeColor(){
     for (let sb of document.getElementById('main').getElementsByClassName('searchBar')){
         for (let i = 0; i<2; i++){sb.childNodes[i].style.backgroundColor = 'rgb('+colors[1 - mode].toString()+')'; sb.childNodes[i].style.color = 'rgb('+colors[mode].toString()+')'}
         sb.childNodes[0].style.caretColor = 'rgb('+colors[mode].toString()+')'
+        if (mode==0){sb.childNodes[1].style.boxShadow = 'inset 0 0 100px 100px rgba(255, 255, 255, 0.5)'}
+        else{sb.childNodes[1].style.boxShadow = 'inset 0 0 100px 100px rgba(0, 0, 0, 0.5)'}
+        
     }
     document.body.style.backgroundColor = 'rgb(' + colors[mode].toString() + ')'
     document.getElementById('theme-color').content = 'rgb(' + colors[mode].toString() + ')'
@@ -35,6 +40,7 @@ function setModeColor(){
 
 function invertMode(){    
     if (mode==0){mode=1}else{mode=0}
+    window.localStorage.setItem('mode', mode)
     setModeColor()
 }
 
@@ -75,6 +81,9 @@ function load(){
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/kaomoji.json', function(data){kaomoji = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/categories.json', function(data){categories = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){pages = data
+        mode = window.localStorage.getItem('mode')
+        console.log(window.localStorage.getItem('mode'))
+        if (mode == null){mode = 0}
         if (pageID == null){pageID = "home"}
         if (pages[pages.findIndex(d => d.id == pageID)] == undefined){
             var url = new URL(window.location.href)

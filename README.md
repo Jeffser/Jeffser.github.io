@@ -1,3 +1,3 @@
 # Jeffser.github.io
 My Blog!
-You can take a look <a href="https://jeffser.github.io/">here</a>.
+You can take a look here https://jeffser.github.io/
