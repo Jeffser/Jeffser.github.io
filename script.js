@@ -74,6 +74,15 @@ function updateWidgets(){
         ih += '</select></div><div class="searchResults"></div>'
         SPL.innerHTML = ih
     }
+    //Category Posts List (CPL)
+    for (let CPL of document.getElementById('main').getElementsByClassName('CPL')){
+        if (CPL.innerHTML==''){CPL.innerHTML = '<b>' + categories[CPL.id]['name'] + '</b><br>'}
+        for (let post of pages){
+            if (post['category']==CPL.id){
+                CPL.innerHTML += '<div class="post" id="' + post['id'] + '" style="padding: 1vmin; margin: 1vmin;"></div>'
+            }
+        }
+    }
 }
 
 function load(){    
@@ -117,3 +126,4 @@ function load(){
     })})})
 }
 window.onload = load()
+//Made by JeffSER with ❤️

@@ -94,7 +94,7 @@ code{
     transition: .2s;
     border: 0.1vmin solid;
 }
-#main #title{
+#main h1{
     margin-top: 0;
     margin-bottom: 0;
 }
