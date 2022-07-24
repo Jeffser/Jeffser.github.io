@@ -92,7 +92,7 @@ function updateWidgets(){
     for (let CPL of document.getElementById('main').getElementsByClassName('CPL')){
         if (CPL.innerHTML==''){CPL.innerHTML = '<b>' + categories[CPL.id]['name'] + '</b><br>'}
         for (let post of pages){
-            if (post['category']==CPL.id){
+            if (post['category'].includes(CPL.id)){
                 CPL.innerHTML += '<div class="post" id="' + post['id'] + '" style="padding: 1vmin; margin: 1vmin;"></div>'
             }
         }
