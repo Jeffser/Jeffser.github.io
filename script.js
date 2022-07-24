@@ -62,6 +62,16 @@ function search(searchBar){
     setModeColor()
 }
 
+function playMuseElement(id){
+    if (document.getElementById('yt')){document.getElementById('yt').remove()}
+    div = document.getElementById(id)
+    yt = document.createElement('iframe')
+    yt.id = 'yt'
+    yt.src = 'https://www.youtube.com/embed/' + id + '?controls=0&rel=0&loop=1&autoplay=1&modestbranding=0&loop=1'
+    yt.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media;'
+    div.appendChild(yt)
+}
+
 function updateWidgets(){
     //Fixed Posts List (FPL)
     for (let FPL of document.getElementById('main').getElementsByClassName('FPL')){
@@ -92,6 +102,12 @@ function updateWidgets(){
         for (let link of FLL.id.split('--')){
             link = link.split('~')
             FLL.innerHTML += '<div class="link" id="' + link[0] + '" style="padding: 1vmin; margin: 1vmin;" onclick="window.location.href=\'' + link[0] + '\'">' + link[1] + '</div>'
+        }
+    }
+    //Fixed Muse Widget (FMW)
+    for (let FMW of document.getElementById('main').getElementsByClassName('FMW')){
+        for (let id of FMW.id.split('-')){
+            $.getJSON('https://youtube.com/oembed?url=https://www.youtube.com/watch?v='+id+'&format=json', function(data){FMW.innerHTML+='<div id="'+ id +'" class="museTrack" style="background-image: url(https://img.youtube.com/vi/'+ id +'/maxresdefault.jpg)" onclick="playMuseElement(\''+ id +'\')" title="'+ data['title'] +'">    </div>'})
         }
     }
 }

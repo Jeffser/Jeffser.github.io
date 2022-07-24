@@ -174,3 +174,22 @@ footer{
 #main .link:hover{
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
 }
+
+#main .museTrack{
+    display: inline-table;
+    border: none;
+    width: 18vmin;
+    height: 18vmin;
+    background-position: center;
+    margin: .5vmin;
+    padding: 0;
+    background-size: auto 100%;
+}
+#main .museTrack iframe{
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+}
