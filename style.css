@@ -107,7 +107,7 @@ code{
     border: 0.1vmin solid;
 }
 #main .post:hover{
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
 }
 #main .SPL .searchBar{
     border: none;
@@ -162,4 +162,14 @@ code{
 footer{
     font-size: 1.5vmin;
     margin-bottom: 1.5vmin;
+}
+#main .link{
+    margin: 0;
+    padding: 0.5vmin;
+    border-radius: 1vmin;
+    font-size: 2vmin;
+    display: inline-table;
+}
+#main .link:hover{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
 }
