@@ -34,8 +34,8 @@ function setModeColor(){
         else{sb.childNodes[1].style.boxShadow = 'inset 0 0 100px 100px rgba(0, 0, 0, 0.5)'}
     }
     for (let link of document.getElementById('main').getElementsByClassName('link')){
-        link.style.backgroundColor = 'rgb('+colors[1 - mode].toString()+')'
-        link.style.color = 'rgb('+colors[mode].toString()+')'
+        link.style.backgroundColor = 'rgb('+colors[mode].toString()+')'
+        link.style.color = 'rgb('+colors[1 - mode].toString()+')'
     }
     document.body.style.backgroundColor = 'rgb(' + colors[mode].toString() + ')'
     document.getElementById('theme-color').content = 'rgb(' + colors[mode].toString() + ')'
@@ -89,7 +89,6 @@ function updateWidgets(){
     }
     //Fixed Link List (FLL)
     for (let FLL of document.getElementById('main').getElementsByClassName('FLL')){
-        console.log(FLL.id)
         for (let link of FLL.id.split('--')){
             link = link.split('~')
             FLL.innerHTML += '<div class="link" id="' + link[0] + '" style="padding: 1vmin; margin: 1vmin;" onclick="window.location.href=\'' + link[0] + '\'">' + link[1] + '</div>'
