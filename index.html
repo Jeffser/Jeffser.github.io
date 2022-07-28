@@ -18,6 +18,7 @@
         </div>
     </header>
     <section id="main"></section>
+    <input type="range" id="zoomLevel" min="80" max="190" oninput="document.getElementById('main').style.width=parseInt(this.value)+'vmin'" onchange="window.localStorage.setItem('width', document.getElementById('main').style.width)" value="0">
     <footer></footer>
 </body>
 </html>

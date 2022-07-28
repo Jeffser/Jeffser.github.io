@@ -37,6 +37,7 @@ function setModeColor(){
         link.style.backgroundColor = 'rgb('+colors[mode].toString()+')'
         link.style.color = 'rgb('+colors[1 - mode].toString()+')'
     }
+    document.getElementById('zoomLevel').style.backgroundColor = 'rgb(' + colors[1-mode].toString() + ')'
     document.body.style.backgroundColor = 'rgb(' + colors[mode].toString() + ')'
     document.getElementById('theme-color').content = 'rgb(' + colors[mode].toString() + ')'
 }
@@ -118,6 +119,8 @@ function load(){
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/categories.json', function(data){categories = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){pages = data
         mode = window.localStorage.getItem('mode')
+        document.getElementById('main').style.width = window.localStorage.getItem('width')
+        document.getElementById('zoomLevel').value = parseInt(window.localStorage.getItem('width').slice(0,-4))
         if (mode == null){mode = 0}
         if (pageID == null){pageID = "home"}
         if (pages[pages.findIndex(d => d.id == pageID)] == undefined){
