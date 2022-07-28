@@ -13,6 +13,6 @@ function getRequest(url){
     http.send(null);
     return JSON.parse(http.responseText)
 }
-window.onload = window.location = getRequest('https://raw.githubusercontent.com/Jeffser/Jeffser.github.io/main/s/metadata.json')[new URLSearchParams(window.location.search).get('c')]
+window.onload = window.location = getRequest('https://raw.githubusercontent.com/Jeffser/Jeffser.github.io/main/old/s/metadata.json')[new URLSearchParams(window.location.search).get('c')]
 </script>
 </html>
