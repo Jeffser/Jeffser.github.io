@@ -22,7 +22,7 @@ function play(id){
     document.getElementById('playing').addEventListener('click', () => {document.getElementById('playing').style.display='none'; document.getElementById('yt').remove()})
 }
 function load(){
-    music = getRequest('https://raw.githubusercontent.com/Jeffser/Jeffser.github.io/main/muse/metadata.json')
+    music = getRequest('https://raw.githubusercontent.com/Jeffser/Jeffser.github.io/main/old/muse/metadata.json')
     music.forEach(cSong => {
         var songData = getRequest('https://youtube.com/oembed?url=https://www.youtube.com/watch?v='+cSong+'&format=json')
         songData['author_name'] = songData['author_name'].slice(0, songData['author_name'].length - 8)
