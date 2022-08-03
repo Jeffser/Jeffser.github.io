@@ -118,6 +118,7 @@ function load(){
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/kaomoji.json', function(data){kaomoji = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/categories.json', function(data){categories = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){pages = data
+        if (window.localStorage.getItem('mode')==null){window.localStorage.setItem('mode', 0)
         mode = window.localStorage.getItem('mode')
         document.getElementById('main').style.width = window.localStorage.getItem('width')
         document.getElementById('zoomLevel').value = parseInt(window.localStorage.getItem('width').slice(0,-4))
