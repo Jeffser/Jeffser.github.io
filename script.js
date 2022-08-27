@@ -115,6 +115,12 @@ function updateWidgets(){
 
 function load(){    
     var pageID = new URLSearchParams(window.location.search).get('p')
+    if (new URLSearchParams(window.location.search).has('s')){
+        $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/shortcuts.json', function(data){
+            if (new URLSearchParams(window.location.search).get('s') in data){window.location.href = data[new URLSearchParams(window.location.search).get('s')]}
+            else{window.location.href = '?p=404'}
+        })
+    }
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/kaomoji.json', function(data){kaomoji = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/categories.json', function(data){categories = data
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/pages.json', function(data){pages = data
