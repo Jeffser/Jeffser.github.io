@@ -38,7 +38,7 @@ window.onload = function(){
                     html_subDiv.appendChild(html_state)
                     html_div.appendChild(html_subDiv)
                 })
-                document.getElementById('main').appendChild(html_div)
+                document.getElementById('main').insertBefore(html_div, document.getElementById('main').firstChild)
                 ////----////
             }
         });
