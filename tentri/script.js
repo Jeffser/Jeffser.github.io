@@ -11,8 +11,6 @@ window.onload = function(){
                         let dateTime = element[0]
                         element.splice(0, 1)
                         for (let i=0; i<element.length; i++){element[i]=dictionary[element[i]]}
-                        //activities.push({'dateTime': dateTime, 'activities': newActivities})
-                        ////----////
                         let html_div = document.createElement('div')
                         html_div.id = dateTime
                         html_div.className = 'activityList'
@@ -22,9 +20,15 @@ window.onload = function(){
                         html_dateTime.className = 'dateTime'
                         html_div.appendChild(html_dateTime)
                         element.forEach(activity => {
+                            if (activity['name']==null){activity['name']=''}
+                            if (activity['details']==null){activity['details']=''}
+                            if (activity['state']==null){activity['state']=''}
                             let html_subDiv = document.createElement('div')
                             html_subDiv.className = 'activity'
-                            html_subDiv.style.backgroundImage = 'url(' + activity['large_image_url'] + ')'
+                            let html_image = document.createElement('img')
+                            html_image.className = 'image'
+                            html_image.src = activity['large_image_url']
+                            html_subDiv.appendChild(html_image)
                             let html_name = document.createElement('h1')
                             html_name.className = 'name'
                             html_name.innerHTML = '<span>' + activity['name'] + '</span>'
@@ -40,11 +44,10 @@ window.onload = function(){
                             html_div.appendChild(html_subDiv)
                         })
                         document.getElementById('main').insertBefore(html_div, document.getElementById('main').firstChild)
-                        ////----////
                     }
                 });
             }
-            document.getElementById('main').innerHTML = '<div class="activityList"><h1 class="dateTime">Select Date</h1><div class="activity" style="text-align: center;"><input type="number" name="year" id="year" placeholder="Year" max="9999" min="2022" onchange="verf(this)"><input type="number" name="month" id="month" placeholder="Month" max="12" min="1" onchange="verf(this)"><input type="number" name="day" id="day" placeholder="Day" max="31" min="1" onchange="verf(this)"><br><input type="number" name="hour" id="hour" placeholder="Hour" max="23", min="0" onchange="verf(this)"><input type="number" name="minute" id="minute" placeholder="Minute" max="59" min="0" onchange="verf(this)"><input type="button" value="Accept" onclick="go()"></div></div>' + document.getElementById('main').innerHTML
+            document.getElementById('main').innerHTML = '<div class="activityList"><h1 class="dateTime">Select Date</h1><div class="activity" style="text-align: center;"><input type="number" name="year" id="year" placeholder="Year" max="9999" min="2022" onchange="verf(this)"><input type="number" name="month" id="month" placeholder="Month" max="12" min="1" onchange="verf(this)"><input type="number" name="day" id="day" placeholder="Day" max="31" min="1" onchange="verf(this)"><input type="number" name="hour" id="hour" placeholder="Hour" max="23", min="0" onchange="verf(this)"><input type="number" name="minute" id="minute" placeholder="Minute" max="59" min="0" onchange="verf(this)"><input type="button" value="Accept" onclick="go()"></div></div>' + document.getElementById('main').innerHTML
         })
     })
 }

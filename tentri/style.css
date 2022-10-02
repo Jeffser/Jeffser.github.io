@@ -37,7 +37,7 @@ body{
     text-align: left;
     display: inline-table;
     position: sticky;
-    width: 85vmin;
+    width: 40vmin;
     background-color: transparent;
     backdrop-filter: brightness(50%) blur(1vmin);
     color: white;
@@ -65,13 +65,20 @@ body{
 .activity h1, .activity h2{
     margin: 0;
     padding: 0;
-    text-shadow: .5vmin .5vmin .5vmin #000000;
 }
-.state, .details{
-    font-size: 4vmin;
+.details{
+    font-size: 3vmin;
+}
+.state{
+    font-size: 2vmin;
+    color: rgb(177, 177, 177);
 }
 .name{
-    font-size: 6vmin;
+    font-size: 4vmin;
+}
+.image{
+    width: 100%;
+    border-radius: 2vmin;
 }
 input{
     background-color: transparent;
@@ -79,7 +86,7 @@ input{
     border-bottom: solid white;
     color: white;
     font-size: 4vmin;
-    width: 20vmin;
+    width: 30vmin;
     margin: 2vmin;
     margin-bottom: 4vmin;
 }
