@@ -50,8 +50,8 @@ window.onload = function(){
 }
 function verf(element){
     if (element.value==''){return true}
-    if (element.value>element.max){element.value = element.max}
-    else if (element.value<element.min){element.value = element.min}
+    if (parseInt(element.value)>parseInt(element.max)){element.value = element.max}
+    else if (parseInt(element.value)<parseInt(element.min)){element.value = element.min}
 }
 function go(){
     data = [document.getElementById('year').value, document.getElementById('month').value, document.getElementById('day').value, document.getElementById('hour').value, document.getElementById('minute').value]
