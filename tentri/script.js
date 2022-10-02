@@ -43,6 +43,17 @@ window.onload = function(){
             }
         });
     }
+    document.getElementById('main').innerHTML = '<div class="activityList">
+            <h1 class="dateTime">Select Date</h1>
+            <div class="activity" style="text-align: center;">
+                <input type="number" name="year" id="year" placeholder="Year" max="9999" min="2022" onchange="verf(this)">
+                <input type="number" name="month" id="month" placeholder="Month" max="12" min="1" onchange="verf(this)">
+                <input type="number" name="day" id="day" placeholder="Day" max="31" min="1" onchange="verf(this)"><br>
+                <input type="number" name="hour" id="hour" placeholder="Hour" max="23", min="0" onchange="verf(this)">
+                <input type="number" name="minute" id="minute" placeholder="Minute" max="59" min="0" onchange="verf(this)">
+                <input type="button" value="Accept" onclick="go()">
+            </div>
+        </div>' + document.getElementById('main').innerHTML
     })
 }
 function verf(element){
