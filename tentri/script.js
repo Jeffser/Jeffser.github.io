@@ -1,7 +1,6 @@
 window.onload = function(){
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/dictionary.json', function(dictionary){
         $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/activities.json', function(data){
-            var activities = []
             var code = new URLSearchParams(window.location.search).get('code')
             if (code!=null && code!=''){
                 code = code.split('-')
@@ -11,9 +10,8 @@ window.onload = function(){
                     if (tempDT.join(' ')==code.join(' ')){
                         let dateTime = element[0]
                         element.splice(0, 1)
-                        newActivities = []
-                        element.forEach(a => {newActivities.push(dictionary[a])})
-                        activities.push({'dateTime': dateTime, 'activities': newActivities})
+                        for (let i=0; i<element.length; i++){element[i]=dictionary[element[i]]}
+                        //activities.push({'dateTime': dateTime, 'activities': newActivities})
                         ////----////
                         let html_div = document.createElement('div')
                         html_div.id = dateTime
