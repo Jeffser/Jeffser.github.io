@@ -75,13 +75,22 @@ function go(){
 }
 
 window.onload = function(){
-    $('html,body').scrollTop(0);
+    $("html, body").scrollTop(0)
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/dictionary.json', function(dictionaryData){dictionary = dictionaryData
     $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/activities.json', function(data){
         data.forEach(element => {
             let tempDT = element[0].split(' ')
             if ((search.get('year')==tempDT[0]||search.get('year')==''||!search.has('year'))&&(search.get('month')==tempDT[1]||search.get('month')==''||!search.has('month'))&&(search.get('day')==tempDT[2]||search.get('day')==''||!search.has('day'))&&(search.get('hour')==tempDT[3]||search.get('hour')==''||!search.has('hour'))&&(search.get('minute')==tempDT[4]||search.get('minute')==''||!search.has('minute'))){
-                activityListsOnUse.push(element)
+                if (search.get('category')==''||!search.has('category')){
+                    activityListsOnUse.push(element)
+                } else{
+                    for (let i=1; i<element.length; i++){
+                        if (dictionary[element[i]]['name']==search.get('category')){
+                            activityListsOnUse.push(element)
+                            break
+                        }
+                    }
+                }
             }
         })
         activityListsOnUse.reverse()

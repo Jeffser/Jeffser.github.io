@@ -68,14 +68,15 @@ body{
     padding: 0;
 }
 .details{
-    font-size: 3vmin;
+    font-size: 4vmin;
 }
 .state{
     font-size: 2vmin;
     color: rgb(177, 177, 177);
 }
 .name{
-    font-size: 4vmin;
+    font-size: 2vmin;
+    color: rgb(177, 177, 177);
 }
 .image{
     width: 100%;
@@ -89,7 +90,7 @@ input, select{
     font-size: 4vmin;
     width: 32vmin;
     margin: 2vmin;
-    margin-bottom: 4vmin;
+    margin-bottom: 3.5vmin;
 }
 input[type=button]:hover, input[type=number]:focus, select:focus{
     outline: gray;
