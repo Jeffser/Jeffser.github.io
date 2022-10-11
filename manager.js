@@ -9,6 +9,8 @@ function changeMode(){
     if (localStorage.getItem('lightMode')==1) localStorage.setItem('lightMode', 0);
     else localStorage.setItem('lightMode', 1);
     CSSVariables.forEach(variable => {$(':root').get(0).style.setProperty('--'+variable, modifyHex($(':root').css('--'+variable)));});
+    if ($(window).scrollTop()>10) $(':root').get(0).style.setProperty('--headerBackgroundColor', 'rgba(' + $(':root').css('--backgroundColor').replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b).substring(1).match(/.{2}/g).map(x => parseInt(x, 16)).join() + ',0.9)');
+    else $(':root').get(0).style.setProperty('--headerBackgroundColor', $(':root').css('--backgroundColor'));
 }
 //METADATA
 $.getJSON('metadata.json', function(metadata){
@@ -34,8 +36,7 @@ $(window).on('load', function() {
         }
         if (scroll<100){
             $(':root').get(0).style.setProperty('--headerScale', 10-(scroll/100*5)+'vmin');
-            let rgb = $(':root').css('--backgroundColor').replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b).substring(1).match(/.{2}/g).map(x => parseInt(x, 16))
-            $(':root').get(0).style.setProperty('--headerBackgroundColor', 'rgba(' + rgb.join() + ',0.9)');
+            $(':root').get(0).style.setProperty('--headerBackgroundColor', 'rgba(' + $(':root').css('--backgroundColor').replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b).substring(1).match(/.{2}/g).map(x => parseInt(x, 16)).join() + ',0.9)');
         }
         else {
             $(':root').get(0).style.setProperty('--headerScale', '5vmin');
