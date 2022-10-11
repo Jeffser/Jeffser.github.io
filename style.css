@@ -1,82 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap');
-*{font-family: 'Roboto', sans-serif; transition: .2s; caret-color: transparent;}
-:root{
-    --backgroundColor: black;
-    --fontColor: white;
-    --fontColor: white;
-    --headerColor: white;
-    --secundaryColor: white;
-    --tertiaryColor: white;
-    --headerScale: 10vmin;
-    --headerBoxShadow: none;
-    --headerBackgroundColor: rgba(0,0,0,0);
-}
-body{
-    padding: 0;
-    margin: 0;
-    background-color: var(--backgroundColor);
-    color: var(--fontColor);
-    text-align: center;
-}
-header{
-    z-index: 1000;
-    backdrop-filter: blur(.5vmin);
-    background-color: var(--headerBackgroundColor);
-    box-shadow: var(--headerBoxShadow);
-    right: 0;
-    left: 0;
-    position: fixed;
-    color: var(--headerColor);
-    text-align: center;
-    height: calc(var(--headerScale)*1.4);
-    border-bottom-left-radius: 2vmin;
-    border-bottom-right-radius: 2vmin;
-}
-header div{
+.page{
     display: inline-table;
-    padding: calc(var(--headerScale)/6);
+    width: 30vmin;
+    border: solid var(--secundaryColor) .4vmin;
+    border-radius: 2vmin;
+    padding: 1vmin;
+    margin: 2vmin;
 }
-header div img{
-    margin-right: calc(var(--headerScale)/6);
-    height: var(--headerScale);
-    border-radius: 50%;
-    float: left;
+.page:hover{
+    box-shadow: 0 0 1vmin;
+    cursor: pointer;
 }
-header div b{
-    float: right;
-    font-size: calc(var(--headerScale)*0.75);
-    padding-top: calc(var(--headerScale)/6);
-    padding-bottom: calc(var(--headerScale)/6);
-}
-#main{
-    margin-top: calc(var(--headerScale)*1.5);
-    text-align: left;
-    display: inline-table;
-    width: 70vw;
-    padding-bottom: 2vmin;
-    border-bottom: solid var(--secundaryColor);
-    font-size: 3vmin;
-}
-#main .title{
-    margin: 0;
-    font-size: 5vmin;
-}
-.secundaryText{
-    color: var(--secundaryColor);
-}
-.tertiaryText{
+.page .pageTitle{
     color: var(--tertiaryColor);
+    width: 100%;
+    margin: 0;
+    border-bottom: solid var(--secundaryColor) .4vmin;
 }
-footer{
+.page .pageDescription{
+    margin-bottom: 1vmin;
     font-size: 2vmin;
-    margin-top: 2vmin;
-    margin-bottom: 2vmin;
-}
-a{
-    color: var(--fontColor);
-	text-decoration-color: var(--tertiaryColor);
-}
-a:hover{
-    text-decoration: underline;
-	text-decoration-color: var(--secundaryColor);
 }

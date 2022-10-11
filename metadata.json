@@ -1,10 +1,17 @@
 {
     "CSSVariables": {
-    "backgroundColor": "#000c18",
+    "backgroundColor": "#002142",
     "fontColor": "#FFFFFF",
     "headerColor": "#FDA534",
     "secundaryColor": "#520934",
     "tertiaryColor": "#f3d19b"
     },
-    "categories": ["home"]
+    "categories": [],
+    "type": "hidden",
+    "description": "The homepage",
+    "name": "Home",
+    "development": {
+        "status": "updating",
+        "note": "As the home page, this is always changing and improving."
+    }
 }
