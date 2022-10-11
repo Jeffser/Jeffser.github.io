@@ -15,9 +15,10 @@ function changeMode(){
 }
 //RICH ALERT
 function richAlert(msg){
+    $('html, body').css({overflow: 'hidden',height: '100%'});    
     $('body').append('<div id="richAlertContainer"><div id="richAlert">'+msg+'</div></div>')
     $('#richAlert').click(function(event){event.stopPropagation();});
-    $('#richAlertContainer').click(function(event){event.target.remove()})
+    $('#richAlertContainer').click(function(event){event.target.remove();$('html, body').css({overflow: 'auto',height: 'auto'});})
 }
 //GET DEVELOPMENT STATUS
 function getDevelopmentStatus(){
