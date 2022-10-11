@@ -11,7 +11,7 @@
     <script src="../manager.js"></script>
     <script>
         $(window).on('load', function(){
-            $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/muse.json', function(data){
+            $.getJSON('./data.json', function(data){
                 videoData = data[Math.floor(Math.random()*(data.length+1)+1)];
                 colorData = [];
                 for (let i=0;i<videoData[1].length;i++){colorData.push('rgb(' + videoData[1][i].join(',') + ')');}
