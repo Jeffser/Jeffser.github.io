@@ -44,6 +44,7 @@ header div img{
     float: left;
 }
 header div b{
+    color: var(--headerColor);
     cursor: pointer;
     float: right;
     font-size: calc(var(--headerScale)*0.75);

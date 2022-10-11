@@ -34,6 +34,7 @@ $.getJSON('metadata.json', function(metadata){
         CSSVariables.push(key);
     }
     $('head').get(0).append('<meta id="theme-color" name="theme-color" content="'+$(':root').css('--backgroundColor')+'">');
+    if (metadata['development']['status']=='broken'||metadata['development']['status']=='error') getDevelopmentStatus()
 })
 $(window).on('load', function() {
     //HEADER
