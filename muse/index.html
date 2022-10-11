@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../manager.js"></script>
     <script>
-        window.onload = function(){
+        $(window).on('load', function(){
             $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/muse.json', function(data){
                 videoData = data[Math.floor(Math.random()*(data.length+1)+1)];
                 colorData = [];
@@ -35,7 +35,7 @@
                     document.getElementById('author').innerHTML = videoMetadata['author_name'];
                 });
             });
-        }
+        })
     </script>
     <link rel="stylesheet" href="../main.css">
     <style>
