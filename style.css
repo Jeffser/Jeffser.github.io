@@ -1,6 +1,6 @@
 .page{
     display: inline-table;
-    width: 25%;
+    width: 15vw;
     border: solid var(--secundaryColor) .4vmin;
     border-radius: 2vmin;
     padding: 1vmin;
