@@ -1,0 +1,10 @@
+{
+    "CSSVariables": {
+    "backgroundColor": "#313782",
+    "fontColor": "#FFFFFF",
+    "headerColor": "#B6D5E9",
+    "secundaryColor": "#D7E5E0",
+    "tertiaryColor": "#E9A4A1"
+    },
+    "categories": ["home"]
+}

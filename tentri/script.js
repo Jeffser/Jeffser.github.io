@@ -50,7 +50,7 @@ function showPage(min, max){
     for (i; i<max; i++){
         if (i>=activityListsOnUse.length){break}
         var element = makeActivityList(activityListsOnUse[i])
-        if (element!=false){document.getElementById('main').appendChild(element)}
+        if (element!=false){document.getElementById('main2').appendChild(element)}
     }
     lastMax = i
 }
@@ -74,10 +74,10 @@ function go(){
     window.location.href='?'+page.slice(0,-1)
 }
 
-window.onload = function(){
+$(window).on('load', function() {
     $("html, body").scrollTop(0)
-    $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/dictionary.json', function(dictionaryData){dictionary = dictionaryData
-    $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/activities.json', function(data){
+    $.getJSON('dictionary.json', function(dictionaryData){dictionary = dictionaryData
+    $.getJSON('activities.json', function(data){
         data.forEach(element => {
             let tempDT = element[0].split(' ')
             if ((search.get('year')==tempDT[0]||search.get('year')==''||!search.has('year'))&&(search.get('month')==tempDT[1]||search.get('month')==''||!search.has('month'))&&(search.get('day')==tempDT[2]||search.get('day')==''||!search.has('day'))&&(search.get('hour')==tempDT[3]||search.get('hour')==''||!search.has('hour'))&&(search.get('minute')==tempDT[4]||search.get('minute')==''||!search.has('minute'))){
@@ -143,7 +143,7 @@ window.onload = function(){
         html_inputButton.addEventListener('click', go)
         html_subDiv.appendChild(html_inputButton)
         html_div.appendChild(html_subDiv)
-        document.getElementById('main').insertBefore(html_div, document.getElementById('main').firstChild)
+        document.getElementById('main2').insertBefore(html_div, document.getElementById('main2').firstChild)
         $(window).scroll(function(){
             if ($(window).scrollTop() + $(window).height() > $(document).height() - 100){
                 if (lastMax<activityListsOnUse.length){
@@ -153,4 +153,4 @@ window.onload = function(){
         })
     })
     })
-}
+})

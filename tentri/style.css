@@ -1,45 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*{font-family: 'Montserrat', sans-serif; transition: .2s;}
-::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: black;
-}
-::selection {
-    color: white;
-    background: black;
-}
-::-webkit-scrollbar{
-    width: 1vmin;
-}
-::-webkit-scrollbar-track{
-    background: transparent;
-}
-::-webkit-scrollbar-thumb{
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 0.5vmin;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: rgba(255, 255, 255, 0.7);
-}
-body{
-    overflow: overlay;
-    background-color: black;
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin: 0;
-}
-#main{
+#main2{
     text-align: center;
 }
 .activityList{
     text-align: left;
     display: inline-table;
     position: sticky;
-    width: 40vmin;
+    width: 35vmin;
     background-color: transparent;
-    backdrop-filter: brightness(50%) blur(1vmin);
+    backdrop-filter: brightness(50%);
     color: white;
     border-radius: 2vmin;
     padding: 2vmin;
@@ -56,7 +24,6 @@ body{
     margin-bottom: 4vmin;
     padding: 2vmin;
     background-color: rgba(25, 25, 25, .7);
-    backdrop-filter: blur(2vmin);
     color: white;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -96,7 +63,6 @@ input[type=button]:hover, input[type=number]:focus, select:focus{
     outline: gray;
     border-bottom: solid gray;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
