@@ -11,7 +11,7 @@
     "description": "A random song that I like, reload the page to change the track.",
     "name": "Muse",
     "development": {
-        "status": "broken",
-        "note": "I'm currently working on it."
+        "status": "error",
+        "note": "I don't know why RichAlert (this) doesn't modify all the background"
     }
 }

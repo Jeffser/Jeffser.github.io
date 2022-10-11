@@ -96,7 +96,7 @@ a:hover{
 }
 #richAlertContainer{
     z-index: 20;
-    backdrop-filter: blur(1vmin) grayscale(.5);
+    backdrop-filter: grayscale(.75);
     position: fixed;
     left: 0;
     right: 0;
