@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favicon" rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">
     <title>JeffSER</title>
     <link rel="stylesheet" href="style.css">
-    <link id="favicon" rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <meta name="theme-color" id="theme-color" content="rgb(0, 0, 0)"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="manager.js"></script>
 </head>
 <body>
-    <header>
-        <div id="header">
-            <img id="PFP" alt="PFP" onclick="invertMode()" src="https://avatars.githubusercontent.com/u/69224322?v=4">
-            <b id="headerTitle" onclick="window.location.href='./'">Jeffry's Corner</b>
-        </div>
-    </header>
-    <section id="main"></section>
-    <input type="range" id="zoomLevel" min="80" max="190" oninput="document.getElementById('main').style.width=parseInt(this.value)+'vmin'" onchange="window.localStorage.setItem('width', document.getElementById('main').style.width)" value="0">
+    <header></header>
+    <section id="main">
+        <h1 class="tertiaryText title">Hi!</h1>
+        <p>It's been a while since I've updated my website doesn't it?<br>I've been busy with personal projects, but now I'm working on this new website.<br>
+        The idea is just to make it as simple as possible, no widgets, no nothing, just a website...<br>
+        Well there are new stuff like a metadata system where every page has it's own JSON with the color palette and categories. <br>
+        I also want to add different sections like blogs, projects and stuff about me.</p>
+        <br>You can also check out my new project <a href="tentri">Tentri</a> where I compile all my life into the ultimate database, just the right place if you want to judge the stuff I watch.
+    </section>
     <footer></footer>
 </body>
 </html>
