@@ -14,11 +14,10 @@ function changeMode(){
     $('head').get(0).append('<meta id="theme-color" name="theme-color" content="'+$(':root').css('--backgroundColor')+'">');
 }
 //RICH ALERT
-function richAlert(msg){
-    $('html, body').css({overflow: 'hidden',height: '100%'});    
+function richAlert(msg){   
     $('body').append('<div id="richAlertContainer"><div id="richAlert">'+msg+'</div></div>')
     $('#richAlert').click(function(event){event.stopPropagation();});
-    $('#richAlertContainer').click(function(event){event.target.remove();$('html, body').css({overflow: 'auto',height: 'auto'});})
+    $('#richAlertContainer').click(function(event){event.target.remove();})
 }
 //GET DEVELOPMENT STATUS
 function getDevelopmentStatus(){
