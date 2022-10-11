@@ -1,0 +1,17 @@
+{
+    "CSSVariables": {
+    "backgroundColor": "#9e869e",
+    "fontColor": "#FFFFFF",
+    "headerColor": "#6ad3ba",
+    "secundaryColor": "#b3fcde",
+    "tertiaryColor": "#f11ba5"
+    },
+    "categories": ["game", "web", "coding"],
+    "type": "project",
+    "description": "A small physics simulation.",
+    "name": "Simulation",
+    "development": {
+        "status": "finished",
+        "note": "I may add more elements but I think this works as a proof of concept."
+    }
+}
