@@ -18,7 +18,7 @@
                 var r = document.querySelector(':root');
                 r.style.setProperty('--font-color', colorData[0]);
                 r.style.setProperty('--secundary-font-color', colorData[3]);
-                r.style.setProperty('--background-color', colorData[2]);
+                r.style.setProperty('--backgroundColor', colorData[2]);
                 r.style.setProperty('--accent-color', colorData[1]);
                 document.getElementById('theme-color').content = colorData[2];
                 ifr = document.createElement('iframe');
@@ -44,13 +44,13 @@
         :root{
             --font-color: ;
             --secundary-font-color: ;
-            --background-color: 'black';
+            --backgroundColor: 'black';
             --accent-color: ;
             --max-width: 65vmin;
             --max-height: 100vh;
         }
         body{
-            background-color: var(--background-color);
+            background-color: var(--backgroundColor);
             margin: 0;
         }
         #main{
