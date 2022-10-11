@@ -7,6 +7,9 @@
     --headerColor: white;
     --secundaryColor: white;
     --tertiaryColor: white;
+    --headerScale: 10vmin;
+    --headerBoxShadow: none;
+    --headerBackgroundColor: rgba(0,0,0,0);
 }
 body{
     padding: 0;
@@ -18,6 +21,8 @@ body{
 header{
     z-index: 1000;
     backdrop-filter: blur(.5vmin);
+    background-color: var(--headerBackgroundColor);
+    box-shadow: var(--headerBoxShadow);
     right: 0;
     left: 0;
     position: fixed;

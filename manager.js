@@ -20,7 +20,6 @@ $.getJSON('metadata.json', function(metadata){
     }
     $('head').get(0).append('<meta id="theme-color" name="theme-color" content="'+metadata['CSSVariables']['backgroundColor']+'">');
 })
-$(':root').get(0).style.setProperty('--headerScale', '10vmin');
 $(window).on('load', function() {
     //HEADER
     $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo" onclick="changeMode()"><b onclick="window.location.href=\'../\'">Jeffry\'s Corner</b></div>');
@@ -29,7 +28,18 @@ $(window).on('load', function() {
     //SCROLL THING
     window.onscroll = function(){
         let scroll = $(window).scrollTop();
-        if (scroll<200) $(':root').get(0).style.setProperty('--headerScale', 10-(scroll/200*5)+'vmin');
-        else $(':root').get(0).style.setProperty('--headerScale', '5vmin');
+        if (scroll<10){
+            $(':root').get(0).style.setProperty('--headerBoxShadow', 'none')
+            $(':root').get(0).style.setProperty('--headerBackgroundColor', $(':root').css('--backgroundColor'));
+        }
+        if (scroll<100){
+            $(':root').get(0).style.setProperty('--headerScale', 10-(scroll/100*5)+'vmin');
+            let rgb = $(':root').css('--backgroundColor').replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b).substring(1).match(/.{2}/g).map(x => parseInt(x, 16))
+            $(':root').get(0).style.setProperty('--headerBackgroundColor', 'rgba(' + rgb.join() + ',0.9)');
+        }
+        else {
+            $(':root').get(0).style.setProperty('--headerScale', '5vmin');
+            $(':root').get(0).style.setProperty('--headerBoxShadow', '0px 2px var(--headerColor)')
+        }
     }
 })
