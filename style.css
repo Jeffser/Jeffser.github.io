@@ -1,4 +1,5 @@
 .page{
+    backdrop-filter: grayscale(.4);
     display: inline-table;
     width: 15vw;
     border: solid var(--secundaryColor) .4vmin;
@@ -19,4 +20,28 @@
 .page .pageDescription{
     margin-bottom: 1vmin;
     font-size: 2vmin;
+}
+.socialDiv{
+    margin-right: 2vmin;
+    border: solid var(--secundaryColor) .4vmin;
+    display: inline-block;
+    backdrop-filter: grayscale(.4);
+    border-radius: 1vmin;
+    padding: 0;
+}
+.socialDiv img{
+    margin: 1vmin;
+    margin-right: 0;
+    float: left;
+    height: 5vmin;
+}
+.socialDiv b{
+    margin: 1vmin;
+    float: right;
+    height: 5vmin;
+    font-size: 4vmin;
+}
+.socialDiv:hover{
+    box-shadow: 0 0 1vmin;
+    cursor: pointer;
 }
