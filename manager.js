@@ -22,7 +22,7 @@ function richAlert(msg){
 //GET DEVELOPMENT STATUS
 function getDevelopmentStatus(){
     $.getJSON('metadata.json', function(metadata){
-        richAlert('<h1 class="tertiaryText title">Development Status - '+metadata['name']+'</h1><div id="development"><div id="development-information"><h1 class="tertiaryText subtitle">'+metadata['development']['status'].charAt(0).toUpperCase()+metadata['development']['status'].slice(1)+'</h1>'+metadata['development']['note']+'</div><img src="https://jeffser.github.io/globalMedia/development/'+metadata['development']['status']+'.gif" alt="'+metadata['development']['status']+'"></div>');
+        richAlert('<div id="development"><div id="development-information"><h1 class="tertiaryText title">Development Status - '+metadata['name']+'</h1><h1 class="tertiaryText subtitle">'+metadata['development']['status'].charAt(0).toUpperCase()+metadata['development']['status'].slice(1)+'</h1>'+metadata['development']['note']+'</div><img src="https://jeffser.github.io/globalMedia/development/'+metadata['development']['status']+'.gif" alt="'+metadata['development']['status']+'"></div>');
     })
 }
 //METADATA
