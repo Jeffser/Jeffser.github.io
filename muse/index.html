@@ -8,6 +8,7 @@
     <link id="favicon" rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">
     <meta name="theme-color" id="theme-color" content="rgb(0, 0, 0)"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../manager.js"></script>
     <script>
         window.onload = function(){
             $.getJSON('https://raw.githubusercontent.com/Jeffser/Blog-Data/main/muse.json', function(data){
@@ -36,6 +37,7 @@
             });
         }
     </script>
+    <link rel="stylesheet" href="../main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
         *{font-family: 'Nunito', sans-serif;}
@@ -110,10 +112,14 @@
     </style>
 </head>
 <body>
-    <div id="yt">
-        <div id="thumbnail"></div>
-        <h1 id="title"></h1>
-        <h2 id="author"></h2>
+    <header></header>
+    <div id="main">
+        <div id="yt">
+            <div id="thumbnail"></div>
+            <h1 id="title"></h1>
+            <h2 id="author"></h2>
+        </div>
     </div>
+    <footer></footer>
 </body>
 </html>
