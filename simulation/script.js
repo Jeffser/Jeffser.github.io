@@ -4,7 +4,6 @@ let wallColor = 'white'
 let ghostColor = 'rgba(0,0,0,0)'
 var blocks = []
 var tool = 'blue'
-var clicked = false
 let running = true
 let textures = false
 function start(){running = true}
@@ -27,10 +26,7 @@ function setBlock([x,y],color='black'){
     blocks[y][x].style.backgroundColor = color
     if (textures){blocks[y][x].style.filter = "brightness("+(95+Math.floor(Math.random()*5))+"%)"}
 }
-function checkBlock(event){
-    var source = event.target || event.srcElement
-    if (clicked){setBlock(source.id.split('-'), tool)}
-}
+
 function getBlocksAround([x,y]){
     var stuff = []
     if (x-1>=0&&y-1>=0){stuff.push(getBlock([x-1,y-1]))}
@@ -53,10 +49,7 @@ function getBlocksAround([x,y]){
 }
 
 $(window).on('load', function(){
-    document.getElementById('main2').onmousedown = function(event){
-        if (event.button==0){
-            clicked=!clicked
-        }}
+    document.getElementById('main2').addEventListener('contexmenu', function(e){e.preventDefault(); getDevelopmentStatus();})
     document.documentElement.style.setProperty('--size', properties['size'])
     for (let y=0; y<properties['height']; y++){
         blocks.push([])
@@ -65,7 +58,18 @@ $(window).on('load', function(){
             blocks[y][x].className = 'block'
             blocks[y][x].style.backgroundColor = defaultColor
             blocks[y][x].id = x+'-'+y
-            blocks[y][x].addEventListener('mouseover', checkBlock)
+            blocks[y][x].addEventListener('mouseover', function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                if (e.buttons == 1){
+                    var source = e.target || e.srcElement
+                    setBlock(source.id.split('-'), tool)
+                }
+                return false;
+            })
+            blocks[y][x].addEventListener('dragstart', function(){return false})
+            blocks[y][x].addEventListener('dragmove', function(){return false})
+            blocks[y][x].addEventListener('contexmenu', function(e){e.preventDefault(); getDevelopmentStatus();})
             document.getElementById('main2').appendChild(blocks[y][x])
         }
         document.getElementById('main2').appendChild(document.createElement('br'))
