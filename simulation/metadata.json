@@ -13,5 +13,9 @@
     "development": {
         "status": "finished",
         "note": "I may add more elements but I think this works as a proof of concept."
+    },
+    "mobile": {
+        "status": "broken",
+        "note": "This application doesn't work with touch screens at all, it wasn't made with touch based devices in mind."
     }
 }

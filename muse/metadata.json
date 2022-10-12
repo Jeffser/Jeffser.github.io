@@ -11,7 +11,11 @@
     "description": "A random song that I like, reload the page to change the track.",
     "name": "Muse",
     "development": {
-        "status": "error",
-        "note": "I don't know why RichAlert (this) doesn't modify all the background"
+        "status": "finished",
+        "note": "It works but richAlert (this) isn't applying it's background effect to all the screen and I don't know why."
+    },
+    "mobile": {
+        "status": null,
+        "note": null
     }
 }

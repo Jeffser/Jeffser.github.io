@@ -13,5 +13,9 @@
     "development": {
         "status": "updating",
         "note": "As the home page, this is always changing and improving."
+    },
+    "mobile": {
+        "status": null,
+        "note": null
     }
 }
