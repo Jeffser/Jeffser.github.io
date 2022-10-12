@@ -40,7 +40,7 @@ $.getJSON('metadata.json', function(metadata){
 })
 $(window).on('load', function() {
     //HEADER
-    $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'../\'">Jeffry\'s Corner</b></div>');
+    $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
     $("header").find('img').contextmenu(function(e){e.preventDefault();})
     $("header").find('img').mousedown(function(ev){
         if(ev.which==1)changeMode();
