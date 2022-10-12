@@ -15,10 +15,12 @@
                 videoData = data[Math.floor(Math.random()*(data.length+1)+1)];
                 colorData = [];
                 for (let i=0;i<videoData[1].length;i++){colorData.push('rgb(' + videoData[1][i].join(',') + ')');}
+                
                 var r = document.querySelector(':root');
                 r.style.setProperty('--font-color', colorData[0]);
                 r.style.setProperty('--secundary-font-color', colorData[3]);
-                r.style.setProperty('--backgroundColor', colorData[2]);
+                colorData[2] = colorData[2].slice(4, -1).split(',')
+                r.style.setProperty('--backgroundColor', "#" + (parseInt(colorData[2][0]).toString(16) + parseInt(colorData[2][1]).toString(16) + parseInt(colorData[2][2]).toString(16)));
                 r.style.setProperty('--accent-color', colorData[1]);
                 document.getElementById('theme-color').content = colorData[2];
                 ifr = document.createElement('iframe');
@@ -40,7 +42,7 @@
     <link rel="stylesheet" href="../main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-        *{font-family: 'Nunito', sans-serif;}
+        *, :not(header), :not(footer){font-family: 'Nunito', sans-serif;}
         :root{
             --font-color: ;
             --secundary-font-color: ;
