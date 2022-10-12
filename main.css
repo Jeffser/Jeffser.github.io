@@ -108,7 +108,7 @@ a:hover{
     align-items: center;
 }
 #richAlert{
-    width: 50vw;
+    width: 70vmin;
     text-align: left;
     display: inline-table;
     border: solid var(--secundaryColor) .4vmin;
