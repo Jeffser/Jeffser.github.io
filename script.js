@@ -7,9 +7,9 @@ $(window).on('load', function(){
         }
     })
     pages.forEach(pageName => {
-        $.getJSON("./"+pageName+"/metadata.json", function(page){
+        $.getJSON("./"+page['type']+'/'+pageName+"/metadata.json", function(page){
             $('#list-'+page['type']).find('#'+pageName).append('<h1 class="pageTitle">'+page['name']+'</h1><p class="pageDescription">'+page['description']+'</p>');
-            $('#list-'+page['type']).find('#'+pageName).click(function(){window.location.href=pageName;});
+            $('#list-'+page['type']).find('#'+pageName).click(function(){window.location.href=page['type']+'/'+pageName;});
         });
     });
 
