@@ -23,7 +23,7 @@
 .activity{
     margin-bottom: 4vmin;
     padding: 2vmin;
-    backdrop-filter: brightness(calc(var(--brightnessLevel))/2);
+    backdrop-filter: brightness(calc(var(--brightnessLevel)/1.5));
     color: var(--tertiaryColor);
     background-size: auto 100%;
     background-repeat: no-repeat;
