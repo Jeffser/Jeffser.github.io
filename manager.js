@@ -100,7 +100,7 @@ $(window).on('load', function() {
     //JEFFSER_TERMINAL THING
     $('body').keypress(function(e){
         if ((e['originalEvent']['key']=='/')&&document.activeElement.tagName=='BODY'){
-            richAlert('<textarea spellcheck="false" rows="3" style="caret-color: lime; box-sizing:border-box; width:100%; background: black; outline: none; border: solid transparent 0; font-size: 4vmin; color: lime;" id="JEFFSER-TERMINAL" onkeyup="if (event[\'key\']==\'Escape\') $(\'#richAlertContainer\').remove(); else return true;" onkeypress="this.placeholder=\'\'; this.style.border=\'solid transparent 0\'; if(event[\'key\']==\'Enter\') return JEFFSER_TERMINAL(this); else return true;"></textarea>');
+            richAlert('<textarea spellcheck="false" rows="1" style="caret-color: lime; box-sizing:border-box; width:100%; background: black; outline: none; border: solid transparent 0; font-size: 4vmin; color: lime;" id="JEFFSER-TERMINAL" onkeyup="if (event[\'key\']==\'Escape\') $(\'#richAlertContainer\').remove(); else return true;" onkeypress="this.placeholder=\'\'; this.style.border=\'solid transparent 0\'; if(event[\'key\']==\'Enter\') return JEFFSER_TERMINAL(this); else return true;"></textarea>');
             $('#JEFFSER-TERMINAL').focus();
             return false;
         }
