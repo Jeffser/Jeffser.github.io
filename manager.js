@@ -6,7 +6,7 @@ function modifyHex(hex){
     return '#' + rgb.map(x => {const hex2 = x.toString(16);return hex2.length === 1 ? '0' + hex2 : hex2;}).join('');
 }
 function changeMode(){
-    if (localStorage.getItem('lightMode')==1) localStorage.setItem('lightMode', 0);
+    if (localStorage.getItem('lightMode')==1||(localStorage.getItem('lightMode')!=1&&localStorage.getItem('lightMode')!=0)) localStorage.setItem('lightMode', 0);
     else localStorage.setItem('lightMode', 1);
     CSSVariables.forEach(variable => {$(':root').get(0).style.setProperty('--'+variable, modifyHex($(':root').css('--'+variable)));});
     if ($(window).scrollTop()>10) $(':root').get(0).style.setProperty('--headerBackgroundColor', 'rgba(' + $(':root').css('--backgroundColor').replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b).substring(1).match(/.{2}/g).map(x => parseInt(x, 16)).join() + ',0.9)');
@@ -15,8 +15,51 @@ function changeMode(){
     if (localStorage.getItem('lightMode')==0) $(':root').get(0).style.setProperty('--brightnessLevel', '150%');
     else $(':root').get(0).style.setProperty('--brightnessLevel', '50%');
 }
+//JEFFSER_TERMINAL
+function JEFFSER_TERMINAL(element){
+    const [good, bad, text] = ['solid lime .5vmin', 'solid red .5vmin', 'solid orange .5vmin'];
+    const constants={
+        ':abandoned:': 'https://jeffser.github.io/globalMedia/development/abandoned.gif',
+        ':broken:': 'https://jeffser.github.io/globalMedia/development/broken.gif',
+        ':error:': 'https://jeffser.github.io/globalMedia/development/error.gif',
+        ':finish:': 'https://jeffser.github.io/globalMedia/development/finish.gif',
+        ':updating:': 'https://jeffser.github.io/globalMedia/development/updating.gif'
+    }
+    let parameters = element.value.split(' ');
+    let ogCMD = parameters[0];
+    parameters.splice(0, 1);
+    for (let i=0; i<parameters.length; i++){
+        for (const [key, value] of Object.entries(constants)) parameters[i] = parameters[i].replace(RegExp(key, 'g'), value);
+    }
+    if (parameters==undefined){parameters = []; parameters.push('')}
+    switch (ogCMD){
+        case 'goto':
+        if (parameters[0].substring(0, 2)!='./') prefix = 'https://jeffser.github.io/';
+        window.location.href = prefix + parameters.join('/');
+        break;
+        case 'print':
+        if (window[fullCMD[1]]!=undefined){element.style.border = text; element.placeholder=window[fullCMD[1]]; element.value='';}
+        else element.style.border = bad;
+        break;
+        case 'changeMode':
+            changeMode();
+            break;
+        case 'alert':
+            alert(parameters.join(' '));
+            break;
+        case 'richAlert':
+            richAlert(parameters.join(' '));
+            break;
+        case 'test':
+            parameters = parameters.join(' ');
+            break;
+            
+    }
+    return false;
+}
 //RICH ALERT
 function richAlert(msg, block=false){   
+    $('#richAlertContainer').remove();
     $('body').append('<div id="richAlertContainer"><div id="richAlert">'+msg+'</div></div>')
     $('#richAlert').click(function(event){event.stopPropagation();});
     if (!block)$('#richAlertContainer').click(function(event){event.target.remove();})
@@ -53,6 +96,13 @@ $(window).on('load', function() {
     });
     //FOOTER
     $("footer").html('Made by <a href="https://www.github.com/jeffser">JeffSER</a> with ❤️');
+    //JEFFSER_TERMINAL THING
+    $('body').keypress(function(e){
+        if ((e['originalEvent']['key']=='t'||e['originalEvent']['key']=='T')&&document.activeElement.tagName=='BODY'){
+            richAlert('<textarea spellcheck="false" rows="3" onfocus="this.value=\'\'; this.style.border=\'solid transparent 0\';" style="caret-color: lime; box-sizing:border-box; width:100%; background: black; outline: none; border: solid transparent 0; font-size: 4vmin; color: lime;" id="JEFFSER-TERMINAL" onkeypress="this.placeholder=\'\'; this.style.border=\'solid transparent 0\';if(event[\'key\']==\'Enter\') return JEFFSER_TERMINAL(this);else return true;"></textarea>');
+            $('#JEFFSER-TERMINAL').focus();
+        }
+    })
     //SCROLL THING
     window.onscroll = function(){
         let scroll = $(window).scrollTop();
