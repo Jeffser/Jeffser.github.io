@@ -34,14 +34,15 @@ function JEFFSER_TERMINAL(element){
     if (parameters==undefined){parameters = []; parameters.push('')}
     switch (ogCMD){
         case 'goto':
-        let prefix = '';
-        if (parameters[0].substring(0, 2)!='./') prefix = 'https://jeffser.github.io/';
-        window.location.href = prefix + parameters.join('/');
-        break;
+            let prefix = '';
+            if (parameters[0].substring(0, 2)!='./') prefix = 'https://jeffser.github.io/';
+            if (parameters.length==0 && parameters[0]=='') parameters[0]=' ';
+            window.location.href = prefix + parameters.join('/');
+            break;
         case 'print':
-        if (window[parameters[0]]!=undefined){element.style.border = text; element.placeholder=window[parameters[0]]; element.value='';}
-        else element.style.border = bad;
-        break;
+            if (window[parameters[0]]!=undefined){element.style.border = text; element.placeholder=window[parameters[0]]; element.value='';}
+            else element.style.border = bad;
+            break;
         case 'changeMode':
             changeMode();
             break;
