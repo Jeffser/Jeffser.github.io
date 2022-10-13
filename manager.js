@@ -12,6 +12,8 @@ function changeMode(){
     if ($(window).scrollTop()>10) $(':root').get(0).style.setProperty('--headerBackgroundColor', 'rgba(' + $(':root').css('--backgroundColor').replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b).substring(1).match(/.{2}/g).map(x => parseInt(x, 16)).join() + ',0.9)');
     else $(':root').get(0).style.setProperty('--headerBackgroundColor', $(':root').css('--backgroundColor'));
     $('head').get(0).append('<meta id="theme-color" name="theme-color" content="'+$(':root').css('--backgroundColor')+'">');
+    if (localStorage.getItem('lightMode')==0) $(':root').get(0).style.setProperty('--brightnessLevel', '150%');
+    else $(':root').get(0).style.setProperty('--brightnessLevel', '50%');
 }
 //RICH ALERT
 function richAlert(msg, block=false){   
