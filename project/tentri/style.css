@@ -39,11 +39,11 @@
 }
 .state{
     font-size: 2vmin;
-    color: rgb(177, 177, 177);
+    color: var(--fontColor);
 }
 .name{
     font-size: 2vmin;
-    color: rgb(177, 177, 177);
+    color: var(--fontColor);
 }
 .image{
     width: 100%;
