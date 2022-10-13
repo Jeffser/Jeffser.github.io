@@ -31,12 +31,11 @@ function JEFFSER_TERMINAL(element){
     for (let i=0; i<parameters.length; i++){
         for (const [key, value] of Object.entries(constants)) parameters[i] = parameters[i].replace(RegExp(key, 'g'), value);
     }
-    if (parameters==undefined){parameters = []; parameters.push('')}
+    if (parameters==undefined||parameters.length==0){parameters = []; parameters.push('')}
     switch (ogCMD){
         case 'goto':
             let prefix = '';
             if (parameters[0].substring(0, 2)!='./') prefix = 'https://jeffser.github.io/';
-            if (parameters.length==0 && parameters[0]=='') parameters[0]=' ';
             window.location.href = prefix + parameters.join('/');
             break;
         case 'print':
