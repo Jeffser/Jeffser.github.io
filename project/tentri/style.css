@@ -23,7 +23,7 @@
 .activity{
     margin-bottom: 4vmin;
     padding: 2vmin;
-    background-color: rgba(25, 25, 25, .7);
+    backdrop-filter: brightness(calc(var(--brightnessLevel))/2);
     color: var(--tertiaryColor);
     background-size: auto 100%;
     background-repeat: no-repeat;
