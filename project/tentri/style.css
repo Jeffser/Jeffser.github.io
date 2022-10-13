@@ -7,7 +7,7 @@
     position: sticky;
     width: 35vmin;
     background-color: transparent;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(var(--brightnessLevel));
     color: white;
     border-radius: 2vmin;
     padding: 2vmin;

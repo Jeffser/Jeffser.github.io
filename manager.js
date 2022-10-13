@@ -29,7 +29,10 @@ function getDevelopmentStatus(){
 $.getJSON('metadata.json', function(metadata){
     for (const [key, value] of Object.entries(metadata['CSSVariables'])){
         v=value;
-        if (localStorage.getItem('lightMode')==0)v=modifyHex(v)
+        if (localStorage.getItem('lightMode')==0){
+            v=modifyHex(v);
+            $(':root').get(0).style.setProperty('--brightnessLevel', '150%');
+        } else $(':root').get(0).style.setProperty('--brightnessLevel', '50%');
         $(':root').get(0).style.setProperty('--'+key,v);
         CSSVariables.push(key);
     }
