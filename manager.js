@@ -39,7 +39,7 @@ function JEFFSER_TERMINAL(element){
         window.location.href = prefix + parameters.join('/');
         break;
         case 'print':
-        if (window[fullCMD[1]]!=undefined){element.style.border = text; element.placeholder=window[fullCMD[1]]; element.value='';}
+        if (window[parameters[0]]!=undefined){element.style.border = text; element.placeholder=window[parameters[0]]; element.value='';}
         else element.style.border = bad;
         break;
         case 'changeMode':
