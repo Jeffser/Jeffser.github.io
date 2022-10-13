@@ -22,7 +22,7 @@ function JEFFSER_TERMINAL(element){
         ':abandoned:': 'https://jeffser.github.io/globalMedia/development/abandoned.gif',
         ':broken:': 'https://jeffser.github.io/globalMedia/development/broken.gif',
         ':error:': 'https://jeffser.github.io/globalMedia/development/error.gif',
-        ':finish:': 'https://jeffser.github.io/globalMedia/development/finish.gif',
+        ':finished:': 'https://jeffser.github.io/globalMedia/development/finished.gif',
         ':updating:': 'https://jeffser.github.io/globalMedia/development/updating.gif'
     }
     let parameters = element.value.split(' ');
