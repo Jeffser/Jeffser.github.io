@@ -34,6 +34,7 @@ function JEFFSER_TERMINAL(element){
     if (parameters==undefined){parameters = []; parameters.push('')}
     switch (ogCMD){
         case 'goto':
+        let prefix = '';
         if (parameters[0].substring(0, 2)!='./') prefix = 'https://jeffser.github.io/';
         window.location.href = prefix + parameters.join('/');
         break;
