@@ -3838,5 +3838,23 @@
       "large_image_url": "https://media.discordapp.net/external/ftBjuYHxeAs2FW1lMnr-_BxOSttEZIc1aAzg_W3nFlM/https/raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/js.png",
       "name": "Code",
       "state": "Working on manager.js:111:24"
+   },
+   {
+      "details": "The Gravity Falls Iceberg Explained",
+      "large_image_url": "https://media.discordapp.net/external/IggO_zRFM1DkRZ_00AtF0wXuQ0K0VgG2JRKxMT-bURs/https/i3.ytimg.com/vi/ScDI7PjDkJg/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "Book of Valis"
+   },
+   {
+      "details": "The Forgotten Gravity Falls Theories",
+      "large_image_url": "https://media.discordapp.net/external/I4ecQqPd0i1sgRBnU5-qSRRvw_8KFdg_9c8FfT62GeA/https/i3.ytimg.com/vi/D98kY0ZSTMY/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "Keyan Carlile"
+   },
+   {
+      "details": "The Cartoon Network Iceberg Explained",
+      "large_image_url": "https://media.discordapp.net/external/jcscpN42vzJM4TiRvKKBqwkqu0Na7KppNB9841866ik/https/i3.ytimg.com/vi/jOiYmfnQf3E/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "Doktor Skipper"
    }
 ]
