@@ -93,6 +93,7 @@ function whenResize(){
 }
 $(window).on('load', function() {
     whenResize();
+    $(window).bind("orientationchange", whenResize);
     $(window).resize(whenResize);
     //HEADER
     $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
