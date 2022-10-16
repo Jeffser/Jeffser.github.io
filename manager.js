@@ -100,11 +100,8 @@ $(window).on('load', function() {
     $(window).resize(whenResize);
     //HEADER
     $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
-    $("header").find('img').contextmenu(function(e){e.preventDefault();})
-    $("header").find('img').mousedown(function(ev){
-        if(ev.which==1)changeMode();
-        if(ev.which==3){ev.preventDefault(); getDevelopmentStatus();}
-    });
+    $("header").find('img').contextmenu(function(e){e.preventDefault(); getDevelopmentStatus();})
+    $("header").find('img').mousedown(function(ev){if(ev.which==1) changeMode();});
     //FOOTER
     $("footer").html('Made by <a href="https://www.github.com/jeffser">JeffSER</a> with ❤️');
     //JEFFSER_TERMINAL THING
