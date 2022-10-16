@@ -93,7 +93,10 @@ function whenResize(){
 }
 $(window).on('load', function() {
     whenResize();
-    $(window).bind("orientationchange", whenResize);
+    $(window).bind("orientationchange", function(event){
+        if (event.orientation=='landscape') $('#main').css('width', '70vw');
+        else $('#main').css('width', '95vw');
+    });
     $(window).resize(whenResize);
     //HEADER
     $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
