@@ -94,6 +94,7 @@ function whenResize(){
 $(window).on('load', function() {
     whenResize();
     $(window).bind("orientationchange", function(event){
+        richAlert(event.orientation)
         if (event.orientation=='landscape') $('#main').css('width', '70vw');
         else $('#main').css('width', '95vw');
     });
