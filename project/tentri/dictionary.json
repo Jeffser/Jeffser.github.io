@@ -1294,5 +1294,197 @@
       "large_image_url": "https://media.discordapp.net/external/1BA-yxW0hozPDL5wF_O_E1hTcZ61HadvWFPe_VxEqPo/https/lh3.googleusercontent.com/bsPieoSMF402F_05hHOq7FITGDPllsNcBnjPE0WUi6T2a4A130z6qqjJLCEV10kE1pCSGBxKt0Bdgfkc%3Dw544-h544-l90-rj",
       "name": "YouTube Music",
       "state": "Avicii - Levels"
+   },
+   {
+      "details": "Rise Up",
+      "large_image_url": "https://media.discordapp.net/external/P79lkFNZ00eaSp_uBg2wztwtanVdNPbVc7WwDeqy-nY/https/lh3.googleusercontent.com/4RC7tgbSGK8uvq06WWuLBqhsfFl2DGgx3mGUtkC_L1D7-s4xaEohW4i3rJB5Ane141OREccCwZTFbfc%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "TheFatRat - Rise Up"
+   },
+   {
+      "details": "Find Our Way",
+      "large_image_url": "https://media.discordapp.net/external/gzF-w01yjhEg45HC9hFp8zYpapnb6M8wGm0Yb6J2TG4/https/lh3.googleusercontent.com/OeLfUW-JcqY8dJlKe7xSmFaEBbSSjRX0hvzquXgKU0llTWK08cvQsNUKfc8Ti9Pf-VNMEH7jQViX_2rr6w%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Midnight Kids - Find Our Way"
+   },
+   {
+      "details": "I Miss Myself",
+      "large_image_url": "https://media.discordapp.net/external/tNbUPdxrypJY470ZN8knfpp3HMKiRxFI2enerX_CnCQ/https/lh3.googleusercontent.com/d5kjxXr9Hz4rwpvTYF8_ovs7P74lMKfmBueh6MHPdZqezQRe4XTPt04EqZBrDUN2VO_cQlJNNwsRR4Jr%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "NOTD & HRVY - I Miss Myself"
+   },
+   {
+      "details": "No Money",
+      "large_image_url": "https://media.discordapp.net/external/1mAElczsfE-jEAvq9sbfZMjDBYV7NaxF3vqHwULYQCs/https/lh3.googleusercontent.com/r7Zud63EbAR1-8zendC8cmffZsXgj3G6s0mtkVJOTnJFaA-dUaGAWECqGTRbiXlKdSwRifZJ1YmpBeix%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Galantis - The Aviary"
+   },
+   {
+      "details": "The River",
+      "large_image_url": "https://media.discordapp.net/external/ilU3MH_z9QH7DmuaiTDCAmctofO1rWMqYyF-YZX4RnA/https/lh3.googleusercontent.com/Mhvzn25wJsmhdzkCrOAyp-hcckKyX-b907FdI30jqhbfqJ-RwQfU7Ij2YBGtnB9urQswVrrT0BNhK2Ju%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Axel Johansson - The River"
+   },
+   {
+      "details": "Funny (Stripped)",
+      "large_image_url": "https://media.discordapp.net/external/M2ozEfaUjkMQY4YQ57-FcB5z9hoi_GS4YCVVfiNQMN4/https/lh3.googleusercontent.com/x9EhIuRNRim83Qe29AUfJthRDo4a2ItKoX-8LwmHN8qmC-ScSrYii0t-KnEipGV7ZdUWeM84oLrx-PQ3SA%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd & Jasmine Thompson - Funny (Stripped)"
+   },
+   {
+      "details": "Clarity",
+      "large_image_url": "https://media.discordapp.net/external/0PklqIElzrJE61CFYEmRFHuEryttlTc30ZR8ztwFwGA/https/lh3.googleusercontent.com/tgDKXG9pHrKFMGjwDM9waFSOs_KlSXF05uymprrGyHvLLg6KGl6U-O34pI2cNukVMatNft6lY-SyaEzHxQ%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd - Clarity"
+   },
+   {
+      "details": "True Feeling",
+      "large_image_url": "https://media.discordapp.net/external/1mAElczsfE-jEAvq9sbfZMjDBYV7NaxF3vqHwULYQCs/https/lh3.googleusercontent.com/r7Zud63EbAR1-8zendC8cmffZsXgj3G6s0mtkVJOTnJFaA-dUaGAWECqGTRbiXlKdSwRifZJ1YmpBeix%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Galantis - The Aviary"
+   },
+   {
+      "details": "Funny (Breathe Carolina Remix)",
+      "large_image_url": "https://media.discordapp.net/external/z7codIv1GOuJUOK5af6Em6fWoHZGYElkwHOg1-u8vmk/https/lh3.googleusercontent.com/poOD8UXVVToOCHv8OPTekG4oeX5F2HYOAdKtwH21X5igCGkEb-NL2aPfWNJZgwJEEsSW4wV-YAXwm7mj%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd & Jasmine Thompson - Funny (Remixes)"
+   },
+   {
+      "details": "Funny (Marc Benjamin Remix)",
+      "large_image_url": "https://media.discordapp.net/external/z7codIv1GOuJUOK5af6Em6fWoHZGYElkwHOg1-u8vmk/https/lh3.googleusercontent.com/poOD8UXVVToOCHv8OPTekG4oeX5F2HYOAdKtwH21X5igCGkEb-NL2aPfWNJZgwJEEsSW4wV-YAXwm7mj%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd & Jasmine Thompson - Funny (Remixes)"
+   },
+   {
+      "details": "Funny (Ellis Remix)",
+      "large_image_url": "https://media.discordapp.net/external/z7codIv1GOuJUOK5af6Em6fWoHZGYElkwHOg1-u8vmk/https/lh3.googleusercontent.com/poOD8UXVVToOCHv8OPTekG4oeX5F2HYOAdKtwH21X5igCGkEb-NL2aPfWNJZgwJEEsSW4wV-YAXwm7mj%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd & Jasmine Thompson - Funny (Remixes)"
+   },
+   {
+      "details": "On My Way",
+      "large_image_url": "https://media.discordapp.net/external/08bVenD4LIg2150fiLXZvICKfUMxsmRp3ELuD6zWcRw/https/lh3.googleusercontent.com/FjBbw7AgcolDeEEpBH5hbI-kT7sb0gNDEmn_ys69LasAg8WS7bK1IuhaDm2N2b7-m89c4ucKGYPtQRRy%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Alan Walker, Sabrina Carpenter & Farruko - On My Way"
+   },
+   {
+      "details": "Play Date",
+      "large_image_url": "https://media.discordapp.net/external/JrOp2JycX7CBUqY7BfDPJMZwhuiyAHRwZocEd2gY65E/https/lh3.googleusercontent.com/v8Ua_iFK9ria2ZovPBnqAn4DJUL_x1_xghdDk9zVtZ3ks6unWNYMGOyNoSlD56_Rsp_UU5SzL2vQ84w%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Melanie Martinez - Cry Baby (Deluxe Edition)"
+   },
+   {
+      "details": "Time",
+      "large_image_url": "https://media.discordapp.net/external/_cwN27MO0HHvbqMAHOQMaakU6k-u8arqIYO4W7425RY/https/lh3.googleusercontent.com/twfLCMVuXco5NYYBgOAlMVu34x4urv_QHfA081LfnBKJLmACYwugv5apENzqUCWMMS3A82UWDhHHnGeE%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Syn Cole - Time"
+   },
+   {
+      "details": "The Haunting",
+      "large_image_url": "https://media.discordapp.net/external/WavZiEIoVqAvYhWLqWiPvr_Q_qaH9hPJOHnN4gjSAEM/https/lh3.googleusercontent.com/ZDMAYykCglOx1bFJR98UxBcle6qD2n-56foIj6q3UnA87DCBDLoiVXUwMCNEAbhD73OVxhZRrwHjCFU%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Set It Off - Duality"
+   },
+   {
+      "details": "Chimera (English Cover)\u3010Will Stetson\u3011\u300c\u30ad\u30e1\u30e9\u300d",
+      "large_image_url": "https://media.discordapp.net/external/AHsXEPqy8CJrEoSdM7w40n0shU0YYW3egMjNzYEFt_0/%3Fsqp%3D-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg%26rs%3DAOn4CLCqbgezM3tL75tWl0h0sOaEkGLtrQ/https/i.ytimg.com/vi/Jpej5WZrbiQ/sddefault.jpg",
+      "name": "YouTube Music",
+      "state": "Will Stetson"
+   },
+   {
+      "details": "Smile",
+      "large_image_url": "https://media.discordapp.net/external/4wx-_BB9PLxUXauw9EfKm0bWUdtLRVg2zL9N45NFjjQ/https/lh3.googleusercontent.com/kOgvMz2PzZTIKd35SsIa51LE08X_A6xGNC6G1dnPPn9dtOahpNmftXsZRwSi5Fizgn9S6rCQJr2qg5Eq%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Vexento - Smile"
+   },
+   {
+      "details": "MAYDAY",
+      "large_image_url": "https://media.discordapp.net/external/l7ingiAwhHX8H6qmJ1jP1xd4p5f1QPFkQS8Yv7HRGZ4/https/lh3.googleusercontent.com/xgCUdYDfLxorz4wCJMHLMVoT2UvLu7mkB9_UdYAS_p7jOKhdGn9KlhDrkPTmIhZXYgzaB9U02krcWewV%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "TheFatRat - MAYDAY"
+   },
+   {
+      "details": "Rotary Dial",
+      "large_image_url": "https://media.discordapp.net/external/QN_ICsECp5AF4BTUFK66Ctg3tgUT5LqgDGEelw5jjhg/https/lh3.googleusercontent.com/LsKBtLEdCX2jpZ1PVqDEOJsH2_AelJoKhnrigdaQIT46enX3Qf9g1TXnVzjcQcQGy7asX3UKtOZdL1Cmdw%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Ghost and Pals - Thanks to You Song"
+   },
+   {
+      "details": "Mind Brand",
+      "large_image_url": "https://media.discordapp.net/external/k7xidQWNnRhEinAC9m_H22WjtKr7GoNhwAlgQqTheTs/https/lh3.googleusercontent.com/sqs2Dm7Ih3nzYVtVNv1H4m7J56aTHwvMksxPZGZAEszERsZoRiDYy7ccX61RrdWvjKr6ZVbdS4qOeuuc1Q%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Kuraiinu - Mind Brand"
+   },
+   {
+      "details": "My R",
+      "large_image_url": "https://media.discordapp.net/external/Hd-v52o7oMCiv4DFJ5SU7icEKnwiA8Xf7Hn1GIpfll8/https/lh3.googleusercontent.com/hCqS67RCmvHPLzt0vgDOKss9qWn2ROYrnk224TtwUMEtt6zCpyA6X0Jfy2kt1aKYe8mA_eQs27V9-gRZZg%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Lollia - My R"
+   },
+   {
+      "details": "Sex Sells",
+      "large_image_url": "https://media.discordapp.net/external/jFSdF7OZlIH4KoE-oF1XrKemp-biV8XJKGopjTY6OnU/https/lh3.googleusercontent.com/SGzeku6sGd1u5x0TXmxTohSJK5dD8NaZhrjqNp2YBegrU5uTT-VKaWiHp29W5HnUja4pK3b2i4teV2TbvA%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Lovejoy - Are You Alright?"
+   },
+   {
+      "details": "Knee Deep At ATP",
+      "large_image_url": "https://media.discordapp.net/external/ehR0gRB_7jFMen2cUfLJld4WM-OmJMCy-ICbFwZ9PiI/https/lh3.googleusercontent.com/2r5IRwOOQYbVAj8IHiHxv_2bLFJ6XXQ8CwhF9sxxbdgVvwuQABnmY9hmBNd_me_vzCqrHnZZ8d8anVoL%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Los Campesinos!"
+   },
+   {
+      "details": "Knee Deep At ATP",
+      "large_image_url": "https://media.discordapp.net/external/ehR0gRB_7jFMen2cUfLJld4WM-OmJMCy-ICbFwZ9PiI/https/lh3.googleusercontent.com/2r5IRwOOQYbVAj8IHiHxv_2bLFJ6XXQ8CwhF9sxxbdgVvwuQABnmY9hmBNd_me_vzCqrHnZZ8d8anVoL%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Los Campesinos! - Hold On Now, Youngster... (Remastered Deluxe Edition)"
+   },
+   {
+      "details": "Look At The Sky",
+      "large_image_url": "https://media.discordapp.net/external/lhJbPTFwEkyvicK7t979TA0-RKYmM61hLv1dHz6xN1s/https/lh3.googleusercontent.com/NZG4Twrg6gDvxq1_nDyifCwx4irFkGthCKUMKw8DBg0u4Bgb3PNY15ORPrB1rZBqH7L55PgqvT3n-ceB%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Porter Robinson - Nurture"
+   },
+   {
+      "details": "Close To The Sun",
+      "large_image_url": "https://media.discordapp.net/external/u8UM9C6U1U4QzRQ_FRhp5a8cwMhq4eanAKYG5Yeey04/https/lh3.googleusercontent.com/ZSiqMYc30VHRA95-H_AkuZnsKeP56oxRAm6IZ3t5aRelH5Ler3JZLOQILyp296vEoYOCLXnAI1GjQbEm%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "TheFatRat & Anjulie - Close To The Sun"
+   },
+   {
+      "details": "All Falls Down",
+      "large_image_url": "https://media.discordapp.net/external/gFzc5PsdSo-d-_NuFgvFHiJ3jtKoqODudfSIALHuxl4/https/lh3.googleusercontent.com/mOxS-HGSPLkUsQIlZZP7drX1x-ewJT5YW8O8FKt5HWR5lZ2b8NAQldscy6n8TV34dQKkND2489goh3zH%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Alan Walker - All Falls Down"
+   },
+   {
+      "details": "Angels (Radio Edit)",
+      "large_image_url": "https://media.discordapp.net/external/Ul92sOSBqvTE8sg_wQDeevjbYEiAChc3QHWu2jCKMvs/https/lh3.googleusercontent.com/KNUDcd5MMrv1Ltdqc3lLiGrfb7T-Mdiv06TLRsaw5VwY_vYsD2fBljNBKB33To7IL1Aq9V9IO4h3NPEz7Q%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Vicetone - Angels (Radio Edit)"
+   },
+   {
+      "details": "Lonely Together",
+      "large_image_url": "https://media.discordapp.net/external/JiWfxyA9ZMRXW6luBrg39dXITE4dJ8JWV4eclajAW4U/https/lh3.googleusercontent.com/3DhB6mnGGpAP1T-rhRDf-snwUJsaEIAShW5DnwkUDcvHJBTT4gLDr9e9owogV10ovveu5-DuoF0E7Wls%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Avicii - AV\u012aCI (01)"
+   },
+   {
+      "details": "It's You (Radio Edit)",
+      "large_image_url": "https://media.discordapp.net/external/1996PtBkmxosTCOlErK1GFggrZGf1F0Nu1ENDWs7T1s/https/lh3.googleusercontent.com/SIgVFmAnZTrsAeJwcgz5mtJnWZXJhDFpExDg8rw7LR7uHlw0g9d1Mk8S0dKUVehLfkrxJFiqkByMVxd7Pw%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Syn Cole - It's You"
+   },
+   {
+      "details": "How to Pretend",
+      "large_image_url": "https://media.discordapp.net/external/P9Kca5ub6s0p9vy2YBhiIE70GeXh6DmXuLN7IVGjLFI/https/lh3.googleusercontent.com/zOESpEO8O2u3FyAdIum-vSw5CM7BRFXDDWQFGFQX1QpiGwDZjRtZ5IZhZu3WEoBrB9efTEf51FyUaXN6%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "CircusP - 715"
+   },
+   {
+      "details": "Not Another Song About Love",
+      "large_image_url": "https://media.discordapp.net/external/U503fs0b7BD3AE7rG6q9BsFF8ej8NweR3XzrnL5z4mU/https/lh3.googleusercontent.com/6X85MudJXzLUvoNHVGQizHNFDU1h0Cy6sbDk2FBcbGvTbUcpiGwXNu2azsiSLuQtfV52MHMbJXiOSQk2%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Hollywood Ending - Anywhere - EP"
    }
 ]
