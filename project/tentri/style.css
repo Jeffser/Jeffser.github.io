@@ -1,3 +1,6 @@
+:root{
+    --defaultMainWidth: 100vw;
+}
 #main2{
     text-align: center;
 }

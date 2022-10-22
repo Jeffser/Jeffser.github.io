@@ -1,4 +1,5 @@
 var CSSVariables = [];
+const defaultMainWidth = $('#main').css('width');
 if (localStorage.getItem('lightMode')==null)localStorage.setItem('lightMode', 1);
 function modifyHex(hex){
     let rgb = hex.replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,(m, r, g, b) => '#' + r + r + g + g + b + b).substring(1).match(/.{2}/g).map(x => parseInt(x, 16))
@@ -88,7 +89,7 @@ $.getJSON('metadata.json', function(metadata){
     if (mobile && metadata['mobile']['status']!=null){richAlert('<div id="development"><div id="development-information"><h1 class="tertiaryText title">Mobile Status - '+metadata['name']+'</h1><h1 class="tertiaryText subtitle">'+metadata['mobile']['status'].charAt(0).toUpperCase()+metadata['mobile']['status'].slice(1)+'</h1>'+metadata['mobile']['note']+'</div><img src="https://jeffser.github.io/globalMedia/development/'+metadata['mobile']['status']+'.gif" alt="'+metadata['mobile']['status']+'"></div>', block=true);}
 })
 function whenResize(){
-    if ($(window).width()>$(window).height()) $('#main').css('width', '70vw');
+    if ($(window).width()>$(window).height()) $('#main').css('width', defaultMainWidth);
     else $('#main').css('width', '95vw');
 }
 $(window).on('load', function() {

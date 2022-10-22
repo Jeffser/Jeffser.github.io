@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap');
 *{font-family: 'Roboto', sans-serif; transition: .2s; caret-color: transparent;}
+::-webkit-scrollbar{
+    width: 1vmin;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0.5vmin;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
 :root{
     --backgroundColor: black;
     --fontColor: white;
@@ -12,6 +25,7 @@
     --brightnessLevel: 50%;
 }
 body{
+    overflow-y: overlay;
     padding: 0;
     margin: 0;
     background-color: var(--backgroundColor);
