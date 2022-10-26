@@ -24,7 +24,8 @@ function makeActivityList(element){
             html_subDiv.className = 'activity'
             let html_image = document.createElement('img')
             html_image.className = 'image'
-            html_image.src = activity['large_image_url']
+            if (activity['large_image_url']=='null') html_image.src = '../../globalMedia/error/404_image.png'
+            else html_image.src = activity['large_image_url']
             html_subDiv.appendChild(html_image)
             let html_name = document.createElement('h1')
             html_name.className = 'name'
