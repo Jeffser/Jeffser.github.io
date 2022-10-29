@@ -1786,5 +1786,11 @@
       "large_image_url": null,
       "name": "Forza Horizon 5",
       "state": null
+   },
+   {
+      "details": "Roasting YOUR setups, AGAIN.",
+      "large_image_url": "https://media.discordapp.net/external/bHezqTavuuIVxZe0zKEVxfjVShXmWjS6w21GhYH389Q/https/i3.ytimg.com/vi/xLs_Q4Ge7s4/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "Linus Tech Tips"
    }
 ]
