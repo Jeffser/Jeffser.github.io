@@ -2206,5 +2206,41 @@
       "large_image_url": "https://media.discordapp.net/external/O2f9t3MmEszuQZZIfvCtPuBXrlK9ax325LxXbIzVljE/https/i3.ytimg.com/vi/73ZFPyRC_04/hqdefault.jpg",
       "name": "YouTube",
       "state": "Pyrocynical"
+   },
+   {
+      "details": "The Disappearance of Dr. Disrespect - Twitch's Greatest Mystery | TRO (ft. Poutine)",
+      "large_image_url": "https://media.discordapp.net/external/XSlIFreWHBG_GxMkg3widWEtxms_7C-EOxPm_1vUIUA/https/i3.ytimg.com/vi/pzyIvNtP0i4/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "The Right Opinion"
+   },
+   {
+      "details": "Browsing...",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/802958789555781663/802961390007615488.png",
+      "name": "Twitch",
+      "state": "Homepage"
+   },
+   {
+      "details": "Weaponized Tor is being Spread on YouTube",
+      "large_image_url": "https://media.discordapp.net/external/BucaOrIszEg8oJwTOWVvWkB0Dydv9v73gLEEnxG9sOA/https/i3.ytimg.com/vi/XS-r2Vpkxas/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "Seytonic"
+   },
+   {
+      "details": "The Minecraft Controversies Iceberg EXPLAINED",
+      "large_image_url": "https://media.discordapp.net/external/E-H-EylqhHXM8Vi2vKGfDXXMim6YxZ6M6dO0I-5BRSA/https/i3.ytimg.com/vi/hocUh4BqDxs/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "accessiblefunky"
+   },
+   {
+      "details": "Schlatt Ranks Your SATISFYING TikToks",
+      "large_image_url": "https://media.discordapp.net/external/FtYjaV8JXssC6xPV4PIEVtTAChHOwiK9PKh_nFASJIY/https/i3.ytimg.com/vi/zWQuYbrSdCA/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "jschlattVODS"
+   },
+   {
+      "details": "Viewing profile of:",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/802958789555781663/802961390007615488.png",
+      "name": "Twitch",
+      "state": "Schlatt (Home)"
    }
 ]
