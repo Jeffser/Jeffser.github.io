@@ -2314,5 +2314,11 @@
       "large_image_url": "https://media.discordapp.net/external/z8qUufuRWtJ_I0-viMVqgcAUM7wAJs4TkEiYnePzpGM/https/i3.ytimg.com/vi/UXZzyKTsBMw/hqdefault.jpg",
       "name": "YouTube",
       "state": "MagnatesMedia"
+   },
+   {
+      "details": "It Came from the Nintendo eShop - Scott The Woz",
+      "large_image_url": "https://media.discordapp.net/external/s0Zua_ppg2iriJ7jTDoL7tvrAARV05hCP8fUATIAl6E/https/i3.ytimg.com/vi/paIZdrKEwuM/hqdefault.jpg",
+      "name": "YouTube",
+      "state": "Scott The Woz"
    }
 ]
