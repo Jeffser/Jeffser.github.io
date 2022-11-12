@@ -2392,5 +2392,77 @@
       "large_image_url": "https://media.discordapp.net/external/2ZGi5DPxuo8gC1ObjkrYHD2Qxf9o1A9AGNDwlHlUzdM/https/i3.ytimg.com/vi/XWmE3YpfaeY/hqdefault.jpg",
       "name": "YouTube",
       "state": "SonoSara"
+   },
+   {
+      "details": "The Middle",
+      "large_image_url": "https://media.discordapp.net/external/YAX-E7Ntbckxlizhegn2uD112GQT2-75HaeTvuunhOI/https/lh3.googleusercontent.com/VK6gmSlNynd4izMgseYP-2jDnvv090DGRJ4T2aa7B7RSQD2zKl2iCgYNcLHfmlLFfnhzeJOvKhCHkc-e%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd, Maren Morris & Grey - The Middle"
+   },
+   {
+      "details": "Make You Say",
+      "large_image_url": "https://media.discordapp.net/external/9MZ2yqewHH6XJoER9GzEVqpniY1mhoQvHGf9aN9DbE4/https/lh3.googleusercontent.com/_5upHUIBbyiCBuxUuzxG11Kqz9LLpxKKpkt5eYd_Tt4eJSEhYfuNJdT4HCgMkNlIHiCOjlondAPz4k8%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd, Maren Morris & BEAUZ - Make You Say"
+   },
+   {
+      "details": "Follow",
+      "large_image_url": "https://media.discordapp.net/external/ibMpk4-t4f4vo193W2ZRmex9eUIRdPjYdOuSLdgsFfs/https/lh3.googleusercontent.com/81wzc-SJFEdsvftdMzGE4JgeXsLpYvneAfUoeV3P95P-6ehlTnMtU6tXclJPIr80A-sPRJAF755OqN8sZw%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Martin Garrix & Zedd - Sentio"
+   },
+   {
+      "details": "Stay (Jonas Blue Remix)",
+      "large_image_url": "https://media.discordapp.net/external/7Po8J0R3w3PyOt28SgpAF-MEwnwMeZUh81JBkJY8T4U/https/lh3.googleusercontent.com/FuOFNNnlqNkoVw5v07GE2pcS_EpjsGac2-qXf_kiSvDXKFBAk5GuXdgV3NSWGQSZ9EOpuOOmS369Txyt8g%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd & Alessia Cara - Stay (Remixes)"
+   },
+   {
+      "details": "Addicted To A Memory",
+      "large_image_url": "https://media.discordapp.net/external/OsGORtBdbsilG6GrESX7ljgO6IsPlkZFvnhubpJofr4/https/lh3.googleusercontent.com/D7X-taZ7lFriMSFBMsi7qt8s1CXq0aZN22rqUbzHqH8PsjliXBGe_K7utsxpIuieGRediDPS-B9MBylleA%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd - True Colors"
+   },
+   {
+      "details": "I Want You To Know",
+      "large_image_url": "https://media.discordapp.net/external/OsGORtBdbsilG6GrESX7ljgO6IsPlkZFvnhubpJofr4/https/lh3.googleusercontent.com/D7X-taZ7lFriMSFBMsi7qt8s1CXq0aZN22rqUbzHqH8PsjliXBGe_K7utsxpIuieGRediDPS-B9MBylleA%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Zedd - True Colors"
+   },
+   {
+      "details": null,
+      "large_image_url": "https://cdn.discordapp.com/app-assets/367827983903490050/373344233077211136.png",
+      "name": "osu!",
+      "state": "Idle"
+   },
+   {
+      "details": null,
+      "large_image_url": "https://cdn.discordapp.com/app-assets/367827983903490050/373344233077211136.png",
+      "name": "osu!",
+      "state": "AFK"
+   },
+   {
+      "details": "Nogizaka46 - Yubi Bouenkyou ~Anime-ban~ [~A r M i N's Adventure~]",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/367827983903490050/373344233077211136.png",
+      "name": "osu!",
+      "state": "Clicking circles"
+   },
+   {
+      "details": "Murasaki Shion - KING [Royal Witch]",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/367827983903490050/373344233077211136.png",
+      "name": "osu!",
+      "state": "Clicking circles"
+   },
+   {
+      "details": "Station Earth - Cold Green Eyes ft. Roos Denayer [Divine]",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/367827983903490050/373344233077211136.png",
+      "name": "osu!",
+      "state": "Clicking circles"
+   },
+   {
+      "details": "Alvaro Soler - Sofia (Speed Up Ver.) [Sin Tu Mirada Sigo]",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/367827983903490050/373344233077211136.png",
+      "name": "osu!",
+      "state": "Clicking circles"
    }
 ]
