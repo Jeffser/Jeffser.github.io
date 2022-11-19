@@ -2878,5 +2878,11 @@
       "large_image_url": null,
       "name": "Fortnite",
       "state": null
+   },
+   {
+      "details": "It's Normal",
+      "large_image_url": "https://media.discordapp.net/external/FqsDa5NZbvrT7U5LWVEauzftC-hx8qakQKwtMsRdmTo/%3Fsqp%3D-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg%26rs%3DAOn4CLD3yqvFGUDJW5RBUvCPPLPupoDmTA/https/i.ytimg.com/vi/cze5GFVR9O0/sddefault.jpg",
+      "name": "YouTube Music",
+      "state": "YonKaGor"
    }
 ]
