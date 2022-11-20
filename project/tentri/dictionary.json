@@ -2884,5 +2884,23 @@
       "large_image_url": "https://media.discordapp.net/external/FqsDa5NZbvrT7U5LWVEauzftC-hx8qakQKwtMsRdmTo/%3Fsqp%3D-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg%26rs%3DAOn4CLD3yqvFGUDJW5RBUvCPPLPupoDmTA/https/i.ytimg.com/vi/cze5GFVR9O0/sddefault.jpg",
       "name": "YouTube Music",
       "state": "YonKaGor"
+   },
+   {
+      "details": null,
+      "large_image_url": "https://cdn.discordapp.com/app-assets/770314100885422095/885306938433368075.png",
+      "name": "Halo Infinite",
+      "state": "Arena: Matchmaking"
+   },
+   {
+      "details": null,
+      "large_image_url": "https://cdn.discordapp.com/app-assets/770314100885422095/885306938433368075.png",
+      "name": "Halo Infinite",
+      "state": "Arena"
+   },
+   {
+      "details": "It's Normal [TW]",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "YonKaGor"
    }
 ]
