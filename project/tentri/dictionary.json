@@ -3652,5 +3652,101 @@
       "large_image_url": "https://media.discordapp.net/external/oCsWrcjttPB-ytk0Q2v_MIu7XYC9SV2EV3srJwSPDlY/https/i.imgur.com/c0W8Na8.png",
       "name": "YouTube",
       "state": "Michael Storen"
+   },
+   {
+      "details": "Cloud Gaming - Scott The Woz",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Scott The Woz"
+   },
+   {
+      "details": "Console Pack-In Games - Scott The Woz",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Scott The Woz"
+   },
+   {
+      "details": "Game Collecting - Scott The Woz",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Scott The Woz"
+   },
+   {
+      "details": null,
+      "large_image_url": null,
+      "name": "RetroArch",
+      "state": null
+   },
+   {
+      "details": "The Game Room - Scott The Woz",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Scott The Woz"
+   },
+   {
+      "details": "Retroarch Fix for sd card on Android 11 - NEW UPDATE 9/22 LINK IN DESCRIPTION",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "LinuxMint Guy"
+   },
+   {
+      "details": "Android 11 Workaround For Scoped Permissions - NEW FIX for Retroarch!",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "LinuxMint Guy"
+   },
+   {
+      "details": "FIX for Retroarch with Samsung Android 11 not recognizing SD card!",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Sud"
+   },
+   {
+      "details": "The Best Selling Consoles of All Time - Scott The Woz",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Scott The Woz"
+   },
+   {
+      "details": "Super Smash Bros Ultimate RAGE/SALT AND FAILS Compilation #14",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "DAWN Smash"
+   },
+   {
+      "details": "Remakes, Remasters and Rereleases - Scott The Woz",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Scott The Woz"
+   },
+   {
+      "details": "\u30a4\u30f3\u30c9\u30a2\u7cfb\u306a\u3089\u30c8\u30e9\u30c3\u30af\u30e1\u30a4\u30ab\u30fc",
+      "large_image_url": "https://cdn.discordapp.com/app-assets/463097721130188830/513734690272968717.png",
+      "name": "YouTube",
+      "state": "Yunomi"
+   },
+   {
+      "details": "\u30a4\u30f3\u30c9\u30a2\u7cfb\u306a\u3089\u30c8\u30e9\u30c3\u30af\u30e1\u30a4\u30ab\u30fc",
+      "large_image_url": "https://media.discordapp.net/external/gLMjgfGY08fBxetWh9ErhR39dJAsmJ4xh3XaRBp4X4Q/https/lh3.googleusercontent.com/VpkI7Faz7jFUkNDCsbO7edegiOySQusneZCxshX0Q9yRCWBkzucGt6i85pledEY82oPGeO-gnZiDXh9A%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "Yunomi - \u3086\u306e\u3082\u304d\u3085"
+   },
+   {
+      "details": "cutlery (self cover)",
+      "large_image_url": "https://media.discordapp.net/external/_vAM3Bk3-F3Ru-1URWkAzmrQYqPi5ZbbB6JJITIO1KQ/https/lh3.googleusercontent.com/o8iF0uw1IEk12bowGbFqcJQPc1wkmT258b9lbuMlLynvKOru-IkF8dkaHKoQ7H649XFZlj5sGAt5E6vT%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "uki3 - cutlery (self cover)"
+   },
+   {
+      "details": null,
+      "large_image_url": null,
+      "name": "Garry's Mod",
+      "state": null
+   },
+   {
+      "details": "Killer Spider",
+      "large_image_url": "https://media.discordapp.net/external/UsNI_CSGaXUxcfaurhlis6u_LL87J31hr8ixLIsKf78/https/lh3.googleusercontent.com/tQX1UawRkqaiFNxxvydQTuprvX33dG6CY_LNvgBOePVv6pMFs7N-PBAvPuJINTqX7EtJ4MNn-t8Fi1S7%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "PinocchioP - Killer Spider"
    }
 ]
