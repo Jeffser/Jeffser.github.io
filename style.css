@@ -51,3 +51,44 @@
 .list-page h1{
     text-align: left;
 }
+
+.stuff{
+    text-align: left;
+    backdrop-filter: grayscale(.4);
+    display: inline-block;
+    border: solid var(--secundaryColor) .4vmin;
+    border-radius: 2vmin;
+    padding: 1vmin;
+    margin: 1vw;
+    width: 15vw;
+}
+.stuff:hover{
+    box-shadow: 0 0 1vmin;
+    cursor: pointer;
+}
+.stuff .stuffImage{
+    width: 100%;
+    position: sticky;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 16/9;
+}
+.stuff .stuffName{
+    font-size: 3vmin;
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+}
+.stuff .stuffTitle{
+    font-size: 4vmin;
+    margin: 0;
+}
+.song #image, .photo #image{
+    aspect-ratio: 1/1;
+}
+#list-stuff{
+    text-align: center;
+}
+#list-stuff .title{
+    text-align: left;
+}

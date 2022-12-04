@@ -9,4 +9,24 @@ $(window).on('load', function(){
             });
         }
     })
+    //STUFF---------------
+    //SONG----------------
+    $.getJSON('https://youtube.com/oembed?url=https://www.youtube.com/watch?v='+$(".song")[0].id+'&format=json', function(videoMetadata){
+        $(".song").html("<div style='background-image: url(https://i.ytimg.com/vi/" + $(".song")[0].id + "/maxresdefault.jpg);' id='image' class='stuffImage'></div><h1 class='stuffName tertiaryText'>Song of the month</h1><h1 class='stuffTitle'>" + videoMetadata['title'] + "</h1>")
+        $(".song").click(function(){window.open('https://music.youtube.com/watch?v=' + $(".song")[0].id, '_blank');});
+    });
+    //VIDEO---------------
+    $.getJSON('https://youtube.com/oembed?url=https://www.youtube.com/watch?v='+$(".video")[0].id+'&format=json', function(videoMetadata){
+        $(".video").html("<div style='background-image: url(https://i.ytimg.com/vi/" + $(".video")[0].id + "/maxresdefault.jpg);' id='image' class='stuffImage'></div><h1 class='stuffName tertiaryText'>Video of the month</h1><h1 class='stuffTitle'>" + videoMetadata['title'] + "</h1>")
+        $(".video").click(function(){window.open('https://www.youtube.com/watch?v=' + $(".video")[0].id, '_blank');});
+    });
+    //SERIES--------------
+    $(".series").html("<div style='background-image: url(./globalMedia/sotm/series.jpg);' id='image' class='stuffImage'></div><h1 class='stuffName tertiaryText'>Series of the month</h1><h1 class='stuffTitle'>" + $(".series").attr('name') + "</h1>")
+    $(".series").click(function(){window.open($(".series")[0].id, '_blank');});
+    //GAME----------------
+    $(".game").html("<div style='background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/" + $(".game")[0].id + "/header.jpg?t=1663621793);' id='image' class='stuffImage'></div><h1 class='stuffName tertiaryText'>Game of the month</h1><h1 class='stuffTitle'>" + $(".game").attr('name') + "</h1>")
+    $(".game").click(function(){window.open("https://store.steampowered.com/app/" + $(".game")[0].id, '_blank');});
+    //PHOTO---------------
+    $(".photo").html("<div style='background-image: url(./globalMedia/sotm/photo.jpg);' id='image' class='stuffImage'></div><h1 class='stuffName tertiaryText'>Photo of the month</h1><h1 class='stuffTitle'>" + $(".photo").attr('name') + "</h1>")
+    $(".photo").click(function(){richAlert("<img src='./globalMedia/sotm/photo.jpg' style='max-height: 80vh; display: block; margin-left: auto; margin-right: auto;'>");});
 })
