@@ -60,7 +60,7 @@
     border-radius: 2vmin;
     padding: 1vmin;
     margin: 1vw;
-    width: 15vw;
+    width: 15vmax;
 }
 .stuff:hover{
     box-shadow: 0 0 1vmin;
