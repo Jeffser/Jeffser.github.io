@@ -22,13 +22,13 @@ function handleTouchEnd(evt) {
         infoOpen = true
         return
     }
-    if (start['element'] == document.getElementById('nameAge') && start['y'] - end['y'] > document.documentElement.clientHeight * .1 && document.getElementById('info').style.height == '15vh') {
+    if ((start['element'] == document.getElementById('nameAge') || isTouchingInformation()) && start['y'] - end['y'] > document.documentElement.clientHeight * .1 && document.getElementById('info').style.height == '15vh') {
         document.getElementById('info').style.height = '30vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
         return
     }
-    else if ((start['element'] == document.getElementById('nameAge') || (isTouchingInformation())) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && infoOpen == true && document.getElementById('info').scrollTop == 0) {
+    else if ((start['element'] == document.getElementById('nameAge') || isTouchingInformation()) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && infoOpen == true && document.getElementById('info').scrollTop == 0) {
         document.getElementById('info').scrollTop = 0
         document.getElementById('info').style.height = '30vh'
         document.getElementById('info').style.overflowY = 'hidden'
