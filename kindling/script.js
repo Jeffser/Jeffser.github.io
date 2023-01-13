@@ -28,7 +28,7 @@ function handleTouchEnd(evt) {
         infoOpen = false
         return
     }
-    else if (start['element'] == document.getElementById('nameAge') && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && (infoOpen == true || document.getElementById('info').style.height == '15vh')) {
+    else if ((start['element'] == document.getElementById('nameAge') || (isTouchingInformation() && document.getElementById('info').scrollTop == 0)) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && (infoOpen == true || document.getElementById('info').style.height == '15vh')) {
         document.getElementById('info').style.height = '30vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
