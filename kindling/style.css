@@ -52,6 +52,7 @@ body{
 }
 
 #card{
+    overflow: hidden;
     transition: .0s;
     max-height: 80vh;
     grid-area: card;

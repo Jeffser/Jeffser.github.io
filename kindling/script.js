@@ -34,7 +34,7 @@ function handleTouchEnd(evt) {
         infoOpen = false
         return
     }
-    else if (start['element'] == document.getElementById('nameAge') && start['y'] - end['y'] < document.documentElement.clientHeight * .1){
+    else if (isTouchingInformation() && start['y'] - end['y'] < document.documentElement.clientHeight * .1){
         document.getElementById('info').style.height = '15vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
@@ -63,6 +63,7 @@ function handleTouchEnd(evt) {
 }
 function handleTouchMove(evt) {
     if (locked || infoOpen) return
+    if (start['element'].parentElement.parentElement == document.getElementById('info') || start['element'].parentElement == document.getElementById('info') || start['element'] == document.getElementById('info') || start['element'] == document.getElementById('nameAge')) return
     const prc = (evt.changedTouches[0].clientX - (document.documentElement.clientWidth / 2)) * 2 / document.documentElement.clientWidth
     if (Math.abs(start['y'] - evt.changedTouches[0].clientY)*1.5 > Math.abs(start['x'] - evt.changedTouches[0].clientX)) return
     //isTouchingInformation()||
