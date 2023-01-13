@@ -78,9 +78,9 @@ function handleTouchMove(evt) {
         document.getElementById('card').style.marginLeft = baseMargin / (1 - prc) + 'px'
         document.getElementById('card').style.opacity = (1 + prc + .5)
     }
-    if (evt.changedTouches[0].clientX < document.getElementById('leftIndicator').offsetWidth && Math.abs(start['x'] - evt.changedTouches[0].clientX) > document.documentElement.clientWidth * .2) document.getElementById('leftIndicator').style.opacity = '1'
+    if (evt.changedTouches[0].clientX < document.getElementById('leftIndicator').offsetWidth && Math.abs(start['x'] - evt.changedTouches[0].clientX) > document.documentElement.clientWidth * .3) document.getElementById('leftIndicator').style.opacity = '1'
     else document.getElementById('leftIndicator').style.opacity = '0'
-    if (evt.changedTouches[0].clientX > document.documentElement.clientWidth - document.getElementById('rightIndicator').offsetWidth && Math.abs(start['x'] - evt.changedTouches[0].clientX) > document.documentElement.clientWidth * .2) document.getElementById('rightIndicator').style.opacity = '1'
+    if (evt.changedTouches[0].clientX > document.documentElement.clientWidth - document.getElementById('rightIndicator').offsetWidth && Math.abs(start['x'] - evt.changedTouches[0].clientX) > document.documentElement.clientWidth * .3) document.getElementById('rightIndicator').style.opacity = '1'
     else document.getElementById('rightIndicator').style.opacity = '0'
 };
 window.onload = function () {
