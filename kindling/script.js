@@ -8,7 +8,6 @@ function vwToPx(vw) {
     return document.documentElement.clientWidth * (vw / 100)
 }
 function isTouchingInformation(){
-    return true
     return start['element'].parentElement.parentElement == document.getElementById('info') || start['element'].parentElement == document.getElementById('info') || start['element'] == document.getElementById('info') || start['element'] == document.getElementById('nameAge')
 }
 function handleTouchStart(evt) {
@@ -16,40 +15,40 @@ function handleTouchStart(evt) {
 };
 function handleTouchEnd(evt) {
     end = { 'x': evt.changedTouches[0].clientX, 'y': evt.changedTouches[0].clientY }
-    if (isTouchingInformation() && start['y'] - end['y'] > document.documentElement.clientHeight * .1 && infoOpen == false && document.getElementById('info').style.height == '30vh') {
+    if (start['y'] - end['y'] > document.documentElement.clientHeight * .1 && infoOpen == false && document.getElementById('info').style.height == '30vh') {
         document.getElementById('info').style.height = 'calc(100% - 12vw - ' + document.getElementsByTagName('header')[0].offsetHeight + 'px)'
         document.getElementById('info').style.overflowY = 'auto'
         infoOpen = true
         return
     }
-    if ((start['element'] == document.getElementById('nameAge') || isTouchingInformation()) && start['y'] - end['y'] > document.documentElement.clientHeight * .1 && document.getElementById('info').style.height == '15vh') {
+    if (start['y'] - end['y'] > document.documentElement.clientHeight * .1 && document.getElementById('info').style.height == '15vh') {
         document.getElementById('info').style.height = '30vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
         return
     }
-    else if ((start['element'] == document.getElementById('nameAge') || isTouchingInformation()) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && infoOpen == true && document.getElementById('info').scrollTop == 0) {
+    else if (start['y'] - end['y'] < document.documentElement.clientHeight * .1 && infoOpen == true && document.getElementById('info').scrollTop == 0) {
         document.getElementById('info').scrollTop = 0
         document.getElementById('info').style.height = '30vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
         return
     }
-    else if (isTouchingInformation() && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && (Math.abs(start['y'] - end['y'])*1.5 > Math.abs(start['x'] - end['x'])) && infoOpen == false){
+    else if (start['y'] - end['y'] < document.documentElement.clientHeight * .1 && (Math.abs(start['y'] - end['y'])*1.5 > Math.abs(start['x'] - end['x'])) && infoOpen == false){
         document.getElementById('info').style.height = '15vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
         return
     }
-    if (start['x'] - end['x'] < document.documentElement.clientWidth * .1) document.getElementById('rightIndicator').style.opacity = '1'
+    if (start['x'] - evt.changedTouches[0].clientX + 40 < 0 - (document.documentElement.clientWidth * .1) && isTouchingInformation()==false) document.getElementById('rightIndicator').style.opacity = '1'
     else document.getElementById('rightIndicator').style.opacity = '0'
-    if (start['x'] - end['x'] > document.documentElement.clientWidth * .1) document.getElementById('leftIndicator').style.opacity = '1'
+    if (start['x'] - end['x'] - 40 > document.documentElement.clientWidth * .1 && isTouchingInformation()==false) document.getElementById('leftIndicator').style.opacity = '1'
     else document.getElementById('leftIndicator').style.opacity = '0'
     //if (infoOpen) return
     document.getElementById('card').style.transition = '.2s'
     locked = true
-    if (document.getElementById('rightIndicator').style.opacity != '0') { document.getElementById('card').style.opacity = '0'; document.getElementById('card').style.marginLeft = document.documentElement.clientWidth + 'px'; document.getElementById('card').style.marginRight = '-' + document.documentElement.clientWidth + 'px'; document.getElementById('rightIndicator').style.opacity = '1'}
-    if (document.getElementById('leftIndicator').style.opacity != '0') { document.getElementById('card').style.opacity = '0'; document.getElementById('card').style.marginRight = document.documentElement.clientWidth + 'px'; document.getElementById('card').style.marginLeft = '-' + document.documentElement.clientWidth + 'px'; document.getElementById('leftIndicator').style.opacity = '1'}
+    if (document.getElementById('rightIndicator').style.opacity == '1') { document.getElementById('card').style.opacity = '0'; document.getElementById('card').style.marginLeft = document.documentElement.clientWidth + 'px'; document.getElementById('card').style.marginRight = '-' + document.documentElement.clientWidth + 'px';}
+    if (document.getElementById('leftIndicator').style.opacity == '1') { document.getElementById('card').style.opacity = '0'; document.getElementById('card').style.marginRight = document.documentElement.clientWidth + 'px'; document.getElementById('card').style.marginLeft = '-' + document.documentElement.clientWidth + 'px';}
     if (document.getElementById('rightIndicator').style.opacity == '0' && document.getElementById('leftIndicator').style.opacity == '0') {document.getElementById('card').style.margin = baseMargin + 'px'; locked=false; return}
     document.getElementById('info').style.height = '15vh'
     setTimeout(function () {
@@ -82,6 +81,11 @@ function handleTouchMove(evt) {
         document.getElementById('card').style.marginLeft = baseMargin / (1 - prc) + 'px'
         document.getElementById('card').style.opacity = (1 + prc + .5)
     }
+    console.log(start['x'] - evt.changedTouches[0].clientX + 40, 0 - (document.documentElement.clientWidth * .1))
+    if (start['x'] - evt.changedTouches[0].clientX + 40 < 0 - (document.documentElement.clientWidth * .1) && isTouchingInformation()==false) document.getElementById('rightIndicator').style.opacity = '.5'
+    else document.getElementById('rightIndicator').style.opacity = '0'
+    if (start['x'] - evt.changedTouches[0].clientX - 40 > document.documentElement.clientWidth * .1 && isTouchingInformation()==false) document.getElementById('leftIndicator').style.opacity = '.5'
+    else document.getElementById('leftIndicator').style.opacity = '0'
 };
 window.onload = function () {
     document.getElementById('leftIndicator').style.opacity = '0'
