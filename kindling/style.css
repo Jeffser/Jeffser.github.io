@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Caramel&family=Lato:wght@300;400&display=swap');
 *{font-family: 'Lato', sans-serif; overflow: hidden; transition: .2s;}
+*::-webkit-scrollbar{
+    width: 1vmin;
+}
+*::-webkit-scrollbar-track{
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0.5vmin;
+}
+*::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
 header{
     border-radius: 5vw;
     border-top-left-radius: 0;
@@ -118,6 +131,13 @@ body{
     overflow-x: overlay;
     white-space: nowrap;
     border-radius: 5vw;
+}
+#photos::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0.5vmin;
+}
+#photos::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 1);
 }
 #photos .photo{
     display: inline-block;

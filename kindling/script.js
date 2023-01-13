@@ -28,7 +28,7 @@ function handleTouchEnd(evt) {
         infoOpen = false
         return
     }
-    else if ((start['element'] == document.getElementById('nameAge') || (isTouchingInformation() && document.getElementById('info').scrollTop == 0)) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && (infoOpen == true || document.getElementById('info').style.height == '15vh')) {
+    else if ((start['element'] == document.getElementById('nameAge') || (isTouchingInformation() && document.getElementById('info').scrollTop == 0)) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && infoOpen == true) {
         document.getElementById('info').style.height = '30vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
@@ -51,7 +51,9 @@ function handleTouchEnd(evt) {
         document.getElementById('rightIndicator').style.opacity = '0'
         document.getElementById('leftIndicator').style.opacity = '0'
         document.getElementById('card').style.margin = baseMargin + 'px'
+        document.getElementById('info').style.overflowY = 'hidden'
         document.getElementById('card').style.opacity = '1'
+        document.getElementById('info').style.height = '30vh'
         setTimeout(function () {
             document.getElementById('card').style.transition = '0s'
             locked = false
