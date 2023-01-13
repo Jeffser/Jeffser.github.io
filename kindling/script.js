@@ -28,25 +28,26 @@ function handleTouchEnd(evt) {
         infoOpen = false
         return
     }
-    else if ((start['element'] == document.getElementById('nameAge') || (isTouchingInformation() && document.getElementById('info').scrollTop == 0)) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && infoOpen == true) {
+    else if ((start['element'] == document.getElementById('nameAge') || (isTouchingInformation())) && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && infoOpen == true && document.getElementById('info').scrollTop == 0) {
+        document.getElementById('info').scrollTop = 0
         document.getElementById('info').style.height = '30vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
         return
     }
-    else if (isTouchingInformation() && start['y'] - end['y'] < document.documentElement.clientHeight * .1){
+    else if (isTouchingInformation() && start['y'] - end['y'] < document.documentElement.clientHeight * .1 && (Math.abs(start['y'] - end['y'])*1.5 > Math.abs(start['x'] - end['x'])) && infoOpen == false){
         document.getElementById('info').style.height = '15vh'
         document.getElementById('info').style.overflowY = 'hidden'
         infoOpen = false
         return
     }
-    console.log(start['y'] - end['y'], document.documentElement.clientHeight * .1)
     //if (infoOpen) return
     document.getElementById('card').style.transition = '.2s'
     locked = true
     if (document.getElementById('rightIndicator').style.opacity != '0') { document.getElementById('card').style.opacity = '0'; document.getElementById('card').style.marginLeft = document.documentElement.clientWidth + 'px'; document.getElementById('card').style.marginRight = '-' + document.documentElement.clientWidth + 'px'; document.getElementById('rightIndicator').style.opacity = '1'}
     if (document.getElementById('leftIndicator').style.opacity != '0') { document.getElementById('card').style.opacity = '0'; document.getElementById('card').style.marginRight = document.documentElement.clientWidth + 'px'; document.getElementById('card').style.marginLeft = '-' + document.documentElement.clientWidth + 'px'; document.getElementById('leftIndicator').style.opacity = '1'}
     if (document.getElementById('rightIndicator').style.opacity == '0' && document.getElementById('leftIndicator').style.opacity == '0') {document.getElementById('card').style.margin = baseMargin + 'px'; locked=false; return}
+    document.getElementById('info').style.height = '15vh'
     setTimeout(function () {
         document.getElementById('rightIndicator').style.opacity = '0'
         document.getElementById('leftIndicator').style.opacity = '0'

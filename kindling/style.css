@@ -54,7 +54,7 @@ body{
 #card{
     overflow: hidden;
     transition: .0s;
-    max-height: 80vh;
+    /*max-height: 80vh;*/
     grid-area: card;
 }
 #card #info{
@@ -72,11 +72,10 @@ body{
     height: 30vh;
 }
 #card #image{
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     width: 100%;
     object-fit: cover;
     border-radius: 5vw;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 4 / 6;
 }
 #card h1{
     font-style: italic;
@@ -101,6 +100,7 @@ body{
     margin-bottom: 4vw;
 }
 #leftIndicator{
+    opacity: 0;
     transition: .01s;
     background: linear-gradient(to right, rgb(158, 58, 58) 1%, rgba(0,0,0,0) 99%);
     position: fixed;
@@ -110,6 +110,7 @@ body{
     width: 25vw;
 }
 #rightIndicator{
+    opacity: 0;
     transition: .01s;
     background: linear-gradient(to left, rgb(136, 243, 136) 1%, rgba(0,0,0,0) 99%);
     position: fixed;
@@ -140,10 +141,20 @@ body{
 #photos::-webkit-scrollbar-thumb:hover{
     background: rgba(255, 255, 255, 1);
 }
+#photos::-webkit-scrollbar{
+    width: 1vmin;
+}
+#photos::-webkit-scrollbar-track{
+    background: transparent;
+}
 #photos .photo{
     display: inline-block;
     width: 80%;
     object-fit: cover;
     aspect-ratio: 9 / 16;
-    object-fit: cover;
+}
+.line{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-top: dashed grey 2pt;
 }
