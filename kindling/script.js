@@ -54,7 +54,7 @@ function handleTouchEnd(evt) {
         document.getElementById('card').style.opacity = '1'
         setTimeout(function () {
             document.getElementById('card').style.transition = '0s'
-            setTimeout(function(){locked = false}, 1500)
+            locked = false
         }, 1000)
     }, 500)
 

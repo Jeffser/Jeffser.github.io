@@ -10,6 +10,8 @@ header{
     text-align: center;
     grid-area: header;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-left: 4vw;
+    margin-right: 4vw
 }
 body{
     overflow: hidden;
