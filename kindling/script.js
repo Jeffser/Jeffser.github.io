@@ -4,11 +4,22 @@ document.addEventListener('touchend', handleTouchEnd, false);
 var start, end, baseMargin, infoOpen, locked
 locked = false
 infoOpen = false
+function scrollInfo(evt){
+    if (document.getElementById('info').scrollTop + 10 >= (document.getElementById('info').scrollHeight - document.getElementById('info').offsetHeight)){
+        document.getElementById('bottomGradient').style.opacity = '0'
+        setTimeout(function(){document.getElementById('bottomGradient').style.display = 'none'}, 200)
+    }
+    else{
+        document.getElementById('bottomGradient').style.display = 'block'
+        
+        setTimeout(function(){document.getElementById('bottomGradient').style.opacity = '1'}, 200)
+    }
+}
 function vwToPx(vw) {
     return document.documentElement.clientWidth * (vw / 100)
 }
 function isTouchingInformation(){
-    return start['element'].parentElement.parentElement == document.getElementById('info') || start['element'].parentElement == document.getElementById('info') || start['element'] == document.getElementById('info') || start['element'] == document.getElementById('nameAge')
+    return start['element'] == document.getElementById('bottomGradient') || start['element'].parentElement.parentElement == document.getElementById('info') || start['element'].parentElement == document.getElementById('info') || start['element'] == document.getElementById('info') || start['element'] == document.getElementById('nameAge')
 }
 function handleTouchStart(evt) {
     start = { 'x': evt.changedTouches[0].clientX, 'y': evt.changedTouches[0].clientY, 'element': evt.srcElement }
@@ -81,7 +92,6 @@ function handleTouchMove(evt) {
         document.getElementById('card').style.marginLeft = baseMargin / (1 - prc) + 'px'
         document.getElementById('card').style.opacity = (1 + prc + .5)
     }
-    console.log(start['x'] - evt.changedTouches[0].clientX + 40, 0 - (document.documentElement.clientWidth * .1))
     if (start['x'] - evt.changedTouches[0].clientX + 40 < 0 - (document.documentElement.clientWidth * .1) && isTouchingInformation()==false) document.getElementById('rightIndicator').style.opacity = '.5'
     else document.getElementById('rightIndicator').style.opacity = '0'
     if (start['x'] - evt.changedTouches[0].clientX - 40 > document.documentElement.clientWidth * .1 && isTouchingInformation()==false) document.getElementById('leftIndicator').style.opacity = '.5'
@@ -94,4 +104,5 @@ window.onload = function () {
     document.getElementById('card').style.margin = baseMargin + 'px'
     document.getElementById('info').style.height = '30vh'
     document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#5d5dd0');
+    document.getElementById('info').addEventListener('scroll', scrollInfo, false);
 }
