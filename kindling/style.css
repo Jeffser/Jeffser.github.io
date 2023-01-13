@@ -55,7 +55,7 @@ body{
     padding: 2vw;
     height: 30vh;
 }
-#card img{
+#card #image{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     width: 100%;
     object-fit: cover;
@@ -63,6 +63,7 @@ body{
     aspect-ratio: 9 / 16;
 }
 #card h1{
+    font-style: italic;
     font-size: 15vw;
     margin: 0;
 }
@@ -80,7 +81,7 @@ body{
 #card #subscriptions, #card #tags, #card #genderSexuality{
     display: flex;
 }
-#card #subscriptions, #card h1, #card #tags, #card #description, #card #genderSexuality, #card #photos{
+#card h1, #card #tags, #card #description, #card #genderSexuality, #card #photos{
     margin-bottom: 4vw;
 }
 #leftIndicator{
@@ -90,7 +91,7 @@ body{
     left: 0;
     top: 0;
     bottom: 0;
-    width: 40px;
+    width: 25vw;
     opacity: 0;
 }
 #rightIndicator{
@@ -100,7 +101,7 @@ body{
     right: 0;
     top: 0;
     bottom: 0;
-    width: 40px;
+    width: 25vw;
     opacity: 0;
 }
 #bottomGradient{
@@ -120,8 +121,8 @@ body{
 }
 #photos .photo{
     display: inline-block;
-    max-width: 80%;
+    width: 80%;
+    object-fit: cover;
     aspect-ratio: 9 / 16;
     object-fit: cover;
-    border-radius: 0;
 }
