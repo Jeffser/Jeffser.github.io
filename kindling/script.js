@@ -6,13 +6,16 @@ locked = false
 infoOpen = false
 function scrollInfo(evt){
     if (document.getElementById('info').scrollTop + 10 >= (document.getElementById('info').scrollHeight - document.getElementById('info').offsetHeight)){
+        document.getElementById('bottomGradient').style.height = '0'
         document.getElementById('bottomGradient').style.opacity = '0'
-        setTimeout(function(){document.getElementById('bottomGradient').style.display = 'none'}, 200)
+        document.getElementById('bottomGradient').style.left = '6vw'
+        document.getElementById('bottomGradient').style.right = '6vw'
     }
     else{
-        document.getElementById('bottomGradient').style.display = 'block'
-        
-        setTimeout(function(){document.getElementById('bottomGradient').style.opacity = '1'}, 200)
+        document.getElementById('bottomGradient').style.height = '10%'
+        document.getElementById('bottomGradient').style.opacity = '1'
+        document.getElementById('bottomGradient').style.left = '4vw'
+        document.getElementById('bottomGradient').style.right = '4vw'
     }
 }
 function vwToPx(vw) {

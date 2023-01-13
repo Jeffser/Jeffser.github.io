@@ -2,14 +2,14 @@
 *{font-family: 'Lato', sans-serif; overflow: hidden; transition: .2s;}
 *::-webkit-scrollbar{
     width: 2vw;
-    height: 2vw;
+    height: 3vw;
 }
 *::-webkit-scrollbar-track{
     background: transparent;
 }
 *::-webkit-scrollbar-thumb{
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 0.5vw;
+    border-radius: 1vw;
 }
 *::-webkit-scrollbar-thumb:hover{
     background: rgba(255, 255, 255, 0.7);
@@ -135,6 +135,13 @@ body{
     overflow-x: overlay;
     white-space: nowrap;
     border-radius: 5vw;
+}
+#photos::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, .9);
+    border-radius: 1vw;
+}
+#photos::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 1);
 }
 #photos .photo{
     display: inline-block;
