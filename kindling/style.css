@@ -92,7 +92,6 @@ body{
     top: 0;
     bottom: 0;
     width: 25vw;
-    opacity: 0;
 }
 #rightIndicator{
     transition: .01s;
@@ -102,7 +101,6 @@ body{
     top: 0;
     bottom: 0;
     width: 25vw;
-    opacity: 0;
 }
 #bottomGradient{
     z-index: 2;
