@@ -9952,5 +9952,35 @@
       "large_image_url": "https://media.discordapp.net/external/1Rkr4m1cfA1nKvGKsPT520G40qQwZ1WIqtfXFw5BzS8/https/lh3.googleusercontent.com/meMq0NRNEUnR2bXYpAKXG0TGn3sgjWQs-UWqltsL2sEr6T_kI8xAeOY0leE6fo4XmLu3tMQXEmfXTMUQ%3Dw544-h544-l90-rj",
       "name": "YouTube Music",
       "state": "Stephen - Sincerely"
+   },
+   {
+      "details": "Not in a workspace!",
+      "large_image_url": "https://media.discordapp.net/external/ByjawWsm2QtMAOa2doThD3bIfP42xs9pmNqRE9rs1X4/https/raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/idle-vscode.png",
+      "name": "Code",
+      "state": null
+   },
+   {
+      "details": "idfc",
+      "large_image_url": "https://media.discordapp.net/external/dvCoorwO1U2ypk_QlGG4ql8zWOrdbTMSD5ugGjPhQMg/https/lh3.googleusercontent.com/P7xJwoPUgwNAa3wcBDUX6dlmxiTHbjFhZM_HgGcGaH0rmMw4HRKNKZ3zkO4XsSp4i1kAsuECc6i-UKeHcQ%3Dw544-h544-l90-rj",
+      "name": "YouTube Music",
+      "state": "blackbear - deadroses"
+   },
+   {
+      "details": "In muse - 0 problems found",
+      "large_image_url": "https://media.discordapp.net/external/TDhIad0P3hmZt6e76lQ9-k1JX57-M_p8F7x_zqP6ar4/https/raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/python.png",
+      "name": "Code",
+      "state": "Working on update.py:27:39"
+   },
+   {
+      "details": "Debugging update.py",
+      "large_image_url": "https://media.discordapp.net/external/mvcR4DrIa3EQSkrI6XEIV0xvlj9TKSYvqstm-ardXHU/https/raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/debugging.png",
+      "name": "Code",
+      "state": "Debugging: muse"
+   },
+   {
+      "details": "In muse - 0 problems found",
+      "large_image_url": "https://media.discordapp.net/external/TDhIad0P3hmZt6e76lQ9-k1JX57-M_p8F7x_zqP6ar4/https/raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/python.png",
+      "name": "Code",
+      "state": "Working on update.py:27:1"
    }
 ]
