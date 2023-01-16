@@ -72,7 +72,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    aspect-ratio: 16/9;
+    aspect-ratio: 6/3;
+    object-fit: cover;
 }
 .stuff .stuffName{
     font-size: 3vmin;
@@ -83,9 +84,9 @@
     font-size: 4vmin;
     margin: 0;
 }
-.song #image, .photo #image{
+/*.song #image, .photo #image{
     aspect-ratio: 1/1;
-}
+}*/
 #list-stuff{
     text-align: center;
 }

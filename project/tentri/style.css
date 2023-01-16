@@ -1,0 +1,76 @@
+:root{
+    --defaultMainWidth: 100vw;
+}
+#main2{
+    text-align: center;
+}
+.activityList{
+    text-align: left;
+    display: inline-table;
+    position: sticky;
+    width: 35vmin;
+    background-color: transparent;
+    backdrop-filter: brightness(var(--brightnessLevel));
+    color: white;
+    border-radius: 2vmin;
+    padding: 2vmin;
+    margin: 2vmin;
+}
+.dateTime{
+    color: var(--headerColor);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2vmin;
+    font-size: 3.5vmin;
+}
+.activity{
+    margin-bottom: 4vmin;
+    padding: 2vmin;
+    backdrop-filter: brightness(calc(var(--brightnessLevel)/2));
+    color: var(--tertiaryColor);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    text-align: right;
+    border-radius: 2vmin;
+}
+.activity h1, .activity h2{
+    margin: 0;
+    padding: 0;
+}
+.details{
+    font-size: 4vmin;
+}
+.state{
+    font-size: 2vmin;
+    color: var(--fontColor);
+}
+.name{
+    font-size: 2vmin;
+    color: var(--fontColor);
+}
+.image{
+    width: 100%;
+    border-radius: 2vmin;
+}
+input, select{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white;
+    color: var(--tertiaryColor);
+    font-size: 4vmin;
+    width: 32vmin;
+    margin: 2vmin;
+    margin-bottom: 3.5vmin;
+}
+input[type=button]:hover, input[type=number]:focus, select:focus{
+    outline: gray;
+    border-bottom: solid gray;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
