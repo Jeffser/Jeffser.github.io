@@ -76,7 +76,7 @@ function go(){
 }
 
 $(window).on('load', function() {
-    richAlert('<h1>⚠️Quick Explanation⚠️</h1>This project collects all my online activity and makes it public, the idea of the project was to show the kind of information that the platforms have about me or something like that, judge all you want but remember that sometimes I leave my computer afk and videos and songs play themselves, I think it\'s pretty obvious when I watch something that I like it because I do it several times lmao.<br><br>I hope this helps you in knowing me better if that is what you want, but just talk to me if you want to, I\'m chill.')
+    richAlert('<h1>⚠️Quick Explanation⚠️</h1>This project collects all my online activity and makes it public, the idea of the project was to show the kind of information that the platforms have about me or something like that, judge all you want but remember that sometimes I leave my computer afk and videos and songs play themselves, I think it\'s pretty obvious when I watch something that I like it because I do it several times lmao.<br><br>')
     $("html, body").scrollTop(0)
     $.getJSON('dictionary.json', function(dictionaryData){dictionary = dictionaryData
     $.getJSON('activities.json', function(data){
