@@ -1,0 +1,21 @@
+{
+"CSSVariables": {
+"backgroundColor": "#272838",
+"fontColor": "#f9f8f8",
+"headerColor": "#f3de8a",
+"secundaryColor": "#eb9486",
+"tertiaryColor": "#7e7f9a"
+},
+"categories": [],
+"type": "hidden",
+"description": "Projects from my university (Spanish only)",
+"name": "Universidad",
+"development": {
+"status": "updating",
+"note": "Ya que guardo todos los proyectos de la univerisdad, siempre se estará actualizando."
+},
+"mobile": {
+"status": null,
+"note": null
+}
+}
