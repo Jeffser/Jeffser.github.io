@@ -1,0 +1,37 @@
+.dropDownButton{
+    cursor: pointer;
+    margin-top: 1vmin !important;
+    margin-bottom: 1vmin !important;
+}
+.dropDownButton:hover{
+    border-bottom: solid var(--secundaryColor) .4vmin;
+}
+.work{
+    backdrop-filter: grayscale(.4);
+    display: inline-table;
+    width: 18vw;
+    border: solid var(--secundaryColor) .4vmin;
+    border-radius: 2vmin;
+    padding: 1vmin;
+    margin: 1vw;
+}
+.work:hover{
+    box-shadow: 0 0 1vmin;
+    cursor: pointer;
+}
+.work .workTitle{
+    color: var(--tertiaryColor);
+    width: 100%;
+    margin: 0;
+    border-bottom: solid var(--secundaryColor) .4vmin;
+}
+.work .workDescription{
+    margin-bottom: 1vmin;
+    font-size: 2vmin;
+}
+.subdivision{
+    text-align: center;
+    /*border: solid var(--secundaryColor) .2vmin;*/
+    border-radius: 2vmin;
+    padding: 1vmin;
+}

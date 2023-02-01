@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
 *{font-family: 'Roboto', sans-serif; transition: .2s; caret-color: transparent;}
 ::-webkit-scrollbar{
     width: 1vmin;
@@ -78,6 +79,10 @@ header div b{
     margin: 0;
     font-size: 5vmin;
 }
+#main .subtitle{
+    margin: 0;
+    font-size: 4vmin;
+}
 .secundaryText{
     color: var(--secundaryColor);
 }
@@ -122,7 +127,6 @@ a:hover{
     align-items: center;
 }
 #richAlert{
-    width: 70vmin;
     text-align: left;
     display: inline-table;
     border: solid var(--secundaryColor) .4vmin;
@@ -142,4 +146,8 @@ a:hover{
 #richAlert #development #development-information{
     width: 80%;
     float: left;
+}
+code{
+    font-size: 4vmin;
+    border-radius: 2vmin !important;
 }

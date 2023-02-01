@@ -1,0 +1,73 @@
+{
+    "Programacion Basica": {
+        "2022-01-24": [
+            {
+                "name": "Trabajo 1.py",
+                "description": "Imprimiendo 4 datos enteros en orden contrario",
+                "code": "#Imprimiendo 4 datos enteros en orden contrario\na = int(input(\"Dato A: \"))\nb = int(input(\"Dato B: \"))\nc = int(input(\"Dato C: \"))\nd = int(input(\"Dato D: \"))\nprint(f\"--Datos Invertidos--\\nDato D: {d}\\nDato C: {c}\\nDato B: {b}\\nDato A: {a}\")\n"
+            },
+            {
+                "name": "Trabajo 2.py",
+                "description": "Solicite edad y muestre cuanta edad tendra en 5 a\u00f1os",
+                "code": "#Solicite edad y muestre cuanta edad tendra en 5 a\u00f1os\nedad = int(input(\"Edad: \"))\nprint(f\"Dentro de 5 a\u00f1os tendr\u00e1 {edad+5}\")"
+            },
+            {
+                "name": "Trabajo 3.py",
+                "description": "Pida valores A y B y muestre el resultado de ((A+B)*2/3)",
+                "code": "#Pida valores A y B y muestre el resultado de ((A+B)*2/3)\na = int(input(\"Valor A: \"))\nb = int(input(\"Valor B: \"))\nprint(f\"El resultado de la ecuaci\u00f3n es: {((a+b)*2)/3}\")"
+            },
+            {
+                "name": "Trabajo 4.py",
+                "description": "Solicite un numero y elevelo al cuadrado y cubo",
+                "code": "#Solicite un numero y elevelo al cuadrado y cubo\nvalor = input(\"Valor: \")\nprint(f\"El cuadrado es {valor**2}\\nEl cubo es {valor**3}\")"
+            },
+            {
+                "name": "Trabajo 5.py",
+                "description": "Obtenga base y altura y calcule area y perimetro del rectangulo",
+                "code": "#Obtenga base y altura y calcule area y perimetro del rectangulo\nbase = int(input(\"Base: \"))\naltura = int(input(\"Altura: \"))\nprint(f\"Area: {base * altura}\\nPerimetro: {2*(base + altura)}\")"
+            },
+            {
+                "name": "Trabajo 6.py",
+                "description": "Solicite la distancia entre la casa y la universidad, el costo por kilometro, la cantidad de dias que va a la semana y calcule cuanto gasta por cuatrimestre, asuma ida y vuelta en 15 semanas",
+                "code": "#Solicite la distancia entre la casa y la universidad, el costo por kilometro, la cantidad de dias que va a la semana y calcule cuanto gasta por cuatrimestre, asuma ida y vuelta en 15 semanas\ndistancia = int(input(\"Cantidad de kilometros entre su casa y la universidad: \"))\ncosto = int(input(\"Costo por kilometro promedio: \"))\ndias = int(input(\"Cantidad de d\u00edas a la semana que va a la universidad: \"))\nprint(f\"Costo promedio por cuatrimestre: {15*(dias*(costo*distancia))}\")"
+            },
+            {
+                "name": "Trabajo 7.py",
+                "description": "Solicite 5 edades y muestre promedio",
+                "code": "#Solicite 5 edades y muestre promedio\nedad = 0\nCANTIDAD = 5\nfor i in range(CANTIDAD): edad += int(input(f\"Edad #{i+1}: \"))\nprint(f\"El promedio de edades es {edad/CANTIDAD}\")"
+            },
+            {
+                "name": "Trabajo 8.py",
+                "description": "Solicite cantidad de horas semanales trabajadas, salario por hora y calcule salario mensual, se aplica una deduccion del 10.5% y 5% cada mes son 4.2 semanas",
+                "code": "#Solicite cantidad de horas semanales trabajadas, salario por hora y calcule salario mensual, se aplica una deduccion del 10.5% y 5% cada mes son 4.2 semanas\nDEDUCCIONES = 10.5 + 5\nhorasSemanales = int(input(\"Horas trabajadas a la semana: \"))\nsalario = int(input(\"Pago por hora: \"))\nsalarioMensual = (salario*horasSemanales)*4.2\nprint(f\"Salario Mensual: {salarioMensual - ((DEDUCCIONES * salarioMensual) / 100)}\")"
+            },
+            {
+                "name": "Trabajo 9.py",
+                "description": "Solicite ingresos y egresos mensuales, muestre porcentaje que gasto del ingreso",
+                "code": "#Solicite ingresos y egresos mensuales, muestre porcentaje que gasto del ingreso\ningresos = float(input(\"Ingresos mensuales: \"))\negresos = float(input(\"Egresos mensuales por alimentaci\u00f3n: \"))\nprcEgresos = (egresos * 100) / ingresos\nprint(f\"El porcentaje de egresos por alimentaci\u00f3n es de: {prcEgresos}%\\nEl porcentaje restante es de: {100-prcEgresos}%\")"
+            },
+            {
+                "name": "Trabajo Introduccion.py",
+                "description": "Trabajo que muestra las bases de Python",
+                "code": "#Trabajo que muestra las bases de Python\n\nnombre = \"Jeffry Samuel\"\napellidos = \"Eduarte Rojas\"\nedad = int(input(\"Edad: \"))\nprint(f\"Nombre: {nombre} {apellidos}\\nEdad: {edad}\") #Muestra el nombre, apellidos y edad\n\n#########\n\nnum1 = input(\"Numero 1: \")\nnum2 = input(\"Numero 2: \")\nprint(f\"Suma (str): {num1 + num2}\") #No funciona por que son str\nprint(f\"Suma (float): {float(num1) + float(num2)}\") #Funciona con decimales\nprint(f\"Suma (int): {int(num1) + int(num2)}\") #Funciona solo en enteros"
+            }
+        ],
+        "2022-01-31": [
+            {
+                "name": "Trabajo 1.py",
+                "description": "Solicita los datos de usuario y muestra mensaje de bienvenida",
+                "code": "#Solicita los datos de usuario y muestra mensaje de bienvenida\nnombre = input(\"Nombre: \")\nprimerApellido = input(\"Primer apellido: \")\nsegundoApellido = input(\"Segundo apellido: \")\nprint(f\"Bienvenido {nombre} {primerApellido} {segundoApellido}\")"
+            },
+            {
+                "name": "Trabajo 2.py",
+                "description": "Basicamente una calculadora que muestra suma resta multiplicacion y division de dos numeros",
+                "code": "#Basicamente una calculadora que muestra suma resta multiplicacion y division de dos numeros\nnum1 = float(input(\"Numero 1: \"))\nwhile True:\n    num2 = float(input(\"Numero 2: \"))\n    if num2 == 0: print(\"El segundo numero no puede ser 0\")\n    else: break\nprint(f\"Suma: {num1 + num2}\")\nprint(f\"Resta: {num1 - num2}\")\nprint(f\"Multiplicaci\u00f3n: {num1 * num2}\")\nprint(f\"Divisi\u00f3n: {num1 / num2}\")"
+            },
+            {
+                "name": "Trabajo 3.py",
+                "description": "Encuentre el perimetro y area de un cuadrado",
+                "code": "#Encuentre el perimetro y area de un cuadrado\nlado = float(input(\"Medida del lado: \"))\nprint(f\"Perimetro: {4 * lado}\\nArea: {lado**2}\")"
+            }
+        ]
+    }
+}

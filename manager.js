@@ -60,9 +60,9 @@ function JEFFSER_TERMINAL(element){
     return false;
 }
 //RICH ALERT
-function richAlert(msg, block=false){   
+function richAlert(msg, width='70vmin', block=false){  
     $('#richAlertContainer').remove();
-    $('body').append('<div id="richAlertContainer"><div id="richAlert">'+msg+'</div></div>')
+    $('body').append('<div id="richAlertContainer"><div id="richAlert" style="width: ' + width + '">'+msg+'</div></div>')
     $('#richAlert').click(function(event){event.stopPropagation();});
     if (!block)$('#richAlertContainer').click(function(event){event.target.remove();})
 }
