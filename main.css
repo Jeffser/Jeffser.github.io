@@ -148,6 +148,8 @@ a:hover{
     float: left;
 }
 code{
+    max-width: 80vw;
+    overflow-x: auto;
     font-size: 4vmin;
     border-radius: 2vmin !important;
 }
