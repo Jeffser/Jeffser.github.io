@@ -1,5 +1,22 @@
 {
     "Programacion Basica": {
+        "2022-01-31": [
+            {
+                "name": "Trabajo 1.py",
+                "description": "Solicita los datos de usuario y muestra mensaje de bienvenida",
+                "code": "#Solicita los datos de usuario y muestra mensaje de bienvenida\nnombre = input(\"Nombre: \")\nprimerApellido = input(\"Primer apellido: \")\nsegundoApellido = input(\"Segundo apellido: \")\nprint(f\"Bienvenido {nombre} {primerApellido} {segundoApellido}\")"
+            },
+            {
+                "name": "Trabajo 2.py",
+                "description": "Basicamente una calculadora que muestra suma resta multiplicacion y division de dos numeros",
+                "code": "#Basicamente una calculadora que muestra suma resta multiplicacion y division de dos numeros\nnum1 = float(input(\"Numero 1: \"))\nwhile True:\n    num2 = float(input(\"Numero 2: \"))\n    if num2 == 0: print(\"El segundo numero no puede ser 0\")\n    else: break\nprint(f\"Suma: {num1 + num2}\")\nprint(f\"Resta: {num1 - num2}\")\nprint(f\"Multiplicaci\u00f3n: {num1 * num2}\")\nprint(f\"Divisi\u00f3n: {num1 / num2}\")"
+            },
+            {
+                "name": "Trabajo 3.py",
+                "description": "Encuentre el perimetro y area de un cuadrado",
+                "code": "#Encuentre el perimetro y area de un cuadrado\nlado = float(input(\"Medida del lado: \"))\nprint(f\"Perimetro: {4 * lado}\\nArea: {lado**2}\")"
+            }
+        ],
         "2022-01-24": [
             {
                 "name": "Trabajo 1.py",
@@ -50,23 +67,6 @@
                 "name": "Trabajo Introduccion.py",
                 "description": "Trabajo que muestra las bases de Python",
                 "code": "#Trabajo que muestra las bases de Python\n\nnombre = \"Jeffry Samuel\"\napellidos = \"Eduarte Rojas\"\nedad = int(input(\"Edad: \"))\nprint(f\"Nombre: {nombre} {apellidos}\\nEdad: {edad}\") #Muestra el nombre, apellidos y edad\n\n#########\n\nnum1 = input(\"Numero 1: \")\nnum2 = input(\"Numero 2: \")\nprint(f\"Suma (str): {num1 + num2}\") #No funciona por que son str\nprint(f\"Suma (float): {float(num1) + float(num2)}\") #Funciona con decimales\nprint(f\"Suma (int): {int(num1) + int(num2)}\") #Funciona solo en enteros"
-            }
-        ],
-        "2022-01-31": [
-            {
-                "name": "Trabajo 1.py",
-                "description": "Solicita los datos de usuario y muestra mensaje de bienvenida",
-                "code": "#Solicita los datos de usuario y muestra mensaje de bienvenida\nnombre = input(\"Nombre: \")\nprimerApellido = input(\"Primer apellido: \")\nsegundoApellido = input(\"Segundo apellido: \")\nprint(f\"Bienvenido {nombre} {primerApellido} {segundoApellido}\")"
-            },
-            {
-                "name": "Trabajo 2.py",
-                "description": "Basicamente una calculadora que muestra suma resta multiplicacion y division de dos numeros",
-                "code": "#Basicamente una calculadora que muestra suma resta multiplicacion y division de dos numeros\nnum1 = float(input(\"Numero 1: \"))\nwhile True:\n    num2 = float(input(\"Numero 2: \"))\n    if num2 == 0: print(\"El segundo numero no puede ser 0\")\n    else: break\nprint(f\"Suma: {num1 + num2}\")\nprint(f\"Resta: {num1 - num2}\")\nprint(f\"Multiplicaci\u00f3n: {num1 * num2}\")\nprint(f\"Divisi\u00f3n: {num1 / num2}\")"
-            },
-            {
-                "name": "Trabajo 3.py",
-                "description": "Encuentre el perimetro y area de un cuadrado",
-                "code": "#Encuentre el perimetro y area de un cuadrado\nlado = float(input(\"Medida del lado: \"))\nprint(f\"Perimetro: {4 * lado}\\nArea: {lado**2}\")"
             }
         ]
     }
