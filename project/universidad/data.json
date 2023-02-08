@@ -1,5 +1,22 @@
 {
     "Programacion Basica": {
+        "2022-02-07": [
+            {
+                "name": "Problema 1.py",
+                "description": "Solicite 2 numeros enteros y calcule la division entera ademas del cubo de ambos, no permita el ingreso de cero",
+                "code": "#Solicite 2 numeros enteros y calcule la division entera ademas del cubo de ambos, no permita el ingreso de cero\nwhile True:\n    valor1 = int(input(\"Valor 1: \"))\n    if valor1 != 0: break\n    print(\"El valor no puede ser 0\")\nwhile True:\n    valor2 = int(input(\"Valor 2: \"))\n    if valor2 != 0: break\n    print(\"El valor no puede ser 0\")\nprint(f\"La divisi\u00f3n entera da {valor1 // valor2}\")\nprint(f\"Valor 1 al cubo es {valor1**3}\\nValor 2 al cubo es {valor2**3}\")"
+            },
+            {
+                "name": "Problema 2.py",
+                "description": "Lea un entero positivo (n) ingresado por el usuario, despues muestre la suma de todos los enteros desde 1 hasta n.",
+                "code": "#Lea un entero positivo (n) ingresado por el usuario, despues muestre la suma de todos los enteros desde 1 hasta n.\nwhile True:\n    n = int(input(\"Valor: \"))\n    if n > 0: break\n    print(\"El valor no puede ser negativo\")\nprint(f\"La suma de todos los enteros de 1 al valor es: {n*(n+1)/2}\")"
+            },
+            {
+                "name": "Problema 3.py",
+                "description": "Pida 2 numeros y muestre su division, si el divisor es 0 muestre error",
+                "code": "#Pida 2 numeros y muestre su division, si el divisor es 0 muestre error\nvalor1 = int(input(\"Valor 1: \"))\nvalor2 = int(input(\"Valor 2: \"))\nif valor2 == 0: print(\"ERROR: El divisor no puede ser 0\")\nelse: print(f\"El resultado de la divisi\u00f3n es {valor1/valor2}\")"
+            }
+        ],
         "2022-01-31": [
             {
                 "name": "Trabajo 1.py",
