@@ -4,12 +4,12 @@
             {
                 "name": "Problema 1.py",
                 "description": "Solicite 2 numeros enteros y calcule la division entera ademas del cubo de ambos, no permita el ingreso de cero",
-                "code": "#Solicite 2 numeros enteros y calcule la division entera ademas del cubo de ambos, no permita el ingreso de cero\nwhile True:\n    valor1 = int(input(\"Valor 1: \"))\n    if valor1 != 0: break\n    print(\"El valor no puede ser 0\")\nwhile True:\n    valor2 = int(input(\"Valor 2: \"))\n    if valor2 != 0: break\n    print(\"El valor no puede ser 0\")\nprint(f\"La divisi\u00f3n entera da {valor1 // valor2}\")\nprint(f\"Valor 1 al cubo es {valor1**3}\\nValor 2 al cubo es {valor2**3}\")"
+                "code": "#Solicite 2 numeros enteros y calcule la division entera ademas del cubo de ambos, no permita el ingreso de cero\nvalor1 = int(input(\"Valor 1: \"))\nif valor1 != 0:\n    valor2 = int(input(\"Valor 2: \"))\n    if valor2 != 0:\n        print(f\"La divisi\u00f3n entera da {valor1 // valor2}\")\n        print(f\"Valor 1 al cubo es {valor1**3}\\nValor 2 al cubo es {valor2**3}\")\n    else: print(\"El valor no puede ser 0\")\nelse: print(\"El valor no puede ser 0\")"
             },
             {
                 "name": "Problema 2.py",
                 "description": "Lea un entero positivo (n) ingresado por el usuario, despues muestre la suma de todos los enteros desde 1 hasta n.",
-                "code": "#Lea un entero positivo (n) ingresado por el usuario, despues muestre la suma de todos los enteros desde 1 hasta n.\nwhile True:\n    n = int(input(\"Valor: \"))\n    if n > 0: break\n    print(\"El valor no puede ser negativo\")\nprint(f\"La suma de todos los enteros de 1 al valor es: {n*(n+1)/2}\")"
+                "code": "#Lea un entero positivo (n) ingresado por el usuario, despues muestre la suma de todos los enteros desde 1 hasta n.\nn = int(input(\"Valor: \"))\nif n >= 0: print(f\"La suma de todos los enteros de 1 al valor es: {n*(n+1)/2}\")\nelse: print(\"El valor no puede ser negativo\")"
             },
             {
                 "name": "Problema 3.py",
