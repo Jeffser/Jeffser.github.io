@@ -80,7 +80,6 @@ footer a{
     font-family: 'Gloock', serif;
 }
 #main{
-    font-size: 2.5vmin;
     margin-top: calc(var(--header-scale)*1.5);
     text-align: left;
     display: inline-table;
@@ -238,6 +237,6 @@ code{
     width: 100% !important;
     max-width: 80vw;
     overflow-x: auto;
-    font-size: 4vmin;
+    font-size: 40px;
     border-radius: 2vmin !important;
 }
