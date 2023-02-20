@@ -10,7 +10,7 @@ function richAlert(msg, width='70vw', block=false){
     if (!block)$('#richAlertContainer').click(function(event){event.target.remove();})
 }
 function showDevelopmentStatus(status, note){
-    richAlert('<section id="development"><section id="development-information"><h1>Desarrollo</h1><h2>'+status.charAt(0).toUpperCase()+status.slice(1)+'</h2>'+note+'</section><img src="https://jeffser.github.io/globalMedia/development/'+status+'.gif" alt="'+status+'"></section>');
+    richAlert('<section id="development"><section id="development-information" style="text-align: center"><h1>Desarrollo</h1><h2>'+status.charAt(0).toUpperCase()+status.slice(1)+'</h2>'+note+'</section><img src="https://jeffser.github.io/globalMedia/development/'+status+'.gif" alt="'+status+'"></section>');
 }
 $(window).on('load', function(){
     $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
