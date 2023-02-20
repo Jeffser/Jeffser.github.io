@@ -24,10 +24,16 @@
     #main{
         width: 95vw;
     }
+    pre:has(code){
+        max-width: 85vw !important;
+    }
 }
 @media screen and (orientation:landscape){
     #main{
         width: 70vw;
+    }
+    pre:has(code){
+        max-width: 70vw !important;
     }
 }
 body{
@@ -235,7 +241,7 @@ pre:has(code){
 }
 code{
     width: 100% !important;
-    max-width: 80vw;
+    max-width: inherit;
     overflow-x: auto;
     font-size: 40px;
     border-radius: 2vmin !important;

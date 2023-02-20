@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffry's Corner</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../../../manager.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/atelier-plateau.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+</head>
+<body>
+    <header></header>
+    <section id="main">
+        <h1>Funciones Integradas</h1>
+        Python incluye muchas funciones integradas, hay algunas que funcionan a partir de otros objetos como hay otras que se usan independientes.
+        <hr>
+        <h2>print()</h2>
+        Una de las funciones más importantes para el desarrollo de aplicaciones de terminal, print significa imprimir y hace lo que su nombre describe, muestra el objeto que es puesto entre sus parentesis en forma de texto.<br>
+        Print tiene dos parametros, el primero es el objeto (u objetos) a mostrar y el segundo es el texto a escribir al final, por defecto este es '\n' que significa 'salto de linea', en el ejemplo veremos como puede ser usado para imprimir distintos objetos en una misma linea.
+        <pre><code class="language-python">print(4, 'hola', True)
+print('hola', end='-')
+print('adios')</code></pre>
+<pre><code>4holaTrue
+hola-adios</code></pre>
+        <hr>
+        <h2>input()</h2>
+        Otra función importante para el desarrollo de aplicaciones de terminal es input(), significa entrada y hace lo que el nombre sugiere, espera por la entrada del usuario y la regresa al codigo. Es muy importante destacar que en todos los casos sin importar que escriba el usuario siempre se va a regresar una cadena (string), si queremos un numero tendremos que convertir ese string.<br>
+        Input tiene un parametro opcional, si incluimos un objeto este será impreso antes de la entrada del usuario, en el ejemplo el usuario escribió 'Jeffry', 2 y 4.
+        <pre><code class="language-python">nombre = input('Cual es tu nombre? ')
+print('Hola ', nombre, '!')
+num1 = float(input('Primer numero a sumar: '))
+num2 = float(input('Segundo numero a sumar: '))
+print('El resultado es ', num1 + num2)</code></pre>
+        <pre><code>Cual es tu nombre? Jeffry
+Hola Jeffry!
+Primer numero a sumar: 2
+Segundo numero a sumar: 4
+El resultado es 6.0</code></pre>
+    </section>
+    <footer></footer>
+</body>
+</html>
