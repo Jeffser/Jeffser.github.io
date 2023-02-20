@@ -25,7 +25,9 @@
         width: 95vw;
     }
     pre:has(code){
-        max-width: 85vw !important;
+        min-width: 10vw !important;
+        max-width: 75vw !important;
+        width: 75vw !important;
     }
 }
 @media screen and (orientation:landscape){
@@ -33,7 +35,9 @@
         width: 70vw;
     }
     pre:has(code){
-        max-width: 70vw !important;
+        min-width: 10vw !important;
+        max-width: 60vw !important;
+        width: 60vw !important;
     }
 }
 body{
@@ -78,7 +82,7 @@ header div b{
     font-size: calc(var(--header-scale)*0.8);
 }
 footer{
-    font-size: 2vmin;
+    font-size: 4vmin;
     margin-top: 2vmin;
     margin-bottom: 2vmin;
 }
@@ -92,7 +96,7 @@ footer a{
     padding-top: 2vmin;
     padding-bottom: 2vmin;
     border-bottom: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
-    font-size: 25px;
+    font-size: 6vmin;
     color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(var(--color-lightness) - 100%));
 }
 a{
@@ -110,7 +114,7 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
     color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 60%));
-    font-size: 60px;
+    font-size: 10vmin;
 }
 h2{
     letter-spacing: .5vmin;
@@ -118,7 +122,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
     color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%));
-    font-size: 50px;
+    font-size: 9vmin;
 }
 h3{
     letter-spacing: .5vmin;
@@ -126,7 +130,7 @@ h3{
     margin-top: 20px;
     margin-bottom: 20px;
     color: hsl(calc(var(--color-hue) + 10), calc(var(--color-saturation) - 5%), calc(var(--color-lightness) - 50%));
-    font-size: 40px;
+    font-size: 8vmin;
 }
 hr{
     margin-top: 1vmin;
@@ -243,6 +247,6 @@ code{
     width: 100% !important;
     max-width: inherit;
     overflow-x: auto;
-    font-size: 40px;
+    font-size: 6vmin;
     border-radius: 2vmin !important;
 }
