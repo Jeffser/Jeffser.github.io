@@ -19,6 +19,10 @@
     --header-scale: 12vmin;
     --main-color: ;
     --header-border: solid transparent 0px;
+    --base-font-size: 20px;
+    --h1-font-size: 46px;
+    --h2-font-size: 36px;
+    --h3-font-size: 26px;
 }
 @media screen and (orientation:portrait){
     #main{
@@ -26,8 +30,8 @@
     }
     pre:has(code){
         min-width: 10vw !important;
-        max-width: 80vw !important;
-        width: 80vw !important;
+        max-width: calc(95vw - 8vmin) !important;
+        width: calc(95vw - 8vmin) !important;
     }
 }
 @media screen and (orientation:landscape){
@@ -36,8 +40,8 @@
     }
     pre:has(code){
         min-width: 10vw !important;
-        max-width: 60vw !important;
-        width: 60vw !important;
+        max-width: calc(70vw - 8vmin) !important;
+        width: calc(70vw - 8vmin) !important;
     }
 }
 body{
@@ -82,7 +86,7 @@ header div b{
     font-size: calc(var(--header-scale)*0.8);
 }
 footer{
-    font-size: 4vmin;
+    font-size: 10pt;
     margin-top: 2vmin;
     margin-bottom: 2vmin;
 }
@@ -96,7 +100,7 @@ footer a{
     padding-top: 2vmin;
     padding-bottom: 2vmin;
     border-bottom: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
-    font-size: 6vmin;
+    font-size: var(--base-font-size);
     color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(var(--color-lightness) - 100%));
 }
 a{
@@ -114,7 +118,7 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
     color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 60%));
-    font-size: 10vmin;
+    font-size: var(--h1-font-size);
 }
 h2{
     letter-spacing: .5vmin;
@@ -122,7 +126,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
     color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%));
-    font-size: 9vmin;
+    font-size: var(--h2-font-size);
 }
 h3{
     letter-spacing: .5vmin;
@@ -130,7 +134,7 @@ h3{
     margin-top: 20px;
     margin-bottom: 20px;
     color: hsl(calc(var(--color-hue) + 10), calc(var(--color-saturation) - 5%), calc(var(--color-lightness) - 50%));
-    font-size: 8vmin;
+    font-size: var(--h3-font-size);
 }
 hr{
     margin-top: 1vmin;
@@ -163,7 +167,7 @@ hr{
     margin: 0;
     flex-grow: 1;
     padding: 10px;
-    font-size: 25px;
+    font-size: var(--base-font-size);
     background-color: transparent;
     outline-color: transparent;
     border-radius: 10px;
@@ -213,13 +217,13 @@ hr{
     padding: 20px;
 }
 #richAlert h1{
-    font-size: 10vmin;
+    font-size: var(--h1-font-size);
 }
 #richAlert h2{
-    font-size: 7vmin;
+    font-size: var(--h2-font-size);
 }
 #richAlert{
-    font-size: 6vmin;
+    font-size: var(--base-font-size);
 }
 #richAlert #development{
     display: flex;
@@ -242,11 +246,13 @@ hr{
 }
 pre:has(code){
     width: 100% !important;
+    padding: 0 !important;
 }
 code{
     width: 100% !important;
+    padding: 4vmin !important;
     max-width: inherit;
     overflow-x: auto;
-    font-size: 6vmin;
+    font-size: var(--base-font-size);
     border-radius: 2vmin !important;
 }
