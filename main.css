@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
-*{font-family: 'Roboto', sans-serif; transition: .2s; caret-color: transparent;}
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat&display=swap');
+*{
+    transition: .2s;
+}
 ::-webkit-scrollbar{
     width: 1vmin;
 }
@@ -8,53 +9,59 @@
     background: transparent;
 }
 ::-webkit-scrollbar-thumb{
-    background: rgba(255, 255, 255, 0.4);
+    background: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%));
     border-radius: 0.5vmin;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: rgba(255, 255, 255, 0.7);
+    background: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 50%));
 }
 :root{
-    --backgroundColor: black;
-    --fontColor: white;
-    --headerColor: white;
-    --secundaryColor: white;
-    --tertiaryColor: white;
-    --headerScale: 10vmin;
-    --headerBoxShadow: none;
-    --headerBackgroundColor: rgba(0,0,0,0);
-    --brightnessLevel: 50%;
+    --header-scale: 12vmin;
+    --main-color: ;
+    --header-border: solid transparent 0px;
+}
+@media screen and (orientation:portrait){
+    #main{
+        width: 95vw;
+    }
+}
+@media screen and (orientation:landscape){
+    #main{
+        width: 70vw;
+    }
 }
 body{
     overflow-y: overlay;
-    padding: 0;
-    margin: 0;
-    background-color: var(--backgroundColor);
-    color: var(--fontColor);
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    margin: 0;
+    background-color: hsl(var(--color-hue), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 20%));
 }
 header{
+    letter-spacing: .5vmin;
+    font-family: 'Gloock', serif;
     z-index: 10;
     backdrop-filter: blur(.5vmin);
-    background-color: var(--headerBackgroundColor);
-    box-shadow: var(--headerBoxShadow);
+    background-color: hsla(var(--color-hue), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 10%), var(--header-background-opacity));
+    border-bottom: var(--header-border);
     right: 0;
     left: 0;
     position: fixed;
-    color: var(--headerColor);
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%));
     text-align: center;
-    height: calc(var(--headerScale)*1.4);
+    height: calc(var(--header-scale)*1.4);
     border-bottom-left-radius: 2vmin;
     border-bottom-right-radius: 2vmin;
 }
 header div{
     display: inline-table;
-    padding: calc(var(--headerScale)/6);
+    padding: calc(var(--header-scale)/6);
 }
 header div img{
+    box-shadow: hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%)) 0px 0px 0px 5px;
     cursor: pointer;
-    margin-right: calc(var(--headerScale)/6);
-    height: var(--headerScale);
+    margin-right: calc(var(--header-scale)/6);
+    height: var(--header-scale);
     border-radius: 50%;
     float: left;
 }
@@ -62,57 +69,118 @@ header div b{
     color: var(--headerColor);
     cursor: pointer;
     float: right;
-    font-size: calc(var(--headerScale)*0.75);
-    padding-top: calc(var(--headerScale)/6);
-    padding-bottom: calc(var(--headerScale)/6);
-}
-#main{
-    margin-top: calc(var(--headerScale)*1.5);
-    text-align: left;
-    display: inline-table;
-    width: 70vw;
-    padding-bottom: 2vmin;
-    border-bottom: solid var(--secundaryColor) .4vmin;
-    font-size: 3vmin;
-}
-#main .title{
-    margin: 0;
-    font-size: 5vmin;
-}
-#main .subtitle{
-    margin: 0;
-    font-size: 4vmin;
-}
-.secundaryText{
-    color: var(--secundaryColor);
-}
-.tertiaryText{
-    color: var(--tertiaryColor);
+    font-size: calc(var(--header-scale)*0.8);
 }
 footer{
     font-size: 2vmin;
     margin-top: 2vmin;
     margin-bottom: 2vmin;
 }
-a{
-    color: var(--fontColor);
-	text-decoration-color: var(--tertiaryColor);
+footer a{
+    font-family: 'Gloock', serif;
 }
-a:hover{
-    text-decoration: underline;
-	text-decoration-color: var(--secundaryColor);
-}
-.borders{
-    margin-bottom: 2vmin;
-    padding-bottom: 2vmin;
-    margin-top: 2vmin;
+#main{
+    font-size: 2.5vmin;
+    margin-top: calc(var(--header-scale)*1.5);
+    text-align: left;
+    display: inline-table;
     padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    border-bottom: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
+    font-size: 25px;
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(var(--color-lightness) - 100%));
 }
-.separatedDiv{
-    margin-bottom: 2vmin;
-    padding: 2vmin;
-    border-radius: 2vmin;
-    backdrop-filter: sepia(.4);
+a{
+    text-decoration: underline wavy;
+    text-decoration-thickness: 1px;
+    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%));
+}
+h1{
+    text-decoration-skip-ink: none;
+    text-decoration: underline wavy;
+    text-decoration-thickness: 4px;
+    text-decoration-color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 60%));
+    letter-spacing: .5vmin;
+    font-family: 'Gloock', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 60%));
+    font-size: 60px;
+}
+h2{
+    letter-spacing: .5vmin;
+    font-family: 'Gloock', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%));
+    font-size: 50px;
+}
+h3{
+    letter-spacing: .5vmin;
+    font-family: 'Gloock', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(calc(var(--color-hue) + 10), calc(var(--color-saturation) - 5%), calc(var(--color-lightness) - 50%));
+    font-size: 40px;
+}
+hr{
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+    border: transparent;
+    border-top: dashed hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
+}
+#main div:not(.button-list), #richAlert div:not(.button-list){
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: hsl(var(--color-hue), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 10%));
+    border: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
+    border-radius: 10px;
+    padding: 1vmin;
+}
+#main div div.button-list, #richAlert div div.button-list{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    column-gap: 1vmin;
+    row-gap: 1vmin;
+}
+#main div div.button-list a, #richAlert div div.button-list a{
+    height: 40px;
+    min-width: fit-content;
+    cursor: pointer;
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(var(--color-lightness) - 100%));
+    text-decoration: none;
+    margin: 0;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 25px;
+    background-color: transparent;
+    outline-color: transparent;
+    border-radius: 10px;
+    background-color: hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 30%));
+    border: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+#main div div.button-list a:hover, #main div div.button-list a:focus, #richAlert div div.button-list a:hover, #richAlert div div.button-list a:focus{
+    border: solid hsl(var(--color-hue), calc(var(--color-saturation) - 0%), calc(var(--color-lightness) - 0%)) .4vmin;
+}
+#main div div.button-list a img.icon, #richAlert div div.button-list a img.icon{
+    aspect-ratio: 1/1;
+    height: 90%;
+    margin-right: 10px;
+}
+#main img{
+    filter: saturate(var(--color-saturation)) brightness(var(--color-lightness));
+}
+#main img:not(img.icon){
+    width: calc(100% - .8vmin);
+    border-radius: 10px;
+    border: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
+    aspect-ratio: 16/4;
+    object-fit: cover;
 }
 #richAlertContainer{
     z-index: 20;
@@ -127,27 +195,47 @@ a:hover{
     align-items: center;
 }
 #richAlert{
+    max-width: 90vw;
     text-align: left;
     display: inline-table;
-    border: solid var(--secundaryColor) .4vmin;
-    background-color: var(--backgroundColor);
-    border-radius: 2vmin;
-    padding: 2vmin;
+    border: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
+    background-color: hsl(var(--color-hue), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 20%));
+    border-radius: 10px;
+    padding: 20px;
+}
+#richAlert h1{
+    font-size: 10vmin;
+}
+#richAlert h2{
+    font-size: 7vmin;
+}
+#richAlert{
+    font-size: 6vmin;
 }
 #richAlert #development{
-    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1vmin;
+    row-gap: 1vmin;
 }
 #richAlert #development img{
-    border-radius: 2vmin;
-    height: auto;
-    width: 20%;
-    float: right;
+    display: block;
+    margin-top: 20px;
+    aspect-ratio: 1/1;
+    height: 20vh;
+    flex-grow: 1;
+    object-fit: contain;
 }
 #richAlert #development #development-information{
-    width: 80%;
-    float: left;
+    flex-grow: 2;
+}
+pre:has(code){
+    width: 100% !important;
 }
 code{
+    width: 100% !important;
     max-width: 80vw;
     overflow-x: auto;
     font-size: 4vmin;
