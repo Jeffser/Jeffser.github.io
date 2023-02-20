@@ -17,6 +17,7 @@
     <section id="main">
         <h1>Conversiones</h1>
         En python hay muchos objetos y estos pueden ser convertidos entre si con algunas excepciones, en esta pagina explico como convertir estos objetos.
+        <hr>
         <h2>int()</h2>
         Para convertir de string, booleano o float a integer usamos la función int(), su unico parametro es el objeto a convertir, esta función regresa el numero en entero o da error en caso de que no sea posible convertirlo.<br>
         Es importante destacar que en el caso de los numeros flotantes estos son redondeados siempre para abajo.
@@ -33,6 +34,7 @@ print(numero)</code></pre>
 <pre><code>3
 424
 1</code></pre>
+        <hr>
         <h2>str()</h2>
         Como aprendimos en la la entrada sobre objetos las cadenas (strings) funcionan distinto que otros objetos cuando se les aplica operaciones matematicas.<br>
         Practicamente cualquier objeto puede ser convertido a string como podremos ver en el ejemplo.
@@ -45,6 +47,7 @@ cadena = str(funcion)
 print(cadena)</code></pre>
 <pre><code>1.51.5
 &ltbuilt-in function print></code></pre>
+        <hr>
         <h2>float()</h2>
         Se puede convertir a floatante (float) objetos como cadenas, enteros y booleanos usando la misma sintaxis que los otros convertidores.<br>
         Es importante considerar que si se convierte un numero entero, automaticamente se agrega '.0' al final para hacerlo flotante.
@@ -61,6 +64,7 @@ print(flotante)</code></pre>
 <pre><code>2.0
 5.2
 0.0</code></pre>
+        <hr>
         <h2>bool()</h2>
         Se pueden convertir numeros flotantes y enteros al igual que cadenas a booleano, es importante destacar en cuales casos el resultado será positivo y en cuales negativo.<br>
         En el caso de los numeros, cuando son 0.0 es negativo y en cualquier otro caso (tanto positivo como negativo) el resultado será positivo. <br>
@@ -81,6 +85,7 @@ print(booleano)</code></pre>
 False
 True
 False</code></pre>
+        <hr>
         <h2>chr()</h2>
         El objeto char hace referencia a un simbolo, letra o numero en la tabla ASCII, el unico objeto que puede ser convertido es integer el cual representará el codigo en la table del simbolo que necesitamos obtener.
         <pre><code class="language-python">codigo = 65
@@ -105,6 +110,7 @@ print(lista)</code></pre>
 ['nombre', 'pagina']
 [3, 6, 2]
 ['J', 'e', 'f', 'f', 'r', 'y']</code></pre>
+        <hr>
         <h2>tuple()</h2>
         Se pueden convertir series (sets), diccionarios (dictionaries), listas (lists) y cadenas (string), de la misma forma en el caso de los diccionarios los valores son ignorados y se mantienen solo las llaves.
         <pre><code class="language-python">serie = {1, 7, 2}
@@ -123,6 +129,7 @@ print(tupla)</code></pre>
 ('nombre', 'pagina')
 ('hola', 'adios')
 ('J', 'e', 'f', 'f', 'r', 'y')</code></pre>
+        <hr>
         <h2>set()</h2>
         Se pueden convertir diccionarios (dictionaries), listas (lists), cadenas (string) y tuplas (tuple), en el caso de los diccionarios, los valores se ignoran y se mantienen las llaves.<br>
         En el caso de la conversión de cadena (string) y de lista (list) a serie (set), automaticamente es invertido como se observa en el ejemplo y en todos los casos se mantiene la regla de que ningun elemento puede ser repetido, esto debido al comportamiento de los sets, otro comportamiento especial es visto cuando convertimos una tupla (tuple) a serie (set), este será ordenado automaticamente.
@@ -142,6 +149,7 @@ print(serie)</code></pre>
 {8, 5}
 {'y', 'r', 'f', 'e', 'J'}
 {1, 3, 5}</code></pre>
+        <hr>
         <h2>dict()</h2>
         El caso de la conversión a diccionario es especial, la función convertidora puede tener una cantidad indefinida de parametros, la sintaxis como es mostrada en el ejemplo se basa en (llave = valor), la llave necesita ser predefinida pero el valor puede cambiar según el codigo.
         <pre><code class="language-python">cadena = 'Jeffry'
