@@ -4,7 +4,7 @@ function changeMode(){
 }
 function richAlert(msg, width='70vw', block=false){
     $('#richAlertContainer').remove();
-    if (activeEG) $('body').append('<div id="richAlertContainer"><div id="richAlert" style="width: auto; background-color: transparent; border-radius: 0; border-color: black;"><img src="../../../globalMedia/easter/cat.gif"></div></div>')
+    if (activeEG) $('body').append('<div id="richAlertContainer"><div id="richAlert" style="width: auto; background-color: transparent; border-radius: 0; border-color: black;"><img src="https://jeffser.github.io/globalMedia/easter/cat.gif"></div></div>')
     else $('body').append('<div id="richAlertContainer"><div id="richAlert" style="width: ' + width + '">'+msg+'</div></div>')
     $('#richAlert').click(function(event){event.stopPropagation();});
     if (!block)$('#richAlertContainer').click(function(event){event.target.remove();})
