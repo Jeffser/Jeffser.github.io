@@ -26,8 +26,8 @@
     }
     pre:has(code){
         min-width: 10vw !important;
-        max-width: 75vw !important;
-        width: 75vw !important;
+        max-width: 80vw !important;
+        width: 80vw !important;
     }
 }
 @media screen and (orientation:landscape){
