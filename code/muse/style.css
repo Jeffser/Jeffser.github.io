@@ -21,6 +21,7 @@
     filter: saturate(var(--color-saturation)) brightness(var(--color-lightness));
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 #youtube-container iframe{
     margin: 0;
