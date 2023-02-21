@@ -18,6 +18,7 @@
 #youtube-container{
     padding: 0;
     border-radius: 20px;
+    filter: saturate(var(--color-saturation)) brightness(var(--color-lightness));
 }
 #youtube-container iframe{
     margin: 0;
