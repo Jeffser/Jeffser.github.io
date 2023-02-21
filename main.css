@@ -101,7 +101,6 @@ header div b{
     background-size: 200% auto;
     color: black;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     cursor: pointer;
