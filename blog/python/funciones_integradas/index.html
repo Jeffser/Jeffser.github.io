@@ -40,6 +40,22 @@ Hola Jeffry!
 Primer numero a sumar: 2
 Segundo numero a sumar: 4
 El resultado es 6.0</code></pre>
+        <hr>
+        <h2>range()</h2>
+        La función range() regresa una tupla que representa un rango, tiene un parametro obligatorio y 2 opcionales, el obligatorio define hasta donde llega el rango, el primero opcional define desde donde empieza el rango, por defecto ese valor es 0 y el segundo opcional define de cuanto en cuanto va a subir el rango por defecto es uno.<br>
+        Por lo general range() es usado en for aunque no es la unica forma de usar un for, en el ejemplo mostramos como actua según los parametros y como se comporta en un for.
+        <pre><code class="language-python">rango = range(5)
+print(rango)
+rango = range(2, 10)
+print(rango)
+rango = range(5, 20, 2)
+print(rango)
+for i in range(3, 20, 2):
+    print(i, end="-")</code></pre>
+<pre><code>range(0, 5)
+range(2, 10)
+range(5, 20, 2)
+3-5-7-9-11-13-15-17-19-</code></pre>
     </section>
     <footer></footer>
 </body>
