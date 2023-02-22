@@ -3,8 +3,23 @@
         "2023-02-22": [
             {
                 "name": "competencia.py",
-                "description": "Pregunte por el tiempo de 5 vueltas y 5 pits y muestre el porcentaje de tiempo en los pits relativo a las vueltas",
-                "code": "#Pregunte por el tiempo de 5 vueltas y 5 pits y muestre el porcentaje de tiempo en los pits relativo a las vueltas\nvueltaT = 0\npitsT = 0\n#Inicia los valores de vuelta y pits\nfor i in range(1, 6):\n    vueltaT += float(input(f'Cual fue el tiempo de la vuelta {i}? '))\n    pitsT += float(input(f'Cual fue el tiempo de los pits {i}? '))\n    #Obtiene los tiempos\nvueltaT /= 5\npitsT /= 5\n#Saca el promedio\nprint(f'En promedio {pitsT * 100 / vueltaT}% es usado en los pits')\n#5 vueltas 5 PITS ingresa tiempo de cada uno y promedio en pits, muestre porcentaje en pits correspondiente a la vuelta"
+                "description": "(Ganada btw) Pregunte por el tiempo de 5 vueltas y 5 pits y muestre el porcentaje de tiempo en los pits relativo a las vueltas",
+                "code": "#(Ganada btw) Pregunte por el tiempo de 5 vueltas y 5 pits y muestre el porcentaje de tiempo en los pits relativo a las vueltas\nvueltaT = 0\npitsT = 0\n#Inicia los valores de vuelta y pits\nfor i in range(1, 6):\n    vueltaT += float(input(f'Cual fue el tiempo de la vuelta {i}? '))\n    pitsT += float(input(f'Cual fue el tiempo de los pits {i}? '))\n    #Obtiene los tiempos\nvueltaT /= 5\npitsT /= 5\n#Saca el promedio\nprint(f'En promedio {pitsT * 100 / vueltaT}% es usado en los pits')\n#5 vueltas 5 PITS ingresa tiempo de cada uno y promedio en pits, muestre porcentaje en pits correspondiente a la vuelta"
+            },
+            {
+                "name": "practica 1.py",
+                "description": "Se realiza un aumento seg\u00fan antig\u00fcedad del trabajador, (0-5=10%) (6-9=15%) (10-15=25%) (+15=30)",
+                "code": "#Se realiza un aumento seg\u00fan antig\u00fcedad del trabajador, (0-5=10%) (6-9=15%) (10-15=25%) (+15=30)\nfor i in range(5):\n    salario = float(input(f'Salario de empleado #{i + 1}: '))\n    annos = float(input(f'A\u00f1os laborados de empleado #{i + 1}: '))\n    aumento = 0\n    if annos > 0 and annos < 5: aumento = 10\n    elif annos > 6 and annos < 9: aumento = 15\n    elif annos > 10 and annos < 15: aumento = 25\n    elif annos > 15: aumento = 30\n    print(f'El aumento es del {aumento}%\\nEl salario total es {salario + (aumento*salario/100)}\\n')"
+            },
+            {
+                "name": "practica 2.py",
+                "description": "Calcule el total de pantalones, si se compran entre 1 y 5 el descuento es del 12.5%, entre 5 y 8 es del 20% y si se compran mas es del 31.5%",
+                "code": "#Calcule el total de pantalones, si se compran entre 1 y 5 el descuento es del 12.5%, entre 5 y 8 es del 20% y si se compran mas es del 31.5%\nprecioUnidad = 1000\nwhile True:\n    cantidad = int(input('Cantidad de pantalones a comprar: '))\n    descuento = 0\n    if cantidad >= 1 and cantidad < 5: descuento = 12.5\n    elif cantidad >=5 and cantidad < 8: descuento = 20\n    elif cantidad >= 8: descuento = 31.5\n    subtotal = precioUnidad * cantidad\n    descuentoAplicado = descuento * subtotal / 100\n    print(f'Subtotal: {subtotal}\\nDescuento ({descuento}%): {descuentoAplicado}\\nTotal: {subtotal-descuentoAplicado}')\n    if input('Desea calcular otro pedido? (S/N) ').capitalize() == 'N': break"
+            },
+            {
+                "name": "practica 3.py",
+                "description": "precioNoche = 100",
+                "code": "precioNoche = 100\nwhile True:\n    cantidadNoche = int(input('Cantidad de noches: '))\n    descuento = 0\n    if cantidadNoche > 3: descuento = 5\n    subtotal = precioNoche * cantidadNoche\n    descuentoAplicado = descuento * subtotal / 100\n    print(f'Cantida total a pagar: {subtotal - descuentoAplicado}')\n    if input('Desea ingresar otro cliente? (S/N) ').capitalize() == 'N': break"
             },
             {
                 "name": "trabajo1.py",
