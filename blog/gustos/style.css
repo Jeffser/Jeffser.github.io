@@ -1,0 +1,17 @@
+:root{
+    --color-hue: 215;
+    --color-saturation: 30%;
+    --color-lightness: 90%;
+    
+    --desktop-development-status:actualizando;
+    --desktop-development-note:Esta pagina se está actualizando activamente;
+
+    --mobile-development-status: ;
+    --mobile-development-note: ;
+
+    --publish-date:'2023-03-11';
+}
+[data-theme="dark"]{
+    --color-saturation: 45%;
+    --color-lightness: 65%;
+}
