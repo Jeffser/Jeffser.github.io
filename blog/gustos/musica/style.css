@@ -12,16 +12,15 @@
     --publish-date:'2023-03-14';
 }
 [data-theme="dark"]{
-    --color-saturation: 45%;
+    --color-saturation: 35%;
     --color-lightness: 65%;
 }
 .song{
-    background-color: black;
     text-align: center;
     font-weight: bold;
     background-size: cover;
     background-position: center;
-    background-blend-mode: lighten;
+    box-shadow: inset 0 0 100px 100px hsla(var(--color-hue), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 20%), 0.8);
     height: 150px !important;
     width: 150px !important;
     max-width: 150px !important;
