@@ -1,0 +1,29 @@
+:root{
+    --color-hue: 150;
+    --color-saturation: 30%;
+    --color-lightness: 90%;
+    
+    --desktop-development-status:actualizando;
+    --desktop-development-note:Esta pagina se está actualizando activamente;
+
+    --mobile-development-status: ;
+    --mobile-development-note: ;
+
+    --publish-date:'2023-03-14';
+}
+[data-theme="dark"]{
+    --color-saturation: 45%;
+    --color-lightness: 65%;
+}
+.song{
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: lighten;
+    height: 150px !important;
+    width: 150px !important;
+    max-width: 150px !important;
+    aspect-ratio: 1/1;
+}
