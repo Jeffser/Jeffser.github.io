@@ -129,23 +129,23 @@ footer a{
     padding-bottom: 2vmin;
     border-bottom: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
     font-size: var(--base-font-size);
-    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(160% - var(--color-lightness)));
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(100% - var(--color-lightness)));
 }
 a{
     text-decoration: underline wavy;
     text-decoration-thickness: 1px;
-    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%));
+    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(100% - var(--color-lightness)));
 }
 h1{
     text-decoration-skip-ink: none;
     text-decoration: underline wavy;
     text-decoration-thickness: 4px;
-    text-decoration-color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 20%), calc(150% - var(--color-lightness)));
+    text-decoration-color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 20%), calc(100% - var(--color-lightness)));
     letter-spacing: .5vmin;
     font-family: 'Gloock', serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(150% - var(--color-lightness)));
+    color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(100% - var(--color-lightness)));
     font-size: var(--h1-font-size);
 }
 h2{
@@ -153,7 +153,7 @@ h2{
     font-family: 'Gloock', serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(150% - var(--color-lightness)));
+    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(100% - var(--color-lightness)));
     font-size: var(--h2-font-size);
 }
 h3{
@@ -161,7 +161,7 @@ h3{
     font-family: 'Gloock', serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: hsl(calc(var(--color-hue) + 10), calc(var(--color-saturation) - 5%), calc(130% - var(--color-lightness)));
+    color: hsl(calc(var(--color-hue) + 10), calc(var(--color-saturation) - 5%), calc(100% - var(--color-lightness)));
     font-size: var(--h3-font-size);
 }
 hr{
