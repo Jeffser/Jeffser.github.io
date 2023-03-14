@@ -92,9 +92,9 @@ header div img{
 header div b{
     background-image: linear-gradient(
         -225deg,
-        hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%)) 0%,
-        hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%)) 50%,
-        hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%)) 100%
+        hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 0%)) 0%,
+        hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 0%)) 50%,
+        hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 0%)) 100%
     );
     background-size: auto auto;
     background-clip: border-box;
