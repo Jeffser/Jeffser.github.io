@@ -134,7 +134,7 @@ footer a{
 a{
     text-decoration: underline wavy;
     text-decoration-thickness: 1px;
-    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(100% - var(--color-lightness)));
+    color: hsl(calc(var(--color-hue) - 30), calc(var(--color-saturation) - 10%), calc(110% - var(--color-lightness)));
 }
 h1{
     text-decoration-skip-ink: none;
@@ -190,7 +190,7 @@ hr{
     height: 40px;
     min-width: fit-content;
     cursor: pointer;
-    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(var(--color-lightness) - 100%));
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness)));
     text-decoration: none;
     margin: 0;
     flex-grow: 1;
@@ -237,6 +237,7 @@ hr{
     align-items: center;
 }
 #richAlert{
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness)));
     max-width: 90vw;
     text-align: left;
     display: inline-table;

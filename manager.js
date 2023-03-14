@@ -39,7 +39,7 @@ $(window).on('load', function(){
     if(localStorage.getItem("theme"))theme = localStorage.getItem("theme");
     else if(!window.matchMedia) return false;
     else if(window.matchMedia("(prefers-color-scheme: dark)").matches) var theme = "dark";
-    //theme="light"; //Deactivated
+    //theme="light";
     document.documentElement.setAttribute("data-theme", theme);
     const mobileStatus = getComputedStyle(document.documentElement).getPropertyValue('--mobile-development-status');
     const mobileNote = getComputedStyle(document.documentElement).getPropertyValue('--mobile-development-note');
