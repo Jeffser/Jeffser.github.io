@@ -12,6 +12,6 @@
     --publish-date:'2023-02-20';
 }
 [data-theme="dark"]{
-    --color-saturation: 45%;
+    --color-saturation: 35%;
     --color-lightness: 65%;
 }

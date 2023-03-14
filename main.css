@@ -145,7 +145,7 @@ h1{
     font-family: 'Gloock', serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 60%));
+    color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 10%), calc(100% - var(--color-lightness)));
     font-size: var(--h1-font-size);
 }
 h2{
