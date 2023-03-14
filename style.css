@@ -13,5 +13,5 @@
 }
 [data-theme="dark"]{
     --color-saturation: 35%;
-    --color-lightness: 65%;
+    --color-lightness: 40%;
 }

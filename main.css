@@ -129,7 +129,7 @@ footer a{
     padding-bottom: 2vmin;
     border-bottom: solid hsl(var(--color-hue), calc(var(--color-saturation) - 25%), calc(var(--color-lightness) - 40%)) .4vmin;
     font-size: var(--base-font-size);
-    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(100% - var(--color-lightness)));
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness)));
 }
 a{
     text-decoration: underline wavy;
@@ -215,7 +215,7 @@ hr{
     margin-right: 10px;
 }
 #main img{
-    filter: saturate(var(--color-saturation)) brightness(var(--color-lightness));
+    filter: saturate(var(--color-saturation)) brightness(calc(var(--color-lightness) + 20%));
 }
 #main img:not(img.icon){
     width: calc(100% - .8vmin);
