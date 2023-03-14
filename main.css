@@ -82,7 +82,7 @@ header div{
     padding: calc(var(--header-scale)/6);
 }
 header div img{
-    box-shadow: hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 40%)) 0px 0px 0px 5px;
+    box-shadow: hsl(var(--color-hue), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) - 0%)) 0px 0px 0px 5px;
     cursor: pointer;
     margin-right: calc(var(--header-scale)/6);
     height: var(--header-scale);
