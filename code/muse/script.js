@@ -3,7 +3,7 @@ id = null;
 function showSong(id, hue = 0){
     if (hue == 0) hue = Math.floor(Math.random()*358);
     $(':root').get(0).style.setProperty('--color-hue', hue);
-    $.getJSON('http://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=' + id + '&format=json', function(data){
+    $.getJSON('https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=' + id + '&format=json', function(data){
         $('#title').html('<a style="text-decoration: none;" href="https://music.youtube.com/watch?v=' + id + '">' + data['title'] + '</a>');
         $('#author').html('<a style="text-decoration: none;" href="' + data['author_url'].replace('www.', 'music.') + '">' + data['author_name'].replace(' - Topic', '') + '</a>');
         $('#youtube-container').css('background-image', 'url(https://i3.ytimg.com/vi/' + id + '/maxresdefault.jpg)')
