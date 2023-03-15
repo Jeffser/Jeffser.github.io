@@ -17,7 +17,7 @@
 }
 #text-wrapper{
     padding: 20px !important;
-    height: 40vh !important;
+    height: 35vh !important;
     max-width: 100% !important;
     font-size: 40px !important;
     word-break: break-all !important;
@@ -50,5 +50,5 @@
     }
 }
 #main{
-    margin-top: calc(var(--header-scale) + 1px) !important;
+    margin-top: calc(var(--header-scale) + 10px) !important;
 }
