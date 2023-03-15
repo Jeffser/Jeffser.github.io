@@ -14,10 +14,10 @@ function showDevelopmentStatus(status, note){
 }
 $(window).on('load', function(){
     $("head").append('<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">');
-    $("header").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
-    $("header").find('img').contextmenu(function(e){e.preventDefault(); showDevelopmentStatus(getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-status'), getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-note'));})
-    $("header").find('img').mousedown(function(ev){if(ev.which==1) changeMode();});
-    $("footer").html(getComputedStyle(document.documentElement).getPropertyValue('--publish-date') + '<br>Made by <a href="https://www.github.com/jeffser">JeffSER</a> with ❤️');
+    $("header:not(.custom)").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
+    $("header:not(.custom)").find('img').contextmenu(function(e){e.preventDefault(); showDevelopmentStatus(getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-status'), getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-note'));})
+    $("header:not(.custom)").find('img').mousedown(function(ev){if(ev.which==1) changeMode();});
+    $("footer:not(.custom)").html(getComputedStyle(document.documentElement).getPropertyValue('--publish-date') + '<br>Made by <a href="https://www.github.com/jeffser">JeffSER</a> with ❤️');
     window.onscroll = function(){
         if (activeEG) return;
         let scroll = $(window).scrollTop();
