@@ -12,12 +12,30 @@ async function mostrarFrase(frase){
 
 $(window).on('load', function(){
     $("#mic-wrapper").contextmenu(function(e){e.preventDefault();})
-    $('#mic-wrapper').mousedown(function(){
-        $('#mic').attr('src', 'mic.webp');
-        $('#text-wrapper').html('Escuchando...');
-    });
-    $('#mic-wrapper').mouseup(function(){
-        $('#mic').attr('src', 'mic_still.png');
-        $.getJSON('frases.json', function(frases){mostrarFrase(frases[Math.floor(Math.random()*frases.length)]);});
-    });
+
+    if (('ontouchstart' in window) ||
+    (navigator.maxTouchPoints > 0) ||
+    (navigator.msMaxTouchPoints > 0)){
+        $("#mic-wrapper").bind('touchstart', function(){
+            $('#mic').attr('src', 'mic.webp');
+            $('#text-wrapper').html('Escuchando...');
+            $('#mic').attr('listening', 'true');
+        }).bind('touchend', function(){
+            $('#mic').attr('src', 'mic_still.png');
+            $('#mic').attr('listening', 'false');
+            $.getJSON('frases.json', function(frases){mostrarFrase(frases[Math.floor(Math.random()*frases.length)]);});
+        });
+    }
+    else{
+        $('#mic-wrapper').mousedown(function(){
+            $('#mic').attr('src', 'mic.webp');
+            $('#text-wrapper').html('Escuchando...');
+            $('#mic').attr('listening', 'true');
+        });
+        $('#mic-wrapper').mouseup(function(){
+            $('#mic').attr('src', 'mic_still.png');
+            $('#mic').attr('listening', 'false');
+            $.getJSON('frases.json', function(frases){mostrarFrase(frases[Math.floor(Math.random()*frases.length)]);});
+        });
+    }
 });
