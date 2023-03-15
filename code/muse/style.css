@@ -18,7 +18,7 @@
 #youtube-container{
     padding: 0;
     border-radius: 20px;
-    filter: saturate(var(--color-saturation)) brightness(var(--color-lightness));
+    filter: saturate(var(--color-saturation)) brightness(calc(var(--color-lightness) + 10%));
     background-size: cover;
     background-position: center;
     cursor: pointer;

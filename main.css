@@ -215,7 +215,7 @@ hr{
     margin-right: 10px;
 }
 #main img{
-    filter: saturate(var(--color-saturation)) brightness(calc(var(--color-lightness) + 20%));
+    filter: saturate(var(--color-saturation)) brightness(calc(var(--color-lightness) + 10%));
 }
 #main img:not(img.icon){
     width: calc(100% - .8vmin);
