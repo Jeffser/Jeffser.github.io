@@ -13,7 +13,7 @@ function showDevelopmentStatus(status, note){
     richAlert('<section id="development"><section id="development-information" style="text-align: center"><h1>Desarrollo</h1><h2>'+status.charAt(0).toUpperCase()+status.slice(1)+'</h2>'+note+'</section><img src="https://jeffser.github.io/globalMedia/development/'+status+'.gif" alt="'+status+'"></section>');
 }
 $(window).on('load', function(){
-    $("head").append('<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">');
+    if ($("#custom-favicon").length == False) $("head").append('<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">');
     $("header:not(.custom)").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
     $("header").find('img').contextmenu(function(e){e.preventDefault(); showDevelopmentStatus(getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-status'), getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-note'));})
     $("header").find('img').mousedown(function(ev){if(ev.which==1) changeMode();});
