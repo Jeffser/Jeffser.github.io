@@ -11,6 +11,7 @@ async function mostrarFrase(frase){
 }
 
 $(window).on('load', function(){
+    $("#mic-wrapper").contextmenu(function(e){e.preventDefault();})
     $('#mic-wrapper').mousedown(function(){
         $('#mic').attr('src', 'mic.webp');
         $('#text-wrapper').html('Escuchando...');
