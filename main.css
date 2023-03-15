@@ -117,6 +117,7 @@ footer{
     font-size: 10pt;
     margin-top: 2vmin;
     margin-bottom: 2vmin;
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness)));
 }
 footer a{
     font-family: 'Gloock', serif;
