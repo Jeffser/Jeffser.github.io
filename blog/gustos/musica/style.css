@@ -26,3 +26,8 @@
     max-width: 150px !important;
     aspect-ratio: 1/1;
 }
+.song:hover{
+    box-shadow: inset 0 0 0 0 transparent;
+    color: transparent !important;
+    
+}
