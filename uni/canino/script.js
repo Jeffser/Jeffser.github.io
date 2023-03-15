@@ -12,7 +12,6 @@ async function mostrarFrase(frase){
 
 $(window).on('load', function(){
     $("#mic-wrapper").contextmenu(function(e){e.preventDefault();})
-
     if (('ontouchstart' in window) ||
     (navigator.maxTouchPoints > 0) ||
     (navigator.msMaxTouchPoints > 0)){
