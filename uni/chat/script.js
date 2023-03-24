@@ -5,7 +5,7 @@ function showMessage(sender, msg){
         dataType: "json",
         method: "POST",
         url: "https://jeffser.com/chat.php",
-        data: {pass: "samuel1202", text: msg},
+        data: {pass: "samuel1202", text: msg, id: "asdasda"},
     }).done(function(data){
         console.log(data);
     });
