@@ -13,7 +13,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script>
         $(window).on('load', function(){
-            $.getJSON('https://jeffser.com/discord.json', function(data){
+            $.getJSON('https://jeffser.com/discord.php', function(data){
                 console.log(data)
                 if (data.length > 0) $('#statusWrapper').css('display', 'block')
                 data.forEach(element => {
