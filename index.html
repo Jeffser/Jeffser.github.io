@@ -13,11 +13,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script>
         $(window).on('load', function(){
-            $.getJSON('https://jeffser.com/discord.json', function(data){
-                console.log(data)
-                if (data.length > 0) $('#statusWrapper').css('display', 'block')
+            $.getJSON('https://jeffser.com/discord.php', function(data){
+                if (data.length > 0) $('#statusWrapper').css('display', 'block');
                 data.forEach(element => {
-                    $("#status-list").append("<div><img title='" + element['name'] + "' src='" + element['large_image_url'] + "''><h3 title='" + element['details'] +"'>" + element['details'] + "</h3><br><b title='" + element['state'] + "'>" + element['state'] + "</b></div>")
+                    $("#status-list").append("<div><img title='" + element['name'] + "' src='" + element['large_image_url'] + "''><h3 title='" + element['details'] +"'>" + element['details'] + "</h3><br><b title='" + element['state'] + "'>" + element['state'] + "</b></div>");
                 });
             });
         });
