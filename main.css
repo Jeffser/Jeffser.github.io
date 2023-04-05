@@ -276,7 +276,7 @@ hr{
     flex-grow: 2;
 }
 pre:has(code){
-    width: fit-content !important;
+    max-width: 100% !important;
     padding: 0 !important;
 }
 code{
