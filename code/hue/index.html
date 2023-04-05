@@ -17,8 +17,8 @@
             $("#hue-label").html("Hue: " + h);
         }
         $(window).on('load', function(){
-            $("#hue").value = 0;
-        })
+            hueChange($("#hue")[0].value);
+        });
     </script>
 </head>
 <body>
