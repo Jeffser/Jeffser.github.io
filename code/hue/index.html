@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffry's Corner</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://jeffser.github.io/main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://jeffser.github.io/manager.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/atelier-plateau.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        function hueChange(h){
+            document.querySelector(':root').style.setProperty('--color-hue', h);
+            $("#hue-label").html("Hue: " + h);
+        }
+        $(window).on('load', function(){
+            $("#hue").value = 0;
+        })
+    </script>
+</head>
+<body>
+    <header></header>
+    <section id="main">
+        <h1>Hue</h1>
+        <h2>Testea como mi pagina web reacciona al cambio de color!</h2>
+        <div>
+            <h3>Controles</h3>
+            <label id="hue-label" for="hue">Hue: 0</label><br>
+            <input type="range", min="-360" max="360" value="0" id="hue" name="hue" oninput="hueChange(this.value)">
+        </div>
+        <div>Recuerda que puedes presionar mi foto de perfil para cambiar de modo claro a oscuro y al revés.<br>Tambien recuerda que todo el css y codigo esta convenientemente en mi Github.</div>
+    </section>
+    <footer></footer>
+</body>
+</html>
