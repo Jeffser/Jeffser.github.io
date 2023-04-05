@@ -20,7 +20,8 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     height: 75px !important;
-    min-width: fit-content;
+    min-width: 0;
+    max-width: fit-content;
     cursor: unset !important;
     color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness)));
     text-decoration: none;

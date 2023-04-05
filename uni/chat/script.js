@@ -7,11 +7,13 @@ $(window).on('load', function(){
 
 function getReply(msg){
     $.ajax({
-        dataType: "json",
+        dataType: "application/json",
+        contentType: "application/json",
         method: "POST",
         url: "http://api.jeffser.com/api/chat/message",
         data: {key: key, msg: msg, id: id},
     }).done(function(data){
+        console.log(data)
         if (data['status'] == 'success'){
             showMessage('bot', data['message'])
         }
