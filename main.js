@@ -96,6 +96,9 @@ function showContact(){
     alternateRichAlert(text);
 }
 
+pageHistory = []
+currentPageIndex = -1
+
 function loadText(dir){
     urlExists(dir + '/text.md', function(exists){
         if (exists) url = dir + '/text.md';
@@ -103,8 +106,7 @@ function loadText(dir){
         $.get(url, function(text){
             $("section#main").html(new showdown.Converter().makeHtml(text));
             makeSummary();
-            console.log(window.location.href + dir);
-            window.history.replaceState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir);
+            window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
 }

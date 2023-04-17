@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat&display=swap');
 *{transition: .2s;}
 :root{
-    --color-hue: 20;
+    --color-hue: 120;
     --color-hue-2: calc(360 - var(--color-hue));
     --color-hue-3: calc(360 - var(--color-hue) / 2);
     --color-hue-4: calc(360 - var(--color-hue) * 2);
