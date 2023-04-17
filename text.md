@@ -58,7 +58,7 @@ Claro que Markdown no tiene todo lo que HTML tiene, lo bueno es que puedo convin
 
 También cabe aclarar que estoy usando el proyecto open source [Showdown](https://github.com/showdownjs/showdown) para hacer la conversión entre Markdown y HTML, si en algún momento quieren intentar hacer algo similar usen ese repositorio.
 
-Si quieren ver el codigo MD directamente de cada pagina agreguen 'index.md' al final del url.
+Si quieren ver el codigo MD directamente de cada pagina agreguen '/text' al final del url.
 
 ## Indice
 
@@ -100,4 +100,6 @@ Si han visitado esta página en la versión beta se habrán encontrado con una n
 
 ## ~New~ Muse
 
-⚠️Aún en desarrollo⚠️ New Muse será el remplazo de la sección Muse de mi anterior sitio web, la idea con la nueva versión es hacer un reproductor que funcione sin tener que cambiar por completo la página en donde está el usuario, la idea es hacer una notificación persistente que diga 'Reproduciendo: (nombre de canción) de (nombre de artista)' con el arte del album o algo por el estilo, aún estoy trabajando en ello.
+⚠️Aún en desarrollo⚠️ New Muse es el remplazo de la sección Muse de [mi anterior sitio web](https://jeffser.github.io/old/code/muse), la nueva versión funciona sin la necesidad de mover al usuario a un url distinto haciendolo más comodo de usar.
+
+<a class="block" style="cursor: pointer;" onclick="muse('GfrN-YxqZDk')">Click aquí para probar.</a>
