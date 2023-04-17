@@ -96,14 +96,14 @@ function showContact(){
     alternateRichAlert(text);
 }
 
-function loadText(url){
-    urlExists(url + '/text.md', function(exists){
-        if (exists) url += '/text.md';
+function loadText(dir){
+    urlExists(dir + '/text.md', function(exists){
+        if (exists) url = dir + '/text.md';
         else url = 'https://jeffser.github.io/404.md';
         $.get(url, function(text){
             $("section#main").html(new showdown.Converter().makeHtml(text));
             makeSummary();
-            window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", url);
+            window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", window.location.href + dir);
         });
     });
 }
