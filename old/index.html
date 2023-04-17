@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffry's Corner</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://jeffser.github.io/main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://jeffser.github.io/manager.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/atelier-plateau.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        $(window).on('load', function(){
+            $.ajaxSetup({ cache: false });
+            $.getJSON('https://jeffser.com/discord.json', function(data){
+                if (data.length > 0) $('#statusWrapper').css('display', 'block');
+                data.forEach(element => {
+                    $("#status-list").append("<div><img title='" + element['name'] + "' src='" + element['large_image_url'] + "''><h3 title='" + element['details'] +"'>" + element['details'] + "</h3><br><b title='" + element['state'] + "'>" + element['state'] + "</b></div>");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    <section id="main">
+        <h1>Sobre mi</h1>
+        ⚠️A NEW VERSION OF THE WEBSITE IS COMING SOON⚠️<br>
+        Hola mi nombre es Jeffry, soy un estudiante de desarrollo de software, siempre me he dedicado a mejorar mis habilidades y crear cosas utiles y simplemente curiosas.<br>
+        He escrito codigo desde que era un niño, recientemente empecé a desarrollar paginas y aplicaciones web, como pueden ver tengo mi propia pagina linda creada desde cero.<br><br>
+        Sobre mis hobbies... Supongo que no tengo mucho más que mi gusto por escuchar musica y ver series, de vez en cuando juego videojuegos pero es raro que lo haga.<br>
+        Cualquier cosa si necesitan ayuda con codigo me pueden contratar en Fiverr o simplemente mandenme un mensaje en Discord y lo más probable es que les ayude de gratis.<br>
+        <div>
+            <h2>Páginas Destacadas</h2>
+            <div class="button-list">
+                <a href="blog/gustos/musica/">Música que me gusta</a>
+            </div>
+        </div>
+        <div id="statusWrapper" style="display: none;">
+            <h2>¿Qué estoy haciendo?</h2>
+            Powered by <a href="https://github.com/Jeffser/DiscordActivityFetcher">Discord Activity Fetcher</a>
+            <div class="button-list" id="status-list"></div>
+        </div>
+        <div>
+            <h2>Redes</h2>
+            <div class="button-list">
+                <a href="https://discordapp.com/users/530237414632062976"><img src="globalMedia/social/discord.png" alt="Discord" class="icon">Discord</a>
+                <a href="https://www.fiverr.com/tentri"><img src="globalMedia/social/fiverr.png" alt="Fiverr" class="icon">Fiverr</a>
+                <a href="https://github.com/Jeffser"><img src="globalMedia/social/github.png" alt="GitHub" class="icon">GitHub</a>
+                <a href="https://steamcommunity.com/id/Tentri/"><img src="globalMedia/social/steam.png" alt="Steam" class="icon">Steam</a>
+                <a href="https://music.youtube.com/channel/UCPGqnFkPLe9Z0jIoQpVJLHg"><img src="globalMedia/social/ytmusic.png" alt="YT Music" class="icon">YT Music</a>
+            </div>
+        </div>
+        <div>
+            <h2>Blogs</h2>
+            <div class="button-list">
+                <a href="blog/python/">Introducción a Python</a>
+                <a href="blog/gustos/">Cosas que me gustan</a>
+            </div>
+        </div>
+        <div>
+            <h2>Codigo</h2>
+            <div class="button-list">
+                <a href="code/hue/">Hue (Juega con el color de mi pagina)</a>
+                <a href="code/universidad/">Trabajos Universidad</a>
+                <a href="code/muse/">Muse (Reproductor de Música)</a>
+            </div>
+        </div>
+        <img src="https://images4.alphacoders.com/932/932271.jpg" alt="">
+    </section>
+    <footer></footer>
+</body>
+</html>
