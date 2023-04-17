@@ -87,7 +87,7 @@ $(window).on('load', function(){
     notification("⚠️ ESTE SITIO ESTÁ EN BETA ⚠️<br>Aún no he convertido todas las páginas.", 10);
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');
     $("section#summary").css('top', 'calc(' + $("header").css('height') + ' + 50px)');
-    $.get(window.location.href + '/index.md', function(text){
+    $.get(window.location.href + '/text.md', function(text){
         $("section#main").append(new showdown.Converter().makeHtml(text));
         makeSummary();
     });
