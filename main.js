@@ -101,12 +101,11 @@ $(window).on('load', function(){
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');
     $("section#summary").css('top', 'calc(' + $("header").css('height') + ' + 50px)');
     urlExists(window.location.href.replace('/404.html', '') + '/text.md', function(exists){
-        if (exists){
-            $.get(window.location.href.replace('/404.html', '') + '/text.md', function(text){
-                $("section#main").append(new showdown.Converter().makeHtml(text));
-                makeSummary();
-            });
-        }
-        else $("section#main").html("<h1>404</h1>")
+        if (exists) url = window.location.href.replace('/404.html', '') + '/text.md';
+        else url = 'https://jeffser.github.io/404.md';
+        $.get(url, function(text){
+            $("section#main").append(new showdown.Converter().makeHtml(text));
+            makeSummary();
+        });
     });
 });
