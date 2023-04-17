@@ -90,5 +90,6 @@ $(window).on('load', function(){
     $.get(window.location.href.replace('/404.html', '') + '/text.md', function(text){
         $("section#main").append(new showdown.Converter().makeHtml(text));
         makeSummary();
+        if ($("section#main").html() == "") $("section#main").html("<h1>404</h1>")
     });
 });

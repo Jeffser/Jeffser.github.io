@@ -16,7 +16,7 @@
         display: none;
     }
     section#richAlert{
-        inset: 150px 15px auto 15px;
+        inset: 120px 15px auto 15px;
         overflow-x: auto;
         flex-wrap: nowrap;
     }
