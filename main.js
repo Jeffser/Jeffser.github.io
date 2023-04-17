@@ -3,6 +3,19 @@ function makeBigCard(id, img, h2, h3, imgTitle, url = ""){
     else return '<div class="bigCard" id="' + id + '"><img title="' + imgTitle + '" src="' + img + '"><div><h2 class="dont-index" title="' + h2 + '">' + h2 + '</h2><h3 class="dont-index" title="' + h3 + '">' + h3 + '</h3></div></div>';    
 }
 
+function urlExists(url, callback){
+    $.ajax({
+      type: 'HEAD',
+      url: url,
+      success: function(){
+        callback(true);
+      },
+      error: function() {
+        callback(false);
+      }
+    });
+}
+
 function makeSummary(){
     $("section#summary").html("<h1 style=\"text-align: center;\">Indice</h1><ul></ul>");
     for (let element of $("section#main h1,section#main h2,section#main h3,section#main h4,section#main hr")){//tagName textContent
@@ -87,9 +100,13 @@ $(window).on('load', function(){
     notification("⚠️ ESTE SITIO ESTÁ EN BETA ⚠️<br>Aún no he convertido todas las páginas.", 10);
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');
     $("section#summary").css('top', 'calc(' + $("header").css('height') + ' + 50px)');
-    $.get(window.location.href.replace('/404.html', '') + '/text.md', function(text){
-        $("section#main").append(new showdown.Converter().makeHtml(text));
-        makeSummary();
-        if ($("section#main").html() == "") $("section#main").html("<h1>404</h1>")
+    urlExists(window.location.href.replace('/404.html', '') + '/text.md', function(exists){
+        console.log(exists)
+        $.get(window.location.href.replace('/404.html', '') + '/text.md', function(text){
+            $("section#main").append(new showdown.Converter().makeHtml(text));
+            makeSummary();
+        });
     });
+    if ($("section#main").html() == "") $("section#main").html("<h1>404</h1>")
+
 });
