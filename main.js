@@ -108,10 +108,6 @@ function loadText(url){
     });
 }
 
-function changeURL(url){
-    
-}
-
 $(window).on('load', function(){
     notification("⚠️ ESTE SITIO ESTÁ EN BETA ⚠️<br>Aún no he convertido todas las páginas.", 10);
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');

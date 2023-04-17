@@ -103,3 +103,5 @@ Si han visitado esta página en la versión beta se habrán encontrado con una n
 ⚠️Aún en desarrollo⚠️ New Muse es el remplazo de la sección Muse de [mi anterior sitio web](https://jeffser.github.io/old/code/muse), la nueva versión funciona sin la necesidad de mover al usuario a un url distinto haciendolo más comodo de usar.
 
 <a class="block" style="cursor: pointer;" onclick="muse('GfrN-YxqZDk')">Click aquí para probar.</a>
+
+<a class="block" style="cursor: pointer;" onclick="loadText('test')">TEST</a>
