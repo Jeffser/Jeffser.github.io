@@ -4,13 +4,13 @@ function changeMode(){
 }
 function richAlert(msg, width='70vw', block=false){
     $('#richAlertContainer').remove();
-    if (activeEG) $('body').append('<div id="richAlertContainer"><div id="richAlert" style="width: auto; background-color: transparent; border-radius: 0; border-color: black;"><img src="https://jeffser.github.io/globalMedia/easter/cat.gif"></div></div>')
+    if (activeEG) $('body').append('<div id="richAlertContainer"><div id="richAlert" style="width: auto; background-color: transparent; border-radius: 0; border-color: black;"><img src="https://jeffser.github.io/old/globalMedia/easter/cat.gif"></div></div>')
     else $('body').append('<div id="richAlertContainer"><div id="richAlert" style="width: ' + width + '">'+msg+'</div></div>')
     $('#richAlert').click(function(event){event.stopPropagation();});
     if (!block)$('#richAlertContainer').click(function(event){event.target.remove();})
 }
 function showDevelopmentStatus(status, note){
-    richAlert('<section id="development"><section id="development-information" style="text-align: center"><h1>Desarrollo</h1><h2>'+status.charAt(0).toUpperCase()+status.slice(1)+'</h2>'+note+'</section><img src="https://jeffser.github.io/globalMedia/development/'+status+'.gif" alt="'+status+'"></section>');
+    richAlert('<section id="development"><section id="development-information" style="text-align: center"><h1>Desarrollo</h1><h2>'+status.charAt(0).toUpperCase()+status.slice(1)+'</h2>'+note+'</section><img src="https://jeffser.github.io/old/globalMedia/development/'+status+'.gif" alt="'+status+'"></section>');
 }
 function checkHeaderPosition(){
     if (activeEG) return;
@@ -34,7 +34,7 @@ function checkHeaderPosition(){
 
 $(window).on('load', function(){
     if ($("#custom-favicon").length == false) $("head").append('<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">');
-    $("header:not(.custom)").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io\'">Jeffry\'s Corner</b></div>');
+    $("header:not(.custom)").html('<div><img src="https://avatars.githubusercontent.com/u/69224322?v=4" alt="logo"><b onclick="window.location.href=\'https://jeffser.github.io/old\'">Jeffry\'s Corner</b></div>');
     $("header").find('img').contextmenu(function(e){e.preventDefault(); showDevelopmentStatus(getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-status'), getComputedStyle(document.documentElement).getPropertyValue('--desktop-development-note'));})
     $("header").find('img').mousedown(function(ev){if(ev.which==1) changeMode();});
     $("footer:not(.custom)").html(getComputedStyle(document.documentElement).getPropertyValue('--publish-date') + '<br>Made by <a href="https://www.github.com/jeffser">JeffSER</a> with ❤️');
@@ -56,7 +56,7 @@ $(window).on('load', function(){
     };
 });
 var activeEG = false;
-var audioEG = new Audio('https://jeffser.github.io/globalMedia/easter/meow.mp3');
+var audioEG = new Audio('https://jeffser.github.io/old/globalMedia/easter/meow.mp3');
 function easter(){
     $("footer").html('2004-02-04<br>Made by <a href="https://www.github.com/jeffser">JeffSER</a> with <3');
     activeEG = true;
@@ -65,7 +65,7 @@ function easter(){
     $('*').css('font-family', 'serif');
     $('div').css({'background-color': 'transparent', 'border': 'solid black', 'border-radius': '0'});
     $('a').css({'background-color': 'transparent', 'border': 'solid black', 'border-radius': '0', 'justify-content': 'left'});
-    $('header').css({'backdrop-filter': 'None', 'background-image': 'url(https://jeffser.github.io/globalMedia/easter/fire.webp)'});
+    $('header').css({'backdrop-filter': 'None', 'background-image': 'url(https://jeffser.github.io/old/globalMedia/easter/fire.webp)'});
     $('img').css({'filter': '', 'border-radius': '0', 'object-fit': 'contain'});
     gifs = ['https://media.tenor.com/koekvLpaXOQAAAAd/tripple-baka-tripple.gif', 'https://j.gifs.com/Kd7GqW.gif']
     $('img').not('.icon').each(function(){
@@ -79,5 +79,5 @@ function easter(){
         this.currentTime = 0;
         this.play();
     }, false);
-    $('body').css('background-image', 'url(https://jeffser.github.io/globalMedia/easter/cat.gif)');
+    $('body').css('background-image', 'url(https://jeffser.github.io/old/globalMedia/easter/cat.gif)');
 }
