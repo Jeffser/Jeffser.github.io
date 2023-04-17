@@ -101,12 +101,12 @@ $(window).on('load', function(){
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');
     $("section#summary").css('top', 'calc(' + $("header").css('height') + ' + 50px)');
     urlExists(window.location.href.replace('/404.html', '') + '/text.md', function(exists){
-        console.log(exists)
-        $.get(window.location.href.replace('/404.html', '') + '/text.md', function(text){
-            $("section#main").append(new showdown.Converter().makeHtml(text));
-            makeSummary();
-        });
+        if (exists){
+            $.get(window.location.href.replace('/404.html', '') + '/text.md', function(text){
+                $("section#main").append(new showdown.Converter().makeHtml(text));
+                makeSummary();
+            });
+        }
+        else $("section#main").html("<h1>404</h1>")
     });
-    if ($("section#main").html() == "") $("section#main").html("<h1>404</h1>")
-
 });
