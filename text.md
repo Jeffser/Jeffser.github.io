@@ -104,4 +104,6 @@ Si han visitado esta página en la versión beta se habrán encontrado con una n
 
 <a class="block" style="cursor: pointer;" onclick="muse('GfrN-YxqZDk')">Click aquí para probar.</a>
 
-## 
+## Nuevo Sistema de Dirección
+
+Cuando ingresas a una página distinta el sitio web no se recarga, en cambio solo cambia el url y carga el texto, esto es util por que de esa forma no hay que cargar los scripts cada vez que se cambia el texto, de la misma forma eso permite que Muse se use como un reproductor de música legitimo, no es interrumpido sin importar cuantas paginas visites en el sitio.
