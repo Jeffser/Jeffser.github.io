@@ -98,6 +98,7 @@ function showContact(){
 
 function loadText(){
     $("section#main").html("");
+    makeSummary();
     urlExists(window.location.href + '/text.md', function(exists){
         if (exists) url = window.location.href + '/text.md';
         else url = 'https://jeffser.github.io/404.md';
