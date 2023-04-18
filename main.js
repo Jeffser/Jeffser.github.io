@@ -118,7 +118,7 @@ window.onpopstate = function(e){
 };
 
 $(window).on('load', function(){
-    notification("⚠️ ESTE SITIO ESTÁ EN BETA ⚠️<br>Aún no he convertido todas las páginas.", 10);
+    notification("⚠️ ESTE SITIO ESTÁ EN MODO TESTING ⚠️<br>Estoy implementando funciones nuevas ahora mismo, puede que algunas páginas no carguen bien o se queden en un bucle.", 10);
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');
     $("section#summary").css('top', 'calc(' + $("header").css('height') + ' + 50px)');
     loadText(window.location.href.replace('/404.html', ''));
