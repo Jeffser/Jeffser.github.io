@@ -105,10 +105,11 @@ function loadText(dir){
         if (exists) url = dir + '/text.md';
         else url = 'https://jeffser.github.io/404.md';
         $.get(url, function(text){
-            $("section#main").html(new showdown.Converter().makeHtml(text));
+            html = new showdown.Converter().makeHtml(text);
+            $("section#main").html(html);
             makeSummary();
             console.log(dir, '\n\n\n', window.location.href)
-            window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir.replace('https://jeffser.github.io/', ''));
+            if (dir != window.location.href) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", dir.replace('https://jeffser.github.io/', ''));
         });
     });
 }
