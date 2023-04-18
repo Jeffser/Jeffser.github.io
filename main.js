@@ -113,6 +113,7 @@ function loadText(dir){
 
 window.onpopstate = function(e){
     if(e.state){
+        console.log(e.state)
         loadText(window.location.href.replace('/404.html', ''));
     }
 };
