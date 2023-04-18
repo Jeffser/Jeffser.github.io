@@ -106,6 +106,7 @@ function loadText(dir){
         $.get(url, function(text){
             $("section#main").html(new showdown.Converter().makeHtml(text));
             makeSummary();
+            if (dir != window.location.href.replace('https://jeffser.github.io/', ''))
             window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
@@ -113,7 +114,6 @@ function loadText(dir){
 
 window.onpopstate = function(e){
     if(e.state){
-        console.log(e.state)
         loadText(window.location.href.replace('/404.html', ''));
     }
 };
