@@ -96,9 +96,6 @@ function showContact(){
     alternateRichAlert(text);
 }
 
-pageHistory = []
-currentPageIndex = -1
-
 function loadText(){
     $("section#main").html("");
     urlExists(window.location.href + '/text.md', function(exists){
