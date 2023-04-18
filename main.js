@@ -99,9 +99,9 @@ function showContact(){
 pageHistory = []
 currentPageIndex = -1
 
-function loadText(dir){
-    urlExists(dir + '/text.md', function(exists){
-        if (exists) url = dir + '/text.md';
+function loadText(){
+    urlExists(window.location.href + '/text.md', function(exists){
+        if (exists) url = window.location.href + '/text.md';
         else url = 'https://jeffser.github.io/404.md';
         $.get(url, function(text){
             html = new showdown.Converter().makeHtml(text);
@@ -114,7 +114,7 @@ function loadText(dir){
 function changePage(url){
     if (url.slice(0, 26) != 'https://jeffser.github.io/') url = window.location.href + url;
     if (url != window.location.href) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", url);
-    loadText(url);
+    loadText();
 }
 
 window.onpopstate = function(e){
@@ -127,5 +127,5 @@ $(window).on('load', function(){
     notification("⚠️ ESTE SITIO ESTÁ EN MODO TESTING ⚠️<br>Estoy implementando funciones nuevas ahora mismo, puede que algunas páginas no carguen bien o se queden en un bucle.", 10);
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');
     $("section#summary").css('top', 'calc(' + $("header").css('height') + ' + 50px)');
-    loadText("https://jeffser.github.io/");
+    loadText();
 });
