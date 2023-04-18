@@ -107,14 +107,17 @@ function loadText(dir){
             html = new showdown.Converter().makeHtml(text);
             $("section#main").html(html);
             makeSummary();
-            window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", dir);
+            if (dir != window.location.href) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
 }
 
+function changeURL(url){
+    
+}
+
 window.onpopstate = function(e){
     if(e.state){
-        console.log(window.location.href);
         loadText(window.location.href.replace('/404.html', ''));
     }
 };
