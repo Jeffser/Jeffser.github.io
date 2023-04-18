@@ -107,7 +107,7 @@ function loadText(dir){
             html = new showdown.Converter().makeHtml(text);
             $("section#main").html(html);
             makeSummary();
-            window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", dir);
+            //window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
 }
@@ -122,5 +122,5 @@ $(window).on('load', function(){
     notification("⚠️ ESTE SITIO ESTÁ EN MODO TESTING ⚠️<br>Estoy implementando funciones nuevas ahora mismo, puede que algunas páginas no carguen bien o se queden en un bucle.", 10);
     $("section#main").css('padding-top', 'calc(' + $("header").css('height') + ' + 50px)');
     $("section#summary").css('top', 'calc(' + $("header").css('height') + ' + 50px)');
-    //loadText(window.location.href.replace('/404.html', ''));
+    loadText(window.location.href.replace('/404.html', ''));
 });
