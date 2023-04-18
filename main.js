@@ -100,6 +100,7 @@ pageHistory = []
 currentPageIndex = -1
 
 function loadText(dir){
+    
     urlExists(dir + '/text.md', function(exists){
         if (exists) url = dir + '/text.md';
         else url = 'https://jeffser.github.io/404.md';
@@ -107,7 +108,7 @@ function loadText(dir){
             $("section#main").html(new showdown.Converter().makeHtml(text));
             makeSummary();
             console.log(dir, '\n\n\n', window.location.href)
-            if (dir != 'https://jeffser.github.io/') window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir.replace('https://jeffser.github.io/'));
+            if (dir != 'https://jeffser.github.io/') window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir.replace('https://jeffser.github.io/', ''));
         });
     });
 }
