@@ -100,6 +100,7 @@ pageHistory = []
 currentPageIndex = -1
 
 function loadText(){
+    $("section#main").html("");
     urlExists(window.location.href + '/text.md', function(exists){
         if (exists) url = window.location.href + '/text.md';
         else url = 'https://jeffser.github.io/404.md';
