@@ -118,10 +118,7 @@ function changePage(url){
 }
 
 window.onpopstate = function(e){
-    if(e.state){
-        console.log(window.location.href)
-        loadText();
-    }
+    loadText();
 };
 
 $(window).on('load', function(){
