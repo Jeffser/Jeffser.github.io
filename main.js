@@ -119,7 +119,7 @@ function changePage(url){
 
 window.onpopstate = function(e){
     if(e.state){
-        loadText(window.location.href.replace('/404.html', ''));
+        loadText();
     }
 };
 
