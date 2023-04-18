@@ -228,6 +228,9 @@ section#richAlertBackground{
     display: none;
 }
 section#main .block{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: hsla(var(--color-hue), 30%, calc(90% - var(--color-lightness-changer)), 0.8);
     border-radius: 20px;
     text-align: center;
