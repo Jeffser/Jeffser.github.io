@@ -106,6 +106,7 @@ function loadText(dir){
         $.get(url, function(text){
             $("section#main").html(new showdown.Converter().makeHtml(text));
             makeSummary();
+            console.log(dir, '\n\n\n', window.location.href)
             if (dir != window.location.href) window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
