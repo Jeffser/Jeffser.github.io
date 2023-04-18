@@ -106,14 +106,14 @@ function loadText(dir){
         $.get(url, function(text){
             $("section#main").html(new showdown.Converter().makeHtml(text));
             makeSummary();
-            if (dir != window.location.href.replace('https://jeffser.github.io/', '')) window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir);
+            if (dir != window.location.href) window.history.pushState({"html":$('html').html(),"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
 }
 
 window.onpopstate = function(e){
     if(e.state){
-        loadText(window.location.href.replace('https://jeffser.github.io/', '').replace('/404.html', ''));
+        loadText(window.location.href.replace('/404.html', ''));
     }
 };
 
