@@ -113,7 +113,7 @@ function loadText(dir){
 
 function changePage(url){
     if (url.slice(0, 26) != 'https://jeffser.github.io/') url = window.location.href + url;
-    if (dir != window.location.href) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", url);
+    if (url != window.location.href) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", url);
     loadText(url);
 }
 
