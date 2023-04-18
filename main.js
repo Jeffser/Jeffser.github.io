@@ -107,13 +107,14 @@ function loadText(dir){
             html = new showdown.Converter().makeHtml(text);
             $("section#main").html(html);
             makeSummary();
-            if (dir != window.location.href) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
 }
 
-function changeURL(url){
-    
+function changePage(url){
+    if (url.slice(0, 26) != 'https://jeffser.github.io/') url = window.location.href + url;
+    if (dir != window.location.href) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", url);
+    loadText(url);
 }
 
 window.onpopstate = function(e){

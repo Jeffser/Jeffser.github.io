@@ -104,4 +104,4 @@ Si han visitado esta página en la versión beta se habrán encontrado con una n
 
 <a class="block" style="cursor: pointer;" onclick="muse('GfrN-YxqZDk')">Click aquí para probar.</a>
 
-<a class="block" style="cursor: pointer;" onclick="loadText('test')">TEST</a>
+<a class="block" style="cursor: pointer;" onclick="changePage('test')">TEST</a>
