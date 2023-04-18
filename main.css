@@ -78,7 +78,10 @@
         background-size: 20vw auto;
         background-blend-mode: soft-light;
     }
-    section#notification{inset: 100% 20px 0 calc(80vw + 20px);}
+    section#notification{
+        inset: 100% 50% 0 50%;
+        transform: translate(-50%, -50%);
+    }
     .bigCard img{
         height: 150px;
     }
