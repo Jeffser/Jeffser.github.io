@@ -107,6 +107,7 @@ function loadText(dir, push){
             html = new showdown.Converter().makeHtml(text);
             $("section#main").html(html);
             makeSummary();
+            console.log(push)
             if (push) window.history.pushState({"html":html,"pageTitle":"Jeffry's Corner"},"", dir);
         });
     });
