@@ -65,3 +65,17 @@ Mi cover favorito de ella es 'Fireworks Beneath My Shoes' que para variar es ori
 <a class="bigCard" onclick="muse('aq0sMfr1zuY')"><img src="https://i3.ytimg.com/vi/aq0sMfr1zuY/maxresdefault.jpg"><div><h2 class="dont-index">Misery Business</h2></div></a>
 <a class="bigCard" onclick="muse('KcE4LgDuRVQ')"><img src="https://i3.ytimg.com/vi/KcE4LgDuRVQ/maxresdefault.jpg"><div><h2 class="dont-index">Odo</h2></div></a>
 </div></div>
+
+---
+
+## Set It Off
+![Set It Off](https://lh3.googleusercontent.com/I5fdOcx3NJf0hyvn10YTEKmoPuWsGFvfoj_x0UnFQcbVCBL4SHS8bdoZiaAlNddwZfNaqWiOIWF70kw=w2880-h1200-p-l90-rj)
+Dato curioso, este grupo fue el primero que seguí, recuerdo que la primera canción que escuché de ellos fue la más popular 'Wolf in Sheep's Clothing', una joya de su tiempo sin ninguna duda. Puedo describir sus canciones como punk y rock o algo por el estilo.
+<div><div class="block song-list">
+<a class="bigCard" onclick="muse('hwyAkd5oOG4')"><img src="https://i3.ytimg.com/vi/hwyAkd5oOG4/maxresdefault.jpg"><div><h2 class="dont-index">Wolf in Sheep's Clothing (feat. William Beckett)</h2></div></a>
+<a class="bigCard" onclick="muse('3HSXI1tYaGc')"><img src="https://i3.ytimg.com/vi/3HSXI1tYaGc/maxresdefault.jpg"><div><h2 class="dont-index">I Want You (Gone)</h2></div></a>
+<a class="bigCard" onclick="muse('JfAO6kzK24s')"><img src="https://i3.ytimg.com/vi/JfAO6kzK24s/maxresdefault.jpg"><div><h2 class="dont-index">Plastic Promises</h2></div></a>
+<a class="bigCard" onclick="muse('Fo7Tp3svdBI')"><img src="https://i3.ytimg.com/vi/Fo7Tp3svdBI/maxresdefault.jpg"><div><h2 class="dont-index">Why Do I</h2></div></a>
+<a class="bigCard" onclick="muse('sqkmuv1UCME')"><img src="https://i3.ytimg.com/vi/sqkmuv1UCME/maxresdefault.jpg"><div><h2 class="dont-index">No Disrespect</h2></div></a>
+<a class="bigCard" onclick="muse('8nm0z1HyimM')"><img src="https://i3.ytimg.com/vi/8nm0z1HyimM/maxresdefault.jpg"><div><h2 class="dont-index">Distance Disturbs Me</h2></div></a>
+</div></div>

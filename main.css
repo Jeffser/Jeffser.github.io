@@ -236,6 +236,13 @@ section#main .block{
     text-align: center;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 section#notification{
     opacity: 0;
@@ -252,14 +259,7 @@ a:hover, section#summary ul li:hover{
     transform: scale(105%);
 }
 /*-----------------------------------*/
-section#main .block{
-    display: flex;
-    column-gap: 10px;
-    row-gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
 .bigCard{
     text-decoration: none;
     display: flex;
@@ -313,7 +313,7 @@ section#main hr{
 section#main a{
     cursor: pointer;
 }
-section#main > p > img{
+section#main p > img{
     width: 100%;
     border-radius: 20px;
 }
