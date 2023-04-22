@@ -10,16 +10,11 @@ Btw si ven esto y se preguntan por que tengo gustos tan raros en algunos casos, 
 ## Yorushika
 ![Yorushika](https://lh3.googleusercontent.com/ufS1qifPTVxSR1_xBz6F75iymu07Qdgplp0Qp3uJBWZuSrpgP6GWFkog-99E8bvH6o5xAmnzzNENskFZ=w1440-h600-p-l90-rj)
 <div><div class="block">
-<a class="bigCard" onclick="muse('xwXAh4gxMbM')"><img src="https://i3.ytimg.com/vi/xwXAh4gxMbM/maxresdefault.jpg"><h2>Spring Thief</h2></a>
-
-<a class="bigCard" onclick="muse('ZdzoLCLliW0')"><img src="https://i3.ytimg.com/vi/ZdzoLCLliW0/maxresdefault.jpg"><h2>ただ君に晴れ</h2></a>
-
-<a class="bigCard" onclick="muse('Xfi9h83lumU')"><img src="https://i3.ytimg.com/vi/Xfi9h83lumU/maxresdefault.jpg"><h2>Thoughtcrime</h2></a>
-
-<a class="bigCard" onclick="muse('jB2kBQteLTk')"><img src="https://i3.ytimg.com/vi/jB2kBQteLTk/maxresdefault.jpg"><h2>Rain with Cappuccino</h2></a>
-
-<a class="bigCard" onclick="muse('vDGFVOv9muk')"><img src="https://i3.ytimg.com/vi/vDGFVOv9muk/maxresdefault.jpg"><h2>Hole In The Heart</h2></a>
-
-<a class="bigCard" onclick="muse('qaOPHnbaBdM')"><img src="https://i3.ytimg.com/vi/qaOPHnbaBdM/maxresdefault.jpg"><h2>Ghost In A Flower</h2></a>
-
+<a class="bigCard" onclick="muse('xwXAh4gxMbM')"><img src="https://i3.ytimg.com/vi/xwXAh4gxMbM/maxresdefault.jpg"><h2 class="dont-index">Spring Thief</h2></a>
+<a class="bigCard" onclick="muse('ZdzoLCLliW0')"><img src="https://i3.ytimg.com/vi/ZdzoLCLliW0/maxresdefault.jpg"><h2 class="dont-index">ただ君に晴れ</h2></a>
+<a class="bigCard" onclick="muse('Xfi9h83lumU')"><img src="https://i3.ytimg.com/vi/Xfi9h83lumU/maxresdefault.jpg"><h2 class="dont-index">Thoughtcrime</h2></a>
+<a class="bigCard" onclick="muse('jB2kBQteLTk')"><img src="https://i3.ytimg.com/vi/jB2kBQteLTk/maxresdefault.jpg"><h2 class="dont-index">Rain with Cappuccino</h2></a>
+<a class="bigCard" onclick="muse('vDGFVOv9muk')"><img src="https://i3.ytimg.com/vi/vDGFVOv9muk/maxresdefault.jpg"><h2 class="dont-index">Hole In The Heart</h2></a>
+<a class="bigCard" onclick="muse('qaOPHnbaBdM')"><img src="https://i3.ytimg.com/vi/qaOPHnbaBdM/maxresdefault.jpg"><h2 class="dont-index">Ghost In A Flower</h2></a>
 </div></div>
+
