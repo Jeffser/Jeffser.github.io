@@ -313,7 +313,7 @@ section#main hr{
 section#main a{
     cursor: pointer;
 }
-section#main > img{
+section#main > p > img{
     width: 100%;
     border-radius: 20px;
 }
