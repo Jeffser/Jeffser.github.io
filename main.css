@@ -252,7 +252,7 @@ a:hover, section#summary ul li:hover{
     transform: scale(105%);
 }
 /*-----------------------------------*/
-section#main #status-wrapper{
+section#main .block{
     display: flex;
     column-gap: 10px;
     row-gap: 10px;
