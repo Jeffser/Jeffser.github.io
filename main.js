@@ -91,7 +91,7 @@ function showContact(){
         ["github", "https://avatars.githubusercontent.com/u/69224322?v=4", "Jeffser", "Github", "Github", "https://github.com/Jeffser"],
         ["steam", "https://avatars.akamai.steamstatic.com/64a06e085bec595bb1472389935743df38589605_full.jpg", "Tentri", "Steam", "Steam", "https://steamcommunity.com/id/Tentri/"],
         ["ytm", "https://yt3.googleusercontent.com/BDflBEMoifUhmkhP3SiDIkah47ZaKszVq_C-ff88oPF7YbZPRvAaLDV9IEbPXNIlTlPhCt4cSQ=s800-c-k-c0x00ffffff-no-rj", "TentriLive", "Youtube Music", "Youtube Music", "https://music.youtube.com/channel/UCPGqnFkPLe9Z0jIoQpVJLHg"],
-        ["discord", "https://cdn.discordapp.com/avatars/530237414632062976/561782095754696d7c31ca74bc4dc184?size=1024", "Tentri#9738", "Discord", "Discord", "https://discordapp.com/users/530237414632062976"],
+        ["discord", "https://cdn.discordapp.com/avatars/530237414632062976/1fef3261f24b8e430331be7acb86631e?size=1024", "Tentri#9738", "Discord", "Discord", "https://discordapp.com/users/530237414632062976"],
     ].forEach(e => {text += makeBigCard(e[0], e[1], e[2], e[3], e[4], e[5]);});
     alternateRichAlert(text);
 }
