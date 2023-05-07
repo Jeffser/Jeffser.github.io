@@ -32,6 +32,10 @@ Si se preguntan por que no pongo una foto mía, no tengo ninguna buena.
     <div class="block" id="status-wrapper"></div>
 </section>
 
+## Cosas que me gustan ^^
+
+<a href="/blog/musica" class="bigCard"><div><h2>Música</h2></div></a>
+
 ---
 
 # Nueva Página Huh?

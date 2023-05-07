@@ -79,3 +79,31 @@ Dato curioso, este grupo fue el primero que seguí, recuerdo que la primera canc
 <a class="bigCard" onclick="muse('sqkmuv1UCME')"><img src="https://i3.ytimg.com/vi/sqkmuv1UCME/maxresdefault.jpg"><div><h2 class="dont-index">No Disrespect</h2></div></a>
 <a class="bigCard" onclick="muse('8nm0z1HyimM')"><img src="https://i3.ytimg.com/vi/8nm0z1HyimM/maxresdefault.jpg"><div><h2 class="dont-index">Distance Disturbs Me</h2></div></a>
 </div></div>
+
+---
+
+## Lovejoy
+![Lovejoy](https://lh3.googleusercontent.com/a-/ACB-R5Sh_zhwArrXSZynIUTgPcMhMcyj5I3n9lje9W7I=w800-h333-l90-rj-dcAYCSKcIF)
+Honestamente empecé escuchando la música independiente de Wilbur Soot (Cantante) y me gustó bastante, pero hoy en día él es parte de Lovejoy y su música es muy buena. Si se lo preguntan, sí, veía los streams de Wilbur.
+<div><div class="block song-list">
+<a class="bigCard" onclick="muse('hwyAkd5oOG4')"><img src="https://i3.ytimg.com/vi/nXqPbsec-Wc/maxresdefault.jpg"><div><h2 class="dont-index">Call Me What You Like</h2></div></a>
+<a class="bigCard" onclick="muse('3HSXI1tYaGc')"><img src="https://i3.ytimg.com/vi/VhQrD_BX-wc/maxresdefault.jpg"><div><h2 class="dont-index">It's All Futile! It's All Pointless!</h2></div></a>
+<a class="bigCard" onclick="muse('JfAO6kzK24s')"><img src="https://i3.ytimg.com/vi/LcZddC3tb30/maxresdefault.jpg"><div><h2 class="dont-index">One Day</h2></div></a>
+<a class="bigCard" onclick="muse('Fo7Tp3svdBI')"><img src="https://i3.ytimg.com/vi/p_ezJibNmAI/maxresdefault.jpg"><div><h2 class="dont-index">Concrete</h2></div></a>
+<a class="bigCard" onclick="muse('sqkmuv1UCME')"><img src="https://i3.ytimg.com/vi/5xAiLd-5ClM/maxresdefault.jpg"><div><h2 class="dont-index">Sex Sells</h2></div></a>
+<a class="bigCard" onclick="muse('8nm0z1HyimM')"><img src="https://i3.ytimg.com/vi/Pul9i2FjVv8/maxresdefault.jpg"><div><h2 class="dont-index">Knee Deep at ATP</h2></div></a>
+</div></div>
+
+---
+
+## Andora
+![Andora](https://lh3.googleusercontent.com/6jXtL823UF5y8SZuizQdIDOkbu1VGhOkNT2BN9BAZVCErlWCIeuqPH0RZq9s2Whl40g0UmBhk_l7HK0T=w2880-h1200-p-l90-rj)
+Andora es una artista pero no una cantante, normalmente sus canciones son cantadas por otros artistas japoneses, toda su música es movidilla y bastante buena, es una artista muy menospreciada. Además de que le da corazón a todos mis comentarios positivos en YouTube ^^
+<div><div class="block song-list">
+<a class="bigCard" onclick="muse('hwyAkd5oOG4')"><img src="https://i3.ytimg.com/vi/qjZ5eC5N5zw/maxresdefault.jpg"><div><h2 class="dont-index">Euphoria</h2></div></a>
+<a class="bigCard" onclick="muse('3HSXI1tYaGc')"><img src="https://i3.ytimg.com/vi/wy39ZtwC-oo/maxresdefault.jpg"><div><h2 class="dont-index">Flicker</h2></div></a>
+<a class="bigCard" onclick="muse('JfAO6kzK24s')"><img src="https://i3.ytimg.com/vi/bIVmnvf5CwY/maxresdefault.jpg"><div><h2 class="dont-index">Starlight</h2></div></a>
+<a class="bigCard" onclick="muse('Fo7Tp3svdBI')"><img src="https://i3.ytimg.com/vi/cT9F6X7Eh1w/maxresdefault.jpg"><div><h2 class="dont-index">Delusion</h2></div></a>
+<a class="bigCard" onclick="muse('sqkmuv1UCME')"><img src="https://i3.ytimg.com/vi/o1yIuu0Gu6o/maxresdefault.jpg"><div><h2 class="dont-index">Dawn (feat. Such)</h2></div></a>
+<a class="bigCard" onclick="muse('8nm0z1HyimM')"><img src="https://i3.ytimg.com/vi/sYsj9j0EVo4/maxresdefault.jpg"><div><h2 class="dont-index">Pop It</h2></div></a>
+</div></div>
