@@ -270,6 +270,9 @@ a:hover, section#summary ul li:hover{
     flex-grow: 1;
     max-width: calc(100% - 10px);
 }
+.bigCard > h2{
+    padding: 20px;
+}
 .bigCard img, .bigCard iframe{
     border-radius: 20px;
     aspect-ratio: 1/1;
