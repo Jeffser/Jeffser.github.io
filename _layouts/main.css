@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    inset: 10px 10px 90% 10px;
+    border: solid red 1px;
+
+}
