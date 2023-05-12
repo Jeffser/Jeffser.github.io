@@ -1,0 +1,54 @@
+:root{
+    --color-hue: 200;
+    --color-saturation: 30%;
+    --color-lightness: 90%;
+    
+    --desktop-development-status:terminado;
+    --desktop-development-note:Esta pagina esta terminada;
+
+    --mobile-development-status: ;
+    --mobile-development-note: ;
+
+    --publish-date:'2023-02-19';
+}
+[data-theme="dark"]{
+    --color-saturation: 35%;
+    --color-lightness: 40%;
+}
+#text-wrapper{
+    padding: 20px !important;
+    height: 35vh !important;
+    max-width: 100% !important;
+    font-size: 40px !important;
+    word-break: break-all !important;
+    overflow-y: overlay;
+}
+#mic-wrapper{
+    border: none;
+    text-align: center !important;
+    height: 20vh !important;
+}
+#mic{
+    height: 100%;
+    border: none !important;
+    aspect-ratio: 1/1 !important;
+    object-fit: contain !important;
+}
+#mic[listening="true"]{
+    background-image: linear-gradient(
+        -225deg,
+        hsla(calc(var(--color-hue) - 40), calc(var(--color-saturation) + 20%), calc(var(--color-lightness) + 0%), 0.5) 0%,
+        hsla(calc(var(--color-hue) - 80), calc(var(--color-saturation) - 10%), calc(var(--color-lightness) + 0%), 0.5) 50%,
+        hsla(calc(var(--color-hue) - 40), calc(var(--color-saturation) + 20%), calc(var(--color-lightness) + 0%), 0.5) 100%
+    );
+    background-size: 200% auto;
+    animation: backgroundMove 5s linear infinite;
+}
+@keyframes backgroundMove{
+    to{
+        background-position: 200% center;
+    }
+}
+#main{
+    margin-top: calc(var(--header-scale) + 10px) !important;
+}

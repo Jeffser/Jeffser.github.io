@@ -1,0 +1,17 @@
+:root{
+    --color-hue: 240;
+    --color-saturation: 30%;
+    --color-lightness: 90%;
+    
+    --desktop-development-status:terminado;
+    --desktop-development-note:Esta entrada del blog está lista;
+
+    --mobile-development-status: ;
+    --mobile-development-note: ;
+
+    --publish-date:'2023-02-20';
+}
+[data-theme="dark"]{
+    --color-saturation: 35%;
+    --color-lightness: 40%;
+}

@@ -1,0 +1,41 @@
+:root{
+    --color-hue: 0;
+    --color-saturation: 30%;
+    --color-lightness: 90%;
+    
+    --desktop-development-status:terminado;
+    --desktop-development-note:Esta pagina está lista, de vez en cuando se agregarán canciones automaticamente;
+
+    --mobile-development-status: ;
+    --mobile-development-note: ;
+
+    --publish-date:'2023-02-20';
+}
+[data-theme="dark"]{
+    --color-saturation: 35%;
+    --color-lightness: 40%;
+}
+#youtube-container{
+    padding: 0;
+    border-radius: 20px;
+    filter: saturate(var(--color-saturation)) brightness(calc(var(--color-lightness) + 10%));
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+#youtube-container iframe{
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+@media screen and (orientation:portrait){
+    #youtube-container{
+        width: 95%;
+    }
+}
+@media screen and (orientation:landscape){
+    #youtube-container{
+        width: 30%;
+    }
+}

@@ -1,0 +1,81 @@
+:root{
+    --color-hue: 240;
+    --color-saturation: 30%;
+    --color-lightness: 90%;
+    
+    --desktop-development-status:actualizando;
+    --desktop-development-note:Esta pagina se está actualizando activamente;
+
+    --mobile-development-status: ;
+    --mobile-development-note: ;
+
+    --publish-date:'2023-02-19';
+}
+[data-theme="dark"]{
+    --color-saturation: 35%;
+    --color-lightness: 40%;
+}
+h1 {
+    text-align: center;
+}
+#main {
+    text-align: center;
+}
+#chat {
+    overflow-y: scroll;
+    height: calc(75vh - var(--header-scale) * 1.4);
+    text-align: center;
+    border-color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness))) !important;
+}
+
+.message-box {
+    width: 95% !important;
+    height: auto !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    border: none !important;
+}
+.message-box div {
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness)));
+    border-color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness))) !important;
+    padding: 2vmin !important;
+    border-top-left-radius:  3vmin !important;
+    border-top-right-radius: 3vmin !important;
+    margin: 0 !important;
+    text-align: left;
+    max-width: 75%;
+    animation: .2s ease-out 0s 1 showMessage;
+}
+@keyframes showMessage {
+    0% {
+        transform: translateY(10%);
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.user {
+    background-color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 10%)) !important;
+    border-bottom-left-radius: 3vmin !important;
+    border-bottom-right-radius: 0 !important;
+    float: right;
+}
+
+.bot {
+    background-color: hsl(calc(var(--color-hue) - 40), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 10%)) !important;
+    border-bottom-right-radius: 3vmin !important;
+    border-bottom-left-radius: 0 !important;
+    float: left;
+}
+#message-input {
+    border-color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness))) !important;
+    background-color: hsl(calc(var(--color-hue) + 40), calc(var(--color-saturation) - 20%), calc(var(--color-lightness) - 10%)) !important;
+    border-style: solid;
+    border-radius: 10px;
+    width: 95%;
+    padding: 1vmin;
+    font-size: var(--base-font-size);
+    color: hsl(var(--color-hue), calc(var(--color-saturation) - 100%), calc(110% - var(--color-lightness)));
+}
