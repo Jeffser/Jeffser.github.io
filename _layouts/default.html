@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff's Corner</title>
+    <style>:root{--hue: {{ page.hue }}}</style>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header><h1>Jeff's Corner</h1></header>
+    <header><h1>Jeff's Corner</h1></header>a
     <section id="main">
-        {{ content }}
+        <section id="titleDate">
+            <h1>{{ page.title }}</h1>
+            <h2>{{ page.date }}</h2>
+        </section>
+        <section id="content">
+            {{ content }}
+        </section>
     </section>
-    <footer>F</footer>
+    <footer>Made by Jeffser with ❤️</footer>
 </body>
 </html>
