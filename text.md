@@ -1,7 +1,7 @@
 <style>#Discord-Activity-Fetcher{display: none;}</style>
 <script>
     $.ajaxSetup({ cache: false });
-    $.getJSON('https://jeffser.com/discord.json', function (data) {
+    $.getJSON('https://api.jeffser.com/discord.json', function (data) {
         if (data.length > 0){
             $("#Discord-Activity-Fetcher").css('display', 'block');
             $("#Discord-Activity-Fetcher h2").attr("class", "");
