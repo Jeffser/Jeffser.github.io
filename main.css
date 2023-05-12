@@ -1,11 +1,13 @@
 body{
     margin: 0;
 }
-
 header{
     position: fixed;
     inset: 10px 10px auto 10px;
     background-color: aliceblue;
     border-radius: 20px;
     padding: 20px;
+}
+header h1{
+    margin: 0;
 }
