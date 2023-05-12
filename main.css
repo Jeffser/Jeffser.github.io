@@ -4,7 +4,8 @@ body{
 
 header{
     position: fixed;
-    inset: 10px 10px calc(100% - 20vh) 10px;
+    inset: 10px 10px auto 10px;
     background-color: aliceblue;
     border-radius: 20px;
+    padding: 20px;
 }
