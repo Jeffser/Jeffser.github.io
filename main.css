@@ -4,7 +4,7 @@ body{
 
 header{
     position: fixed;
-    inset: 10px 10px 90% 10px;
-    border: solid red 1px;
-
+    inset: 10px 10px calc(100% - 40px) 10px;
+    background-color: aliceblue;
+    border-radius: 20px;
 }
