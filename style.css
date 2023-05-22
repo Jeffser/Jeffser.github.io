@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+}
+@media screen and (orientation:portrait) {
+    section#products section div{
+        width: 90vw;
+    }
+}
+@media screen and (orientation:landscape) {
+    section#products section div{
+        width: 25vmax;
+    }
+}
+header{
+    border-bottom: solid black 3px;
+    padding: 10px;
+    font-size: 45px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    inset: 0 0 auto 0;
+}
+body{
+    margin: 0;
+}
+section#products section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+section#products section div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+section#products section div img{
+    width: 100%;
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+section#products section div h1{
+    display: inline-block;
+    width: 100%;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section#products{
+    margin: 20px;
+    margin-top: 70px;
+    text-align: center;
+}
+section#products section > h1{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
