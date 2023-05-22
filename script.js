@@ -10,11 +10,17 @@ function showProduct(codigo, precio, scroll){
         $("#showcase").css("display", "none");
         window.history.pushState({}, document.title, "/");
     });
-    $("#showcase").html('<div class="showcase-product" id="' + codigo + '"><img src="images/' + codigo + '.webp"><h1>' + precio + '</h1><a href="https://instagram.com" id="insta-link"><img src="instagram.webp"><p>Contactanos</p></a></div>');
+    $("#showcase").html('<div class="showcase-product" id="' + codigo + '"><img src="images/' + codigo + '.webp"><h1>₡' + precio + '</h1><a href="https://instagram.com" id="insta-link"><img src="instagram.webp"><p>Contactanos</p></a></div>');
     if (scroll){
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#" + codigo).offset().top - 100
         }, 0);
+    }
+    if ((codigo in rawProducts) == false){
+        $("body").css("overflow-y", "overlay");
+        $("#showcase-container").css("display", "none");
+        $("#showcase").css("display", "none");
+        window.history.pushState({}, document.title, "/");
     }
 }
 
@@ -42,7 +48,7 @@ $(window).on("load", function(){
             products.forEach(product => {
                 if (product['mostrar']){
                     rawProducts[product['codigo']] = product['precio'];
-                    $("section#"+category).append('<a href="?c=' + product['codigo'] + '" class="product" id="' + product['codigo'] + '"><img src="images/' + product['codigo'] + '.webp"><h1>' + product['precio'] + '</h1></a>');
+                    $("section#"+category).append('<a href="?c=' + product['codigo'] + '" class="product" id="' + product['codigo'] + '"><img src="images/' + product['codigo'] + '.webp"><h1>₡' + product['precio'] + '</h1></a>');
                     $("a#" + product['codigo']).unbind('click');
                     $("a#" + product['codigo']).click(function(){
                         window.history.pushState({}, document.title, "/?c=" + product['codigo']);

@@ -2,27 +2,27 @@
     "Pulseras": [
         {
             "codigo": "pulsera0",
-            "precio": "₡1.000",
+            "precio": "1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera1",
-            "precio": "₡1.000",
+            "precio": "1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera2",
-            "precio": "₡1.000",
+            "precio": "1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera3",
-            "precio": "₡1.000",
+            "precio": "1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera4",
-            "precio": "₡1.000",
+            "precio": "1.000",
             "mostrar": true
         }
     ]
