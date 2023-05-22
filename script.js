@@ -1,8 +1,10 @@
+topMargin = 0;
+
 function showProduct(codigo, precio, scroll){
     $("body").css("overflow-y", "hidden");
     $("#showcase-container").css("display", "block");
     $("#showcase").css("display", "block");
-    $("#showcase-container").click(function(){
+    $("#showcase-container, header").click(function(){
         $("body").css("overflow-y", "overlay");
         $("#showcase-container").css("display", "none");
         $("#showcase").css("display", "none");
@@ -16,7 +18,14 @@ function showProduct(codigo, precio, scroll){
     }
 }
 
+$(window).on("resize", function(){
+    topMargin = parseInt($("header").css("height").replace('px', '')) + 20;
+    $("section#products").css("margin-top", topMargin + "px");
+});
+
 $(window).on("load", function(){
+    topMargin = parseInt($("header").css("height").replace('px', '')) + 20;
+    $("section#products").css("margin-top", topMargin + "px");
     $.getJSON("./data.json", function(data){
         rawProducts = {};
         for (const [category, products] of Object.entries(data)) {

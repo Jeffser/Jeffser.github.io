@@ -89,7 +89,6 @@ section#products section{
 }
 section#products{
     margin: 20px;
-    margin-top: 70px;
     text-align: center;
 }
 section#products section > h1{
@@ -160,7 +159,7 @@ div.showcase-product a#insta-link img{
 }
 div.showcase-product a#insta-link p{
     color: white;
-    font-size: 35px;
+    font-size: 2vmax;
 }
 div.showcase-product a#insta-link:hover{
     transform: scale(1.05);
