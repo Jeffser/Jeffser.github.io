@@ -1,31 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 *{
+    transition: .2s;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 5px;
 }
 @media screen and (orientation:portrait) {
-    section#products section div{
+    section#products section .product, div.showcase-product{
         width: 90vw;
+    }
+    section#showcase{
+        left: 5vw;
+        right: 5vw;
     }
 }
 @media screen and (orientation:landscape) {
-    section#products section div{
+    section#products section .product, div.showcase-product{
         width: 25vmax;
     }
+    section#showcase{
+        left: calc(50vw - (25vmax / 2));
+        right: calc(50vw - (25vmax / 2));
+    }
+}
+::-webkit-scrollbar{
+    width: 1vmin;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: hsla(0, 30%, 50%, 80%);
+    border-radius: 0.5vmin;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: hsla(0 30%, 70%, 80%);
 }
 header{
-    border-bottom: solid black 3px;
+    letter-spacing: 10px;
+    z-index: 10;
+    border-bottom: solid hsla(0, 30%, 50%, 80%) 3px;
     padding: 10px;
     font-size: 45px;
     text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(5px);
     position: fixed;
     inset: 0 0 auto 0;
 }
 body{
+    background-color: rgb(255, 228, 228);
+    overflow-y: overlay;
     margin: 0;
 }
 section#products section{
@@ -34,18 +60,27 @@ section#products section{
     justify-content: space-evenly;
     gap: 20px;
 }
-section#products section div{
+.product{
+    z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
 }
-section#products section div img{
+.product:hover{
+    border: solid hsla(0, 30%, 50%, 80%) 3px;
+    transform: scale(1.05);
+}
+.product img{
     width: 100%;
     border-radius: 20px;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
 }
-section#products section div h1{
+.product h1{
+    color: black;
+    text-decoration: none;
     display: inline-block;
     width: 100%;
     font-size: 40px;
@@ -62,4 +97,71 @@ section#products section > h1{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+}
+section#showcase-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 5;
+    inset: 0 0 0 0;
+    display: none;
+}
+section#showcase{
+    text-align: center;
+    position: fixed;
+    z-index: 7;
+    top: 20%;
+}
+div.showcase-product{
+    border: solid hsla(0, 30%, 50%, 80%) 3px;
+    display: inline-block;
+    z-index: 7;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+div.showcase-product img{
+    width: 100%;
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+div.showcase-product h1{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.showcase-product a#insta-link{
+    height: 10vh;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(49, 49, 49);
+    margin: 20px;
+    margin-top: 0;
+    border: solid hsla(0, 30%, 50%, 80%) 3px;
+    border-radius: 20px;
+    padding: 10px;
+}
+div.showcase-product a#insta-link img{
+    display: inline-block;
+    height: 100%;
+    width: 10vh;
+    aspect-ratio: 1/1;
+}
+div.showcase-product a#insta-link p{
+    color: white;
+    font-size: 35px;
+}
+div.showcase-product a#insta-link:hover{
+    transform: scale(1.05);
 }

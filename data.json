@@ -2,31 +2,26 @@
     "Pulseras": [
         {
             "codigo": "pulsera0",
-            "imagen": "pulsera1.webp",
             "precio": "₡1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera1",
-            "imagen": "pulsera2.jpg",
             "precio": "₡1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera2",
-            "imagen": "pulsera3.jpg",
             "precio": "₡1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera3",
-            "imagen": "pulsera4.webp",
             "precio": "₡1.000",
             "mostrar": true
         },
         {
             "codigo": "pulsera4",
-            "imagen": "pulsera5.webp",
             "precio": "₡1.000",
             "mostrar": true
         }
