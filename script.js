@@ -1,27 +1,24 @@
 rawProducts = {};
 
+function hideProduct(){
+    $("body").css("overflow-y", "overlay");
+    $("#showcase-container").css("display", "none");
+    $("#showcase").css("display", "none");
+    window.history.pushState({}, document.title, "/");
+}
+
 function showProduct(codigo, precio, scroll){
     $("body").css("overflow-y", "hidden");
     $("#showcase-container").css("display", "block");
     $("#showcase").css("display", "block");
-    $("#showcase-container, header").click(function(){
-        $("body").css("overflow-y", "overlay");
-        $("#showcase-container").css("display", "none");
-        $("#showcase").css("display", "none");
-        window.history.pushState({}, document.title, "/");
-    });
+    $("#showcase-container, header").click(function(){hideProduct()});
     $("#showcase").html('<div class="showcase-product" id="' + codigo + '"><img src="images/' + codigo + '.webp"><h1>₡' + precio + '</h1><a href="https://instagram.com" id="insta-link"><img src="instagram.webp"><p>Contactanos</p></a></div>');
     if (scroll){
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#" + codigo).offset().top - 100
         }, 0);
     }
-    if ((codigo in rawProducts) == false){
-        $("body").css("overflow-y", "overlay");
-        $("#showcase-container").css("display", "none");
-        $("#showcase").css("display", "none");
-        window.history.pushState({}, document.title, "/");
-    }
+    if ((codigo in rawProducts) == false) hideProduct()
 }
 
 window.onpopstate = function(e){
