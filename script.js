@@ -60,16 +60,18 @@ function checkScroll(){
         $('#title').css('display', 'unset');
         $('#content').css('display', 'none');
         if (screenModeDetector() == "landscape") $('#main').css('inset', scroll/100 + '%' + scroll/100 + '%' + scroll/100 +'%' + scroll/100 + '%');
-        else $('#main').css('inset', scroll/100 + 5 + '%' + '2%' + scroll/100 +'%' + '2%');
+        else $('#main').css('inset', scroll/150 + '%' + '2%' + scroll/100 +'%' + '2%');
     }
     if (scroll >= 1000){
         $('#title').css('opacity', '0');
         $('#title').css('display', 'none');
         $('#content').css('display', 'block');
         if (screenModeDetector() == "landscape") $('#main').css('inset', '10% 10% 10% 10%');
-        else $('#main').css('inset', '15% 2% 10% 2%');
+        else $('#main').css('inset', parseFloat($("#top-menu").css('height')) + 20 + 'px 2% 10% 2%');
     }
 }
+
+$(window).resize(function(){checkScroll();});
 
 function initialLoad(){
     $('.button').css('flex-grow', '1')

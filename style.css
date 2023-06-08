@@ -42,7 +42,8 @@ body{
 }
 @media (orientation: portrait){
     section#top-menu{
-        inset: 1% 2% calc(90% - 20px) 2%;
+        inset: 1% 2% auto 2%;
+        
     }
     section#bottom-menu{
         inset: calc(90% - 20px) 2% 2% 2%;
@@ -177,9 +178,9 @@ section#bottom-menu{
     position: fixed;
     z-index: 5;
     display: flex;
-    gap: 1%;
-    padding: 1%;
-    padding-top: calc(20px + 1%);
+    gap: 10px;
+    padding: 10px;
+    padding-top: 30px;
     flex-direction: row;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -192,7 +193,7 @@ section#bottom-menu{
     flex-grow: 1;
     font-weight: 500;
     cursor: pointer;
-    margin: 1%;
+    margin: 10px;
 }
 .button:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px !important;
