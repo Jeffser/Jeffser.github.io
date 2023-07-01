@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: post
 title: ¡Bienvenidos a mi página web!
 ---
 ¡Hola! Mi nombre es Jeffry y estoy encantado de tener la oportunidad de compartir un poco sobre mí contigo. Originario del hermoso país de Costa Rica, actualmente estoy persiguiendo mi pasión por la tecnología como estudiante dedicado de ingeniería de sistemas informáticos en Fidélitas.
