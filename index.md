@@ -1,5 +1,5 @@
 ---
-layout: main.hmtl
+layout: main.html
 title: ¡Bienvenidos a mi página web!
 permalink: /
 ---
