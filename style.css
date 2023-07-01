@@ -1,240 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Montserrat:wght@300;400&family=Quicksand:wght@400;500&family=Shadows+Into+Light&display=swap');
-*{transition: .2s;}
-body{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300&family=Roboto+Mono:wght@200&display=swap');
+* {transform: .2s;}
+@media screen and (orientation:portrait) {
+    #content p {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #content h1 {
+        text-align: center;
+        font-size: 200%;
+    }
+}
+@media screen and (orientation:landscape) {
+    #content p {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    #content h1 {
+        text-align: center;
+        font-size: 400%;
+    }
+}
+body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    background-color: #333C43;
-    height: 240vh;
-    background-image: url(wallpaper.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: contain;
-}
-
-@media (orientation: landscape){
-    section#top-menu{
-        inset: 1% 10% calc(90% - 20px) 10%;
-    }
-    section#bottom-menu{
-        inset: calc(90% - 20px) 10% 2% 10%;
-    }
-    section#top-menu h1{
-        font-size: 400%;
-    }
-    section#title p{
-        font-size: 300%;
-    }
-    section#title h1{
-        font-size: 400%;
-    }
-    section#title h2{
-        font-size: 400%;
-    }
-    section#content h1{
-        font-size: 200%;
-    }
-    section#content h2{
-        font-size: 150%;
-    }
-    section#content{
-        font-size: 200%;
-    }
-}
-@media (orientation: portrait){
-    section#top-menu{
-        inset: 1% 2% auto 2%;
-        
-    }
-    section#bottom-menu{
-        inset: calc(90% - 20px) 2% 2% 2%;
-    }
-    section#top-menu h1{
-        font-size: 200%;
-    }
-    section#title p{
-        font-size: 150%;
-    }
-    section#title h1{
-        font-size: 300%;
-    }
-    section#title h2{
-        font-size: 200%;
-    }
-    section#content h1{
-        font-size: 150%;
-    }
-    section#content h2{
-        font-size: 150%;
-    }
-    section#content{
-        font-size: 100%;
-    }
-}
-
-::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-}
-section#main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset: 2% 2% 2% 2%;
-    border: solid 4px #A7C080;
-    border-radius: 20px;
-    background-color: #293136;
-    z-index: 10;
-    transition: 0s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-section#title{
-    transition: 0;
-    padding: 10px;
-}
-section#title p{
-    color: #E67E80;
+    background-color: #28231f;
     margin: 0;
 }
-h1{
-    color: #A7C080;
-}
-h2{
-    color: #7FBBB3;
-}
-section#title h1{
-    font-family: 'IBM Plex Mono', monospace;
-    margin: 0;
-}
-section#title h2{
-    font-weight: 300;
-    margin: 0;
-}
-section#title #to-change{
-    font-family: 'IBM Plex Mono', monospace;
-    color: #DBBC7F;
-}
-section#title div{
-    position: absolute;
+h1 {color: #4f634c;}
+h2 {color: #9dc49d;}
+h3 {color: #d8edac;}
+h4, a {color: #bad29c;}
+header {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    inset: 90% 0 0 0;
-    text-align: center;
-}
-section#title div a{
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-}
-section#content{
-    text-align: left;
-    position: relative;
-    color: white;
-    width: 100%;
-    height: calc(100% - 40px);
-    display: none;
-    padding: 20px;
-    overflow-y: auto;
-}
-section#content a{
-    color: white;
-}
-section#content img{
-    max-width: 100%;
-    border-radius: 20px;
-}
-section#content h1{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-section#content h2{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.color-yellow{
-    background-color: #DBBC7F;
-    color: #7C6B4A !important;
-}
-.color-orange{
-    background-color: #E69875;
-    color: #845A46 !important;
-}
-.color-purple{
-    background-color: #D699B6;
-    color: #785767 !important;
-}
-.color-aqua{
-    background-color: #83C092;
-    color: #47664F !important;
-}
-.color-blue{
-    background-color: #7FBBB3;
-    color: #44625E !important;
-}
-section#bottom-menu{
-    border-radius: 0 0 20px 20px;
-    background-color: #4D5960;
-    position: fixed;
-    z-index: 5;
-    display: flex;
-    gap: 1px;
-    padding: 1px;
-    padding-top: 30px;
-    flex-direction: row;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.button{
-    text-decoration: none;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    font-weight: 500;
-    cursor: pointer;
-    margin: 1px;
-}
-.button:hover{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px !important;
-}
-.button-list{
     flex-wrap: wrap;
-    min-height: 60px;
-    display: flex;
-    padding: 1%;
-    padding-top: calc(20px + 1%);
     flex-direction: row;
-}
-section#top-menu{
-    text-align: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     position: fixed;
-    z-index: 5;
+    left: 10px;
+    right: 10px;
+    top: 0;
 }
-section#top-menu h1{
-    color: #A7C080;
-    font-family: 'IBM Plex Mono', monospace;
-    margin: 0;
-    background-image: linear-gradient(
-        -225deg,
-        #7FBBB3 0%,
-        #DBBC7F 25%,
-        #E69875 50%,
-        #D699B6 75%,
-        #83C092 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: black;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+header div {
+    flex-grow: 1;
+}
+header div h1 {
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 5px;
+    float: left;
     cursor: pointer;
-    animation: textclip 5s linear infinite;
+    margin: 0;
 }
-@keyframes textclip{
-    to{
-        background-position: 200% center;
-    }
+header a {
+    text-decoration: none;
+}
+header a:hover, header div h1:hover {
+    text-decoration: underline;
+}
+#content {
+    color: white;
+}
+#content #title {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#content #title h1 {
+    margin: 0;
+    text-align: center;
+}
+#content #title #date {
+    text-align: center;
+    color: black;
+    font-size: 125%;
+    word-spacing: 5px;
+}
+#content p {
+    line-height: 200%;
+    font-size: 125%;
+}
+img {
+    max-width: 50%;
+    float: right;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
