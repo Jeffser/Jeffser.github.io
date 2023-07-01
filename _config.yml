@@ -1,6 +1,6 @@
 description: Personal developer website
 url: https://jeffser.com/
-
+baseurl: https://jeffser.com/
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
