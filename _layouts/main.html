@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeffser</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <script>
         window.onload = function(){
@@ -16,18 +17,31 @@
         <div>
             <h1>Jeffry Eduarte Rojas</h1>
         </div>
-        <a href="https://github.com/Jeffser?tab=repositories">Repositories</a>
-        <a href="./">Blog</a>
-        <a href="./">Contact</a>
+        <a href="https://github.com/Jeffser?tab=repositories"><span class="material-icons">terminal</span><span id="label">Repositorios</span></a>
+        <a href="./"><span class="material-icons">library_books</span><span id="label">Blog</span></a>
+        <a href="./"><span class="material-icons">contact_page</span><span id="label">Contacto</span></a>
     </header>
     <section id="content">
         <div id="title">
+            
             <h1>{{ page.title }}</h1>
             {% if page.date %} <span id="date">{{ page.date }}</span>{% endif %}
         </div>
         <p>
             {{ content }}
         </p>
+        <section id="featured-posts">
+            {% for post in site.posts %}
+            {% if post.featured == 1 %}
+            <article class="post">
+                <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                <p id="excerpt">
+                    {{ post.excerpt }}
+                </p>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </section>
     </section>
 </body>
 </html>

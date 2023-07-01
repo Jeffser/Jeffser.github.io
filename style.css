@@ -50,6 +50,7 @@ header div {
     flex-grow: 1;
 }
 header div h1 {
+    color: #bad29c;
     font-family: 'Dancing Script', cursive;
     letter-spacing: 5px;
     float: left;
@@ -58,8 +59,12 @@ header div h1 {
 }
 header a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
 }
-header a:hover, header div h1:hover {
+header a:hover span#label, header div h1:hover {
     text-decoration: underline;
 }
 #content {
