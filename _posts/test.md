@@ -1,7 +1,7 @@
 ---
 layout: default
 title: test
-featured: 1
+featured: true
 ---
 
 This is a test

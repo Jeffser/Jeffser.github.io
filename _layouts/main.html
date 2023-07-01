@@ -32,7 +32,7 @@
         </p>
         <section id="featured-posts">
             {% for post in site.posts %}
-            {% if post.featured == 1 %}
+            {% if post.featured == "true" %}
             <article class="post">
                 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
                 <p id="excerpt">
