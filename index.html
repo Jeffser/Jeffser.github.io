@@ -1,6 +1,9 @@
 ---
 layout: post
 title: ¡Bienvenidos a mi página!
+cover: oneshot.jpeg
+cover_cr: Nightmargin / Oneshot Game
+cover_cr_url: https://www.oneshot-game.com/
 ---
 
 <p>
@@ -44,16 +47,17 @@ title: ¡Bienvenidos a mi página!
     se presentan. Si tienes alguna pregunta o deseas conectarte, no dudes en hacerlo. Espero la posibilidad de trabajar
     juntos y marcar la diferencia en el mundo de la tecnología.
 </p>
-</p>
+<h2>Posts destacados</h2>
 <section id="featured-posts">
     {% for post in site.posts %}
-
-    <article class="post">
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        <p id="excerpt">
-            asdasda
-        </p>
-    </article>
-
+    {% if post.featured == true %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="post">
+        <img title="Cover image by: {{ post.cover_cr }}" src="{{ site.url }}/images/{{ post.cover }}" alt="">
+        <h2>{{ post.title }}</h2>
+        <div id="excerpt">
+            {{ post.excerpt }}
+        </div>
+    </a>
+    {% endif %}
     {% endfor %}
 </section>

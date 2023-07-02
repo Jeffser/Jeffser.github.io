@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeffser</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="{{ site.url }}/style.css">
     <script>
         window.onload = function(){
             document.getElementById("content").style.marginTop = document.getElementsByTagName("header")[0].offsetHeight + 40 + "px";
+            if (document.getElementById("cover-image")) {
+                document.getElementById("cover-image").style.height = document.getElementsByTagName("header")[0].offsetHeight + document.getElementById("title").offsetHeight + 180 + "px";
+            }
         }
     </script>
 </head>
 <body>
     <header>
         <div>
-            <h1>Jeffry Eduarte Rojas</h1>
+            <a href="{{ site.url }}"><h1>Jeffry Eduarte Rojas</h1></a>
         </div>
         <a href="https://github.com/Jeffser?tab=repositories"><span class="material-icons">terminal</span><span id="label">Repositorios</span></a>
         <a href="./"><span class="material-icons">library_books</span><span id="label">Blog</span></a>
         <a href="./"><span class="material-icons">contact_page</span><span id="label">Contacto</span></a>
     </header>
+    {% if page.cover %} <img src="{{ site.url }}/images/{{ page.cover }}" id="cover-image"> {% endif %}
     <section id="content">
         <div id="title">
             
             <h1>{{ page.title }}</h1>
-            {% if page.date %} <span id="date">{{ page.date }}</span>{% endif %}
+            {% if page.date %} <span id="date">{{ page.date | date: "%d / %m / %y" }}</span>{% endif %}
         </div>
         <p>
             {{ content }}
         </p>
     </section>
+    <footer>
+        <div id="img-cr">
+            Cover image by: <a href="{{ page.cover_cr_url }}">{{ page.cover_cr }}</a>
+        </div>
+        <div id="page-cr">
+            Page made by <a href="https://github.com/Jeffser">Jeffser</a> using <a href="https://pages.github.com/">Github pages</a> and <a href="https://jekyllrb.com/">Jekyll</a> 
+        </div>
+    </footer>
 </body>
 </html>

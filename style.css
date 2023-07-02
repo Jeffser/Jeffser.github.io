@@ -1,24 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300&family=Roboto+Mono:wght@200&display=swap');
 * {transform: .2s;}
 @media screen and (orientation:portrait) {
-    #content p {
+    #content {
         margin-left: 5vw;
         margin-right: 5vw;
     }
-    #content h1 {
+    #content #title {
+        margin-left: -5vw;
+        margin-right: -5vw;
+    }
+    #content h1, #content h2 {
         text-align: center;
+        margin: 0;
         font-size: 200%;
     }
 }
 @media screen and (orientation:landscape) {
-    #content p {
+    #content {
         margin-left: 20vw;
         margin-right: 20vw;
     }
-    #content h1 {
+    #content #title {
+        margin-left: -20vw;
+        margin-right: -20vw;
+    }
+    #content h1, #content h2 {
         text-align: center;
+        margin: 0;
         font-size: 400%;
     }
+}
+::-webkit-scrollbar{
+    width: 1vmin;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: hsla(0, 30%, 50%, 80%);
+    border-radius: 0.5vmin;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: hsla(0 30%, 70%, 80%);
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -30,6 +53,7 @@ h2 {color: #9dc49d;}
 h3 {color: #d8edac;}
 h4, a {color: #bad29c;}
 header {
+    z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +73,10 @@ header {
 header div {
     flex-grow: 1;
 }
-header div h1 {
+header div a {
+    float: left;
+}
+header div a h1 {
     color: #bad29c;
     font-family: 'Dancing Script', cursive;
     letter-spacing: 5px;
@@ -77,10 +104,8 @@ header a:hover span#label, header div h1:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-#content #title h1 {
-    margin: 0;
-    text-align: center;
+    margin-bottom: 40px;
+    backdrop-filter: blur(20px);
 }
 #content #title #date {
     text-align: center;
@@ -92,9 +117,86 @@ header a:hover span#label, header div h1:hover {
     line-height: 200%;
     font-size: 125%;
 }
-img {
+#content p img {
     max-width: 50%;
     float: right;
     margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#featured-posts {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.post {
+    cursor: pointer;
+    flex-grow: 1;
+    border-radius: 20px;
+    backdrop-filter: brightness(110%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 120%;
+    text-decoration: none;
+    height: auto;
+}
+.post:hover h2 {
+    text-decoration: underline;
+}
+.post:hover {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.post div {
+    padding: 20px;
+}
+.post div p {
+    margin: 0 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: white;
+}
+.post h2 {
+    margin: 20px !important;
+    text-align: center;
+    font-size: 250% !important;
+}
+.post img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+#cover-image {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    width: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(transparent));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent);
+}
+footer {
+    backdrop-filter: brightness(150%);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+}
+footer * {
+    flex-grow: 1;
+}
+footer #page-cr {
+    text-align: right;
+}
+footer #img-cr {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
