@@ -7,11 +7,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ site.url }}/style.css">
     <script>
-        window.onload = function(){
+        function aspectRatioChange() {
             document.getElementById("content").style.marginTop = document.getElementsByTagName("header")[0].offsetHeight + 40 + "px";
             if (document.getElementById("cover-image")) {
                 document.getElementById("cover-image").style.height = document.getElementsByTagName("header")[0].offsetHeight + document.getElementById("title").offsetHeight + 180 + "px";
             }
+        }
+        window.onload = function() {
+            aspectRatioChange();
+            window.addEventListener('resize', aspectRatioChange);
         }
     </script>
 </head>
@@ -22,9 +26,9 @@
         </div>
         <a href="https://github.com/Jeffser?tab=repositories"><span class="material-icons">terminal</span><span id="label">Repositorios</span></a>
         <a href="./"><span class="material-icons">library_books</span><span id="label">Blog</span></a>
-        <a href="./"><span class="material-icons">contact_page</span><span id="label">Contacto</span></a>
+        <a href="{{ site.url }}/contacto"><span class="material-icons">contact_page</span><span id="label">Contacto</span></a>
     </header>
-    {% if page.cover %} <img src="{{ site.url }}/images/{{ page.cover }}" id="cover-image"> {% endif %}
+    {% if page.cover %} <img src="{{ site.url }}/images/cover/{{ page.cover }}" id="cover-image"> {% endif %}
     <section id="content">
         <div id="title">
             
@@ -37,7 +41,7 @@
     </section>
     <footer>
         <div id="img-cr">
-            Cover image by: <a href="{{ page.cover_cr_url }}">{{ page.cover_cr }}</a>
+            Cover image by: <a {% if page.cover_cr_url%} href="{{ page.cover_cr_url }}" {% endif %}>{{ page.cover_cr }}</a> 
         </div>
         <div id="page-cr">
             Page made by <a href="https://github.com/Jeffser">Jeffser</a> using <a href="https://pages.github.com/">Github pages</a> and <a href="https://jekyllrb.com/">Jekyll</a> 

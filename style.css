@@ -200,3 +200,44 @@ footer #img-cr {
     flex-direction: row;
     gap: 10px;
 }
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.button-container a {
+    font-size: 200%;
+    color: #4f634c;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.button-container a:hover span.label {
+    text-decoration: underline;
+}
+.button-container a img {
+    height: 40px;
+    border-radius: 25%;
+}
+.photo-gallery {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    height: 50vh;
+    gap: 10px;
+    border-radius: 20px;
+}
+.photo-gallery img {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

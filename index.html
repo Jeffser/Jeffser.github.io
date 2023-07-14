@@ -52,7 +52,7 @@ cover_cr_url: https://www.oneshot-game.com/
     {% for post in site.posts %}
     {% if post.featured == true %}
     <a href="{{ site.baseurl }}{{ post.url }}" class="post">
-        <img title="Cover image by: {{ post.cover_cr }}" src="{{ site.url }}/images/{{ post.cover }}" alt="">
+        <img title="Cover image by: {{ post.cover_cr }}" src="{{ site.url }}/images/cover/{{ post.cover }}" alt="">
         <h2>{{ post.title }}</h2>
         <div id="excerpt">
             {{ post.excerpt }}
