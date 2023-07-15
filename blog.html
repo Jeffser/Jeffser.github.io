@@ -1,0 +1,21 @@
+---
+layout: post
+title: Blog
+featured: false
+cover: benjamin-voros.jpg
+cover_cr: Benjamin Voros / POP-OS
+cover_cr_url: https://github.com/pop-os/wallpapers
+excerpt_separator: <!-- excerpt -->
+---
+
+<section id="featured-posts">
+    {% for post in site.posts %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="post">
+        <img title="Cover image by: {{ post.cover_cr }}" src="{{ site.url }}/images/cover/{{ post.cover }}" alt="">
+        <h2>{{ post.title }}</h2>
+        <div id="excerpt">
+            {{ post.excerpt }}
+        </div>
+    </a>
+    {% endfor %}
+</section>
