@@ -1,244 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300&family=Roboto+Mono:wght@200&display=swap');
-* {transform: .2s;}
-@media screen and (orientation:portrait) {
-    #content {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    #content #title {
-        margin-left: -5vw;
-        margin-right: -5vw;
-    }
-    #content h1, #content h2 {
-        text-align: center;
-        margin: 0;
-        font-size: 200%;
-    }
+div#nav-drawer {
+	background: #111111;
 }
-@media screen and (orientation:landscape) {
-    #content {
-        margin-left: 20vw;
-        margin-right: 20vw;
-    }
-    #content #title {
-        margin-left: -20vw;
-        margin-right: -20vw;
-    }
-    #content h1, #content h2 {
-        text-align: center;
-        margin: 0;
-        font-size: 400%;
-    }
+div#nav-drawer div#nav-drawer-container nav.list-group {
+	display: flex;
+	gap: 10px !important;
+	flex-direction: column;
+	/*padding: 10px;*/
+	padding-top: 10px;
+	padding-left: 10px;
 }
-::-webkit-scrollbar{
-    width: 1vmin;
+div#nav-drawer div#nav-drawer-container nav.list-group a {
+	background: #151517 !important;
+	color: #949ae0;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	padding: 0 !important;
 }
-::-webkit-scrollbar-track{
-    background: transparent;
+div#mycoursessubmenu {
+	background: #151517 !important;
 }
-::-webkit-scrollbar-thumb{
-    background: hsla(0, 30%, 50%, 80%);
-    border-radius: 0.5vmin;
+div#mycoursessubmenu > a > div > div.media {
+	margin: 0;
+	padding-left: 5px !important;
+	padding-right: 0 !important;
 }
-::-webkit-scrollbar-thumb:hover{
-    background: hsla(0 30%, 70%, 80%);
+div#mycoursessubmenu > a {
+	margin: 0 !important;
 }
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #28231f;
-    margin: 0;
+div#nav-drawer div#nav-drawer-container nav.list-group a div.media {
+	padding: 10px;
+	gap: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
-h1 {color: #4f634c;}
-h2 {color: #9dc49d;}
-h3 {color: #d8edac;}
-h4, a {color: #bad29c;}
-header {
-    z-index: 10;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(20px);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: fixed;
-    left: 10px;
-    right: 10px;
+div#nav-drawer div#nav-drawer-container nav.list-group a > div {
+	height: 100%;
+}
+div#nav-drawer div#nav-drawer-container nav.list-group a div.media span.media-body {
+	flex-grow: 1;
+}
+div#nav-drawer div#nav-drawer-container nav.list-group a div.media span.media-left.remuiicon {
+	width: auto !important;
+	height: auto !important;
+	margin: 0 !important;
+}
+div#nav-drawer div#nav-drawer-container nav.list-group a div.media span.media-left.remuiicon i {
+	margin: 0 !important;
+}
+div.navbar-brand > a.header-logo img {
+	padding: 10px;
+	object-fit: contain;
+}
+a, div.multiblock ul.nav li.nav-item a.nav-link {
+	color: #949ae0 !important;
+}
+div#page {
+	background: transparent;
+	backdrop-filter: var(--background-effect);
+}
+header .mr-2 {
+	text-align: center;
+	width: 100%;
+}
+header nav {
+	text-align: center;
+}
+div[role="main"] > aside > section[data-block="myoverview"], section.card {
+	background: transparent;
+}
+header .breadcrumb {
+	width: 100%;
+	text-align: center;
+	display flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+header .breadcrumb li a {
+	color: white !important;
+}
+header .breadcrumb li:last-child a {
+	color: #FFDA00 !important;
+}
+div[role="main"] div.course-content > div > ul > li, div[role="main"] div.course-content > div > ul > li#section-0.section.main[role="region"] {
+	background: #151517 !important;
+	border-radius: 20px;
+}
+div[role="main"] div.course-content > div > ul {
+	background: #151517 !important;
+	border-radius: 20px;
+	padding: 0;
+}
+div[role="main"] div.course-content ul div.contentwithoutlink img[role="presentation"]{
+	padding: 5px;
+	border-radius: 20px;
+	border: solid black 2px;
+	background: white;
+}
+div[role="main"] div.course-content > div > ul > li h3.sectionname {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+div[role="main"] div.course-content div.section-navigation h3.sectionname {
+	background: #151517 !important;
+	border-radius: 20px;
+	padding: 10px;
+}
+li.activity div.activityinstance > a span.instancename {
+	color: white !important;
+}
+li.activity div.activityinstance > a {
+	display: flex !important;
+	padding: 5px;
+	gap: 40px;
+	justify-content: left;
+	align-items: center;
+}
+div.card-body {
+	background: #202124 !important;
+	border-radius: 20px;
+	color: white !important;
+	margin-top: 20px;
+	box-shadow: rgba(var(--shadow-color), 0.1) 0px 8px 24px, rgba(var(--shadow-color), 0.1) 0px 16px 56px, rgba(var(--shadow-color), 0.1) 0px 24px 80px;
+}
+div.card-body h4, div.card-body h3 {
+	color: white !important;
+	text-decoration: underline #FFDA00;
+}
+div[data-region="paged-content-page"] > div[role="list"] {
+	flex-wrap: wrap;
+	display: flex;
+	gap: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	align-items: center;
+	justify-content: center;
+}
+div[data-region="course-content"] {
+	border: none !important;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	max-width: 30vmax;
+	flex-grow: 1;
+	width: auto;
+	background: #111111 !important;
+	padding: 0 !important;
+	border-radius: 20px;
+}
+div[data-region="course-content"] .ml-auto .small {
+	color: white;
+	text-align: right;
+}
+div[data-region="course-content"] .ml-auto .progress {
+	background: black;
+}
+div[data-region="course-content"] .ml-auto .progress .progress-bar {
+	background: #FFDA00;
+}
+div[data-region="course-content"] > div > a {
+	position: absolute;
+    left: 0;
     top: 0;
+	height: 100% !important;
 }
-header div {
-    flex-grow: 1;
+div[data-region="course-content"] > div > a > div {
+	object-fit: cover;
+	border-radius: 0 !important;
+	height: 100% !important;
+	width: 200px;
+	-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+	border-bottom-left-radius: 20px !important;
+	border-top-left-radius: 20px !important;
 }
-header div a {
-    float: left;
+div[data-region="course-content"] > div {
+	margin: 0;
+	height: 100%;
+	position: relative;
 }
-header div a h1 {
-    color: #bad29c;
-    font-family: 'Dancing Script', cursive;
-    letter-spacing: 5px;
-    float: left;
-    cursor: pointer;
-    margin: 0;
+div[data-region="course-content"] > div > div {
+	z-index: 2;
+	padding: 20px !important;
 }
-header a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 5px;
+div[data-region="course-content"] > div > div h6 {
+	color: white !important;
 }
-header a:hover span#label, header div h1:hover {
-    text-decoration: underline;
+div[data-region="course-content"] > div > div > div > div > button {
+	background: transparent;
+	border: none !important;
+	margin-right: -10px;
+	margin-top: -10px;
 }
-#content {
-    color: white;
+div[data-region="course-content"] > div > div > div > div > button > i {
+	color: white !important;
 }
-#content #title {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 40px;
-    backdrop-filter: blur(20px);
+div[data-region="course-content"] > div > div > div > div > button:hover > i {
+	color: black !important;
 }
-#content #title #date {
-    text-align: center;
-    color: black;
-    font-size: 125%;
-    word-spacing: 5px;
+div.tool_dataprivacy:after {
+	content: "  |  Modificaciones hechas por JeffSER";
 }
-#content p {
-    line-height: 200%;
-    font-size: 125%;
+button.dropdown-toggle {
+	background: #151517;
+	color: white !important;
 }
-#content p img {
-    max-width: 50%;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+nav.navbar, nav.navbar-brand {
+	background: transparent !important;
 }
-#featured-posts {
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: wrap;
+body, div#page-wrapper {
+	background: var(--background);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
-.post {
-    cursor: pointer;
-    flex-grow: 1;
-    border-radius: 20px;
-    backdrop-filter: brightness(110%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    font-size: 120%;
-    text-decoration: none;
-    height: auto;
+nav.navbar > div {
+	background: rgba(42, 50, 138, 0.8);
+	backdrop-filter: blur(5px);
 }
-.post:hover h2 {
-    text-decoration: underline;
+section[data-region="blocks-column"] {
+	background: #111111 !important;
 }
-.post:hover {
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+section[data-region="blocks-column"] h5{
+	color: white !important;
 }
-.post div {
-    padding: 20px;
+section[data-region="blocks-column"] div.page-aside-switch {
+	background: #2B338C !important;
 }
-.post div p {
-    margin: 0 !important;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box; 
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    color: white;
+section[data-region="blocks-column"] div.card-body{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.post h2 {
-    margin: 20px !important;
-    text-align: center;
-    font-size: 250% !important;
+html {
+	background: transparent;
 }
-.post img {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+jdiv.label_d9a5#jvlabelWrap {
+	top: unset !important;
+	bottom: 10% !important;
 }
-#cover-image {
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-    object-position: center;
-    top: 0;
-    width: 100%;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(transparent));
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent);
+footer > div.floating-buttons {
+	right: 5% !important;
 }
-footer {
-    backdrop-filter: brightness(150%);
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    color: white;
+div.multiblock ul.nav-tabs {
+	border-bottom: none !important;
 }
-footer * {
-    flex-grow: 1;
+div.multiblock ul.nav-tabs .nav-link.active {
+	border-color: #FFDA00 !important;
 }
-footer #page-cr {
-    text-align: right;
+ul.dropdown-menu {
+	background: #202124 !important;
 }
-footer #img-cr {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+ul.dropdown-menu > li a.dropdown-item:focus {
+	color: white !important;
+	background: #111111 !important;
 }
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
-}
-.button-container a {
-    font-size: 200%;
-    color: #4f634c;
-    font-weight: 800;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    flex-grow: 1;
-    text-align: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-.button-container a:hover span.label {
-    text-decoration: underline;
-}
-.button-container a img {
-    height: 40px;
-    border-radius: 25%;
-}
-.photo-gallery {
-    width: 100%;
-    overflow-x: auto;
-    display: flex;
-    height: 50vh;
-    gap: 10px;
-    border-radius: 20px;
-}
-.photo-gallery img {
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+section#region-bottom-blocks, section#region-top-blocks {
+	display: none !important;
 }
