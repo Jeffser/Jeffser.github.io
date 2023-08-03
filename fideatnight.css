@@ -218,9 +218,9 @@ nav.navbar, nav.navbar-brand {
 }
 body {
 	background: var(--background) !important;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-attachment: fixed !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
 }
 div#page {
 	background: transparent !important;
