@@ -295,7 +295,7 @@ section#region-bottom-blocks, section#region-top-blocks {
 div.content-section > ul.topics > li {
 	background: transparent !important;
 }
-h5, h5 span, p span {
+h5, h5 span, p span, p {
 	color: white !important;
 }
 div.course-content ul.nav-tabs li.nav-item a {
