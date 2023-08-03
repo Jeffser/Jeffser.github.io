@@ -12,7 +12,6 @@ div#nav-drawer div#nav-drawer-container nav.list-group {
 	display: flex;
 	gap: 10px !important;
 	flex-direction: column;
-	/*padding: 10px;*/
 	padding-top: 10px;
 	padding-left: 10px;
 }
@@ -65,7 +64,6 @@ a, div.multiblock ul.nav li.nav-item a.nav-link {
 	color: #949ae0 !important;
 }
 div#page {
-	background: transparent;
 	backdrop-filter: var(--background-effect);
 }
 header .mr-2 {
@@ -218,11 +216,17 @@ button.dropdown-toggle, button.btn[data-action="toggle-manual-completion"] {
 nav.navbar, nav.navbar-brand {
 	background: transparent !important;
 }
-body, div#page-wrapper {
+body {
 	background: var(--background);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+div#page {
+	background: transparent !important;
+}
+div#page-wrapper {
+	background: transparent !important;
 }
 nav.navbar > div {
 	background: rgba(42, 50, 138, 0.8);
@@ -269,9 +273,9 @@ div.site-sidebar-tab-content {
 html {
 	background: transparent;
 }
-jdiv.label_d9a5#jvlabelWrap {
+jdiv#jvlabelWrap {
 	top: unset !important;
-	bottom: 10% !important;
+	bottom: 20% !important;
 }
 footer > div.floating-buttons {
 	right: 5% !important;
@@ -282,10 +286,10 @@ ul.nav-tabs {
 ul.nav-tabs .nav-link.active {
 	border-color: #FFDA00 !important;
 }
-ul.dropdown-menu {
+.dropdown-menu {
 	background: #202124 !important;
 }
-ul.dropdown-menu > li a.dropdown-item:focus, ul.dropdown-menu > li a.dropdown-item:hover {
+.dropdown-menu a:focus, .dropdown-menu a:hover {
 	color: white !important;
 	background: #111111 !important;
 }
@@ -304,4 +308,111 @@ div.course-content ul.nav-tabs li.nav-item a {
 div.course-content ul.nav-tabs li.nav-item a.active {
 	color: #FFDA00 !important;
 	border: none !important;
+}
+section[data-block="mycertificates"] > div.card-body > div.content > p.alert {
+	color: white !important;
+	background: #111111 !important;
+	border-radius: 20px;
+}
+div.message-app {
+	background: rgba(17, 17, 17, 0.8);
+	backdrop-filter: blur(5px);
+}
+div.drawer {
+	background: transparent !important;
+}
+div.message-app div[data-region="view-overview"] > div.text-right {
+	text-align: left !important;
+}
+div.message-app button {
+	color: #949AE0 !important;
+}
+div.message-app div.list-group a {
+	background: #111111 !important;
+}
+div.message-app div.list-group a p[data-region="last-message"] span {
+	color: white !important;
+}
+div.message-app div.input-group > * {
+	background: #111111 !important;
+	color: white;
+}
+div.message-app div[data-region="content-message-container"] div.message {
+	background: #111111 !important;
+}
+div.message-app div[data-region="content-message-container"] div[data-region="day-container"] > h6 {
+	color: white !important;
+}
+div.message-app div.footer-container textarea {
+	background: #111111 !important;
+	color: white;
+}
+div.popover-region-container {
+	background: rgba(17, 17, 17, 0.8);
+	backdrop-filter: blur(5px) !important;
+	border-radius: 20px;
+}
+div.popover-region-container h3 {
+	color: #949AE0 !important;
+}
+div.popover-region-container div.empty-message {
+	color: white !important;
+}
+div.popover-region-container a.see-all-link > div{
+	background: black;
+	color: white !important;
+}
+div[data-region="emoji-picker"] {
+	border-radius: 10px;
+	background: #111111 !important;
+}
+div[data-region="emoji-picker"] > div.card-footer {
+	border-radius: 10px;
+	background: #111111 !important;
+	border: none !important;
+}
+div[data-region="emoji-picker"] > div.card-footer > div[data-region="emoji-short-name"] {
+	color: white !important;
+}
+div[data-region="emoji-picker"] > div.card-body {
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+	margin-top: 0 !important;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+div[data-region="emoji-picker"] > div.card-body > div.input-group > div > span {
+	padding: 10px !important;
+}
+div.calendar-controls h2 {
+	color: #949ae0 !important;
+}
+div.spinner-wrapper {
+	background: var(--background) !important; 
+	background-attachment: fixed !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+div.spinner-wrapper > * {
+	padding: 10px;
+	border-radius: 20px;
+	background: rgba(17, 17, 17, 0.8);
+	backdrop-filter: blur(5px);
+	box-shadow: rgba(var(--shadow-color), 0.1) 0px 8px 24px, rgba(var(--shadow-color), 0.1) 0px 16px 56px, rgba(var(--shadow-color), 0.1) 0px 24px 80px;
+}
+div.spinner-wrapper > div.img-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	width: auto;
+}
+div.spinner-wrapper > div.img-container:after {
+	content: "Fide@Night by JeffSER";
+	color: white !important;
+	font-size: 120%;
+}
+div[data-region="loading-placeholder-content"] {
+	background: #111111 !important;
+	color: white !important;
 }
