@@ -91,7 +91,7 @@ header .breadcrumb li a {
 header .breadcrumb li:last-child a {
 	color: #FFDA00 !important;
 }
-div[role="main"] div.course-content > div > ul > li, div[role="main"] div.course-content > div > ul > li#section-0.section.main[role="region"] {
+div[role="main"] div.course-content > div > ul > li, div[role="main"] div.course-content > div ul li#section-0.section.main[role="region"] {
 	background: #151517 !important;
 	border-radius: 20px;
 }
