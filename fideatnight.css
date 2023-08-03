@@ -12,6 +12,7 @@ div#nav-drawer div#nav-drawer-container nav.list-group {
 	display: flex;
 	gap: 10px !important;
 	flex-direction: column;
+	/*padding: 10px;*/
 	padding-top: 10px;
 	padding-left: 10px;
 }
@@ -101,8 +102,9 @@ div[role="main"] div.course-content > div > ul {
 div[role="main"] div.course-content ul div.contentwithoutlink img[role="presentation"]{
 	padding: 5px;
 	border-radius: 20px;
-	border: solid black 2px;
-	background: white;
+}
+div.no-overflow > img[role="presentation"] {
+	border-radius: 20px;
 }
 div[role="main"] div.course-content > div > ul > li h3.sectionname {
 	margin-left: 50px;
