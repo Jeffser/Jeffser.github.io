@@ -161,6 +161,7 @@ div[data-region="course-content"] {
 div[data-region="course-content"] .ml-auto .small {
 	color: white;
 	text-align: right;
+	margin-top: 10px;
 }
 div[data-region="course-content"] .ml-auto .progress {
 	background: black;
