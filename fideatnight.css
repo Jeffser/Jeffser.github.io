@@ -178,7 +178,7 @@ div[data-region="course-content"] > div > a > div {
 	border-radius: 0 !important;
 	height: 100% !important;
 	width: 200px;
-	-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+	-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0));
 	border-bottom-left-radius: 20px !important;
 	border-top-left-radius: 20px !important;
 }
