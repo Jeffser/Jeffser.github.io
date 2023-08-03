@@ -5,6 +5,11 @@ Este proyecto puede ser modificado y forkeado pero por favor incluir creditos, g
 Cualquier cosa CSS como tal no puede hacer nada como robo de informacion, basicamente maneja el estilo. Asi que no hay de que preocuparse.
 Disfruten de la pagina que una universidad privada se merece.
 */
+:root {
+	--background: url(https://jeffser.com/images/cover/oneshot.jpeg);
+    --shadow-color: 255, 0, 0;
+    --background-effect: blur(5px);
+}
 div#nav-drawer {
 	background: #111111;
 }
@@ -227,15 +232,32 @@ nav.navbar > div {
 }
 section[data-region="blocks-column"] {
 	background: #111111 !important;
+	height: auto !important;
+	position: fixed !important;
+	padding: 10px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+body.sidebar-pinned section[data-region="blocks-column"] {
+	position: fixed !important;
+}
+body.sidebar-pinned {
+	margin-right: 0 !important;
 }
 section[data-region="blocks-column"] h5{
 	color: white !important;
 }
 section[data-region="blocks-column"] div.page-aside-switch {
 	background: #2B338C !important;
+	top: calc(50% - 44px) !important;
+	position: absolute !important;
+	left: -25px;
 }
 section[data-region="blocks-column"] div.card-body{
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+div.site-sidebar-tab-content {
+	height: auto !important;
 }
 html {
 	background: transparent;
