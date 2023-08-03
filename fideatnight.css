@@ -156,15 +156,15 @@ div[data-region="course-content"] {
 	padding: 0 !important;
 	border-radius: 20px;
 }
-div[data-region="course-content"] .ml-auto .small {
+div[data-region="course-content"] .ml-auto .small, div[data-region="page-container"] div > ul.list-group > li .small {
 	color: white;
 	text-align: right;
 	margin-top: 10px;
 }
-div[data-region="course-content"] .ml-auto .progress {
+div[data-region="course-content"] .ml-auto .progress, div[data-region="page-container"] div > ul.list-group > li .progress {
 	background: black;
 }
-div[data-region="course-content"] .ml-auto .progress .progress-bar {
+div[data-region="course-content"] .ml-auto .progress .progress-bar, div[data-region="page-container"] div > ul.list-group > li .progress-bar {
 	background: #FFDA00;
 }
 div[data-region="course-content"] > div > a {
@@ -194,20 +194,25 @@ div[data-region="course-content"] > div > div {
 div[data-region="course-content"] > div > div h6 {
 	color: white !important;
 }
-div[data-region="course-content"] > div > div > div > div > button {
+div[data-region="course-content"] > div > div > div > div > button{
 	background: transparent;
 	border: none !important;
 	margin-right: -10px;
 	margin-top: -10px;
 }
-div[data-region="course-content"] > div > div > div > div > button > i {
+div[data-region="page-container"] div > ul.list-group > li button[data-toggle="dropdown"] {
+	background: transparent;
+	border: none !important;
+	margin-right: 25px;
+}
+div[data-region="course-content"] > div > div > div > div > button > i, div[data-region="page-container"] div > ul.list-group > li button[data-toggle="dropdown"] i {
 	color: white !important;
 }
-div[data-region="course-content"] > div > div > div > div > button:hover > i {
+div[data-region="course-content"] > div > div > div > div > button:hover > i, div[data-region="page-container"] div > ul.list-group > li button[data-toggle="dropdown"]:hover i {
 	color: black !important;
 }
 div.tool_dataprivacy:before {
-	content: "Modificaciones hechas por JeffSER | ";
+	content: "Modificaciones hechas por Jeffry Samuel Eduarte Rojas | ";
 }
 button.dropdown-toggle, button.btn[data-action="toggle-manual-completion"] {
 	background: #151517 !important;
@@ -389,15 +394,16 @@ div.calendar-controls h2 {
 	color: #949ae0 !important;
 }
 div.spinner-wrapper {
-	background: var(--background) !important; 
+	background: black !important;
+	/*background-image: var(--background) !important; 
 	background-attachment: fixed !important;
 	background-repeat: no-repeat !important;
-	background-size: cover !important;
+	background-size: cover !important;*/
 }
 div.spinner-wrapper > * {
 	padding: 10px;
 	border-radius: 20px;
-	background: rgba(17, 17, 17, 0.8);
+	background: rgba(17, 17, 17, 1);
 	backdrop-filter: blur(5px);
 	box-shadow: rgba(var(--shadow-color), 0.1) 0px 8px 24px, rgba(var(--shadow-color), 0.1) 0px 16px 56px, rgba(var(--shadow-color), 0.1) 0px 24px 80px;
 }
@@ -415,5 +421,16 @@ div.spinner-wrapper > div.img-container:after {
 }
 div[data-region="loading-placeholder-content"] {
 	background: #111111 !important;
+	color: white !important;
+}
+div[data-region="page-container"] div > ul.list-group {
+	padding-top: .5rem!important;
+}
+div[data-region="page-container"] div > ul.list-group > li {
+	background: #111111 !important;
+	border-radius: 20px;
+	border: none !important;
+}
+div[data-region="page-container"] div > ul.list-group > li span.categoryname {
 	color: white !important;
 }
