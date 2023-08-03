@@ -206,8 +206,8 @@ div[data-region="course-content"] > div > div > div > div > button > i {
 div[data-region="course-content"] > div > div > div > div > button:hover > i {
 	color: black !important;
 }
-div.tool_dataprivacy:after {
-	content: "  |  Modificaciones hechas por JeffSER";
+div.tool_dataprivacy:before {
+	content: "Modificaciones hechas por JeffSER | ";
 }
 button.dropdown-toggle, button.btn[data-action="toggle-manual-completion"] {
 	background: #151517 !important;
