@@ -209,8 +209,8 @@ div[data-region="course-content"] > div > div > div > div > button:hover > i {
 div.tool_dataprivacy:after {
 	content: "  |  Modificaciones hechas por JeffSER";
 }
-button.dropdown-toggle {
-	background: #151517;
+button.dropdown-toggle, button.btn[data-action="toggle-manual-completion"] {
+	background: #151517 !important;
 	color: white !important;
 }
 nav.navbar, nav.navbar-brand {
@@ -262,4 +262,17 @@ ul.dropdown-menu > li a.dropdown-item:focus {
 }
 section#region-bottom-blocks, section#region-top-blocks {
 	display: none !important;
+}
+div.content-section > ul.topics > li {
+	background: transparent !important;
+}
+h5, h5 span, p span {
+	color: white !important;
+}
+div.course-content ul.nav-tabs li.nav-item a {
+	color: #949ae0 !important;
+}
+div.course-content ul.nav-tabs li.nav-item a.active {
+	color: #FFDA00 !important;
+	border: none !important;
 }
