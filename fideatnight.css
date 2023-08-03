@@ -133,6 +133,7 @@ div.card-body {
 div.card-body h4, div.card-body h3 {
 	color: white !important;
 	text-decoration: underline #FFDA00;
+	text-transform: capitalize;
 }
 div[data-region="paged-content-page"] > div[role="list"] {
 	flex-wrap: wrap;
@@ -216,7 +217,7 @@ nav.navbar, nav.navbar-brand {
 	background: transparent !important;
 }
 body {
-	background: var(--background);
+	background: var(--background) !important;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -232,16 +233,13 @@ nav.navbar > div {
 	backdrop-filter: blur(5px);
 }
 section[data-region="blocks-column"] {
-	top: 0 !important;
-	height: 100vh;
+	top: 80px !important;
+	height: calc(100vh - 100px);
 	background: #111111 !important;
 	padding: 10px;
 	position: fixed !important;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-}
-body.sidebar-pinned section[data-region="blocks-column"] {
-
 }
 body.sidebar-pinned {
 	margin-right: 0 !important;
@@ -261,14 +259,17 @@ section[data-region="blocks-column"] div.card-body{
 section[data-region="blocks-column"] a.nav-link {
 	cursor: default;
 }
-section[data-region="blocks-column"] a.nav-link i.icon:before{
+section[data-region="blocks-column"] a.nav-link i.icon:before {
 	color: #FFDA00 !important;
 }
 section[data-region="blocks-column"] div.block_microsoft div.profilepicture {
 	text-align: center;
 }
-div.site-sidebar-tab-content {
-	height: auto !important;
+div.tab-content > div.tab-pane > .block_accessibility:before {
+	content: "Por favor desactivar Fide@Night antes de usar ajustes de accesibilidad";
+}
+div.tab-content > div.tab-pane > .block_accessibility input#block_accessibility_launchtoolbar {
+	color: white !important;
 }
 html {
 	background: transparent;
