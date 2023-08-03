@@ -64,9 +64,6 @@ div.navbar-brand > a.header-logo img {
 a, div.multiblock ul.nav li.nav-item a.nav-link {
 	color: #949ae0 !important;
 }
-div#page {
-	backdrop-filter: var(--background-effect);
-}
 header .mr-2 {
 	text-align: center;
 	width: 100%;
@@ -235,15 +232,16 @@ nav.navbar > div {
 	backdrop-filter: blur(5px);
 }
 section[data-region="blocks-column"] {
+	top: 0 !important;
+	height: 100vh;
 	background: #111111 !important;
-	height: auto !important;
-	position: fixed !important;
 	padding: 10px;
+	position: fixed !important;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
 body.sidebar-pinned section[data-region="blocks-column"] {
-	position: fixed !important;
+
 }
 body.sidebar-pinned {
 	margin-right: 0 !important;
