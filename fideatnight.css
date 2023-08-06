@@ -434,3 +434,70 @@ div[data-region="page-container"] div > ul.list-group > li {
 div[data-region="page-container"] div > ul.list-group > li span.categoryname {
 	color: white !important;
 }
+div.submissionsummarytable > table tr th {
+	color: white !important;
+}
+div.submissionsummarytable > table tr td {
+	background: #111111 !important;
+	color: white !important;
+}
+div.submissionsummarytable > table tr td.submissionstatussubmitted {
+	background: #3f6e37 !important;
+}
+div.submissionsummarytable > table tr:hover th {
+	background: #111111 !important;
+}
+div.filemanager .fp-navbar, div.filemanager .filemanager-container {
+	padding: 10px !important;
+	border-radius: 20px !important;
+	background: #111111 !important;
+	color: white !important;
+	margin-top: 20px !important;
+	border: none !important;
+}
+div.filemanager .filemanager-container .fp-file * {
+	border: none !important;
+}
+div.filemanager .filemanager-container .fp-file .fp-filename-field div {
+	background: none !important;
+	color: white !important;
+}
+div.filemanager .fp-navbar div span.fp-path-folder {
+	color: white !important;
+}
+div[role="dialog"] {
+	background: rgba(32, 33, 36, 0.90) !important;
+	padding: 10px !important;
+	border-radius: 20px !important;
+}
+div[role="dialog"] a > span{
+	color: white !important;
+}
+div[role="dialog"] div.fp-navbar, div[role="dialog"] div.fp-content {
+	padding: 10px !important;
+	background: #111111 !important;
+	border: none !important;
+	margin: 10px !important;
+	border-radius: 20px !important;
+}
+div[role="dialog"] .fp-iconview .fp-file * {
+	border: none !important;
+}
+div[role="dialog"] .fp-iconview .fp-file .fp-filename-field p {
+	color: white !important;
+	background: none !important;
+}
+section#region-main div.row > div > div a {
+	padding: 10px !important;
+	background: #111111 !important;
+	border: none !important;
+	border-radius: 20px !important;
+}
+div[role="main"] div[role="alertdialog"] div#modal-content {
+	background: #111111 !important;
+	border-radius: 20px !important;
+}
+div[role="main"] div[role="alertdialog"] div#modal-content div {
+	border-top: none !important;
+	border-bottom: none !important;
+}
