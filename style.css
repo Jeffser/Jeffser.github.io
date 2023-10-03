@@ -68,7 +68,7 @@ body {
     radial-gradient(4.57vh at 50% calc(100% + 3.45vh),#0000 99%,#000 101%) calc(50% - 6vh) calc(100% - 3vh)/12vh calc(51% - 3vh) repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
-    margin: -6vh 0;
+    margin: -6.1vh 0;
     padding: 6vh 0;
 }
 body > section {
@@ -202,6 +202,22 @@ body > section#titlescreen > div#buttons > a > span#title {
 }
 body > section#titlescreen > div#buttons > a:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body > section#titlescreen > div#gradient-indicator {
+    display: block;
+    position: absolute;
+    width: 5vmin;
+    height: 10vmin;
+    bottom: 3vmin;
+    z-index: 2;
+}
+body > section#titlescreen > div#gradient-indicator.left {
+    left: 0;
+    background-image: linear-gradient(to right, var(--background), rgba(0,0,0,0));
+}
+body > section#titlescreen > div#gradient-indicator.right {
+    right: 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), var(--background));
 }
 /*CERTIFICATES*/
 body > section#certificates {
