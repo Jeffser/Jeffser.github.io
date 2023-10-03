@@ -24,7 +24,6 @@ body {
     z-index: 100;
 }
 #go-to-top {
-    text-decoration: none;
     transition: opacity .2s;
     opacity: 0;
     position: fixed;
@@ -76,6 +75,10 @@ body > section {
     background-color: black;
     color: var(--font);
     background-color: var(--background);
+    z-index: 0;
+}
+a {
+    text-decoration: none;
 }
 h1 {
     font-family: 'Lora', serif;
@@ -132,6 +135,27 @@ footer {
     opacity: 100% !important;
     transform: translateY(0%) !important;
 }
+header {
+    transition-delay: 0ms;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    background-color: #6c584ccc;
+    backdrop-filter: blur(.5vw);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+header > a {
+    color: #adc178;
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin: .5vmin 0;
+    margin-bottom: -2vmin;
+    font-size: 5vmin;
+}
 /*TITLESCREEN*/
 body > section#titlescreen {
     /*----*/
@@ -149,7 +173,7 @@ body > section#titlescreen {
 }
 body > section#titlescreen h1 {
     font-size: 10vmin;
-    padding: 0 2vmin;
+    padding: 2vmin 0;
     margin: 0;
 }
 body > section#titlescreen h2 {
@@ -162,7 +186,6 @@ body > section#titlescreen div#button-container {
     gap: 8vmin;
 }
 body > section#titlescreen div#button-container a {
-    text-decoration: none;
     color: var(--foreground);
     font-size: 6vmin;
     transition: filter .2s;
@@ -189,7 +212,6 @@ body > section#titlescreen > div#buttons > a {
     padding: 2vmin;
     font-size: 3vmin;
     border-radius: 2vmin;
-    text-decoration: none;
     color: var(--font);
     transition: box-shadow .2s;
     display: flex;

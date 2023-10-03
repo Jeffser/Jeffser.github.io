@@ -43,6 +43,14 @@ document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 
 window.onscroll = function() {
     const goTopButton = document.getElementById("go-to-top");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) goTopButton.style.opacity = "50%";
+    const header = document.querySelector("header");
+    const subtitle = document.querySelector("#titlescreen > #presentation > h2");
+    if (subtitle.getBoundingClientRect().bottom < subtitle.offsetHeight) {
+        header.style.display = "flex";
+    }
+    else {
+        header.style.display = "none";
+    }
+    if (document.body.scrollTop > document.getElementById("titlescreen").offsetHeight * .95 || document.documentElement.scrollTop > document.getElementById("titlescreen").offsetHeight * .95) goTopButton.style.opacity = "50%";
     else goTopButton.style.opacity = "0%";
 }
