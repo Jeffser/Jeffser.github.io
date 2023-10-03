@@ -1,63 +1,75 @@
----
-layout: post
-title: ¡Bienvenidos a mi página!
-cover: oneshot.jpeg
-cover_cr: Nightmargin / Oneshot Game
-cover_cr_url: https://www.oneshot-game.com/
----
-
-<p>
-    ¡Hola! Mi nombre es Jeffry y estoy encantado de tener la oportunidad de compartir un poco sobre mí contigo.
-    Originario del hermoso país de Costa Rica, actualmente estoy persiguiendo mi pasión por la tecnología como
-    estudiante dedicado de ingeniería de sistemas informáticos en Fidélitas.
-</p>
-<p>
-    Desde una edad temprana, la programación siempre ha sido parte integral de mi vida, cautivando mi curiosidad y
-    alimentando mi deseo de explorar sus vastas posibilidades. Lo que comenzó como un simple pasatiempo se ha
-    transformado orgánicamente en un increíble viaje, en perfecta sintonía con mis estudios y abriendo el camino hacia
-    una prometedora carrera en la industria tecnológica.
-</p>
-<p>
-    Un aspecto de la programación que realmente me cautiva es su evolución constante. Presenciar de primera mano los
-    avances en lenguajes de programación, frameworks y metodologías ha sido una experiencia increíblemente emocionante y
-    enriquecedora. Es un campo que constantemente me desafía a mantenerme actualizado con las últimas tendencias y me
-    impulsa a ampliar mis habilidades, asegurando que pueda adaptarme al paisaje en constante cambio del mundo digital.
-</p>
-<p>
-    En mis exploraciones, he encontrado una gran alegría en la creación de sitios web atractivos y fáciles de usar.
-    Poder combinar la artesanía del desarrollo de front-end con las complejidades de la funcionalidad del back-end es un
-    proceso emocionante. Desde conceptualizar interfaces visualmente atractivas hasta implementar sistemas robustos que
-    brinden experiencias de usuario fluidas, disfruto la oportunidad de dar vida a ideas en el lienzo digital.
-</p>
-<p>
-    Si bien mi experiencia se encuentra principalmente en el desarrollo web, no me limito a un solo ámbito. También me
-    he adentrado en el desarrollo de aplicaciones de escritorio, utilizando el poder de Python y Java. La capacidad de
-    crear soluciones de software eficientes e intuitivas que se ejecuten de manera nativa en diversas plataformas me ha
-    permitido ampliar mis horizontes y enfrentar diversos desafíos de frente.
-</p>
-<p>
-    A medida que continúo navegando por mi camino educativo, espero con ansias canalizar mi pasión y conocimiento hacia
-    aplicaciones prácticas. Creo en el poder de la tecnología para tener un impacto positivo en la vida de las personas
-    y me impulsa a contribuir a este proceso transformador. A través de la colaboración, la innovación y la búsqueda
-    incansable de la excelencia, aspiro a aprovechar mis habilidades para crear soluciones significativas centradas en
-    el usuario que acerquen la brecha entre la imaginación y la realidad.
-</p>
-<p>
-    Gracias por tomarte el tiempo para conocerme un poco mejor. Estoy emocionado por el futuro y las oportunidades que
-    se presentan. Si tienes alguna pregunta o deseas conectarte, no dudes en hacerlo. Espero la posibilidad de trabajar
-    juntos y marcar la diferencia en el mundo de la tecnología.
-</p>
-<h2>Posts destacados</h2>
-<section id="featured-posts">
-    {% for post in site.posts %}
-    {% if post.featured == true %}
-    <a href="{{ site.baseurl }}{{ post.url }}" class="post">
-        <img title="Cover image by: {{ post.cover_cr }}" src="{{ site.url }}/images/cover/{{ post.cover }}" alt="">
-        <h2>{{ post.title }}</h2>
-        <div id="excerpt">
-            {{ post.excerpt }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffser</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button onclick="goTop()" class="nf nf-fa-arrow_up" id="go-to-top"></button>
+    <section id="titlescreen" class="wavy-both">
+        <div id="temp-alert" class="hidden from-top">
+            <span class="nf nf-md-alert"></span>
+            <span>This website is still in active development, some things might change</span>
         </div>
-    </a>
-    {% endif %}
-    {% endfor %}
-</section>
+        <div id="presentation">
+            <h1 class="hidden from-top">Jeffry Eduarte Rojas</h1>
+            <h2 class="hidden from-top" style="transition-delay: 100ms;">Software Developer</h2>
+            <div id="button-container" class="hidden from-top" style="transition-delay: 200ms;">
+                <a href="https://www.linkedin.com/in/jeffrysamuer/" class="nf nf-md-linkedin"></a>
+                <a href="https://twitter.com/jeffrysamuer" class="nf nf-md-twitter"></a>
+                <a href="https://github.com/Jeffser" class="nf nf-md-github"></a>
+            </div>
+        </div>
+        <div id="buttons" class="hidden from-bottom" style="transition-delay: 300ms;">
+            <a href="#certificates"><span id="icon" class="nf nf-md-certificate"></span><span id="title">Certificates</span></a>
+            <a href="#os"><span id="icon" class="nf nf-md-arch"></span><span id="title">Arch Linux</span></a>
+            <a href="#skills"><span id="icon" class="nf nf-md-medal"></span><span id="title">Skills</span></a>
+            <a href="#education"><span id="icon" class="nf nf-fa-graduation_cap"></span><span id="title">Current Education</span></a>
+        </div>
+    </section>
+    <section id="certificates" class="wavy-both">
+        <h1>Certificates</h1>
+        <div id="certificate-container">
+            <div class="certificate hidden from-bottom">
+                <h1>Introducción a Redes</h1>
+                <h2>Cisco Networking Academy</h2>
+            </div>
+            <div class="certificate hidden from-bottom">
+                <h1>Introducción a IoT</h1>
+                <h2>Cisco Networking Academy</h2>
+            </div>
+            <div class="certificate hidden from-bottom">
+                <h1>NDG Linux Unhatched</h1>
+                <h2>Cisco Networking Academy</h2>
+            </div>
+            <div class="certificate hidden from-bottom">
+                <h1>IT Essentials</h1>
+                <h2>Cisco Networking Academy</h2>
+            </div>
+        </div>
+        <h2>- AND MORE -</h2>
+    </section>
+    <section id="os" class="wavy-both">
+        <h1>I use Arch btw...</h1>
+        <div class="description hidden from-bottom">Arch Linux, with its "make it yourself" philosophy, speed, and customizability, has become more than an operating system for me. It's a canvas upon which I paint my digital world. It's a testament to the power of choice, trust in performance, and the joy of creating an environment that reflects who I am. With Hyprland as my window manager, I've achieved a computing experience that's as unique as I am, and I wouldn't have it any other way. Arch Linux is not just a choice; it's a statement of individuality and empowerment.</div>
+        <img src="https://user-images.githubusercontent.com/69224322/268539244-b9a1010f-6d0e-4740-8511-ae96bdae5df1.png" class="hidden from-bottom" style="transition-delay: 100ms;" alt="">
+    </section>
+    <section id="skills" class="wavy-both">
+        <h1>Skills</h1>
+        <div id="skill-container">
+        </div>
+    </section>
+    <section id="education" class="wavy-both">
+        <h1>Current Education</h1>
+        <div class="description hidden from-bottom">
+            <h2>Fidélitas University</h2>
+            I am currently pursuing a degree in Computer Systems Engineering at Fidélitas University. This program encompasses a wide range of concepts, including programming, database management, web development, project planning, and graphic design. Furthermore, it places a strong emphasis on teamwork and ongoing collaboration for various projects.
+        </div>
+    </section>
+    <footer>Made from 0 by Jeffser</footer>
+</body>
+</html>
