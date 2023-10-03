@@ -46,8 +46,3 @@ window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) goTopButton.style.opacity = "50%";
     else goTopButton.style.opacity = "0%";
 }
-
-function goTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
