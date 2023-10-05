@@ -51,6 +51,6 @@ window.onscroll = function() {
     else {
         header.style.display = "none";
     }
-    if (document.body.scrollTop > document.getElementById("titlescreen").offsetHeight * .9 || document.documentElement.scrollTop > document.getElementById("titlescreen").offsetHeight * .9) goTopButton.style.opacity = "50%";
-    else goTopButton.style.opacity = "0%";
+    //if (document.body.scrollTop > document.getElementById("titlescreen").offsetHeight * .9 || document.documentElement.scrollTop > document.getElementById("titlescreen").offsetHeight * .9) goTopButton.style.opacity = "50%";
+    //else goTopButton.style.opacity = "0%";
 }
