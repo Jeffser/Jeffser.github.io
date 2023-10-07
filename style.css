@@ -96,14 +96,14 @@ img {
     width: 90vw;
     padding: 2vmin;
     border-radius: 2vmin;
-    backdrop-filter: brightness(50%);
+    background-color: rgba(0, 0, 0, 0.4);
     margin: 5vmin 0;
 }
 div.description {
     width: 90vw;
     margin: auto;
     font-size: 3vmin;
-    backdrop-filter: brightness(50%);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 4vmin;
     padding: 4vmin;
 }
@@ -142,7 +142,7 @@ header {
     z-index: 2;
     left: 0;
     right: 0;
-    background-color: #6c584ccc;
+    background-color: #6c584c;
     backdrop-filter: blur(.5vw);
     display: none;
     align-items: center;
@@ -262,7 +262,7 @@ body > section#certificates > div#certificate-container {
     padding: 5vmin;
 }
 body > section#certificates > div#certificate-container > .certificate {
-    backdrop-filter: brightness(50%);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 2vmin;
     border-radius: 2vmin;
     font-family: 'Montserrat', sans-serif;
@@ -311,7 +311,7 @@ body > section#skills div#skill-container {
     gap: 5vmin;
 }
 body > section#skills div#skill-container > .skill {
-    backdrop-filter: brightness(50%);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 5vmin;
     border-radius: 5vmin;
 }
