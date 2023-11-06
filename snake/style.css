@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+table {
+    table-layout: fixed;
+    
+}
+table tr td {
+    overflow: hidden;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 12px;
+    height: 12px;
+    background-color: azure;
+
+}
+div#stats {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(https://media.tenor.com/8QTiEfTe1RoAAAAi/niko-oneshot.gif);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+div#stats div {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
