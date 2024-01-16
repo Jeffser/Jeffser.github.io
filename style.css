@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@500&family=Montserrat:wght@500&family=Yeseva+One&display=swap');
 @import url("https://www.nerdfonts.com/assets/css/webfont.css");
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f0ead2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dde5b6;
+  }
+  
+
 /*TEMP STUFF*/
 #temp-alert {
     position: absolute;
@@ -22,6 +43,7 @@ body {
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     z-index: 100;
+    overflow: overlay;
 }
 #go-to-top {
     transition: opacity .2s;
