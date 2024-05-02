@@ -3,76 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffry Eduarte Rojas</title>
-    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/69224322?v=4">
+    <title>Jeffser</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <meta name="theme-color" content="#6c584c">
-    <link rel="canonical" href="https://jeffser.com"/>
 </head>
 <body>
-    <!--<a href="#" class="nf nf-fa-arrow_up" id="go-to-top"></a>-->
-    <header class="wavy-both hidden from-top"><a href="#">Jeffry Eduarte Rojas</a></header>
-    <section id="titlescreen" class="wavy-both">
-        <div id="temp-alert" class="hidden from-top">
-            <span class="nf nf-md-alert"></span>
-            <span>NEW WEBSITE COMMING SOON</span>
-        </div>
-        <div id="presentation">
-            <h1 class="hidden from-top">Jeffry Eduarte Rojas</h1>
-            <h2 class="hidden from-top" style="transition-delay: 100ms;">Software Developer</h2>
-            <div id="button-container" class="hidden from-top" style="transition-delay: 200ms;">
+    <section id="modal">
+        <div id="background" onclick="this.parentNode.style.display='none'"></div>
+        <div id="content"></div>
+    </section>
+    <section id="container">
+        <section id="main-page">
+            <h1 class="abril-fatface-regular title mask" id="name">Jeffser</h1>
+            <span class="platypi" id="fullname">-Jeffry Samuel Eduarte Rojas-</span>
+            <div id="socials">
                 <a href="https://www.linkedin.com/in/jeffrysamuer/" class="nf nf-md-linkedin"></a>
+                <div class="hline"></div>
                 <a href="https://twitter.com/jeffrysamuer" class="nf nf-md-twitter"></a>
+                <div class="hline"></div>
                 <a href="https://github.com/Jeffser" class="nf nf-md-github"></a>
             </div>
-        </div>
-        <div id="buttons" class="hidden from-bottom" style="transition-delay: 300ms;">
-            <a href="#certificates"><span id="icon" class="nf nf-md-certificate"></span><span id="title">Certificates</span></a>
-            <a href="#os"><span id="icon" class="nf nf-md-arch"></span><span id="title">Arch Linux</span></a>
-            <a href="#skills"><span id="icon" class="nf nf-md-medal"></span><span id="title">Skills</span></a>
-            <a href="#education"><span id="icon" class="nf nf-fa-graduation_cap"></span><span id="title">Current Education</span></a>
-        </div>
-    </section>
-    <section id="certificates" class="wavy-both">
-        <h1>Certificates</h1>
-        <div id="certificate-container">
-            <div class="certificate hidden from-bottom">
-                <h1>Introducción a Redes</h1>
-                <h2>Cisco Networking Academy</h2>
+        </section>
+        <section id="navigation-bar">
+            <a href="#about-me">About me</a>
+            <a href="#repos">Repositories</a>
+            <a href="#skills">Skills</a>
+        </section>
+        <section id="about-me">
+            <h1 class="abril-fatface-regular title mask">About me</h1>
+            <div id="text">
+                <p>
+                    Hello! I'm Jeffry. I'm a computer science engineering student at Fidelitas University, I have personal experience in web development, Python and Java. I daily drive Linux on my computers, usually Arch Linux but nowadays I'm using Fedora Silverblue.
+                </p>
+                <p>
+                    I enjoy listening to music and watching YouTube videos about technology and history. I also like to take photos from time to time.
+                </p>
             </div>
-            <div class="certificate hidden from-bottom">
-                <h1>Introducción a IoT</h1>
-                <h2>Cisco Networking Academy</h2>
+            <div class="gallery">
+                <img src="images/photos/IMG_1578.JPG" onclick="showModal(this.outerHTML)">
+                <img src="images/photos/IMG_1585.JPG" onclick="showModal(this.outerHTML)">
+                <img src="images/photos/IMG_1590.JPG" onclick="showModal(this.outerHTML)">
+                <img src="images/photos/IMG_1566.JPG" onclick="showModal(this.outerHTML)">
+                <img src="images/photos/IMG_1588.JPG" onclick="showModal(this.outerHTML)">
+                <img src="images/photos/IMG_1577.JPG" onclick="showModal(this.outerHTML)">
+                <img src="images/photos/IMG_1591.JPG" onclick="showModal(this.outerHTML)">
             </div>
-            <div class="certificate hidden from-bottom">
-                <h1>NDG Linux Unhatched</h1>
-                <h2>Cisco Networking Academy</h2>
+        </section>
+        <section id="repos">
+            <h1 class="abril-fatface-regular title mask">Repositories</h1>
+            <div id="text">
+                These are my repositories, some are from my university account.
             </div>
-            <div class="certificate hidden from-bottom">
-                <h1>IT Essentials</h1>
-                <h2>Cisco Networking Academy</h2>
+            <div id="repos"></div>
+        </section>
+        <section id="skills">
+            <h1 class="abril-fatface-regular title mask">Skills</h1>
+            <div id="text">
+                <p>
+                    Some techincal skills I have.
+                </p>
             </div>
-        </div>
-        <h2>- AND MORE -</h2>
+            <div id="skills">
+            </div>
+        </section>
+        <footer>
+            <p>Created by <a href="https://github.com/jeffser">Jeffser</a> with ♥️</p>
+        </footer>
     </section>
-    <section id="os" class="wavy-both">
-        <h1>I use Arch btw...</h1>
-        <div class="description hidden from-bottom">Arch Linux, with its "make it yourself" philosophy, speed, and customizability, has become more than an operating system for me. It's a canvas upon which I paint my digital world. It's a testament to the power of choice, trust in performance, and the joy of creating an environment that reflects who I am. With Hyprland as my window manager, I've achieved a computing experience that's as unique as I am, and I wouldn't have it any other way. Arch Linux is not just a choice; it's a statement of individuality and empowerment.</div>
-        <img src="https://user-images.githubusercontent.com/69224322/268539244-b9a1010f-6d0e-4740-8511-ae96bdae5df1.png" class="hidden from-bottom" style="transition-delay: 100ms;" alt="">
-    </section>
-    <section id="skills" class="wavy-both">
-        <h1>Skills</h1>
-        <div id="skill-container">
-        </div>
-    </section>
-    <section id="education" class="wavy-both">
-        <h1>Current Education</h1>
-        <div class="description hidden from-bottom">
-            <h2>Fidélitas University</h2>
-            I am currently pursuing a degree in Computer Systems Engineering at Fidélitas University. This program encompasses a wide range of concepts, including programming, database management, web development, project planning, and graphic design. Furthermore, it places a strong emphasis on teamwork and ongoing collaboration for various projects.
-        </div>
-    </section>
-    <footer>Made from 0 by Jeffser</footer>
 </body>
 </html>

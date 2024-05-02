@@ -3,7 +3,7 @@ skills = [
     {name: "Javascript", stars: 4, icon: "nf-md-language_javascript"},
     {name: "PHP", stars: 3, icon: "nf-md-language_php"},
     {name: "Bash Scripting", stars: 4, icon: "nf-md-bash"},
-    {name: "Java", stars: 3.5, icon: "nf-md-language_java"},
+    {name: "Java", stars: 3, icon: "nf-md-language_java"},
     {name: "Linux", stars: 5, icon: "nf-md-linux"},
     {name: "SQL", stars: 4, icon: "nf-md-database"},
     {name: "Windows", stars: 4, icon: "nf-md-microsoft_windows"},
@@ -12,14 +12,12 @@ skills = [
 ]
 skills.forEach(skill => {
     let skillElement = document.createElement("div");
-    skillElement.className = "skill hidden from-bottom";
-    skillElement.style.transitionDelay = "100ms";
+    skillElement.className = "skill";
     let starContainerElement = document.createElement("p");
     starContainerElement.id = "stars";
     for (let i=skill.stars; i>0; i--) {
         let star = document.createElement('span');
-        if (i==.5) star.className = "nf nf-md-star_half";
-        else star.className = "nf nf-md-star";
+        star.className = "nf nf-md-star";
         starContainerElement.append(star)
     }
     for (let i=0.5; i<5-skill.stars; i++) {
@@ -27,30 +25,28 @@ skills.forEach(skill => {
         star.className = "nf nf-md-star_outline";
         starContainerElement.append(star)
     }
-    skillElement.innerHTML = `<h1><span class="nf ${skill.icon}"></span>${skill.name}</h1>`
+    skillElement.innerHTML = `<h2 class="abril-fatface-regular"><span class="nf ${skill.icon}"></span>${skill.name}</h2>`
     skillElement.append(starContainerElement);
-    document.querySelector("section#skills > div#skill-container").append(skillElement);
+    document.querySelector("section#skills > div#skills").append(skillElement);
 });
-
-const observer = new IntersectionObserver((entries) => {
-    for (const entry of entries) {
-        if (entry.isIntersecting) entry.target.classList.add('show');
-        else entry.target.classList.remove('show');
-    }
+repositories = [
+    {name: "Hyprccin", url: "https://github.com/jeffser/hyprccin", description: "My config files and scripts for Hyprland"},
+    {name: "Website", url: "https://github.com/Jeffser/Jeffser.github.io", description: "The code for this website and older versions"},
+    {name: "Java Store Demo", url: "https://github.com/JeffryFidelitas/portafolioJeffryEduarte/tree/main/tienda_Jeffry_Eduarte_Rojas", description: "Java backend web store demo using Springframework and SQL"},
+    {name: "Emulation Website Demo", url: "https://github.com/JeffryFidelitas/ProyectoDesarrolloWeb", description: "Emulation website project for my web development class"},
+    {name: "Hand Cursor for Linux", url: "https://github.com/Jeffser/Linux-Hand-Control", description: "Control your Wayland Linux distro using your hands and webcam"}
+]
+repositories.forEach(repo => {
+    let repoElement = document.createElement("a");
+    repoElement.className = "repo";
+    repoElement.innerHTML = `<h2 class="abril-fatface-regular">${repo.name}</h2><p>${repo.description}</p>`;
+    repoElement.href = repo.url;
+    document.querySelector("section#repos > div#repos").append(repoElement);
 });
-
-document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
-
-window.onscroll = function() {
-    const goTopButton = document.getElementById("go-to-top");
-    const header = document.querySelector("header");
-    const subtitle = document.querySelector("#titlescreen > #presentation > h2");
-    if (subtitle.getBoundingClientRect().bottom < subtitle.offsetHeight) {
-        header.style.display = "flex";
-    }
-    else {
-        header.style.display = "none";
-    }
-    //if (document.body.scrollTop > document.getElementById("titlescreen").offsetHeight * .9 || document.documentElement.scrollTop > document.getElementById("titlescreen").offsetHeight * .9) goTopButton.style.opacity = "50%";
-    //else goTopButton.style.opacity = "0%";
+function showModal(content) {
+    console.log(content)
+    let modal = document.querySelector("section#modal");
+    modal.style.display = "flex";
+    let modalContent = document.querySelector("section#modal div#content");
+    modalContent.innerHTML = content;
 }
