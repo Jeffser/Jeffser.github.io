@@ -34,7 +34,7 @@ repositories = [
     {name: "Website", url: "https://github.com/Jeffser/Jeffser.github.io", description: "The code for this website and older versions"},
     {name: "Java Store Demo", url: "https://github.com/JeffryFidelitas/portafolioJeffryEduarte/tree/main/tienda_Jeffry_Eduarte_Rojas", description: "Java backend web store demo using Springframework and SQL"},
     {name: "Emulation Website Demo", url: "https://github.com/JeffryFidelitas/ProyectoDesarrolloWeb", description: "Emulation website project for my web development class"},
-    {name: "Hand Cursor for Linux", url: "https://github.com/Jeffser/Linux-Hand-Control", description: "Control your Wayland Linux distro using your hands and webcam"}
+    {name: "Alpaca", url: "https://github.com/Jeffser/Alpaca", description: "An Ollama client using GTK and Adwaita"}
 ]
 repositories.forEach(repo => {
     let repoElement = document.createElement("a");
