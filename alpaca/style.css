@@ -1,3 +1,7 @@
+:root {
+    color-scheme: dark;
+}
+
 body,
 html {
     margin: 0;
@@ -7,7 +11,6 @@ html {
     font-style: normal;
     background-color: #251f32;
     color: #dddcd9;
-    user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -26,17 +29,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #251f32a6;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background-color: #635d6d80;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.5s;
+    transition: opacity 0.2s ease, visibility 0.5s;
+
 }
 
 header.show {
     visibility: visible;
     opacity: 1;
+}
+
+h1 {
+    font-size: 1.5rem;
 }
 
 .link {
@@ -45,8 +53,8 @@ header.show {
 }
 
 .link a {
-    color: #dddcd9;
-    font-size: 1.3rem;
+    color: #ffffff;
+    font-size: 1.1rem;
 }
 
 header .github {
@@ -56,22 +64,31 @@ header .github {
 .github {
     display: flex;
     align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    transition: all 200ms ease;
+}
+
+.github:hover {
+    background-color: #5e586b;
+}
+
+.github:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .redirect {
-    width: 1.3rem;
+    width: 1.2rem;
 }
 
 .yay {
     flex-direction: column;
 }
 
-header img {
-    width: 10rem;
-}
-
 header .logo img {
-    width: 3rem;
+    width: 2.5rem;
     margin-right: 0.5rem;
 }
 
@@ -80,12 +97,16 @@ a {
 }
 
 .hero {
-    margin-top: 10rem;
+    background-color: #443e50;
     column-gap: 4rem;
+    row-gap: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .logo {
@@ -98,12 +119,8 @@ a {
     margin-right: 2rem;
 }
 
-h1 {
-    font-weight: 800;
-}
-
 main h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .image img {
@@ -115,9 +132,9 @@ main h1 {
 }
 
 .hover:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .hover:active {
@@ -129,12 +146,16 @@ main h1 {
 .image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1122px;
+    margin: auto;
+}
+
+ul {
+    margin-left: 3rem;
 }
 
 li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 footer {
@@ -142,22 +163,14 @@ footer {
     text-align: center;
 }
 
-footer a {
-    text-decoration: underline;
-    color: #dddcd9;
-}
-
 .margin {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 h2 {
-    font-size: 1.7rem;
-}
-
-.splide{
-    max-width: 1122px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .splide__slide img {
