@@ -1,295 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
-@import url("https://www.nerdfonts.com/assets/css/webfont.css");
-
-.platypi {
-    font-family: "Platypi", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.abril-fatface-regular {
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color: 255, 255, 255;
-        --secundary-color: 0, 0, 0;
-    }
-
-    body>section#container>section {
-        backdrop-filter: invert(1);
-    }
-
-    body>section#container {
-        backdrop-filter: invert(0);
-    }
-
-    section#container>section#navigation-bar {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .mask {
-        filter: invert(0);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color: 0, 0, 0;
-        --secundary-color: 255, 255, 255;
-    }
-
-    body>section#container>section {
-        backdrop-filter: invert(1);
-    }
-
-    body>section#container {
-        backdrop-filter: invert(1);
-    }
-
-    section#container>section#navigation-bar {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .mask {
-        filter: invert(1);
-    }
-}
-
-div.vline {
-    border-right: solid rgb(var(--secundary-color)) 0.2pc;
-    height: 50%;
-}
-
-div.hline {
-    border-top: solid rgb(var(--color)) 0.2pc;
-    width: 50%;
-}
-
-.multiply {
-    mix-blend-mode: multiply;
-}
-
-.mask {
-    background-image: url('https://i.ibb.co/VMb4KWH/textured-paper-light.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    display: inline-block;  
-}
-
 body {
-    color: rgb(var(--color));
     margin: 0;
-    background: url('https://i.ibb.co/Sf8sH9b/textured-paper-light.png');
-    background-repeat: both;
-    background-size: auto auto;
-    font-size: 2vh;
-    background-position: top;
-    animation: background-animation ease alternate 60s infinite;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    padding: 30px;
 }
-
-@keyframes background-animation {
-    25% {background-position: top left;}
-    50% {background-position: bottom;}
-    75% {background-position: bottom right;}
-}
-
-body>section#container {
-    position: fixed;
-    inset: 0 0 0 0;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-}
-
-body>section#container>section {
+section#main {
+    padding: 30px;
+    border: solid white;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 12vmin);
-    margin: 2vmin 1vmin 2vmin 1vmin;
-    border-radius: 2vh;
-    height: 88vh;
-    padding: 5vmin 5vmin 5vmin 5vmin;
-    gap: 3pc;
+    gap: 30px;
+    border-radius: 30px;
 }
-
-section#container>section#main-page {
-    height: 81vh;
-    justify-content: center;
-    align-items: center;
-}
-
-section>.title {
-    font-size: 20vmin;
+section#main > h1 {
+    font-size: 100px;
+    text-align: center;
     margin: 0;
-    line-height: 0.9;
 }
-
-div.gallery {
-    flex-grow: 1;
+section#main > div#link-container {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    gap: 2vmin;
-}
-
-div.gallery > img {
-    background-color: white;
-    padding: 1vmin;
-    padding-bottom: 2vmin;
-    transition: .2s;
-}
-div.gallery > img:hover {
-    padding: 0;
-}
-
-section#main-page>#fullname {
-    letter-spacing: 1vmin;
-    font-size: 3vmin;
-}
-
-section#container>section#main-page>div#socials {
-    display: flex;
-    flex-direction: column;
-    gap: 2vmin;
-    position: absolute;
-    align-items: center;
-    bottom: 2vmin;
-    left: 2vmin;
-}
-
-section#container>section#main-page>div#socials>a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 5vmin;
-    transition: .2s;
-}
-section#container>section#main-page>div#socials>a:hover {
-    letter-spacing: 2vmin;
-}
-
-section#container>section#navigation-bar {
-    position: sticky;
-    top: 1vh;
-    height: 7vmin;
-    margin: 0 2vh 0 2vh;
-    flex-direction: row;
-    padding: 0;
     justify-content: space-evenly;
-    align-items: center;
-    z-index: 5;
-    background-color: rgba(var(--color),0.75);
-    color: rgb(var(--secundary-color));
-    backdrop-filter: blur(5px);
-    overflow-x: auto;
-    width: calc(100% - 4vh);
-}
 
-section#container>section#navigation-bar>a {
-    text-align: center;
-    border-radius: 1vh;
-    color: inherit;
-    transition: .2s;
-    overflow-wrap: normal;
 }
-section#container>section#navigation-bar>a:hover {
-    letter-spacing: 0.5vmin;
-}
-section#container>section#skills,section#container>section#repos {
-    height: auto;
-}
-section#container>section#skills>div#skills, section#container>section#repos>div#repos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2vmin;
-}
-
-section#container> section#skills>div#skills>div,section#container> section#repos>div#repos>a {
-    backdrop-filter: invert(1);
-    padding: 2vmin;
-    color: rgb(var(--secundary-color));
-    border-radius: 2vmin;
-    flex-grow: 1;
-    display: flex;
-    gap: 2vmin;
-    justify-content: center;
-    align-items: center;
-}
-section#container> section#repos>div#repos>a {
-    flex-direction: column;
+section#main > div#link-container > a {
+    color: white;
     text-decoration: none;
-    transition: .2s;
+    font-size: 50px;
+    transition: .2s transform;
 }
-section#container> section#repos>div#repos>a:hover {
-    transform: scale(105%);
-}
-section#container> section#skills>div#skills>div>h2, section#container> section#repos>div#repos>a>h2 {
-    margin: 0;
-    display: flex;
-    gap: 2vmin;
-    justify-content: center;
-    align-items: center;
-}
-section#container> section#repos>div#repos>a>h2 {
-    font-size: 4vh;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(var(--secundary-color));
-    text-align: center;
-    height: 3.6pc;
-    padding-bottom: 0.4pc;
-    margin: 0 2vmin 1vmin 2vmin;
-}
-
-footer a {
-    color: rgb(var(--secundary-color));
-}
-
-section#modal {
-    z-index: 10000;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    inset: 0 0 0 0;
-}
-section#modal>div#background {
-    z-index: 10000;
-    position: fixed;
-    inset: 0 0 0 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-section#modal>div#content {
-    z-index: 20000;
-    max-width: 90vmin;
-    height: 90%;
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(5px);
-    border-radius: 2vmin;
-    padding: 2vmin;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-section#modal>div#content img {
-    max-width: 100%;
-    max-height: 100%;
+section#main > div#link-container > a:hover {
+    transform: scale(1.1);
 }
