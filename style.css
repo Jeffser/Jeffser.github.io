@@ -3,12 +3,14 @@ body {
     background-color: black;
     color: white;
     display: flex;
+    flex-direction: column;
+    gap: 60px;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 60px);
     padding: 30px;
 }
-section#main {
+body > section, body > a {
     padding: 30px;
     border: solid white;
     display: flex;
@@ -35,4 +37,21 @@ section#main > div#link-container > a {
 }
 section#main > div#link-container > a:hover {
     transform: scale(1.1);
+}
+a#alpaca {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    transition: .2s transform;
+}
+
+a#alpaca:hover {
+    transform: scale(1.1);
+}
+
+a#alpaca > div > h1 {
+    font-size: 50px;
+    margin: 0;
 }
