@@ -6,81 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpaca</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header">
-        <div class="logo">
-            <img src="https://jeffser.com/images/alpaca/logo.svg" alt="Alpaca logo">
-            <h1>Alpaca</h1>
-        </div>
-        <div class="link">
-            <a class="github" href='https://github.com/Jeffser/Alpaca' target="_blank">Github<img class="redirect"
-                    src="assets/arrow.svg"></a>
-            <a class="github" href='https://flathub.org/apps/com.jeffser.Alpaca' target="_blank">Flathub<img class="redirect"
-                    src="assets/arrow.svg"></a>
+    <header>
+        <div class="container">
+            <div class="left">
+                <img class="logo" src="/images/alpaca/logo.svg" alt="Alpaca logo">
+                <div class="subleft">
+                    <h1>Alpaca</h1>
+                    <h2>An Ollama client</h2>
+                </div>
+            </div>
+            <div class="right">
+                <a href='https://flathub.org/apps/com.jeffser.Alpaca' target="_blank">
+                    <img class="hover" alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en' /></a>
+                <a class="link" href='https://github.com/sponsors/Jeffser' target="_blank">Sponsor the project
+                    <img class="arrow" src="assets/arrow.svg"></a>
+                <a class="link" href='https://github.com/Jeffser/Alpaca' target="_blank">Browse code on Github
+                    <img class="arrow" src="assets/arrow.svg"></a>
+            </div>
         </div>
     </header>
     <main>
-        <div class="hero margin">
-            <div class="logo">
-                <img src="https://jeffser.com/images/alpaca/logo.svg" alt="Alpaca logo">
-                <h1>Alpaca</h1>
-            </div>
-            <div class="link yay">
-                <a class="hover" href='https://flathub.org/apps/com.jeffser.Alpaca' target="_blank">
-                    <img alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en' /></a>
-                <a class="github" href='https://github.com/sponsors/Jeffser' target="_blank">Sponsor the project
-                    <img class="redirect" src="assets/arrow.svg"></a>
-                <a class="github" href='https://github.com/Jeffser/Alpaca' target="_blank">Browse code on Github
-                    <img class="redirect" src="assets/arrow.svg"></a>
-            </div>
-        </div>
-        <div class="image" id="targetElement">
-            <h2 class="margin">An Ollama client made with GTK4 and Adwaita</h2>
-            <ul class="margin">
-                <li>Built in Ollama instance</li>
-                <li>Talk to multiple models in the same conversation</li>
-                <li>Pull and delete models from the app</li>
-                <li>Have multiple conversations</li>
-                <li>Image recognition (Only available with compatible models)</li>
-                <li>Import and export chats</li>
-            </ul>
-            <h2>Screenshots</h2>
-            <section id="image-carousel" class="splide" aria-label="Screenshots">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="https://jeffser.com/images/alpaca/screenie1.png" alt="">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="https://jeffser.com/images/alpaca/screenie2.png" alt="">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="https://jeffser.com/images/alpaca/screenie3.png" alt="">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+        <p>Alpaca is an Ollama client where you can manage and chat with multiple models, Alpaca provides an easy and
+            begginer friendly way of interacting with local AI, everything is open source and powered by Ollama.</p>
+        <ul>
+            <li>Talk to multiple models in the same conversation</li>
+            <li>Pull and delete models from the app</li>
+            <li>Image recognition</li>
+            <li>Document recognition (plain text files)</li>
+            <li>Code highlighting</li>
+            <li>Multiple conversations</li>
+            <li>Notifications</li>
+            <li>Import / Export chats</li>
+            <li>Delete / Edit messages</li>
+            <li>Regenerate messages</li>
+            <li>YouTube recognition (Ask questions about a YouTube video using the transcript)</li>
+            <li>Website recognition (Ask questions about a certain website by parsing the url)</li>
+        </ul>
     </main>
-
+    <section id="image-carousel" class="splide" aria-label="Screenshots">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="/images/alpaca/screenie1.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="/images/alpaca/screenie2.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="/images/alpaca/screenie3.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="/images/alpaca/screenie4.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="/images/alpaca/screenie5.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
     <footer>
         This project is not affiliated with Ollama<br>
-        &copy; 2024 Jeffser & Louis Chauvet-Villaret
+        &copy; 2024 <a href="https://github.com/jeffser">Jeffser</a> & <a href="https://github.com/loulou64490">Louis
+            Chauvet-Villaret</a>
     </footer>
 </body>
 

@@ -1,179 +1,128 @@
 :root {
     color-scheme: dark;
+    --text-color: white;
+    --bg-color: #251f32;
+
 }
 
-body,
-html {
+* {
     margin: 0;
     padding: 0;
-    font-family: "Cantarell", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #251f32;
-    color: #dddcd9;
+    font-family: "Onest", sans-serif;
     user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-header {
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 2rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #635d6d80;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.2s ease, visibility 0.5s;
-
-}
-
-header.show {
-    visibility: visible;
-    opacity: 1;
-}
-
-h1 {
-    font-size: 1.5rem;
-}
-
-.link {
-    display: flex;
-    align-items: center;
-}
-
-.link a {
-    color: #ffffff;
-    font-size: 1.1rem;
-}
-
-header .github {
-    margin-right: 1rem;
-}
-
-.github {
-    display: flex;
-    align-items: center;
-    border-radius: 0.5rem;
-    padding: 0.2rem;
-    transition: all 200ms ease;
-}
-
-.github:hover {
-    background-color: #5e586b;
-}
-
-.github:active {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-}
-
-.redirect {
-    width: 1.2rem;
-}
-
-.yay {
-    flex-direction: column;
-}
-
-header .logo img {
-    width: 2.5rem;
-    margin-right: 0.5rem;
 }
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
-.hero {
-    background-color: #443e50;
-    column-gap: 4rem;
-    row-gap: 2rem;
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    padding: 4rem;
+    background: radial-gradient(ellipse at 75% 0%, #424f70 0%, #251F32 74%);
+}
+
+.hover{
+    transition: transform 0.2s ease-out;
+}
+
+.hover:hover{
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 60rem;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    row-gap: 4rem;
 }
 
-.logo {
+@media screen and (max-width:55rem) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.left {
     display: flex;
-    align-items: center;
+    gap: 4rem;
 }
 
-.logo img {
-    width: 6rem;
-    margin-right: 2rem;
+.subleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-main h1 {
+h1{
     font-size: 3rem;
 }
 
-.image img {
-    pointer-events: none;
+h2{
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #e7e0f8;
 }
 
-.hover {
-    transition: all 200ms ease;
+.logo {
+    width: 7rem;
 }
 
-.hover:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-}
-
-.hover:active {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-}
-
-.image {
+.right {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.link{
+    color: #e7e0f8;
+    font-size: 1.1rem;
+    display: flex;
+    padding: 3px;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.link:hover{
+    background-color: #e7e0f828;
+}
+
+.arrow {
+    width: 1.1rem;
+}
+
+main{
+    max-width: 60rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+p{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+li{
+    color: #e7e0f8;
+}
+
+section{
     max-width: 1122px;
     margin: auto;
 }
 
-ul {
-    margin-left: 3rem;
-}
-
-li {
-    font-size: 1.1rem;
-}
-
-footer {
-    margin: 1rem;
-    text-align: center;
-}
-
-.margin {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
 .splide__slide img {
     max-width: 100%;
-    height: auto;
+}
+
+footer{
+    margin: 1rem;
+    text-align: center;
 }
