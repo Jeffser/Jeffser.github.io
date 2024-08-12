@@ -32,7 +32,7 @@ body {
 }
 
 header {
-    padding: 6rem 4rem 2rem 4rem;
+    padding: 10rem 4rem 8rem 4rem;
     background: radial-gradient(ellipse at 75% 0%, #3f3053 0%, #251F32 60%);
 }
 
@@ -88,6 +88,7 @@ main {
 }
 
 main h1 {
+    margin: 4rem 0;
     display: block;
     text-align: center;
 }
@@ -139,7 +140,6 @@ main h1 {
 }
 
 .card-container {
-    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -169,9 +169,31 @@ main h1 {
 }
 
 p{
-    margin: 0 1rem;   
+    padding: 0.5rem 1rem;   
     font-size: 1.2rem;
     line-height: 2rem;
+}
+
+@media screen and (max-width: calc(404px + 4rem)) {
+    .card{
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        border-top: 2px solid #564d69;
+        background-color: #332b463b;
+        width: 100%;
+    }
+
+    .card:hover {
+        box-shadow: none;
+        background-color: none;
+        border: none;
+        border-top: 2px solid #564d69;
+    }
+
+    p{
+        border-bottom: 2px solid #564d69;
+    }
 }
 
 footer {
