@@ -174,13 +174,14 @@ p{
     line-height: 2rem;
 }
 
-@media screen and (max-width: calc(404px + 1rem)) {
+@media screen and (max-width: calc(404px + 4rem)) {
     .card{
         margin: 0;
         border-radius: 0;
         border: none;
         border-top: 2px solid #564d69;
         background-color: #332b463b;
+        width: 100%;
     }
 
     .card:hover {
