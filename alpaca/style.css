@@ -85,6 +85,7 @@ div.title-container div.button-container {
     gap: 20px;
 }
 
+
 @media (orientation: landscape) {
     div.title-container div.button-container, section.page div.page-container {
         flex-direction: row;
@@ -110,15 +111,17 @@ div.title-container div.button-container {
 
 @media (orientation: portrait) {
     div.title-container div.button-container, section.page div.page-container {
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     section.page div.page-container {
         align-items: center;
     }
 
-    section.page div.page-container div.text-container h1 {
-        text-align: center;
+    section.page div.page-container div.text-container h1,
+    div.title-container div.button-container, section.page div.page-container p {
+        text-align: center !important;
     }
 }
 
@@ -145,7 +148,8 @@ section.page div.page-container {
     display: flex;
 }
 section.page div.page-container img {
-    width: 100vmin;
+    min-width: 30vmax;
+    max-width: 100vmin;
     background: radial-gradient(circle, rgb(83, 81, 179) 20%, rgba(199,0,255,0) 100%);
     background-size: 95% 95%;
     background-repeat: no-repeat;
@@ -167,6 +171,8 @@ section.page div.page-container div.text-container h1 {
 }
 section.page div.page-container div.text-container p {
     font-size: 2vh;
+    text-wrap: wrap;
+    line-break: word;
 }
 
 section.page div.images-page-container {
