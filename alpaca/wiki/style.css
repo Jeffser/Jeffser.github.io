@@ -3,7 +3,7 @@
 @import url('https://www.nerdfonts.com/assets/css/webfont.css');
 
 body {
-    background: radial-gradient(ellipse at 75% 0%, #3f3053 0%, #251F32 60%);
+    background: radial-gradient(ellipse at 75% 0%, var(--bg-color-1) 0%, var(--bg-color-2) 60%);
     margin: 0;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -12,18 +12,18 @@ body {
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(2vmin);
     background-color: rgba(0,0,0,.3);
-    padding: 10px 20px;
+    padding: 1vmin 2vmin;
     z-index: 10;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 2vmin;
 }
 
 header h1 {
@@ -46,4 +46,69 @@ header > a, header h1 {
 
 header a:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+section.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.main {
+    max-width: 60vmax;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 0 3vmin 0 3vmin;
+    margin: 3vmin 0 3vmin 0;
+    border-radius: 3vmin;
+}
+
+section.main h1, section.main h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section.main h1 {
+    color: var(--h1-color);
+    font-size: 4vh;
+}
+
+section.main h2 {
+    color: var(--h2-color);
+    font-size: 3vh;
+}
+
+section.main p {
+    font-size: 2vh;
+    color: white;
+}
+
+section.main table {
+    padding: 0;
+    border-collapse: collapse;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+    font-size: 2vmin;
+    width: 100%;
+}
+
+section.main table thead {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+section.main table, section.main table th, section.main table td {
+    border: solid rgba(255, 255, 255, .5) .3vmin;
+}
+
+section.main table thead tr th {
+    padding: 1vmin 1vmin;
+    text-align: left;
+}
+
+section.main table tbody tr th {
+    font-size: 1.5vmin;
+    padding: 1vmin 1vmin;
+    text-align: left;
+    color: white;
 }
