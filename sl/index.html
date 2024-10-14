@@ -1,0 +1,13 @@
+<style>
+    html {
+        background: black;
+    }
+</style>
+<script>
+    let urls = new Map();
+    urls.set('alpaca', 'com.jeffser.Alpaca')
+    urls.set('amd', 'com.jeffser.Alpaca.Plugins.AMD')
+    const urlParams = new URLSearchParams(window.location.search);
+    let id = String(urlParams.get('id'))
+    window.location.replace("appstream://" + urls.get(id));
+</script>
