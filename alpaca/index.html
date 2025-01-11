@@ -4,158 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpaca</title>
-    <link rel="icon" type="image/x-icon" href="../images/alpaca/logo.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="page" id="welcome">
+    <nav class="navbar">
+        <div style="flex-grow: 1; justify-content: left;">
+            <a href="#main-page">
+                <img src="https://jeffser.com/images/alpaca/logo.svg" width="30" height="30" class="bi me-2 d-inline-block align-top">
+                <span>Alpaca</span> 
+            </a>
+        </div>
+        <div>
+            <a href="#chat-page" class="nf nf-md-chat"></a>
+            <a href="#image-page" class="nf nf-fa-image"></a>
+            <a href="#custom-page" class="nf nf-fae-brain"></a>
+            <a href="#local-page" class="nf nf-fa-hard_drive"></a>
+            <a href="#code-page" class="nf nf-cod-code"></a>
+            <a href="#youtube-page" class="nf nf-fa-youtube"></a>
+            <a href="#privacy-page" class="nf nf-md-safe"></a>
+            <a href="#sponsor-page" class="nf nf-fa-heart"></a>
+        </div>
+    </nav>
+    <section id="main-page">
         <div class="title-container">
             <h1>Alpaca</h1>
-            <div class="button-container">
-                <a href='https://flathub.org/apps/com.jeffser.Alpaca'><img alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en'/></a>
-                <div>
-                    <a href="https://github.com/sponsors/Jeffser">Sponsor project</a>
-                    <a href="https://github.com/Jeffser/Alpaca">Visit repository</a>
-                </div>
-            </div>
+            <a href='https://flathub.org/apps/com.jeffser.Alpaca'><img alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en'/></a>
         </div>
     </section>
-    <header>
-        <a href="#welcome"><h1>Alpaca</h1></a>
-        <div style="flex-grow: 1;"></div>
-        <a class="nf nf-oct-download" href='https://flathub.org/apps/com.jeffser.Alpaca'></a>
-        <a class="nf nf-fa-heart_o" href="https://github.com/sponsors/Jeffser"></a>
-        <a class="nf nf-cod-github" href="https://github.com/Jeffser/Alpaca"></a>
-    </header>
-    <section class="page" id="introduction">
+    <section id="chat-page">
         <div class="page-container">
-            <img src="../images/alpaca/screenie1.png" alt="Screenie1">
-            <div class="text-container">
-                <h1>Chat With AI Models</h1>
-                <p>
-                    Have conversations with AI models locally without any data collection outside your device. Asks questions about advanced topics, use files like PDF and even images to ask questions.
-                    <br><br>
-                    All without any complicated setup, just install Alpaca, download a model of your choice and start chatting!
-                </p>
-            </div>
+            <h1>Chat With AI</h1>
+            <p>
+                Enjoy seamless interactions with advanced AI models directly on your device—no data collection, no cloud dependencies, and complete control over your privacy. Ask deep, meaningful questions on complex topics or leverage the power of AI to analyze files like PDFs or even images to get insightful answers.
+            </p>
+            <p>
+                Getting started is simple and hassle-free. Just install Alpaca, choose and download the AI model that suits your needs, and start exploring the possibilities—all without the need for complex setups or technical expertise.
+            </p>
+            <b>
+                Take charge of your AI experience today with Alpaca!
+            </b>
         </div>
+        <img src="https://jeffser.com/images/alpaca/screenie1.png" alt="">
     </section>
-    <section class="page" id="features">
-        <div class="simple-container">
-            <h1>Features</h1>
-            <div class="images-page-container">
-                <a class="image-label-container" href="https://github.com/Jeffser/Alpaca/blob/main/COPYING">
-                    <span class="nf nf-md-open_source_initiative"></span>
-                    <h1>Open Source</h1>
-                </a>
-                <a class="image-label-container" href="#privacy">
-                    <span class="nf nf-oct-cloud_offline"></span>
-                    <h1>Offline and Private</h1>
-                </a>
-                <a class="image-label-container" href="#local-ai-models">
-                    <span class="nf nf-oct-desktop_download"></span>
-                    <h1>Local Models</h1>
-                </a>
-                <a class="image-label-container" href="#image-recognition">
-                    <span class="nf nf-fa-image"></span>
-                    <h1>Image Recognition</h1>
-                </a>
-                <a class="image-label-container" href="#youtube-recognition">
-                    <span class="nf nf-fa-youtube"></span>
-                    <h1>YouTube Recognition</h1>
-                </a>
-                <a class="image-label-container" href="#code-generation">
-                    <span class="nf nf-cod-terminal_bash"></span>
-                    <h1>Code Generation</h1>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="page" id="privacy">
+    <section id="image-page">
         <div class="page-container">
-            <div class="text-container">
-                <h1>Privacy</h1>
-                <p>
-                    Alpaca is powered by <a href="https://ollama.com">Ollama</a>, an open source framework for running AI Models, mainly developed by Meta (Formally Facebook), Ollama does not collect any information about conversations or usage of models.
-                    <br><br>
-                    The model list used by Alpaca is provided by <a href="https://ollama.com/library">Ollama</a>, models have no direct access to the internet, the information collected is stored locally on your device.
-                    <ul>
-                        <li>Alpaca does not collect information outside your device</li>
-                        <li>All conversations are stored locally using SQLite3 files</li>
-                        <li>The only times Alpaca connects to the internet are to extract text from websites, extract YouTube captions and download models</li>
-                        <li>You don't need internet access to use Alpaca with your already downloaded models</li>
-                        <li>There's no account system or cloud computing involved on the usage of Alpaca or Ollama</li>
-                        <li>The quality and speed of responses is determined by your system specifications, the model used and nothing more</li>
-                        <li>These disclaimers may not apply if you use a remote instance of Ollama (optional)</li>
-                    </ul>
-                </p>
-            </div>
+            <h1>Image Recognition</h1>
+            <p>
+                Ask image recognition-capable models insightful questions about any image—all while keeping your data secure and offline. Your images and text stay completely private, ensuring everything remains between you and the model.
+            </p>
+            <p>
+                But that's not all! Expand your creativity by using various inputs like text files, PDFs, YouTube videos, and even websites to prompt the model. Whether you're analyzing content, generating ideas, or uncovering insights, Alpaca puts the possibilities of AI at your fingertips—securely and privately.
+            </p>
         </div>
+        <img src="https://jeffser.com/images/alpaca/screenie2.png" alt="">
     </section>
-    <section class="page" id="local-ai-models">
-        <div class="page-container reversed">
-            <img src="../images/alpaca/screenie7.png" alt="Screenie6">
-            <div class="text-container">
-                <h1>Local AI Models</h1>
-                <p>
-                    Experiment with dozens of pre-trained models from companies like Meta, Microsoft, Google, Nvidia and Alibaba, as well as independent models available through a simple interface.
-                    <br><br>
-                    From coding, multilingual, image recognition and specialized models, Alpaca can combine models in a single conversation so you can always find the answer to any question.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="page" id="image-recognition">
+    <section id="custom-page">
         <div class="page-container">
-            <img src="../images/alpaca/screenie2.png" alt="Screenies2">
-            <div class="text-container">
-                <h1>Image Recognition</h1>
-                <p>
-                    Ask image recognition capable models questions about any image, this process is also fully offline and private, your images and text will always stay between you and the model.
-                    <br><br>
-                    You can also use text files, PDF, <a href="#youtube-recognition">YouTube videos</a> and even websites to prompt a model!
-                </p>
-            </div>
+            <h1>Custom Models</h1>
+            <p>
+                Create personalized AI models by simply providing instructions and a profile picture. Perfect for crafting immersive roleplay scenarios with your favorite fictional characters or even developing unique AI personas tailored to your needs.
+            </p>
+            <p>
+                Unleash your creativity and make every interaction feel truly personal. Whether it's for entertainment, storytelling, or brainstorming, Alpaca lets you design models that fit your vision seamlessly.
+            </p>
         </div>
+        <img src="https://jeffser.com/images/alpaca/screenie3.png" alt="">
     </section>
-    <section class="page" id="youtube-recognition">
-        <div class="page-container reversed">
-            <img src="../images/alpaca/screenie6.png" alt="Screenies5">
-            <div class="text-container">
-                <h1>YouTube Recognition</h1>
-                <p>
-                    By extracting the captions from a YouTube video automatically, you can attach music, tutorials and any kind of video to ask questions to a model.
-                    <br><br>
-                    Just paste the url, select a language and Alpaca will take care of everything.
-                    <br><br>
-                    Disclaimer: Please do not use this feature to plagiarize content from other users, please support the creators of the content you are using by watching their videos with ads or YouTube Premium.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="page" id="code-generation">
+    <section id="local-page">
         <div class="page-container">
-            <img src="../images/alpaca/screenie4.png" alt="Screenies3">
-            <div class="text-container">
-                <h1>Code Generation</h1>
-                <p>
-                    Most models are capable of generating code, Alpaca automatically transforms the code into code blocks to make it easier to copy and review the code
-                    <br><br>
-                    Additionally, you can also run Python scripts directly from Alpaca using a virtual environment that supports features such as user input and library installation.
-                </p>
-            </div>
+            <h1>Powered by Local AI</h1>
+            <p>
+                Dive into a vast collection of pre-trained models from leading innovators like Meta, Microsoft, Google, Nvidia, and Alibaba, as well as unique independent models—all accessible through a user-friendly interface.
+            </p>
+            <p>
+                From coding assistants and multilingual communicators to advanced image recognition and specialized expertise, Alpaca gives you the power to experiment with a wide range of capabilities. Even better, you can combine multiple models in a single conversation, ensuring you always have the perfect tool to answer any question or tackle any challenge.
+            </p>
+        </div>
+        <img src="https://jeffser.com/images/alpaca/screenie7.png" alt="">
+    </section>
+    <section id="code-page">
+        <div class="page-container">
+            <h1>Code Generation</h1>
+            <p>
+                Most models in Alpaca are designed to generate clean, efficient code across a variety of programming languages. To make your workflow seamless, Alpaca automatically formats the output into easy-to-read code blocks, simplifying the process of copying, reviewing, and implementing the code.
+            </p>
+            <p>
+                But that's not all—Alpaca takes it a step further by letting you run Python scripts directly within the app! Using a built-in virtual environment, you can execute scripts with full support for user input and library installation, giving you a complete coding experience without leaving Alpaca.
+            </p>
+            <b>
+                Transform the way you code with Alpaca—where AI meets convenience and efficiency.
+            </b>
+        </div>
+        <img src="https://jeffser.com/images/alpaca/screenie4.png" alt="">
+    </section>
+    <section id="youtube-page">
+        <div class="page-container">
+            <h1>YouTube Caption Extraction</h1>
+            <p>
+                Alpaca makes it easy to interact with YouTube content by automatically extracting captions from videos. Whether it's music, tutorials, or any type of video, you can attach it to your session and ask the model questions based on its content.
+            </p>
+            <p>
+                Getting started is effortless—just paste the video URL, select a language, and let Alpaca handle the rest.
+            </p>
+            <p>
+                Disclaimer: Please use this feature responsibly. Avoid using it to plagiarize or misuse content from other creators. Support the content you use by watching their videos with ads or subscribing to YouTube Premium.
+            </p>
+        </div>
+        <img src="https://jeffser.com/images/alpaca/screenie6.png" alt="">
+    </section>
+    <section id="privacy-page" style="gap: 20px">
+        <div class="page-container">
+            <h1>Privacy</h1>
+            <p>
+                Alpaca is built on <a href="https://ollama.com/library">Ollama</a>, an open-source framework for running AI models, primarily developed by Meta (formerly Facebook). Ollama is committed to privacy and does not collect any data about your conversations or model usage.
+            </p>
+            <p>
+                The model list used by Alpaca is provided by Ollama, ensuring secure, offline operation. Models have no direct access to the internet, and all information is stored locally on your device.
+            </p>
+            <ul>
+                <li><b>Local Data Storage: </b>All conversations are securely saved in SQLite3 files on your device.</li>
+                <li><b>Limited Internet Usage: </b>Alpaca only connects to the internet for specific actions, like extracting text from websites, extracting YouTube captions, or downloading models.</li>
+                <li><b>Offline Capability: </b>Once your models are downloaded, you can use Alpaca entirely offline.</li>
+                <li><b>No Cloud Dependency: </b>Alpaca and Ollama do not rely on cloud computing or account systems for operation.</li>
+                <li><b>Performance Transparency: </b>The quality and speed of responses depend solely on your system specifications and the model in use.</li>
+            </ul>
+            <b>
+                Note: If you choose to use a remote instance of Ollama, some privacy aspects may differ.
+            </b>
+        </div>
+        <div class="page-container">
+            <h1>Open Source</h1>
+            <p>
+                Alpaca is fully open source and licensed under the <a href="https://github.com/Jeffser/Alpaca?tab=GPL-3.0-1-ov-file">GPL-3.0 license</a>, ensuring complete transparency and trustworthiness. Every line of its code is available for inspection, allowing anyone to verify its integrity, contribute to its development, or adapt it to their needs.
+            </p>
+            <p>
+                By embracing open-source principles, Alpaca empowers its users with full control and confidence in their AI experience.
+            </p>
+        </div>
+    </section>
+    <section id="sponsor-page">
+        <div class="page-container">
+            <h1>Become a Sponsor</h1>
+            <p>
+                Alpaca is a labor of love, primarily developed by a single dedicated developer. Your support can help sustain and grow this project, enabling the creation of even more innovative features and improvements.
+            </p>
+            <p>
+                If you find Alpaca valuable, please consider sponsoring the project with a pledge on GitHub. Every contribution, big or small, is greatly appreciated and goes a long way in supporting its continued development.
+            </p>
+            <b>
+                Thank you for helping keep Alpaca open and thriving!
+            </b>
+            <a href="https://github.com/sponsors/Jeffser" class="sponsor-button">
+                ♥ Sponsor Alpaca ♥
+            </a>
         </div>
     </section>
     <footer>
         <div>
-            <span>Alpaca is made by <a href="https://github.com/Jeffser">Jeffser</a> and <a href="https://github.com/Jeffser/Alpaca/graphs/contributors">other contributors</a> with ♥️</span>
-            <span>Thanks to <a href="https://tobiasbernard.com/">Tobias Bernard</a> for the awesome icon!</span>
+            <span>Alpaca is made by <a href="https://github.com/jeffser">Jeffser</a> and <a href="https://github.com/Jeffser/Alpaca/graphs/contributors">other contributors</a> with ♥</span>
+            <span>Thanks to <a href="https://tobiasbernard.com/">Tobias Bernard</a> for the awesome logo!</span>
         </div>
-        <img src="../images/alpaca/logo.svg" height="40px">
-        <div style="text-align: right;">
-            <span>Ollama and Facebook are trademarks of Meta, all rights reserved to them</span>
+        <div>
+            <span>Ollama and Facebook are trademarks of Meta, all rights are reserved to them.</span>
             <span>Alpaca was proudly created from Costa Rica 🇨🇷 for the world!</span>
         </div>
     </footer>
 </body>
 </html>
+
+
+
