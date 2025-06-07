@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://www.nerdfonts.com/assets/css/webfont.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section:nth-child(even) {
+    background: radial-gradient(ellipse at 75% 0%, #44608C 0%, #448C70 60%);
+    flex-direction: row;
+}
+
+section:nth-child(odd) {
+    background: radial-gradient(ellipse at 75% 0%, #8C7044 0%, #8C4460 60%);
+    flex-direction: row-reverse;
+}
+
+div.title-container {
+    background-image: url(https://jeffser.com/images/pigment/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+div.title-container h1 {
+    font-size: 20vmin;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body > section > div.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80vh;
+    color: white;
+    mix-blend-mode: difference;
+    font-size: 1.5vh;
+}
+
+body > section > div.page-container p {
+    width: 100%;
+}
+
+body > section > div.page-container a {
+    color: white;
+    mix-blend-mode: difference;
+}
+
+body > section > img {
+    max-width: 90vw;
+    max-height: 70vh;
+}
+
+body > section > div.page-container > h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: x-large;
+    font-size: 10vmin;
+    margin: 0;
+    position: relative;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px 10px 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    transition: filter .2s;
+}
+
+nav > a {
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav a:hover {
+    filter: brightness(75%);
+}
+
+nav a.nf {
+    font-size: 25px;
+    color: white;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav span {
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+body > section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: white 2px solid;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sponsor-button {
+    border: solid 2px white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+footer div a {
+    color: white;
+}
+
+footer div:nth-child(even) {
+    text-align: right;
+}

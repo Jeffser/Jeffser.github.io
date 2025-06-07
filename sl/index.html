@@ -5,7 +5,9 @@
 </style>
 <script>
     let urls = new Map();
+    urls.set('pigment', 'com.jeffser.Pigment')
     urls.set('alpaca', 'com.jeffser.Alpaca')
+    urls.set('ollama', 'com.jeffser.Alpaca.Plugins.Ollama')
     urls.set('amd', 'com.jeffser.Alpaca.Plugins.AMD')
     const urlParams = new URLSearchParams(window.location.search);
     let id = String(urlParams.get('id'))

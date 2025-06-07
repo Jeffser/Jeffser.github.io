@@ -10,7 +10,7 @@ body {
     height: calc(100vh - 60px);
     padding: 30px;
 }
-body > section, body > a {
+body > section#main, body > section#app_container > a {
     padding: 30px;
     border: solid white;
     display: flex;
@@ -18,6 +18,16 @@ body > section, body > a {
     gap: 30px;
     border-radius: 30px;
 }
+section#app_container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+section#app_container > a {
+    flex-direction: row !important;
+    align-items: center;
+}
+
 section#main > h1 {
     font-size: 100px;
     text-align: center;
@@ -38,20 +48,26 @@ section#main > div#link-container > a {
 section#main > div#link-container > a:hover {
     transform: scale(1.1);
 }
-a#alpaca {
+a.app {
     display: flex;
     gap: 10px;
     flex-direction: row;
     color: white;
     text-decoration: none;
     transition: .2s transform;
+    backdrop-filter: invert(.1);
+    flex-grow: 1;
 }
 
-a#alpaca:hover {
+a.app:hover {
     transform: scale(1.1);
 }
 
-a#alpaca > div > h1 {
+a.app > div > h1 {
     font-size: 50px;
     margin: 0;
+}
+
+a.app img {
+    width: 128px;
 }
