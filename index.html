@@ -1,34 +1,269 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffser</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Jeffry Samuel</title>
 </head>
-<body>
-    <section id="main">
-        <h1 class="yeseva-one-regular">Jeffry Samuel</h1>
-        <div id="link-container">
-            <a href="https://github.com/Jeffser" class="nf nf-md-github"></a>
-        </div>
-    </section>
-    <section id="app_container">
-        <a href="alpaca/" id="alpaca" class="app">
-            <img src="images/alpaca/logo.svg" alt="">
-            <div>
-                <h1>Alpaca</h1>
-                <p class="montserrat">Your AI hub</p>
-            </div>
+
+<body class="bg-white dark:bg-slate-800">
+    <header class="flex items-center justify-between px-8 py-4 border-b border-slate-200 dark:border-slate-700 justify-center space-x-5">
+        <a href="https://github.com/jeffser" class="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors">
+            <img src="/images/icons/github.svg" class="w-6 h-6 dark:invert opacity-70 hover:opacity-100 transition-opacity"/>
         </a>
-        <a href="pigment/" id="pigment" class="app">
-            <img src="images/pigment/logo.svg" alt="">
-            <div>
-                <h1>Pigment</h1>
-                <p class="montserrat">Create color palettes</p>
-            </div>
+        <a href="https://linkedin.com/in/jeffrysamuer" class="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+            <img src="/images/icons/linkedin.svg" class="w-6 h-6 dark:invert opacity-70 hover:opacity-100 transition-opacity"/>
         </a>
-    </section>
+    </header>
+    <main class="flex flex-col items-center justify-center text-center px-4 space-y-15 pt-10 pb-10 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+        <section class="max-w-6xl mx-auto flex flex-col gap-5">
+            <h1 class="text-5xl md:text-7xl font-extrabold pb-5 bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+                Jeffry Samuel
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed mx-auto">
+                Computer Systems Engineer building
+                <span class="text-blue-600 dark:text-blue-400 font-semibold">high-performance apps</span>
+                for the open source Linux desktop ecosystem.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="/alpaca"
+                    class="group block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl transition-all hover:shadow-xl hover:-translate-y-1 hover:border-blue-500 dark:hover:border-blue-400">
+                    <div class="flex items-center justify-center">
+                        <img src="/images/alpaca/logo.svg" alt="Alpaca logo" class="w-16 h-16" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                        Alpaca</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        More than just an AI client, Alpaca brings together a variety of local tools to provide
+                        users with easy and private AI access.
+                    </p>
+                </a>
+
+                <a href="/nocturne"
+                    class="group block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl transition-all hover:shadow-xl hover:-translate-y-1 hover:border-blue-500 dark:hover:border-blue-400">
+                    <div class="flex items-center justify-center">
+                        <img src="/images/nocturne/logo.svg" alt="Nocturne logo" class="w-16 h-16" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                        Nocturne</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Experience your local music collection through a fully featured, high-performance music
+                        player and library manager.
+                    </p>
+                </a>
+
+                <a href="/pigment"
+                    class="group block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl transition-all hover:shadow-xl hover:-translate-y-1 hover:border-blue-500 dark:hover:border-blue-400">
+                    <div class="flex items-center justify-center">
+                        <img src="/images/pigment/logo.svg" alt="Pigment logo" class="w-16 h-16" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                        Pigment</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        A fast and simple tool for retrieving color palletes from pictures and screenshots, useful for
+                        UI designers.
+                    </p>
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center">
+                <a href="https://github.com/sponsors/Jeffser"
+                    class="flex items-center px-4 py-2 rounded-full border border-pink-200 bg-pink-50 text-pink-700 dark:border-pink-500/30 dark:bg-pink-500/10 dark:text-pink-400 text-sm font-medium transition-all hover:shadow-xl hover:-translate-y-1 hover:border-pink-500 dark:hover:border-pink-400">
+                    Sponsor
+                </a> 
+            </div>
+        </section>
+
+        <hr class="border-slate-200 dark:border-slate-800 w-full" />
+
+        <section class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800 dark:text-slate-200">
+                Skillset
+            </h2>
+
+            <div class="flex flex-wrap gap-3 justify-center">
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    Python
+                </span>
+
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    Java
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    C++
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    C#
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    .NET Core
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    GTK4 / Adwaita
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    DBus
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                    Software Packaging
+                </span>
+
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-orange-200 bg-orange-50 text-orange-700 dark:border-orange-500/30 dark:bg-orange-500/10 dark:text-orange-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-orange-500 mr-2"></span>
+                    Linux Systems
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-orange-200 bg-orange-50 text-orange-700 dark:border-orange-500/30 dark:bg-orange-500/10 dark:text-orange-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-orange-500 mr-2"></span>
+                    OpenBSD
+                </span>
+
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span>
+                    SQLite
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span>
+                    MySQL
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-400 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span>
+                    MariaSQL
+                </span>
+
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-500/30 dark:bg-slate-500/10 dark:text-slate-300 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-slate-500 mr-2"></span>
+                    Git
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-500/30 dark:bg-slate-500/10 dark:text-slate-300 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-slate-500 mr-2"></span>
+                    Open Source Development
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-500/30 dark:bg-slate-500/10 dark:text-slate-300 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-slate-500 mr-2"></span>
+                    Docker / Podman
+                </span>
+                <span
+                    class="flex items-center px-4 py-2 rounded-full border border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-500/30 dark:bg-slate-500/10 dark:text-slate-300 text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-slate-500 mr-2"></span>
+                    Kubernetes
+                </span>
+            </div>
+        </section>
+        
+        <hr class="border-slate-200 dark:border-slate-800 w-full" />
+
+        <section class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800 dark:text-slate-200">
+                Education
+            </h2>
+            
+            <div class="flex flex-wrap gap-3 justify-center">
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-green-200 bg-green-50 dark:border-green-500/30 dark:bg-green-500/10">
+                    <span class="text-green-900 dark:text-green-300 text-sm font-semibold leading-tight">
+                        Technical Diploma in Software Development
+                    </span>
+                    <span class="text-green-600 dark:text-green-400/80 text-xs font-medium mt-0.5">
+                        Highschool • 2020-2022
+                    </span>
+                </div>
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-green-200 bg-green-50 dark:border-green-500/30 dark:bg-green-500/10">
+                    <span class="text-green-900 dark:text-green-300 text-sm font-semibold leading-tight">
+                        Bachelor of Science in Computer Systems Engineering
+                    </span>
+                    <span class="text-green-600 dark:text-green-400/80 text-xs font-medium mt-0.5">
+                        Fidélitas University • 2023-2026
+                    </span>
+                </div>
+
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-orange-200 bg-orange-50 dark:border-orange-500/30 dark:bg-orange-500/10">
+                    <span class="text-orange-900 dark:text-orange-300 text-sm font-semibold leading-tight">
+                        AWS Re / Start
+                    </span>
+                    <span class="text-orange-600 dark:text-orange-400/80 text-xs font-medium mt-0.5">
+                        ELEV8 Education • 2023
+                    </span>
+                </div>
+
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-500/30 dark:bg-slate-500/10">
+                    <span class="text-slate-900 dark:text-slate-300 text-sm font-semibold leading-tight">
+                        Conversational English B2+
+                    </span>
+                    <span class="text-slate-600 dark:text-slate-400/80 text-xs font-medium mt-0.5">
+                        Instituto Lingüístico Centroamericano • 2022
+                    </span>
+                </div>
+
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-blue-200 bg-blue-50 dark:border-blue-500/30 dark:bg-blue-500/10">
+                    <span class="text-blue-900 dark:text-blue-300 text-sm font-semibold leading-tight">
+                        IT Essentials
+                    </span>
+                    <span class="text-blue-600 dark:text-blue-400/80 text-xs font-medium mt-0.5">
+                        Cisco Networking Academy • 2020
+                    </span>
+                </div>
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-blue-200 bg-blue-50 dark:border-blue-500/30 dark:bg-blue-500/10">
+                    <span class="text-blue-900 dark:text-blue-300 text-sm font-semibold leading-tight">
+                        CCNAv7: Introduction to Networking
+                    </span>
+                    <span class="text-blue-600 dark:text-blue-400/80 text-xs font-medium mt-0.5">
+                        Cisco Networking Academy • 2023
+                    </span>
+                </div>
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-blue-200 bg-blue-50 dark:border-blue-500/30 dark:bg-blue-500/10">
+                    <span class="text-blue-900 dark:text-blue-300 text-sm font-semibold leading-tight">
+                        Introduction to IoT
+                    </span>
+                    <span class="text-blue-600 dark:text-blue-400/80 text-xs font-medium mt-0.5">
+                        Cisco Networking Academy • 2023
+                    </span>
+                </div>
+                <div class="flex flex-col px-5 py-3 rounded-2xl border border-blue-200 bg-blue-50 dark:border-blue-500/30 dark:bg-blue-500/10">
+                    <span class="text-blue-900 dark:text-blue-300 text-sm font-semibold leading-tight">
+                        NDG Linux Unhatched
+                    </span>
+                    <span class="text-blue-600 dark:text-blue-400/80 text-xs font-medium mt-0.5">
+                        Cisco Networking Academy • 2022
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="flex items-center justify-between px-8 py-4 border-t border-slate-200 dark:border-slate-700 justify-center space-x-5">
+        <span class="text-slate-600 dark:text-slate-400/80 text-xl font-medium mt-0.5 flex-grow">
+            Website created with Tailwind CSS<br>
+            No template was used
+        </span>
+        <span class="text-slate-600 dark:text-slate-400/80 text-xl font-medium mt-0.5 text-end">
+            Any third-party icons belong to their respective owners
+        </span>
+    </footer>
 </body>
+
 </html>

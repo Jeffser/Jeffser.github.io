@@ -1,52 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Pigment</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/pigment/logo.svg">
 </head>
-<body>
-    <nav class="navbar">
-        <div style="flex-grow: 1; justify-content: left;">
-            <a href="#main-page">
-                <img src="https://jeffser.com/images/pigment/logo.svg" width="30" height="30" class="bi me-2 d-inline-block align-top">
-                <span>Pigment</span> 
-            </a>
+
+<body class="bg-white dark:bg-slate-800">
+    <header class="flex items-center justify-between px-8 py-4 border-b border-slate-200 dark:border-slate-700 justify-center space-x-5">
+        <a class="text-2xl font-extrabold text-slate-900 dark:text-slate-100 opacity-70 hover:opacity-100 transition-opacity" href="/">
+            Jeffser
+        </a>
+        <a href="https://github.com/jeffser" class="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors">
+            <img src="/images/icons/github.svg" class="w-6 h-6 dark:invert opacity-70 hover:opacity-100 transition-opacity"/>
+        </a>
+        <a href="https://linkedin.com/in/jeffrysamuer" class="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+            <img src="/images/icons/linkedin.svg" class="w-6 h-6 dark:invert opacity-70 hover:opacity-100 transition-opacity"/>
+        </a>
+    </header>
+    
+    <main class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 px-10 py-10 flex flex-wrap gap-5 justify-center">
+        <div class="flex flex-wrap px-5 py-5 gap-10 items-center justify-center h-42 min-w-screen">            
+            <img class="h-32" src="/images/pigment/logo.svg">
+            <div class="flex flex-col justify-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold pb-5 bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+                    Pigment
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400">
+                    Get color palettes from images
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+                <a href="https://flathub.org/apps/com.jeffser.Pigment"><img alt="Download on Flathub" src="https://flathub.org/api/badge?locale=en"></a>
+                <span>
+                    <a class="underline transition-colors" href="https://github.com/Jeffser/Pigment">Repository</a>
+                </span>
+                
+            </div>
+        </div>        
+        
+        <div class="flex flex-wrap rounded-2xl border border-blue-200 bg-blue-50 dark:border-blue-500/30 dark:bg-blue-500/10">
+            <img src="/images/pigment/screenie1.png" class="h-128 object-contain"/>
+            
+            <div class="flex flex-col px-5 py-5 max-w-2xl justify-center space-y-10 text-start">
+                <span class="text-blue-900 dark:text-blue-300 text-5xl font-semibold leading-tight">
+                    Color Palettes
+                </span>
+                <span class="text-blue-600 dark:text-blue-400/80 text-xl font-medium mt-0.5">
+                    Discover the colors hidden within your favorite images. Pigment lets you effortlessly extract beautiful and accurate color palettes from any image, all without needing an internet connection.<br><br>
+                    Whether you're designing a theme, creating artwork, or simply exploring color combinations, Pigment can generate up to 50 unique colors from a single image, helping you capture the perfect tone and mood every time. 
+                </span>
+            </div>
         </div>
-        <div>
-            <a href="#description-page" class="nf nf-fa-image"></a>
+
+        <div class="flex flex-wrap justify-between gap-5">
+            <div class="flex flex-wrap rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-500/30 dark:bg-slate-500/10">
+                <div class="flex flex-col px-5 py-5 max-w-2xl justify-center space-y-10">
+                    <span class="text-slate-900 dark:text-slate-300 text-5xl font-semibold leading-tight">
+                        Privacy
+                    </span>
+                    <ul class="list-disc text-slate-600 dark:text-slate-400/80 text-xl font-medium mt-0.5 px-4">
+                        <li><b>Offline:</b> Pigment does not connect to the internet at all.</li>
+                        <li><b>Open Source:</b> Pigment is licensed under the GPL-3.0 license, it's code can be audited freely.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-wrap rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-500/30 dark:bg-slate-500/10">
+                <div class="flex flex-col px-5 py-5 max-w-2xl justify-center space-y-10">
+                    <span class="text-slate-900 dark:text-slate-300 text-5xl font-semibold leading-tight">
+                        Colorthief
+                    </span>
+                    <span class="text-slate-600 dark:text-slate-400/80 text-xl font-medium mt-0.5">
+                        The library <a href="https://pypi.org/project/colorthief/" class="underline">Colorthief</a> is used to do the heavy lifting, Pigment is basically a wrapper that gives users access to this tool in a nice UI with additional features.
+                    </span>
+                </div>
+            </div>
         </div>
-    </nav>
-    <section id="main-page">
-        <div class="title-container">
-            <h1>Pigment</h1>
-            <a href='https://flathub.org/apps/com.jeffser.Pigment'><img alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en'/></a>
-        </div>
-    </section>
-    <section id="description-page">
-        <div class="page-container">
-            <h1>Get Palettes</h1>
-            <p>
-                Discover the colors hidden within your favorite images. Pigment lets you effortlessly extract beautiful and accurate color palettes from any image — all without needing an internet connection.
-            </p>
-            <p>
-                Whether you're designing a theme, creating artwork, or simply exploring color combinations, Pigment can generate up to 50 unique colors from a single image, helping you capture the perfect tone and mood every time.
-            </p>
-        </div>
-        <img src="https://jeffser.com/images/pigment/screenie1.png" alt="">
-    </section>
-    <footer>
-        <div>
-            <span>Pigment is made by <a href="https://github.com/jeffser">Jeffser</a> with ♥</span>
-        </div>
-        <div>
-            <span>Pigment was proudly created from Costa Rica 🇨🇷 for the world!</span>
-        </div>
+    </main>
+
+    <footer class="flex items-center justify-between px-8 py-4 border-t border-slate-200 dark:border-slate-700 justify-center space-x-5">
+        <span class="text-slate-600 dark:text-slate-400/80 text-xl font-medium mt-0.5 flex-grow">
+            Nocturne is made by <a class="underline" href="https://github.com/Jeffser">Jeffser</a> with ♥️<br>
+        </span>
+        <span class="text-slate-600 dark:text-slate-400/80 text-xl font-medium mt-0.5 text-center">
+            Proudly created from<br>
+            Costa Rica 🇨🇷
+        </span>
     </footer>
 </body>
 </html>
-
-
-
